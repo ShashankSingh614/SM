@@ -1,0 +1,9 @@
+/* HomePage Styles */
+.homePage {
+  overflow-x: hidden;
+}
+
+/* Smooth scroll behavior for the entire page */
+.homePage * {
+  scroll-behavior: smooth;
+}

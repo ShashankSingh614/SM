@@ -1,0 +1,186 @@
+/* App.css - Main app layout and slider styles */
+.app {
+  position: relative;
+  padding-top: 80px; /* Account for fixed header */
+}
+
+/* Slider/Banner section */
+.slider {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 40px 0 60px 0;
+  margin-top: 20px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.logo1 {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo-placeholder {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #a01f18 100%);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(219, 45, 36, 0.3);
+}
+
+.logo-placeholder h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.logo-placeholder p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.guarantee-badge {
+  background: var(--secondary-color);
+  color: var(--text-dark);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(222, 184, 29, 0.3);
+  border: 2px solid #f4d03f;
+}
+
+.guarantee-badge h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.guarantee-badge p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.contact-banner {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  padding: 40px 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 20px 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-banner h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.contact-banner p {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Team section */
+.Team {
+  padding: 40px 0;
+}
+
+.Team h1 {
+  color: var(--text-dark);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .app {
+    padding-top: 140px; /* More space for mobile header */
+  }
+  
+  .slider {
+    padding: 20px 0 40px 0;
+    margin-top: 0;
+  }
+  
+  .logo1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-placeholder h2 {
+    font-size: 1.4rem;
+  }
+  
+  .logo-placeholder p {
+    font-size: 0.8rem;
+  }
+  
+  .call {
+    margin-bottom: 20px;
+  }
+  
+  .guarantee-badge h3 {
+    font-size: 1.2rem;
+  }
+  
+  .guarantee-badge p {
+    font-size: 0.8rem;
+  }
+  
+  .contact-banner h1 {
+    font-size: 2rem;
+  }
+  
+  .contact-banner p {
+    font-size: 1rem;
+  }
+  
+  .Team h1 {
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .app {
+    padding-top: 160px;
+  }
+  
+  .Team h1 {
+    font-size: 1.75rem;
+  }
+  
+  .logo-placeholder {
+    padding: 15px 20px;
+  }
+  
+  .logo-placeholder h2 {
+    font-size: 1.2rem;
+  }
+  
+  .guarantee-badge {
+    padding: 15px;
+  }
+  
+  .contact-banner {
+    padding: 30px 15px;
+  }
+  
+  .contact-banner h1 {
+    font-size: 1.75rem;
+  }
+}
