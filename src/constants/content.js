@@ -14,7 +14,7 @@ export const COMPANY_INFO = {
     image: '/images/team/dharmendra_singh.jpg'
   },
   mission: 'Making high-quality technical education accessible to all, empowering individuals to thrive in the digital era regardless of their economic backgrounds.',
-  description: 'With over 34 years of excellence, Shankar Multimedia, an ISO 9001:2015-certified institute based in Mumbai, has been a trusted leader in IT and multimedia animation training. Established in the early 1990s by Dharmendra Kumar Singh, the institute is dedicated to making high-quality technical education accessible to all, empowering individuals to thrive in the digital era regardless of their economic backgrounds.'
+  description: 'With over 35 Years of Excellence, Shankar Multimedia, an ISO 9001:2015-certified institute based in Mumbai, has been a trusted leader in IT and multimedia animation training. Established in the early 1990s by Dharmendra Kumar Singh, the institute is dedicated to making high-quality technical education accessible to all, empowering individuals to thrive in the digital era regardless of their economic backgrounds.'
 };
 
 export const CONTACT_INFO = {
@@ -76,12 +76,12 @@ export const COURSES_DATA = [
   {
     id: 'graphic-design-ui-ux',
     name: 'Graphic Design & UI/UX',
-    title: 'DIPLOMA IN ADVANCED GRAPHIC DESIGNING & UI/UX DESIGN',
+    title: 'DIPLOMA IN ADVANCED GRAPHIC DESIGNING & UI/UX DESIGN WITH AI INTEGRATION',
     description: 'Master visual communication and user experience design with industry-standard tools and techniques.',
     image: '/images/g_d.png',
     banner: '/images/g_d1.png',
     background: '/images/PS_bg.png',
-    tools: ['Adobe Photoshop', 'Adobe Illustrator', 'Adobe InDesign', 'UI/UX Design', 'Brand Identity'],
+    tools: ['Adobe Photoshop', 'CorelDRAW', 'Adobe Illustrator', 'Adobe InDesign', 'Adobe XD', 'Figma', 'Canva'],
     category: 'Design'
   },
   {
@@ -92,7 +92,7 @@ export const COURSES_DATA = [
     image: '/images/g_d1.png',
     banner: '/images/g_d1.png',
     background: '/images/PS_bg.png',
-    tools: ['Complete Graphic Design', 'Motion Graphics', 'Video Editing', 'VFX', 'UI/UX Design'],
+    tools: ['Adobe Photoshop', 'CorelDRAW', 'Adobe Illustrator', 'Adobe InDesign', 'Adobe XD', 'Figma', 'Canva', 'Adobe After Effects', 'Adobe Premiere Pro', 'Adobe Media Encoder'],
     category: 'Design'
   },
   {
@@ -103,7 +103,7 @@ export const COURSES_DATA = [
     image: '/images/3_d.png',
     banner: '/images/3_d1.png',
     background: '/images/3D_bg.png',
-    tools: ['3ds Max', 'Maya', 'Character Modeling', '3D Animation', 'Lighting & Rendering'],
+    tools: ['Adobe Photoshop', 'CorelDRAW', '3Ds Max', 'V-Ray Rendering', 'Corona Render', 'Autocad', 'SketchUp'],
     category: 'Animation'
   },
   {
@@ -114,29 +114,18 @@ export const COURSES_DATA = [
     image: '/images/3_d1.png',
     banner: '/images/3_d1.png',
     background: '/images/3D_bg.png',
-    tools: ['Advanced 3D Animation', 'VFX Compositing', 'Character Rigging', 'Film Production Pipeline'],
+    tools: ['Adobe Photoshop', 'CorelDRAW', '3Ds Max', 'V-Ray Rendering', 'Corona Render', 'Autocad', 'SketchUp', 'Adobe After Effects', 'Adobe Premiere Pro', 'Adobe Media Encoder'],
     category: 'Animation'
   },
   {
     id: 'web-design-development',
     name: 'Web Design & Development',
-    title: 'DIPLOMA IN ADVANCED WEB DESIGNING & DEVELOPMENT WITH ADVANCED UI/UX',
+    title: 'DIPLOMA IN ADVANCED WEB DESIGNING & UI/UX',
     description: 'Build modern, responsive websites and web applications with latest technologies.',
     image: '/images/w_d.png',
     banner: '/images/w_d1.png',
     background: '/images/DW_bg.png',
-    tools: ['HTML5/CSS3/JavaScript', 'Responsive Design', 'UI/UX Design', 'WordPress Development'],
-    category: 'Development'
-  },
-  {
-    id: 'full-stack-development',
-    name: 'Full Stack Development',
-    title: 'FULL STACK DEVELOPER COURSE WITH (PHP, LARAVEL, CODEIGNITER + MYSQL)',
-    description: 'Complete web development course with backend technologies and database management.',
-    image: '/images/w_d1.png',
-    banner: '/images/w_d1.png',
-    background: '/images/php_bg.png',
-    tools: ['PHP Programming', 'Laravel Framework', 'CodeIgniter', 'MySQL Database', 'Full Stack Development'],
+    tools: ['Adobe Photoshop','Adobe XD','Figma','Adobe Dreamweaver','HTML5','CSS3 / SCSS','JavaScript / jQuery','React.js','Bootstrap 4 & 5','WordPress','Notepad++','Sublime Text','Visual Studio Code','Brackets'],
     category: 'Development'
   },
   {
@@ -147,15 +136,15 @@ export const COURSES_DATA = [
     image: '/images/p_a.png',
     banner: '/images/p_a1.png',
     background: '/images/3D_bg.png',
-    tools: ['2D/3D Animation', 'VFX Compositing', 'Motion Graphics', 'Video Editing', 'Sound Design'],
+    tools: ['Adobe Photoshop', 'CorelDRAW', 'Adobe Illustrator', 'Adobe InDesign', 'Adobe XD', 'Figma', 'Canva', 'Adobe After Effects', 'Adobe Premiere Pro', 'Adobe Media Encoder', '3Ds Max', 'V-Ray Rendering', 'Corona Render', 'Autocad', 'SketchUp'],
     category: 'Animation'
   }
 ];
 
 export const FEATURES = [
-  '100% Job Placement Guarantee',
+  'Job Placement Support',
   'ISO 9001:2015 Certified Institute', 
-  '34+ Years of Excellence',
+  '35+ Years of Excellence',
   'Industry Expert Faculty',
   'Hands-on Project Training',
   'Multiple Branch Locations',
@@ -166,9 +155,8 @@ export const FEATURES = [
 
 export const HERO_CONTENT = {
   title: 'Shankar Multimedia',
-  subtitle: '34 Years of Excellence',
-  description: 'ISO 9001:2015 Certified Institute | 100% Placement Guarantee | 30,000+ Students Placed Globally',
-  
+  subtitle: '35 Years of Excellence',
+  description: 'ISO 9001:2015 Certified Institute | Job Placement Support | Industry-Driven Sessions | Expert-Led Sessions | Global Alumni Network',
   
   banners: [
     '/images/banner-11.png',
@@ -209,7 +197,7 @@ export const MANAGEMENT_TEAM = [
   {
     id: 3,
     name: 'Mr. Saurabh Singh',
-    position: 'HOD – Operations',
+    position: 'HOD - Operations',
     image: '/images/Saurabh-Singh2.JPEG',
     description: 'Mr. Saurabh Singh, Head of Operations at Shankar Multimedia, brings over 22+ years of expertise in media platforms and operations management. His proficiency lies in empowering students with industry insights, effective time management strategies, and a comprehensive understanding of corporate mindsets, enabling them to excel in interviews and build successful careers. With a robust foundation in leadership and management, he leverages his knowledge and skills to drive operational excellence and ensure the organization\'s sustained growth in the multimedia industry.'
   },

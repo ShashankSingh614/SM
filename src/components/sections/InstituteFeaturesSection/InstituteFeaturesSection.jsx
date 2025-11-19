@@ -7,58 +7,53 @@ const InstituteFeaturesSection = () => {
   const features = [
     {
       id: 1,
-      title: '100% Job Guarantee & Comprehensive Career Assistance',
-      description: 'We guarantee job placement upon successful completion of the course through our strong industry connections. Additionally, benefit from expert resume preparation, personalized interview coaching, and continuous job placement support.'
+      title: 'Comprehensive Career Support',
+      description: 'Receive dedicated job placement assistance through our industry network, including expert resume preparation, personalized interview coaching, and continuous placement support.'
     },
     {
       id: 2,
       title: 'Personalized Learning Experience',
-      description: 'With batch sizes of 1-5 students, we offer tailored learning, enhanced individual attention, and customized guidance to meet your specific needs.'
+      description: 'With batch sizes of 1–5 students, you receive tailored learning, enhanced individual attention, and customized guidance to match your learning style.'
     },
     {
       id: 3,
       title: 'Industry-Recognized Certification',
-      description: 'Earn credentials that are highly valued by top employers, boosting your career prospects.'
+      description: 'Earn credentials valued by leading employers, helping you strengthen your professional profile and career prospects.'
     },
     {
       id: 4,
       title: 'Hands-On Practice Labs & Latest Technology',
-      description: 'Gain practical experience with dedicated, high-performance computers and state-of-the-art infrastructure equipped with the latest software and hardware'
+      description: 'Gain practical experience using high-performance systems and modern infrastructure equipped with the latest software and hardware.'
     },
     {
       id: 5,
       title: 'Real-World Project Experience',
-      description: 'Work on industry-based projects to develop practical skills and ensure you are job-ready.'
+      description: 'Work on industry-based projects to build practical skills and develop a strong, job-ready portfolio.'
     },
     {
       id: 6,
       title: 'Lifetime Mentorship & Support',
-      description: 'Receive ongoing career and technical guidance even after course completion to help you navigate your professional journey.'
+      description: 'Continue receiving career and technical guidance even after course completion to support your long-term professional growth.'
     },
     {
       id: 7,
       title: 'Comfortable Learning Environment',
-      description: 'Study in spacious, air-conditioned, and well-ventilated classrooms designed for optimal focus and comfort.'
+      description: 'Train in spacious, air-conditioned, and well-ventilated classrooms designed for maximum comfort and focus.'
     },
     {
       id: 8,
       title: 'Expert Faculty & Guidance',
-      description: 'Learn from experienced trainers and industry professionals who provide valuable insights into real-world challenges.'
+      description: 'Learn from experienced trainers and industry professionals who bring real-world insights and practical expertise.'
     },
     {
       id: 9,
       title: 'Flexible Batch Timings',
-      description: 'Choose from convenient schedules that fit your lifestyle, allowing you to balance studies with personal commitments.'
+      description: 'Choose from convenient schedule options that allow you to balance your education with work, studies, or personal commitments.'
     },
     {
       id: 10,
-      title: 'Seminars & Workshops',
-      description: 'Participate in seminars and workshops conducted by industry experts, gaining valuable insights and staying ahead in your field.'
-    },
-    {
-      id: 11,
       title: 'Commitment to Excellence',
-      description: 'Our top-tier training, cutting-edge infrastructure, and experienced faculty ensure you receive the best education and preparation in the industry'
+      description: 'Our high-quality training, advanced infrastructure, and skilled faculty ensure you receive top-tier education and professional preparation.'
     }
   ];
 

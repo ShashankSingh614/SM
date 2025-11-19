@@ -446,16 +446,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--gray-50);
-  border: 2px dashed var(--primary-yellow);
 }
 
 .moreCardContent {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--primary-red);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-secondary);
 }
 
 .studentCategory {

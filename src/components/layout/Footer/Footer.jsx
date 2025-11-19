@@ -38,7 +38,7 @@ const Footer = () => {
                 </div>
               </div>
               <p className={styles.footerDescription}>
-                With over 34 years of excellence, Shankar Multimedia is Mumbai's leading 
+                With over 35 Years of Excellence, Shankar Multimedia is Mumbai's leading 
                 ISO 9001:2015 certified institute for IT and multimedia animation training.
               </p>
               <div className={styles.socialLinks}>
