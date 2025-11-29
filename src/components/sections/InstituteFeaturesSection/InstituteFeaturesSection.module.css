@@ -1,0 +1,120 @@
+/* Institute Features Section Styles */
+.featuresSection {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  padding: 5rem 0;
+  color: white;
+}
+
+.sectionHeader {
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.sectionHeader h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.featuresContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featureItem {
+  margin-bottom: 1.5rem;
+  padding: 0 2.5rem;
+}
+
+.featureContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.checkIcon {
+  color: #f9e48e;
+  font-size: 1.25rem;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.featureText {
+  flex: 1;
+  line-height: 1.6;
+}
+
+.featureTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+}
+
+.featureDescription {
+  font-size: 0.9375rem;
+  color: white;
+  font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .featuresSection {
+    padding: 3rem 0;
+  }
+
+  .sectionHeader h1 {
+    font-size: 2rem;
+  }
+
+  .featureItem {
+    padding: 0 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .featureContent {
+    gap: 0.75rem;
+  }
+
+  .checkIcon {
+    font-size: 1.1rem;
+  }
+
+  .featureTitle {
+    font-size: 1rem;
+  }
+
+  .featureDescription {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionHeader h1 {
+    font-size: 1.5rem;
+  }
+
+  .featureItem {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .featureContent {
+    gap: 0.5rem;
+  }
+
+  .checkIcon {
+    font-size: 1rem;
+    margin-top: 0.1rem;
+  }
+
+  .featureTitle {
+    font-size: 0.9rem;
+  }
+
+  .featureDescription {
+    font-size: 0.8rem;
+  }
+}
+

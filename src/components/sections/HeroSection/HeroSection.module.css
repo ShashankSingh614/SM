@@ -1,0 +1,490 @@
+/* Modern Hero Section - Red & Yellow Theme */
+.hero {
+  position: relative;
+  min-height: auto;
+  background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+  overflow: hidden;
+}
+
+/* Top Contact Bar */
+.topBar {
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red-dark) 100%);
+  color: white;
+  padding: 0.75rem 0;
+  font-size: 0.875rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.topBarContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.workingHours {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contactNumbers {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.contactLink {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all var(--transition-base);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.contactLink:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--primary-yellow);
+}
+
+/* Hero Content */
+.heroContent {
+  padding: 1rem 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.heroTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logoText h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-red);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.logoText p {
+  font-size: 1.1rem;
+  color: var(--primary-yellow-dark);
+  font-weight: 600;
+  margin: 0;
+}
+
+.guaranteeBadge {
+  flex-shrink: 0;
+}
+
+.guaranteeBadge img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+/* Carousel Section */
+.carouselSection {
+  margin-bottom: 1.5rem;
+}
+
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  background: white;
+}
+
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+}
+
+.carouselSlide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carouselImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Carousel Controls */
+.carouselBtn {
+  display: none;
+}
+
+.prevBtn {
+  display: none;
+}
+
+.nextBtn {
+  display: none;
+}
+
+/* Carousel Indicators */
+.carouselIndicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.indicator.active {
+  background: var(--primary-yellow);
+  border-color: var(--primary-yellow);
+  transform: scale(1.2);
+}
+
+.indicator:hover {
+  background: white;
+  transform: scale(1.1);
+}
+
+/* Hero Info Section */
+.heroInfo {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.heroDescription {
+  margin-bottom: 3rem;
+}
+
+.heroDescription h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.heroDescription p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Stats Grid */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.statCard {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all var(--transition-base);
+  border: 1px solid var(--gray-200);
+}
+
+.statCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--primary-yellow);
+}
+
+.statIcon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red-dark) 100%);
+  color: white;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.statContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.statNumber {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary-red);
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
+/* Hero Actions */
+.heroActions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+/* Trust Badges */
+.trustBadges {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--primary-yellow);
+  color: var(--gray-900);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+}
+
+.badge:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .heroTop {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .logoSection {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .logoText h2 {
+    font-size: 1.75rem;
+  }
+
+  .carouselContainer {
+    height: 400px;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .heroDescription h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .topBarContent {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .contactNumbers {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .heroContent {
+    padding: 1rem 0 2rem;
+  }
+  
+  .heroTop {
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+  }
+  
+  .carouselSection {
+    margin-bottom: 1rem;
+  }
+
+  .logoText h2 {
+    font-size: 1.5rem;
+  }
+
+  .logoText p {
+    font-size: 1rem;
+  }
+
+  .guaranteeBadge img {
+    height: 80px;
+  }
+
+  .carouselContainer {
+    height: 280px;
+  }
+
+  .carouselBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .prevBtn {
+    left: 15px;
+  }
+
+  .nextBtn {
+    right: 15px;
+  }
+
+  .heroDescription h3 {
+    font-size: 1.75rem;
+  }
+
+  .heroDescription p {
+    font-size: 1rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .statCard {
+    padding: 1.5rem 1rem;
+  }
+
+  .heroActions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroActions .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .trustBadges {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactNumbers {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .logoText h2 {
+    font-size: 1.25rem;
+  }
+
+  .guaranteeBadge img {
+    height: 60px;
+  }
+
+  .carouselContainer {
+    height: 220px;
+  }
+
+  .heroDescription h3 {
+    font-size: 1.5rem;
+  }
+
+  .statCard {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .statContent {
+    align-items: center;
+  }
+}
+
+/* Animation Enhancements */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.guaranteeBadge img {
+  animation: float 3s ease-in-out infinite;
+}
+
+.statCard:nth-child(even) {
+  animation-delay: 0.1s;
+}
+
+.statCard:nth-child(odd) {
+  animation-delay: 0.2s;
+}
