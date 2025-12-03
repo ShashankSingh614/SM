@@ -1,4 +1,4 @@
-// Modern HomePage with hero section and key components
+// Modern HomePage with key components
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import HeroSection from '../../components/sections/HeroSection/HeroSection';

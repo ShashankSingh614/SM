@@ -41,22 +41,7 @@ const HeroSection = () => {
       {/* Main Hero Content */}
       <div className="container">
         <div className={styles.heroContent}>
-          {/* Logo and Guarantee Badge */}
-          <motion.div 
-            className={styles.heroTop}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className={styles.logoSection}>
-              <img src="/images/logo.png" alt="Shankar Multimedia" className={styles.logo} />
-              <div className={styles.logoText}>
-                <h2>{HERO_CONTENT.title}</h2>
-                <p>{HERO_CONTENT.subtitle}</p>
-              </div>
-            </div>
-            
-          </motion.div>
+
 
           {/* Carousel Section */}
           <motion.div 

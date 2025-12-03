@@ -1,17 +1,47 @@
-/* Modern App.css */
+/* Modern App.css - Mobile First */
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
+/* Mobile first - smaller header */
 main {
   flex: 1;
-  padding-top: 80px; /* Account for fixed header */
+  padding-top: 60px;
 }
 
-@media (max-width: 768px) {
+/* Tablet */
+@media (min-width: 480px) {
+  main {
+    padding-top: 65px;
+  }
+}
+
+/* Small tablet */
+@media (min-width: 640px) {
   main {
     padding-top: 70px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  main {
+    padding-top: 72px;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1024px) {
+  main {
+    padding-top: 78px;
+  }
+}
+
+/* Extra large desktop */
+@media (min-width: 1280px) {
+  main {
+    padding-top: 85px;
   }
 }
