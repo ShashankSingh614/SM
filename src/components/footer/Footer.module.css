@@ -1,0 +1,155 @@
+.footer2 {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  padding: 60px 0 0 0;
+  position: relative;
+}
+
+.footer2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 49%, rgba(255,255,255,0.02) 50%, transparent 51%);
+  opacity: 0.05;
+}
+
+.jojo {
+  position: relative;
+  z-index: 1;
+}
+
+.jojo img {
+  filter: brightness(0) invert(1);
+  max-width: 150px;
+  height: auto;
+}
+
+.footer2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer2 ul li {
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer2 ul li a {
+  color: #bdc3c7;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+  padding: 5px 0;
+  display: block;
+}
+
+.footer2 ul li a:hover {
+  color: white;
+  padding-left: 10px;
+  border-left: 3px solid var(--secondary-color);
+}
+
+.iconss {
+  margin-top: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.iconss a {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.iconss a:hover {
+  background: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+.iconss a img {
+  width: 20px !important;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.footer {
+  background: #1a252f;
+  padding: 20px 0;
+  border-top: 1px solid #34495e;
+  margin-top: 40px;
+}
+
+.fut p {
+  color: #7f8c8d;
+  font-size: 12px;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .footer2 {
+    padding: 40px 0 0 0;
+  }
+  
+  .footer2 ul li a {
+    font-size: 12px;
+  }
+  
+  .iconss {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .iconss a {
+    margin: 0 8px 10px 8px;
+  }
+  
+  .jojo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .jojo img {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer2 {
+    padding: 30px 0 0 0;
+  }
+  
+  .footer2 ul li a {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+  
+  .fut p {
+    font-size: 11px;
+  }
+  
+  .iconss a {
+    width: 35px;
+    height: 35px;
+    line-height: 19px;
+  }
+  
+  .iconss a img {
+    width: 18px !important;
+    height: 18px;
+  }
+}

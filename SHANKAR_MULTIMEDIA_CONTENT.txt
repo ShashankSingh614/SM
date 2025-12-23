@@ -1,0 +1,507 @@
+═══════════════════════════════════════════════════════════════════════════════
+SHANKAR MULTIMEDIA - COMPREHENSIVE COURSE & PLACEMENT OVERVIEW
+═══════════════════════════════════════════════════════════════════════════════
+
+ABOUT SHANKAR MULTIMEDIA
+────────────────────────────────────────────────────────────────────────────────
+
+Shankar Multimedia is a leading multimedia training institute in Mumbai offering 
+professional diploma courses with guaranteed placement support. We are committed to 
+transforming aspiring professionals into industry-ready experts through hands-on 
+training and mentorship.
+
+LOCATIONS IN MUMBAI
+────────────────────────────────────────────────────────────────────────────────
+• Goregaon 
+• Malad 
+• Santacruz
+• Mulund
+• Nalasopara
+• Ghatkopar
+
+═══════════════════════════════════════════════════════════════════════════════
+JOB GUARANTEE & PLACEMENT ASSURANCE
+═══════════════════════════════════════════════════════════════════════════════
+
+✓ 100% PLACEMENT ASSURANCE
+  - Guaranteed job placement after course completion
+  - Dedicated placement cell for each student
+  - Career counseling and interview preparation included
+  - Resume building assistance
+
+═══════════════════════════════════════════════════════════════════════════════
+PROFESSIONAL DIPLOMA COURSES OFFERED
+═══════════════════════════════════════════════════════════════════════════════
+
+1. GRAPHIC DESIGNING COURSE
+   ────────────────────────────────────────────────────────────────────────────
+   Duration: 6 Months (Diploma)
+   Certification: Industry-recognized diploma
+   
+   COURSE DETAILS:
+   • Introduction to Graphic Design & Design Principles
+   • Color Theory & Typography
+   • Branding & Logo Design
+   • UI/UX Design Fundamentals
+   • Print Design & Publication Layout
+   • Web Design Basics
+   • Portfolio Building
+   
+   SOFTWARE COVERED:
+   ✓ Adobe Photoshop (Advanced)
+     - Photo editing, retouching, manipulation
+     - Layer management, filters, effects
+     - Color correction, brightness/contrast
+     - Image composition and blending
+   
+   ✓ Adobe Illustrator (Advanced)
+     - Vector graphics creation
+     - Logo & icon design
+     - Typography manipulation
+     - Infographic design
+     - Print-ready file preparation
+   
+   ✓ Adobe InDesign (Intermediate)
+     - Document layout & design
+     - Brochure, flyer, poster creation
+     - Magazine & newsletter design
+     - Master pages & templates
+   
+   ✓ CorelDRAW
+     - Vector illustration
+     - Logo and graphic design
+     - Branding materials
+   
+   CAREER PROSPECTS:
+   • Graphic Designer
+   • UI/UX Designer
+   • Brand Identity Designer
+   • Print Designer
+   • Freelance Designer
+   • Web Designer
+   • Design Consultant
+
+
+2. UI/UX DESIGN COURSE
+   ────────────────────────────────────────────────────────────────────────────
+   Duration: 4-6 Months (Diploma)
+   
+   COURSE DETAILS:
+   • User Research & Analysis
+   • Wireframing & Prototyping
+   • User Interface Design
+   • User Experience Best Practices
+   • Accessibility in Design
+   • Design Systems & Components
+   • Mobile App Design
+   • Web Application Design
+   • Usability Testing
+   
+   SOFTWARE & TOOLS:
+   ✓ Figma
+     - UI design & prototyping
+     - Collaborative design
+     - Component libraries
+     - Design handoff
+   
+   ✓ Adobe XD
+     - Wireframing & prototyping
+     - Interactive prototypes
+     - User testing
+   
+   ✓ Sketch
+     - Interface design
+     - Symbol libraries
+     - Design collaboration
+   
+   ✓ Prototyping Tools
+     - InVision
+     - Principle
+     - Framer
+   
+   CAREER PROSPECTS:
+   • UI Designer
+   • UX Designer
+   • Product Designer
+   • Interaction Designer
+   • User Research Analyst
+   • Design Strategist
+
+
+3. WEB DESIGNING COURSE
+   ────────────────────────────────────────────────────────────────────────────
+   Duration: 4-6 Months (Diploma)
+   
+   COURSE DETAILS:
+   • Web Design Fundamentals
+   • Responsive Web Design
+   • HTML5 & CSS3 Mastery
+   • Web Typography & Colors
+   • Conversion Rate Optimization
+   • E-commerce Website Design
+   • Website Performance & SEO
+   • Accessibility Standards (WCAG)
+   • CMS Integration
+   
+   PROGRAMMING & SOFTWARE:
+   ✓ HTML5
+     - Semantic markup
+     - Forms & validation
+     - Accessibility
+   
+   ✓ CSS3
+     - Flexbox & CSS Grid
+     - Responsive design
+     - Animations & transitions
+     - Bootstrap framework
+   
+   ✓ JavaScript (Basics)
+     - DOM manipulation
+     - Event handling
+     - jQuery basics
+   
+   ✓ Design Tools
+     - Adobe XD
+     - Figma
+     - Photoshop
+   
+   ✓ Website Builders
+     - WordPress
+     - Elementor
+     - Wix basics
+   
+   CAREER PROSPECTS:
+   • Web Designer
+   • Frontend Developer
+   • Responsive Designer
+   • WordPress Developer
+   • Web Developer
+   • E-commerce Specialist
+   • Digital Marketing Specialist
+
+
+4. FULL STACK WEB DEVELOPMENT COURSE
+   ────────────────────────────────────────────────────────────────────────────
+   Duration: 6-9 Months (Diploma)
+   
+   COURSE DETAILS:
+   • Web Fundamentals & Internet
+   • Frontend Development
+   • Backend Development
+   • Database Management
+   • API Development & Integration
+   • Version Control (Git)
+   • Web Security Best Practices
+   • Cloud Deployment (AWS, Heroku)
+   • Testing & Debugging
+   
+   FRONTEND TECHNOLOGIES:
+   ✓ HTML5 & CSS3 (Advanced)
+   ✓ JavaScript (Advanced)
+     - ES6+ features
+     - Asynchronous programming
+     - DOM manipulation
+   
+   ✓ React.js
+     - Components & JSX
+     - State management
+     - Hooks & Context API
+     - Redux (if advanced track)
+   
+   ✓ Bootstrap & Tailwind CSS
+   ✓ jQuery
+   
+   BACKEND TECHNOLOGIES:
+   ✓ PHP & Laravel
+     - Object-oriented programming
+     - MVC architecture
+     - Artisan CLI
+     - Blade templating
+     - Eloquent ORM
+   
+   ✓ Node.js & Express.js
+     - Server-side JavaScript
+     - REST APIs
+     - Middleware
+     - Authentication & authorization
+   
+   ✓ Python (Basics)
+   
+   DATABASE TECHNOLOGIES:
+   ✓ MySQL
+     - Database design
+     - Relationships
+     - Query optimization
+   
+   ✓ MongoDB
+     - NoSQL concepts
+     - Document-based storage
+   
+   TOOLS & FRAMEWORKS:
+   ✓ Git & GitHub
+   ✓ Postman (API testing)
+   ✓ VS Code
+   ✓ Package managers (npm, composer)
+   
+   DEPLOYMENT & HOSTING:
+   ✓ AWS (Amazon Web Services)
+   ✓ Heroku
+   ✓ DigitalOcean
+   ✓ cPanel Hosting
+   
+   CAREER PROSPECTS:
+   • Full Stack Developer
+   • Frontend Developer
+   • Backend Developer
+   • Web Developer
+   • MERN Stack Developer
+   • LAMP Stack Developer
+   • Junior Developer
+   • Startup Founder
+
+
+5. 3D ANIMATION COURSE
+   ────────────────────────────────────────────────────────────────────────────
+   Duration: 6-9 Months (Diploma)
+   
+   COURSE DETAILS:
+   • 3D Modeling Fundamentals
+   • Texturing & Shading
+   • Lighting Techniques
+   • Animation Principles
+   • Character Animation
+   • VFX Basics
+   • Rendering & Compositing
+   • Motion Graphics
+   
+   SOFTWARE COVERED: 
+   ✓ Autodesk 3DS Max
+     - 3D modeling
+     - Character animation
+     - VFX
+   
+   ✓ Cinema 4D
+     - Motion graphics
+     - Animation
+     - Rendering
+   
+   CAREER PROSPECTS:
+   • 3D Animator
+   • Character Animator
+   • 3D Modeler
+   • VFX Artist
+   • Motion Graphics Designer
+   • Game Developer
+   • Film & Video Editor
+
+
+6. 2D ANIMATION COURSE
+   ────────────────────────────────────────────────────────────────────────────
+   Duration: 4-6 Months (Diploma)
+   
+   COURSE DETAILS:
+   • Animation Fundamentals
+   • Drawing & Storyboarding
+   • Frame-by-frame Animation
+   • Character Design
+   • Motion Graphics
+   • Stop Motion Basics
+   • Lip Sync & Dialogue
+   
+   SOFTWARE COVERED:
+   ✓ Adobe Animate
+     - Frame animation
+     - Tweening
+     - Actionscript basics
+   
+   ✓ Adobe After Effects
+     - Motion graphics
+     - Visual effects
+     - Compositing
+   
+   ✓ Toon Boom Harmony
+     - Professional animation software
+     - Digital painting
+   
+   ✓ TVPaint
+     - Digital animation
+     - Brush engines
+   
+   CAREER PROSPECTS:
+   • 2D Animator
+   • Motion Graphics Designer
+   • Storyboard Artist
+   • Cartoon Designer
+   • Video Editor
+   • YouTube Content Creator
+
+
+7. VIDEO EDITING & VFX COURSE
+   ────────────────────────────────────────────────────────────────────────────
+   Duration: 4-6 Months (Diploma)
+   
+   COURSE DETAILS:
+   • Video Editing Fundamentals
+   • Color Grading & Correction
+   • Audio Mixing & Sync
+   • Visual Effects Creation
+   • Compositing Techniques
+   • Motion Graphics & Titles
+   • Film Production Workflow
+   • YouTube Optimization
+   
+   SOFTWARE COVERED:
+   ✓ Adobe Premiere Pro
+     - Non-linear editing
+     - Video composition
+     - Effects & transitions
+     - Color grading
+     - Audio editing
+   
+   ✓ Adobe After Effects (Advanced)
+     - Visual effects
+     - Motion graphics
+     - Compositing
+     - Particle effects
+   
+   CAREER PROSPECTS:
+   • Video Editor
+   • VFX Artist
+   • Color Grader
+   • Motion Graphics Designer
+   • Post-Production Specialist
+   • Film Producer
+   • YouTube Creator
+   • Corporate Video Producer
+
+
+8. AUTOCAD COURSE
+   ────────────────────────────────────────────────────────────────────────────
+   Duration: 3-4 Months (Diploma)
+   
+   COURSE DETAILS:
+   • CAD Fundamentals
+   • 2D Drawing & Drafting
+   • 3D Modeling
+   • Architectural Drawing
+   • Construction Documentation
+   • Project Development
+   • Drawing Standards
+   
+   SOFTWARE COVERED:
+   ✓ Autodesk AutoCAD
+     - 2D drafting
+     - 3D modeling
+     - Parametric design
+   
+   ✓ Revit (BIM Software)
+     - Building Information Modeling
+     - Architectural planning
+   
+   ✓ SketchUp
+     - 3D modeling
+     - Presentation
+   
+   SPECIALIZATIONS:
+   • Interior Design AutoCAD
+   
+   CAREER PROSPECTS:
+   • AutoCAD Draftsman
+   • CAD Designer
+   • Architectural Technician
+   • Mechanical Designer
+   • Interior Designer
+   • Construction Manager
+   • BIM Specialist
+
+
+═══════════════════════════════════════════════════════════════════════════════
+ADDITIONAL LEARNING TOOLS & TECHNOLOGIES
+═══════════════════════════════════════════════════════════════════════════════
+
+DESIGN & GRAPHICS TOOLS
+• Adobe Creative Cloud (Complete Suite)
+• Figma (Cloud-based design tool)
+• SketchUp
+• Adobe XD
+
+DEVELOPMENT TOOLS & IDEs
+• Visual Studio Code
+• Sublime Text
+• Git & GitHub
+• Postman API Client
+• Nodejs & npm
+• Package managers (npm, yarn, composer)
+
+DATABASES
+• MySQL
+• MongoDB
+• PostgreSQL
+• Firebase
+
+VERSION CONTROL
+• Git
+• GitHub
+• GitLab
+• Bitbucket
+
+═══════════════════════════════════════════════════════════════════════════════
+COURSE BENEFITS
+═══════════════════════════════════════════════════════════════════════════════
+
+✓ Hands-on Practical Training
+  - Industry projects & real-world assignments
+  - Portfolio building throughout the course
+  - Live project deployments
+
+✓ Expert Faculty
+  - Experienced industry professionals
+  - Current with latest technologies
+  - Personalized mentoring
+
+✓ Updated Curriculum
+  - Latest tools & technologies
+  - Current industry standards
+  - Regular curriculum updates
+
+✓ Job Guarantee
+  - 100% placement assurance
+  - Dedicated placement cell
+  - Interview preparation
+
+✓ Flexible Learning
+  - Weekend classes available
+
+✓ Career Support
+  - Resume building
+  - Interview coaching
+  - Career counseling
+
+✓ Industry Network
+  - Internship opportunities
+  - Company tie-ups
+  - Networking events
+  - Alumni network
+
+═══════════════════════════════════════════════════════════════════════════════
+CONTACT & ENROLLMENT
+═══════════════════════════════════════════════════════════════════════════════
+
+Phone: +91-9223439986
+Email: info@shankarmultimedia.com
+Website: https://shankarmultimedia.com
+
+FOLLOW US
+Facebook: https://www.facebook.com/share/1JiWnFuzfD/
+Instagram: https://www.instagram.com/shankarmultimedia
+YouTube: https://www.youtube.com/@ShankarMultimediaMumbai
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SHANKAR MULTIMEDIA - YOUR GATEWAY TO A SUCCESSFUL CREATIVE & TECH CAREER!
+
+Transform your passion into a profession. Get job guaranteed training with 
+guaranteed placement in leading companies. Join thousands of successful 
+graduates working in top organizations worldwide.
+
+═══════════════════════════════════════════════════════════════════════════════
