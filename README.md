@@ -1,4 +1,4 @@
-# Shankar Multimedia - Professional Training Institute Platform
+# Shankar Multimedia
 
 A comprehensive, modern React-based web application serving as the digital presence for Shankar Multimedia, a premier professional training institute in Mumbai. This platform delivers an intuitive, fully responsive experience enabling students to explore courses, track placements, access institute information, and engage with the organization across multiple locations in Mumbai.
 
