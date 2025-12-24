@@ -12,6 +12,17 @@ const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const banners = HERO_CONTENT.banners || [];
 
+  // Preload images on component mount
+  useEffect(() => {
+    banners.forEach((bannerUrl) => {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = bannerUrl;
+      document.head.appendChild(link);
+    });
+  }, [banners]);
+
   // Auto-slide functionality
   useEffect(() => {
     if (banners.length > 1) {
@@ -48,7 +59,7 @@ const HeroSection = () => {
             className={styles.carouselSection}
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0 }}
           >
             <div className={styles.carousel}>
               <div className={styles.carouselContainer}>
@@ -65,6 +76,8 @@ const HeroSection = () => {
                       src={banners[currentSlide]} 
                       alt={`Shankar Multimedia Course ${currentSlide + 1}`}
                       className={styles.carouselImage}
+                      loading="eager"
+                      decoding="async"
                     />
                   </motion.div>
                 </AnimatePresence>

@@ -56,8 +56,8 @@ All images should be referenced using the public path:
 
 ### Course Images:
 - `3D_bg.png`, `courses/3_d.png`, `courses/3d.jpg` - 3D Animation course
-- `DW_bg.png`, `w_d1.png`, `w_d1.png` - Web Development course
-- `PS_bg.png`, `g_d1.png`, `g_d1.png` - Graphic Design course
+- `DW_bg.png`, `web.jpg`, `web.jpg` - Web Development course
+- `PS_bg.png`, `gra.jpg`, `gra.jpg` - Graphic Design course
 - `php_bg.png` - PHP Development course
 
 ### Team Photos:

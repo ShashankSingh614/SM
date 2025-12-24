@@ -154,21 +154,7 @@ const TermsConditionsPage = () => {
               Any unauthorized use of the Content or course materials may violate copyright, trademark, and other laws of India and may subject you to civil and criminal penalties under the Copyright Act, 1957, the Trade Marks Act, 1999, the Information Technology Act, 2000, and the Bharatiya Nyaya Sanhita, 2023. Shankar Multimedia reserves the right to pursue legal action and claim damages for any unauthorized use or infringement of its intellectual property.
             </p>
           </section>
-
-          {/* Links to Other Websites */}
-          <section className={styles.section}>
-            <h2>Links to Other Websites</h2>
-            <p>
-              Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company.
-            </p>
-            <p>
-              The Company has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that the Company shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services.
-            </p>
-            <p>
-              We strongly advise You to read the terms and conditions and privacy policies of any third-party web sites or services that You visit.
-            </p>
-          </section>
-
+          
           {/* Termination */}
           <section className={styles.section}>
             <h2>Termination and Suspension</h2>
