@@ -8,6 +8,8 @@ import CoursesPage from './pages/CoursesPage/CoursesPage';
 import PlacementsPage from './pages/PlacementsPage/PlacementsPage';
 import AboutPage from './pages/AboutPage/AboutPage';
 import ContactPage from './pages/ContactPage/ContactPage';
+import TermsConditionsPage from './pages/TermsConditionsPage/TermsConditionsPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage/PrivacyPolicyPage';
 import ScrollToTop from './components/ui/ScrollToTop/ScrollToTop';
 import WhatsAppButton from './components/ui/WhatsAppButton/WhatsAppButton';
 import './App.css';
@@ -32,6 +34,8 @@ function App() {
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/placements" element={<PlacementsPage />} />
                 <Route path="/contact" element={<ContactPage />} />
+                <Route path="/terms-conditions" element={<TermsConditionsPage />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
               </Routes>
             </motion.main>
           </AnimatePresence>

@@ -1,0 +1,225 @@
+/* Privacy Policy Page Styles */
+.privacyPage {
+  padding: 8rem 0 4rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 3rem 0;
+}
+
+.pageHeader h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.pageHeader p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.content {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e8ecf1;
+}
+
+.section {
+  margin-bottom: 3.5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #e8ecf1;
+}
+
+.section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--primary-red);
+  display: inline-block;
+}
+
+.section h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+
+.list {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.list li {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.list li:before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--primary-red);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.list li strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.contactBox {
+  background: linear-gradient(135deg, #f0f4ff 0%, #f9f0ff 100%);
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+  margin: 2rem 0;
+}
+
+.contactBox p {
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.contactBox p:last-child {
+  margin-bottom: 0;
+}
+
+.contactBox strong {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.footer {
+  background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 2px solid var(--primary-red);
+}
+
+.footer p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .privacyPage {
+    padding: 5rem 0 2rem;
+  }
+
+  .pageHeader h1 {
+    font-size: 2rem;
+  }
+
+  .pageHeader p {
+    font-size: 1rem;
+  }
+
+  .content {
+    padding: 1.5rem;
+  }
+
+  .section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .section h2 {
+    font-size: 1.4rem;
+  }
+
+  .section h3 {
+    font-size: 1.1rem;
+  }
+
+  .section p,
+  .list li {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  .list {
+    padding-left: 1rem;
+  }
+
+  .list li {
+    padding-left: 1.2rem;
+  }
+
+  .contactBox {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacyPage {
+    padding: 3rem 0 1rem;
+  }
+
+  .pageHeader {
+    margin-bottom: 2rem;
+    padding: 1.5rem 0;
+  }
+
+  .pageHeader h1 {
+    font-size: 1.5rem;
+  }
+
+  .pageHeader p {
+    font-size: 0.9rem;
+  }
+
+  .content {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .section h2 {
+    font-size: 1.2rem;
+  }
+
+  .section h3 {
+    font-size: 1rem;
+  }
+
+  .section p,
+  .list li {
+    font-size: 0.9rem;
+  }
+}

@@ -28,7 +28,7 @@ const Footer = ({ logoSrc, logoAlt, socialLinks }) => {
           </div>
 
           {/* Courses Links */}
-          <div className="col-md-4 mt-5">
+          <div className="col-md-3 mt-5">
             <ul>
               {courseOptions.map((course) => (
                 <li key={course.value}>
@@ -38,8 +38,23 @@ const Footer = ({ logoSrc, logoAlt, socialLinks }) => {
             </ul>
           </div>
 
+          {/* Quick Links Section */}
+          <div className="col-md-2 mt-5">
+            <ul>
+              <li>
+                <a href="/contact">Contact Us</a>
+              </li>
+              <li>
+                <a href="/privacy-policy">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="/terms-conditions">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+
           {/* Social Media Section */}
-          <div className="col-md-3 mt-5">
+          <div className="col-md-2 mt-5">
             <ul>
               <li>
                 <a href="#contact">GET IN TOUCH</a>
