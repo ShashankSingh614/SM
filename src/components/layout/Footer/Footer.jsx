@@ -89,7 +89,7 @@ const Footer = () => {
         <div className="container">
           <div className={styles.footerBottomContent}>
             <p className={styles.copyright}>
-              Shankar Multimedia. All Rights Reserved ©2026
+              Shankar Multimedia. All Rights Reserved ©{new Date().getFullYear()}
             </p>
             
           </div>

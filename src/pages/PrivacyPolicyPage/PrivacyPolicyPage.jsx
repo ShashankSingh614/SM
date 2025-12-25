@@ -22,7 +22,7 @@ const PrivacyPolicyPage = () => {
       <div className="container">
         <div className={styles.pageHeader}>
           <h1>Privacy Policy</h1>
-          <p>Last Updated: January 2026</p>
+          <p>Last Updated: January {new Date().getFullYear()}</p>
         </div>
 
         <motion.div
@@ -43,10 +43,10 @@ const PrivacyPolicyPage = () => {
           <section className={styles.section}>
             <h2>Data Protection & Privacy</h2>
             <p>
-              Your personal information collected during offline admission is secured and protected under the <strong>Information Technology Act, 2000</strong> and applicable Indian data protection laws. We are legally bound and committed to the following:
+              Your personal information collected during offline admission is secured and protected under the <strong className={styles.highlight}>Information Technology Act, 2000</strong> and applicable Indian data protection laws. We are legally bound and committed to the following:
             </p>
             <ul className={styles.list}>
-              <li>We <strong>DO NOT</strong> sell, trade, rent, or share your personal information with any third parties</li>
+              <li>We <strong className={styles.highlight}>DO NOT</strong> sell, trade, rent, or share your personal information with any third parties</li>
               <li>Your data is used solely for educational and administrative purposes related to your enrollment</li>
               <li>Information is stored securely with restricted access only to authorized personnel</li>
               <li>Your data is retained only as long as necessary for educational purposes and legal compliance</li>
@@ -57,7 +57,7 @@ const PrivacyPolicyPage = () => {
           <section className={styles.section}>
             <h2>Contact Us</h2>
             <p>
-              For any questions about this Privacy Policy or your personal information, please contact us at info@shankarmultimedia.com.
+              For any questions about this Privacy Policy or your personal information, please contact us at <strong className={styles.highlight}>info@shankarmultimedia.com</strong>.
             </p>
           </section>
         </motion.div>

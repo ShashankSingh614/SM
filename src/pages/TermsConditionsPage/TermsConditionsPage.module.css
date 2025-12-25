@@ -1,3 +1,9 @@
+.highlight {
+  color: var(--primary-yellow, #FFD700) !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.5px;
+}
+
 /* Terms and Conditions Page Styles */
 .termsPage {
   padding: 8rem 0 4rem;

@@ -73,7 +73,7 @@ src/
 
 ### Copyright & Intellectual Property
 
-© 2024-2026 **Shankar Multimedia**. All rights reserved.
+© 2008-2026 **Shankar Multimedia**. All rights reserved.
 
 This website, application, and all associated content are the exclusive property of Shankar Multimedia and protected under copyright laws of India and international copyright laws.
 

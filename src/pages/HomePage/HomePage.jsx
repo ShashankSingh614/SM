@@ -10,6 +10,9 @@ import PartnersSection from '../../components/sections/PartnersSection/PartnersS
 import styles from './HomePage.module.css';
 import { useSEO } from '../../hooks/useSEO';
 import { helmetConfig, structuredData } from '../../utils/helmet';
+import RecentPlacementCurved from '../../components/sections/RecentPlacementCurved/RecentPlacementCurved';
+
+
 
 export default function HomePage() {
   useSEO({
@@ -52,11 +55,13 @@ const HomePageContent = () => {
       transition={pageTransition}
     >
       <HeroSection />
-      
+
+      <RecentPlacementCurved />
+
       <TestimonialsSection />
-      
+
       <PartnersSection />
-      
+
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 50 }}
@@ -67,7 +72,7 @@ const HomePageContent = () => {
       </motion.div>
 
       <InstituteFeaturesSection />
-      
+
       <CentersGallery />
     </motion.div>
   );

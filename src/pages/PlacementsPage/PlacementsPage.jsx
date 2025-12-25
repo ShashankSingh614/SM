@@ -9,11 +9,13 @@ import {
 } from 'react-icons/fi';
 import { ALL_PLACEMENT_STUDENTS } from '../../data/placementStudents';
 import PlacementCard from '../../components/ui/PlacementCard/PlacementCard';
-import CurvedSlider from '../../components/sections/CurvedSlider/CurvedSlider';
+import { PLACEMENT_STUDENTS } from '../../data/placementStudents';
 import PartnersSection from '../../components/sections/PartnersSection/PartnersSection';
 import styles from './PlacementsPage.module.css';
 import { useSEO } from '../../hooks/useSEO';
 import { helmetConfig } from '../../utils/helmet';
+import RecentPlacementCurved from '../../components/sections/RecentPlacementCurved/RecentPlacementCurved';
+
 
 const PlacementsPageContent = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -419,19 +421,8 @@ const PlacementsPageContent = () => {
           <p>Discover the success stories of our students who have secured excellent positions in leading companies worldwide</p>
         </div>
 
-        {/* Curved Slider - Recent Placements */}
-        <motion.section 
-          ref={alumniSectionRef}
-          className={styles.studentsSection}
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
-          <h2>Recent Placements</h2>
-          <CurvedSlider 
-	          images={instagramPlacementsImages} 
-          />
-        </motion.section>
+        {/* Recent Placements Section */}
+        <RecentPlacementCurved />
 
         {/* Testimonials Section */}
         <motion.section 

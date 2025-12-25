@@ -23,7 +23,7 @@ const TermsConditionsPage = () => {
       <div className="container">
         <div className={styles.pageHeader}>
           <h1>Terms and Conditions</h1>
-          <p>Last Updated: January 2026</p>
+          <p>Last Updated: January {new Date().getFullYear()}</p>
         </div>
 
         <motion.div
@@ -44,18 +44,18 @@ const TermsConditionsPage = () => {
             <h3>Definitions</h3>
             <p>For the purposes of these Terms and Conditions:</p>
             <ul className={styles.list}>
-              <li><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Shankar Multimedia, an educational institution located in Mumbai, Maharashtra, India.</li>
-              <li><strong>Courses</strong> refers to the offline educational courses, programs, training sessions, workshops, and classes conducted by the Company at its physical premises in Mumbai.</li>
-              <li><strong>Country</strong> refers to: India</li>
-              <li><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</li>
-              <li><strong>Educational Services</strong> means all offline educational programs, courses, training, workshops, certifications, and related educational activities provided by the Company.</li>
-              <li><strong>Enrollment</strong> means the process of registering for and being admitted to any of the Company's offline courses or programs.</li>
-              <li><strong>Service</strong> refers to the Website and the Educational Services offered by the Company.</li>
-              <li><strong>Student</strong> means any individual who has enrolled in or is attending any of the Company's offline courses or programs.</li>
-              <li><strong>Terms and Conditions</strong> (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service and enrollment in Educational Services.</li>
-              <li><strong>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.</li>
-              <li><strong>Website</strong> refers to Shankar Multimedia, accessible from www.shankarmultimedia.com</li>
-              <li><strong>You</strong> means the individual accessing or using the Service, enrolling in courses, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</li>
+              <li><strong className={styles.highlight}>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Shankar Multimedia, an educational institution located in Mumbai, Maharashtra, India.</li>
+              <li><strong className={styles.highlight}>Courses</strong> refers to the offline educational courses, programs, training sessions, workshops, and classes conducted by the Company at its physical premises in Mumbai.</li>
+              <li><strong className={styles.highlight}>Country</strong> refers to: India</li>
+              <li><strong className={styles.highlight}>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</li>
+              <li><strong className={styles.highlight}>Educational Services</strong> means all offline educational programs, courses, training, workshops, certifications, and related educational activities provided by the Company.</li>
+              <li><strong className={styles.highlight}>Enrollment</strong> means the process of registering for and being admitted to any of the Company's offline courses or programs.</li>
+              <li><strong className={styles.highlight}>Service</strong> refers to the Website and the Educational Services offered by the Company.</li>
+              <li><strong className={styles.highlight}>Student</strong> means any individual who has enrolled in or is attending any of the Company's offline courses or programs.</li>
+              <li><strong className={styles.highlight}>Terms and Conditions</strong> (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service and enrollment in Educational Services.</li>
+              <li><strong className={styles.highlight}>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.</li>
+              <li><strong className={styles.highlight}>Website</strong> refers to Shankar Multimedia, accessible from www.shankarmultimedia.com</li>
+              <li><strong className={styles.highlight}>You</strong> means the individual accessing or using the Service, enrolling in courses, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</li>
             </ul>
           </section>
 
@@ -100,19 +100,19 @@ const TermsConditionsPage = () => {
             
             <h3>Course Enrollment and Attendance</h3>
             <p>
-              <strong>Enrollment:</strong> Enrollment in any offline course requires submission of accurate and complete registration information. False or misleading information may result in immediate termination of enrollment without refund.
+              <strong className={styles.highlight}>Enrollment:</strong> Enrollment in any offline course requires submission of accurate and complete registration information. False or misleading information may result in immediate termination of enrollment without refund.
             </p>
             <p>
-              <strong>Attendance:</strong> Students are expected to maintain regular attendance as specified in the course curriculum. The Company reserves the right to deny course completion certificates or other benefits to students who fail to meet minimum attendance requirements.
+              <strong className={styles.highlight}>Attendance:</strong> Students are expected to maintain regular attendance as specified in the course curriculum. The Company reserves the right to deny course completion certificates or other benefits to students who fail to meet minimum attendance requirements.
             </p>
             <p>
-              <strong>Code of Conduct:</strong> All students must maintain appropriate conduct at our Mumbai premises, respect faculty and fellow students, and comply with all institute rules and regulations. Violation of conduct rules may result in suspension or expulsion from courses.
+              <strong className={styles.highlight}>Code of Conduct:</strong> All students must maintain appropriate conduct at our Mumbai premises, respect faculty and fellow students, and comply with all institute rules and regulations. Violation of conduct rules may result in suspension or expulsion from courses.
             </p>
             <p>
-              <strong>Payment Terms:</strong> Course fees must be paid as per the payment schedule provided at the time of enrollment. Non-payment may result in suspension of access to classes and educational services. 
+              <strong className={styles.highlight}>Payment Terms:</strong> Course fees must be paid as per the payment schedule provided at the time of enrollment. Non-payment may result in suspension of access to classes and educational services. 
             </p>
             <p>
-              <strong>Refund Policy:</strong> Refunds, if applicable, will be processed as per the refund policy communicated at the time of enrollment and in accordance with applicable consumer protection laws in India.
+              <strong className={styles.highlight}>Refund Policy:</strong> Refunds, if applicable, will be processed as per the refund policy communicated at the time of enrollment and in accordance with applicable consumer protection laws in India.
             </p>
           </section>
 
@@ -126,13 +126,13 @@ const TermsConditionsPage = () => {
               The Content is protected by Indian and international copyright laws under the Copyright Act, 1957, trademark laws under the Trade Marks Act, 1999, and other intellectual property laws and treaties. The arrangement and compilation of all Content on this Service and all educational materials is the exclusive property of Shankar Multimedia and is protected by Indian copyright law.
             </p>
             <p>
-              <strong>Trademarks:</strong> "Shankar Multimedia" and all related names, logos, product and service names, designs, and slogans are trademarks of Shankar Multimedia or its affiliates or licensors. You must not use such marks without the prior written permission of Shankar Multimedia. All other names, logos, product and service names, designs, and slogans on this Service are the trademarks of their respective owners.
+              <strong className={styles.highlight}>Trademarks:</strong> "Shankar Multimedia" and all related names, logos, product and service names, designs, and slogans are trademarks of Shankar Multimedia or its affiliates or licensors. You must not use such marks without the prior written permission of Shankar Multimedia. All other names, logos, product and service names, designs, and slogans on this Service are the trademarks of their respective owners.
             </p>
             <p>
-              <strong>Course Materials:</strong> All course materials provided during offline classes, including but not limited to handouts, study materials, assignments, projects, and any educational content, remain the intellectual property of Shankar Multimedia. Students are granted a limited, non-transferable, non-exclusive license to use these materials solely for personal educational purposes during their enrollment period.
+              <strong className={styles.highlight}>Course Materials:</strong> All course materials provided during offline classes, including but not limited to handouts, study materials, assignments, projects, and any educational content, remain the intellectual property of Shankar Multimedia. Students are granted a limited, non-transferable, non-exclusive license to use these materials solely for personal educational purposes during their enrollment period.
             </p>
             <p>
-              <strong>Restrictions:</strong> You may not reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish, download, store, or transmit any of the material on our Service or course materials, except as follows:
+              <strong className={styles.highlight}>Restrictions:</strong> You may not reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish, download, store, or transmit any of the material on our Service or course materials, except as follows:
             </p>
             <ul className={styles.list}>
               <li>Your computer may temporarily store copies of such materials in RAM incidental to your accessing and viewing those materials</li>
@@ -141,7 +141,7 @@ const TermsConditionsPage = () => {
               <li>You may take personal notes during classes for your own study purposes, but may not reproduce or distribute such notes commercially</li>
             </ul>
             <p>
-              <strong>Prohibited Uses:</strong> Students and website users expressly agree not to:
+              <strong className={styles.highlight}>Prohibited Uses:</strong> Students and website users expressly agree not to:
             </p>
             <ul className={styles.list}>
               <li>Record, photograph, or videograph any classes, lectures, or training sessions without explicit written permission</li>
@@ -159,7 +159,7 @@ const TermsConditionsPage = () => {
           <section className={styles.section}>
             <h2>Termination and Suspension</h2>
             <p>
-              <strong>By the Company:</strong> We may terminate or suspend Your access to the Service and/or Your enrollment in any course immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You:
+              <strong className={styles.highlight}>By the Company:</strong> We may terminate or suspend Your access to the Service and/or Your enrollment in any course immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You:
             </p>
             <ul className={styles.list}>
               <li>Breach these Terms and Conditions</li>
@@ -171,7 +171,7 @@ const TermsConditionsPage = () => {
               <li>Engage in activities that harm the reputation of the institute or other students</li>
             </ul>
             <p>
-              <strong>Effect of Termination:</strong> Upon termination or suspension:
+              <strong className={styles.highlight}>Effect of Termination:</strong> Upon termination or suspension:
             </p>
             <ul className={styles.list}>
               <li>Your right to use the Service and attend classes will cease immediately</li>
@@ -200,38 +200,6 @@ const TermsConditionsPage = () => {
             </p>
             <p>
               Some jurisdictions do not allow the exclusion of certain types of warranties or limitations on applicable statutory rights of a consumer, so some or all of the above exclusions and limitations may not apply to You. But in such a case the exclusions and limitations set forth in this section shall be applied to the greatest extent enforceable under applicable law.
-            </p>
-          </section>
-
-          {/* Governing Law */}
-          <section className={styles.section}>
-            <h2>Governing Law and Jurisdiction</h2>
-            <p>
-              These Terms and Conditions shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law principles. The following Indian laws shall specifically apply to these Terms and your use of the Service:
-            </p>
-            <ul className={styles.list}>
-              <li>The Information Technology Act, 2000 and rules thereunder</li>
-              <li>The Indian Contract Act, 1872</li>
-              <li>The Bharatiya Nyaya Sanhita (BNS), 2023</li>
-              <li>The Consumer Protection Act, 2019 (where applicable)</li>
-              <li>The Copyright Act, 1957</li>
-              <li>The Trade Marks Act, 1999</li>
-              <li>All other applicable laws, regulations, and rules of India</li>
-            </ul>
-            <p>
-              <strong>Exclusive Jurisdiction:</strong> All disputes, claims, complaints, causes of action, or legal proceedings of any nature whatsoever arising out of or relating to these Terms and Conditions, your use of the Service, or the relationship between you and Shankar Multimedia shall be exclusively subject to the jurisdiction of the competent courts located in Mumbai, Maharashtra, India.
-            </p>
-            <p>
-              You hereby irrevocably and unconditionally:
-            </p>
-            <ul className={styles.list}>
-              <li>Submit to the exclusive jurisdiction of the courts in Mumbai, Maharashtra, India</li>
-              <li>Agree that the courts in Mumbai, Maharashtra shall have sole and exclusive jurisdiction to hear and determine any suit, action, or proceedings arising out of or in connection with these Terms</li>
-              <li>Waive any objection to proceedings in such courts on the grounds of venue or on the grounds that proceedings have been brought in an inconvenient forum</li>
-              <li>Agree not to commence any action, suit, or proceeding in any jurisdiction other than Mumbai, Maharashtra, India</li>
-            </ul>
-            <p>
-              <strong>Service of Legal Notice:</strong> Any legal notice, summons, or court documents may be served at the registered address of Shankar Multimedia in Mumbai, Maharashtra, India, or at info@shankarmultimedia.com as per applicable Indian laws.
             </p>
           </section>
 
@@ -264,7 +232,7 @@ const TermsConditionsPage = () => {
           {/* Contact Us */}
           <section className={styles.section}>
             <h2>Contact Us</h2>
-            <p>If you have any questions about these Terms and Conditions, You can contact us at info@shankarmultimedia.com.</p>
+            <p>If you have any questions about these Terms and Conditions, You can contact us at <strong className={styles.highlight}>info@shankarmultimedia.com</strong>.</p>
           </section>
         </motion.div>
       </div>

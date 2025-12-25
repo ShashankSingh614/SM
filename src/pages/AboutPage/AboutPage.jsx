@@ -31,16 +31,16 @@ const AboutPageContent = () => {
           <div className={styles.missionVisionGrid}>
             <div className={styles.missionCard}>
               <div className={styles.cardIcon}>
-                <FiTarget />
+                <strong className={styles.highlight}><FiTarget /></strong>
               </div>
-              <h3>Our Mission</h3>
+              <h3><strong className={styles.highlight}>Our Mission</strong></h3>
               <p>{ABOUT_CONTENT.mission}</p>
             </div>
             <div className={styles.visionCard}>
               <div className={styles.cardIcon}>
-                <FiStar />
+                <strong className={styles.highlight}><FiStar /></strong>
               </div>
-              <h3>Our Vision</h3>
+              <h3><strong className={styles.highlight}>Our Vision</strong></h3>
               <p>{ABOUT_CONTENT.vision}</p>
             </div>
           </div>
@@ -85,7 +85,7 @@ const AboutPageContent = () => {
                 </div>
                 <div className={styles.memberInfo}>
                   <h4>{member.name}</h4>
-                  <h5>{member.position}</h5>
+                  <strong className={styles.highlight}><h5>{member.position}</h5></strong>
                   <p>{member.description}</p>
                 </div>
               </motion.div>
