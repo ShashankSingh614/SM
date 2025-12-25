@@ -9,6 +9,7 @@ import {
 } from 'react-icons/fi';
 import { ALL_PLACEMENT_STUDENTS } from '../../data/placementStudents';
 import PlacementCard from '../../components/ui/PlacementCard/PlacementCard';
+import CurvedSlider from '../../components/sections/CurvedSlider/CurvedSlider';
 import PartnersSection from '../../components/sections/PartnersSection/PartnersSection';
 import styles from './PlacementsPage.module.css';
 import { useSEO } from '../../hooks/useSEO';
@@ -22,6 +23,27 @@ const PlacementsPageContent = () => {
   const alumniSectionRef = useRef(null);
   
   const studentsPerPage = 12;
+
+  // Instagram Placements Images
+  const instagramPlacementsImages = [
+    '/images/instaPlacements/WhatsApp Image 2025-12-11 at 8.11.04 PM.jpeg',
+    '/images/instaPlacements/WhatsApp Image 2025-12-15 at 6.55.14 PM (1).jpeg',
+    '/images/instaPlacements/WhatsApp Image 2025-12-15 at 6.55.14 PM (2).jpeg',
+    '/images/instaPlacements/WhatsApp Image 2025-12-15 at 6.55.14 PM.jpeg',
+    '/images/instaPlacements/WhatsApp Image 2025-12-15 at 6.55.15 PM.jpeg',
+    '/images/instaPlacements/WhatsApp Image 2025-12-15 at 6.55.16 PM (1).jpeg',
+    '/images/instaPlacements/WhatsApp Image 2025-12-15 at 6.55.16 PM (2).jpeg',
+    '/images/instaPlacements/WhatsApp Image 2025-12-15 at 6.55.16 PM.jpeg',
+    '/images/instaPlacements/WhatsApp Image 2025-12-15 at 6.55.17 PM.jpeg',
+    '/images/instaPlacements/WhatsApp Image 2025-12-24 at 2.08.27 PM.jpeg',
+    '/images/instaPlacements/WhatsApp Image 2025-12-24 at 2.08.28 PM.jpeg',
+    '/images/instaPlacements/WhatsApp Image 2025-12-24 at 2.08.30 PM.jpeg',
+    '/images/instaPlacements/WhatsApp Image 2025-12-24 at 2.08.31 PM.jpeg',
+    '/images/instaPlacements/WhatsApp Image 2025-12-24 at 2.08.33 PM.jpeg',
+    '/images/instaPlacements/WhatsApp Image 2025-12-24 at 2.08.34 PM.jpeg',
+    '/images/instaPlacements/WhatsApp Image 2025-12-24 at 2.08.35 PM.jpeg',
+    '/images/instaPlacements/WhatsApp Image 2025-12-24 at 2.08.36 PM.jpeg',
+  ];
 
   // Filter students based on role and search
   const filteredStudents = ALL_PLACEMENT_STUDENTS.filter(student => {
@@ -396,6 +418,12 @@ const PlacementsPageContent = () => {
           <h1>Placements</h1>
           <p>Discover the success stories of our students who have secured excellent positions in leading companies worldwide</p>
         </div>
+
+        {/* Curved Slider - Recent Placements */}
+        <CurvedSlider 
+          images={instagramPlacementsImages} 
+          title="Recent Placements"
+        />
 
         {/* Testimonials Section */}
         <motion.section 

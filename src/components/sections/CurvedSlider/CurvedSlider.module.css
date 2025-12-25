@@ -1,0 +1,142 @@
+/* Curved Slider Styles - Matches Success Stories */
+.curvedSliderSection {
+  width: 100%;
+  padding: 4rem 0;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.headerContainer {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.underline {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-yellow) 100%);
+  margin: 0 auto;
+  border-radius: var(--radius-full);
+}
+
+.sliderWrapper {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.sliderTrack {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  will-change: transform;
+}
+
+
+.sliderItem {
+  flex-shrink: 0;
+  width: 260px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.35s ease;
+  transform-origin: center;
+}
+
+
+.placementImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--gray-200);
+}
+
+/* Edge fade */
+.leftFade,
+.rightFade {
+  position: absolute;
+  top: 0;
+  width: 160px;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.leftFade {
+  left: 0;
+  background: linear-gradient(to right, #ffffff 40%, transparent);
+}
+
+.rightFade {
+  right: 0;
+  background: linear-gradient(to left, #ffffff 40%, transparent);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .curvedSliderSection {
+    padding: 3rem 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .sliderWrapper {
+    height: 300px;
+    padding: 0 1rem;
+  }
+
+  .sliderItem {
+    width: 200px;
+    height: 240px;
+  }
+
+  .leftFade,
+  .rightFade {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .curvedSliderSection {
+    padding: 2rem 0;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .sliderWrapper {
+    height: 250px;
+    padding: 0 1rem;
+  }
+
+  .sliderItem {
+    width: 160px;
+    height: 200px;
+    gap: 15px;
+  }
+
+  .leftFade,
+  .rightFade {
+    width: 80px;
+  }
+}
