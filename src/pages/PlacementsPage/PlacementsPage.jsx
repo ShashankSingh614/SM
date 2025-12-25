@@ -420,10 +420,20 @@ const PlacementsPageContent = () => {
         </div>
 
         {/* Curved Slider - Recent Placements */}
-        <CurvedSlider 
-          images={instagramPlacementsImages} 
-          title="Recent Placements"
-        />
+        <motion.section 
+          ref={alumniSectionRef}
+          className={styles.studentsSection}
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <h2>Recent Placements</h2>
+          <CurvedSlider 
+	    images={instagramPlacementsImages} 
+          />
+        </motion.section>
+
+        {/* Remove extra spacing or lines here to ensure a clean transition to the next section */}
 
         {/* Testimonials Section */}
         <motion.section 
@@ -477,8 +487,6 @@ const PlacementsPageContent = () => {
             </div>
           </div>
         </motion.section>
-
-        
 
         {/* Students Gallery */}
         <motion.section 
