@@ -185,40 +185,7 @@ const TermsConditionsPage = () => {
             </p>
           </section>
 
-          {/* Limitation of Liability */}
-          <section className={styles.section}>
-            <h2>Limitation of Liability</h2>
-            <p>
-              To the maximum extent permitted under applicable Indian law, including but not limited to the Indian Contract Act, 1872, the Consumer Protection Act, 2019, and the Information Technology Act, 2000, Shankar Multimedia shall not be liable for any loss, damage, injury, delay, inconvenience, or disruption arising out of or in connection with:
-            </p>
-            <ul className={styles.list}>
-              <li>Admission, enrollment, or denial of admission to any course or program</li>
-              <li>Attendance, participation, or non-participation in any offline course, program, training, workshop, or related educational activity</li>
-              <li>Completion, non-completion, or cancellation of any course or program</li>
-              <li>Quality or outcomes of educational services provided</li>
-              <li>Employment opportunities or career advancement following course completion</li>
-              <li>Interaction with faculty, staff, or other students at our Mumbai premises</li>
-              <li>Use of facilities, equipment, or resources at our institute</li>
-              <li>Any changes to course schedules, curriculum, or faculty assignments</li>
-            </ul>
-            <p>
-              Without prejudice to the foregoing, Shankar Multimedia shall not be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages, including but not limited to loss of income, loss of opportunity, loss of data, loss of employment prospects, emotional distress, or any other non-direct loss, whether arising in contract, tort, negligence, or otherwise, as permitted under the Indian Contract Act, 1872 and other applicable laws of India.
-            </p>
-            <p>
-              The Company shall further not be liable for any damages or losses arising from:
-            </p>
-            <ul className={styles.list}>
-              <li>Unauthorized access to the Service, hacking attempts, data breaches caused by cyber attacks, or any security incidents beyond the Company's reasonable control, subject to the Company's obligations under the Information Technology Act, 2000 and the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011</li>
-              <li>Force majeure events including natural disasters, pandemics, government orders, strikes, or other events beyond the Company's reasonable control that prevent or delay the delivery of educational services</li>
-              <li>Accidents, injuries, or health issues occurring on institute premises, except where caused by gross negligence or willful misconduct of the Company</li>
-              <li>Loss or damage to personal property brought to institute premises</li>
-              <li>Interruptions or delays in course delivery due to technical issues, facility maintenance, or other operational requirements</li>
-            </ul>
-            <p>
-              Any liability of Shankar Multimedia which cannot be excluded or limited under applicable Indian law shall be limited strictly to the minimum extent mandatorily required under such law, including provisions of the Consumer Protection Act, 2019, where applicable.
-            </p>
-          </section>
-
+         
           {/* "AS IS" and "AS AVAILABLE" Disclaimer */}
           <section className={styles.section}>
             <h2>"AS IS" and "AS AVAILABLE" Disclaimer</h2>
