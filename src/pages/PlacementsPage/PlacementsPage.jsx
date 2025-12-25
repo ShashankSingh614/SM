@@ -429,11 +429,9 @@ const PlacementsPageContent = () => {
         >
           <h2>Recent Placements</h2>
           <CurvedSlider 
-	    images={instagramPlacementsImages} 
+	          images={instagramPlacementsImages} 
           />
         </motion.section>
-
-        {/* Remove extra spacing or lines here to ensure a clean transition to the next section */}
 
         {/* Testimonials Section */}
         <motion.section 

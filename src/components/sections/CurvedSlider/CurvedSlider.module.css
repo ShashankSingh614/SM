@@ -13,22 +13,6 @@
   padding: 0 2rem;
 }
 
-.title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 1rem;
-  text-transform: capitalize;
-}
-
-.underline {
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-yellow) 100%);
-  margin: 0 auto;
-  border-radius: var(--radius-full);
-}
-
 .sliderWrapper {
   position: relative;
   height: 420px;
@@ -55,7 +39,6 @@
     opacity 0.35s ease;
   transform-origin: center;
 }
-
 
 .placementImage {
   width: 100%;

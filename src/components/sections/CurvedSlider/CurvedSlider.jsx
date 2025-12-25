@@ -50,11 +50,6 @@ const CurvedSlider = ({ images, title }) => {
 
   return (
     <section className={styles.curvedSliderSection}>
-      <div className={styles.headerContainer}>
-        <h2 className={styles.title}>{title}</h2>
-        <div className={styles.underline}></div>
-      </div>
-
       <div className={styles.sliderWrapper} ref={wrapperRef}>
         <div className={styles.sliderTrack} ref={trackRef}>
           {[...images, ...images, ...images].map((src, i) => (
