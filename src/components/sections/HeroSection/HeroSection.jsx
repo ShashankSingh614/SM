@@ -1,5 +1,5 @@
 // Modern Hero Section with working carousel
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   FiChevronLeft, 
@@ -10,7 +10,7 @@ import styles from './HeroSection.module.css';
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const banners = HERO_CONTENT.banners || [];
+  const banners = useMemo(() => HERO_CONTENT.banners || [], []);
 
   // Preload images on component mount
   useEffect(() => {

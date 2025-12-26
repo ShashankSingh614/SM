@@ -11,8 +11,7 @@ import styles from './HomePage.module.css';
 import { useSEO } from '../../hooks/useSEO';
 import { helmetConfig, structuredData } from '../../utils/helmet';
 import RecentPlacementCurved from '../../components/sections/RecentPlacementCurved/RecentPlacementCurved';
-
-
+import RecentPlacementHorizontal from '../../components/sections/RecentPlacementHorizontal/RecentPlacementHorizontal';
 
 export default function HomePage() {
   useSEO({
@@ -57,6 +56,8 @@ const HomePageContent = () => {
       <HeroSection />
 
       <RecentPlacementCurved />
+
+      <RecentPlacementHorizontal />
 
       <TestimonialsSection />
 
