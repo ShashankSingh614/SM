@@ -6,7 +6,7 @@
 .phone {
   height: auto;
   position: fixed;
-  background-color: #fff;
+  background-color: #1A1A1A;
   top: 0;
   right: 0;
   left: 0;
@@ -38,8 +38,10 @@
   padding: 2px 4px;
 }
 
-.phone ul li a:hover {
-  color: var(--primary-color);
+.phone ul li a:hover {            
+  background-color: #ffc107 !important;        
+  border-radius: 4px;           
+  transition: all 0.3s ease;        
 }
 
 .phoneTab {

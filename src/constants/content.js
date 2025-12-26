@@ -83,9 +83,9 @@ export const COURSES_DATA = [
     name: 'Graphic Design & UI/UX',
     title: 'DIPLOMA IN ADVANCED GRAPHIC DESIGNING & UI/UX DESIGN WITH AI INTEGRATION',
     description: 'Master visual communication and user experience design with industry-standard tools and techniques.',
-    image: '/images/courses/gra.jpg',
-    banner: '/images/courses/gra.jpg',
-    background: '/images/courses/gra.jpg',
+    image: '/images/courses/gra1.png',
+    banner: '/images/courses/gra1.png',
+    background: '/images/courses/gra1.png',
     tools: ['Adobe Photoshop', 'CorelDRAW', 'Adobe Illustrator', 'Adobe InDesign', 'Adobe XD', 'Figma', 'Canva'],
     category: 'Design'
   },
@@ -94,9 +94,9 @@ export const COURSES_DATA = [
     name: 'Complete Graphic Design & VFX',
     title: 'DIPLOMA IN ADVANCED GRAPHIC DESIGNING, UI/UX, MOTION GRAPHIC, VIDEO EDITING & VFX',
     description: 'Comprehensive course covering all aspects of digital design, motion graphics, and video production.',
-    image: '/images/courses/gra.jpg',
-    banner: '/images/courses/gra.jpg',
-    background: '/images/courses/gra.jpg',
+    image: '/images/courses/gra1.png',
+    banner: '/images/courses/gra1.png',
+    background: '/images/courses/gra1.png',
     tools: ['Adobe Photoshop', 'CorelDRAW', 'Adobe Illustrator', 'Adobe InDesign', 'Adobe XD', 'Figma', 'Canva', 'Adobe After Effects', 'Adobe Premiere Pro', 'Adobe Media Encoder'],
     category: 'Design'
   },
@@ -127,8 +127,8 @@ export const COURSES_DATA = [
     name: 'Web Design & Development',
     title: 'DIPLOMA IN ADVANCED WEB DESIGNING & UI/UX',
     description: 'Build modern, responsive websites and web applications with latest technologies.',
-    image: '/images/courses/web.jpg',
-    banner: '/images/courses/web.jpg',
+    image: '/images/courses/web1.png',
+    banner: '/images/courses/web1.png',
     background: '/images/courses/DW_bg.png',
     tools: ['Adobe Photoshop','Adobe XD','Figma','Adobe Dreamweaver','HTML5','CSS3 / SCSS','JavaScript / jQuery','React.js','Bootstrap 4 & 5','WordPress','Notepad++','Sublime Text','Visual Studio Code','Brackets'],
     category: 'Development'
@@ -164,11 +164,8 @@ export const HERO_CONTENT = {
   description: 'ISO 9001:2015 Certified Institute | Job Placement Support | Industry-Driven Sessions | Expert-Led Sessions | Global Alumni Network',
   
   banners: [
-    '/images/courses/gra.jpg',
-    '/images/courses/vfx.jpg',
-    '/images/courses/3d.jpg',
-    '/images/courses/mg.jpg',
-    '/images/courses/web.jpg',
+    '/images/courses/gra1.png',
+    '/images/courses/web1.png',
   ],
   
 };

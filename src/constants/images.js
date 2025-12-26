@@ -17,16 +17,16 @@ export const COURSE_IMAGES = {
   
   // Web Development
   web: {
-    background: '/images/courses/web.jpg',
-    icon: '/images/courses/web.jpg',
-    icon2: '/images/courses/web.jpg',
+    background: '/images/courses/web1.png',
+    icon: '/images/courses/web1.png',
+    icon2: '/images/courses/web1.png',
   },
   
   // Graphic Design
   graphics: {
-    background: '/images/courses/gra.jpg',
-    icon: '/images/courses/gra.jpg',
-    icon2: '/images/courses/gra.jpg',
+    background: '/images/courses/gra1.png',
+    icon: '/images/courses/gra1.png',
+    icon2: '/images/courses/gra1.png',
   }
 
 };
