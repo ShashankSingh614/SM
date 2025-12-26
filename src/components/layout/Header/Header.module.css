@@ -247,7 +247,6 @@
   transition: all var(--transition-base);
   font-size: 1rem;
   position: relative;
-  padding-left: 2.8rem;
 }
 
 .mobileNavLink::before {
@@ -264,12 +263,12 @@
 
 .mobileNavLink:hover {
   color: #fff;
-  padding-left: 2rem; /* Move right on hover */
+  padding-left: 2.8rem; /* Move right on hover */
 }
 
 .mobileNavLink:hover::before {
   opacity: 1;
-  left: 0.5rem;
+  left: 0rem;
 }
 
 /* Mobile Branch Section - Contact area */
@@ -283,12 +282,12 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  font-family: var(--font-family-heading);
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ffffff !important;
+  margin-bottom: var(--space-4);
+  font-size: 1.1rem;
 }
 
 .mobileBranchList {
