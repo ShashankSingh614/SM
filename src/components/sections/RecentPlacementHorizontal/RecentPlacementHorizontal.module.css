@@ -46,17 +46,17 @@
 
 @keyframes scrollHorizontal {
   0% {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(0);
   }
 }
 
-/* Optional: Pause on hover */
+/* Optional: Pause on hover
 .sliderWrapper:hover .sliderTrack {
   animation-play-state: paused;
-}
+}*/
 
 .sliderItem {
   flex-shrink: 0;
