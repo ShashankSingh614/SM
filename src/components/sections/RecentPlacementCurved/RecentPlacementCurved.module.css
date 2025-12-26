@@ -67,7 +67,7 @@
   border: 1px solid #eee;
 }
 
-/* fades */
+/* fades 
 .leftFade,
 .rightFade {
   position: absolute;
@@ -86,7 +86,7 @@
 .rightFade {
   right: 0;
   background: linear-gradient(to left, #ffffff 40%, transparent);
-}
+}*/
 
 /* responsive */
 @media (max-width: 768px) {

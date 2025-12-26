@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import styles from './RecentPlacementCurved.module.css';
 
-const SPEED = 0.65;
+const SPEED = 0.7;
 
 const RecentPlacementCurved = () => {
   const trackRef = useRef(null);
