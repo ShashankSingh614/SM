@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect } from 'react';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import classes from './RecentPlacementSlider.module.css';
 
@@ -8,37 +7,32 @@ const images = Array.from(
   (_, i) => `/images/instaPlacements/${i + 1}.jpeg`
 );
 
-const slideVariants = {
-  enter: {
-    x: 80,
-    opacity: 0,
-  },
-  center: {
-    x: 0,
-    opacity: 1,
-    transition: { duration: 0.6, ease: [0.22, 0.61, 0.36, 1] },
-  },
-  exit: {
-    x: -140, // moves more to the left on exit
-    opacity: 0,
-    transition: { duration: 0.6, ease: [0.22, 0.61, 0.36, 1] },
-  },
-};
-
 const RecentPlacementSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
 
   const nextSlide = () => {
-    setCurrentSlide(prev => (prev + 1) % images.length);
+    setCurrentSlide((prev) => (prev + 1) % images.length);
   };
 
   const prevSlide = () => {
-    setCurrentSlide(prev => (prev - 1 + images.length) % images.length);
+    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
   };
 
-  const goToSlide = index => {
+  const goToSlide = (index) => {
     setCurrentSlide(index);
   };
+
+  // Auto-play with pause on hover
+  useEffect(() => {
+    if (isHovered) return;
+
+    const interval = setInterval(nextSlide, 4000);
+    return () => clearInterval(interval);
+  }, [currentSlide, isHovered]);
+
+  const getSlideIndex = (offset) =>
+    (currentSlide + offset + images.length) % images.length;
 
   return (
     <section className={classes.section}>
@@ -50,46 +44,59 @@ const RecentPlacementSlider = () => {
 
         {/* Slider */}
         <div className={classes.sliderWrapper}>
-          <div className={classes.carousel}>
-            <div className={classes.carouselContainer}>
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={currentSlide}
-                  className={classes.carouselSlide}
-                  variants={slideVariants}
-                  initial="enter"
-                  animate="center"
-                  exit="exit"
-                >
-                  <img
-                    src={images[currentSlide]}
-                    alt={`Recent placement ${currentSlide + 1}`}
-                    className={classes.carouselImage}
-                    draggable="false"
-                  />
-                </motion.div>
-              </AnimatePresence>
+          <div
+            className={classes.carousel}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <div className={classes.carouselTrack}>
+              {/* Previous Slide */}
+              <div className={classes.carouselSlide}>
+                <img
+                  src={images[getSlideIndex(-1)]}
+                  alt="Previous placement"
+                  className={classes.carouselImage}
+                  draggable="false"
+                />
+              </div>
 
-              {/* Controls */}
-              <button
-                type="button"
-                className={`${classes.carouselBtn} ${classes.prevBtn}`}
-                onClick={prevSlide}
-                aria-label="Previous placement"
-              >
-                <FiChevronLeft />
-              </button>
+              {/* Current / Center Slide */}
+              <div className={`${classes.carouselSlide} ${classes.center}`}>
+                <img
+                  src={images[currentSlide]}
+                  alt={`Recent placement ${currentSlide + 1}`}
+                  className={classes.carouselImage}
+                  draggable="false"
+                />
+              </div>
 
-              <button
-                type="button"
-                className={`${classes.carouselBtn} ${classes.nextBtn}`}
-                onClick={nextSlide}
-                aria-label="Next placement"
-              >
-                <FiChevronRight />
-              </button>
-
+              {/* Next Slide */}
+              <div className={classes.carouselSlide}>
+                <img
+                  src={images[getSlideIndex(1)]}
+                  alt="Next placement"
+                  className={classes.carouselImage}
+                  draggable="false"
+                />
+              </div>
             </div>
+
+            {/* Navigation Buttons at Bottom */}
+            <button
+              className={`${classes.carouselBtn} ${classes.prevBtn}`}
+              onClick={prevSlide}
+              aria-label="Previous placement"
+            >
+              <FiChevronLeft />
+            </button>
+            <button
+              className={`${classes.carouselBtn} ${classes.nextBtn}`}
+              onClick={nextSlide}
+              aria-label="Next placement"
+            >
+              <FiChevronRight />
+            </button>
+
           </div>
         </div>
       </div>

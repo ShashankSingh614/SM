@@ -314,3 +314,16 @@
 .star:nth-child(3) { animation-delay: 0.2s; }
 .star:nth-child(4) { animation-delay: 0.3s; }
 .star:nth-child(5) { animation-delay: 0.4s; }
+
+.carousel:hover .carouselTrack,
+.carousel:hover .carouselSlide,
+.carousel:hover .carouselImage {
+  transition-duration: 0s !important;
+}
+
+/* Resume smooth curve when not hovering */
+.carousel:not(:hover) .carouselTrack,
+.carousel:not(:hover) .carouselSlide,
+.carousel:not(:hover) .carouselImage {
+  transition-duration: 1.4s;
+}

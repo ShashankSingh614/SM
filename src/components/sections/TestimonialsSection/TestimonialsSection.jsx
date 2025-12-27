@@ -1,12 +1,12 @@
-// Testimonials Section
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiStar, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import styles from './TestimonialsSection.module.css';
 
 const TestimonialsSection = () => {
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
-
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+  
   const testimonials = [
     {
       id: 1,
@@ -262,95 +262,104 @@ const TestimonialsSection = () => {
     }
   ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-    }, 6000);
-    return () => clearInterval(interval);
+  const nextTestimonial = useCallback(() => {
+    setCurrentIndex((prev) => (prev + 1) % testimonials.length);
   }, [testimonials.length]);
 
-  const nextTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-  };
+  const prevTestimonial = useCallback(() => {
+    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  }, [testimonials.length]);
 
-  const prevTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
+  const goToTestimonial = useCallback((index) => {
+    setCurrentIndex(index);
+  }, []);
+
+  useEffect(() => {
+    if (isHovered) return;
+
+    const interval = setInterval(nextTestimonial, 4500);
+    return () => clearInterval(interval);
+  }, [isHovered, nextTestimonial]);
+
+  const current = testimonials[currentIndex];
 
   return (
     <section className={styles.testimonialsSection}>
       <div className="container">
-        <motion.div 
-          className={styles.sectionHeader}
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <h2>What Our Students Say</h2>
-          
-        </motion.div>
+        {/* Section Header */}
+        <div className={styles.sectionHeader}>
+          <h2>Student Testimonials</h2>
+          <p>Hear from our successful students who have transformed their careers with us</p>
+        </div>
 
-        <div className={styles.testimonialContainer}>
+        {/* Testimonial Slider */}
+        <div
+          className={styles.testimonialContainer}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
           <AnimatePresence mode="wait">
             <motion.div
-              key={currentTestimonial}
+              key={currentIndex}
               className={styles.testimonial}
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.5, ease: 'easeInOut' }}
+              transition={{ duration: 0.6, ease: 'easeInOut' }}
             >
               <div className={styles.testimonialContent}>
+                {/* Quote Icon */}
+                <div className={styles.quoteIcon}>
+                  <span>“</span>
+                </div>
+
+                {/* Testimonial Text & Rating */}
                 <div className={styles.testimonialText}>
-                  <p>"{testimonials[currentTestimonial].content}"</p>
-                  
+                  <p>{current.content}</p>
                   <div className={styles.testimonialRating}>
-                    {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
+                    {[...Array(current.rating)].map((_, i) => (
                       <FiStar key={i} className={styles.star} />
                     ))}
                   </div>
                 </div>
 
+                {/* Author Info */}
                 <div className={styles.testimonialAuthor}>
                   <div className={styles.authorImage}>
-                    <img 
-                      src={testimonials[currentTestimonial].image} 
-                      alt={testimonials[currentTestimonial].name}
-                    />
+                    <img src={current.image} alt={current.name} />
                   </div>
                   <div className={styles.authorInfo}>
-                    <h4>{testimonials[currentTestimonial].name}</h4>
-                    <p className={styles.authorRole}>{testimonials[currentTestimonial].role}</p>
-                    <p className={styles.authorLocation}>{testimonials[currentTestimonial].location}</p>
+                    <h4>{current.name}</h4>
+                    <p className={styles.authorRole}>{current.role}</p>
+                    <p className={styles.authorCourse}>{current.location}</p>
                   </div>
                 </div>
               </div>
             </motion.div>
           </AnimatePresence>
 
-          {/* Navigation Controls */}
+          {/* Controls - Prev/Next Buttons (hidden by CSS) & Indicators */}
           <div className={styles.testimonialControls}>
-            <button 
+            <button
               className={styles.controlBtn}
               onClick={prevTestimonial}
               aria-label="Previous testimonial"
             >
               <FiChevronLeft />
             </button>
-            
+
             <div className={styles.testimonialIndicators}>
               {testimonials.map((_, index) => (
                 <button
                   key={index}
-                  className={`${styles.indicator} ${index === currentTestimonial ? styles.active : ''}`}
-                  onClick={() => setCurrentTestimonial(index)}
+                  className={`${styles.indicator} ${index === currentIndex ? styles.active : ''}`}
+                  onClick={() => goToTestimonial(index)}
                   aria-label={`Go to testimonial ${index + 1}`}
                 />
               ))}
             </div>
-            
-            <button 
+
+            <button
               className={styles.controlBtn}
               onClick={nextTestimonial}
               aria-label="Next testimonial"
