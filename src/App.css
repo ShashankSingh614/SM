@@ -45,3 +45,25 @@ main {
     padding-top: 85px;
   }
 }
+
+/* Disable image drag & selection */
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.img-protect-wrapper {
+  position: relative;
+}
+
+.img-protect-wrapper img {
+  pointer-events: none;
+}
+
+.img-protect-overlay {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+}
