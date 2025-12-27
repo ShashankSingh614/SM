@@ -263,7 +263,7 @@
 
 .mobileNavLink:hover {
   color: #fff;
-  padding-left: 2.8rem; /* Move right on hover */
+  padding-left: 1.5rem; /* Move right on hover */
 }
 
 .mobileNavLink:hover::before {
