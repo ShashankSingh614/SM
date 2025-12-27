@@ -3,73 +3,108 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import classes from './RecentPlacementSlider.module.css';
 
+const images = Array.from(
+  { length: 18 },
+  (_, i) => `/images/instaPlacements/${i + 1}.jpeg`
+);
+
+const slideVariants = {
+  enter: {
+    x: 80,
+    opacity: 0,
+  },
+  center: {
+    x: 0,
+    opacity: 1,
+    transition: { duration: 0.6, ease: [0.22, 0.61, 0.36, 1] },
+  },
+  exit: {
+    x: -140, // moves more to the left on exit
+    opacity: 0,
+    transition: { duration: 0.6, ease: [0.22, 0.61, 0.36, 1] },
+  },
+};
+
 const RecentPlacementSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const images = Array.from({ length: 18 }, (_, i) => `/images/instaPlacements/${i + 1}.jpeg`);
-
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % images.length);
+    setCurrentSlide(prev => (prev + 1) % images.length);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
+    setCurrentSlide(prev => (prev - 1 + images.length) % images.length);
+  };
+
+  const goToSlide = index => {
+    setCurrentSlide(index);
   };
 
   return (
     <section className={classes.section}>
       <div className={classes.container}>
         {/* Header */}
-        <motion.div
-          className={classes.sectionHeader}
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
+        <div className={classes.sectionHeader}>
           <h2>Recent Placements</h2>
-          <span className={classes.gradientLine}></span>
-        </motion.div>
+        </div>
 
         {/* Slider */}
         <div className={classes.sliderWrapper}>
           <div className={classes.carousel}>
             <div className={classes.carouselContainer}>
-              {/* Slide */}
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentSlide}
                   className={classes.carouselSlide}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.45, ease: 'easeInOut' }}
+                  variants={slideVariants}
+                  initial="enter"
+                  animate="center"
+                  exit="exit"
                 >
                   <img
                     src={images[currentSlide]}
                     alt={`Recent placement ${currentSlide + 1}`}
                     className={classes.carouselImage}
-                    loading="lazy"
+                    draggable="false"
                   />
                 </motion.div>
               </AnimatePresence>
 
               {/* Controls */}
               <button
+                type="button"
                 className={`${classes.carouselBtn} ${classes.prevBtn}`}
                 onClick={prevSlide}
-                aria-label="Previous slide"
+                aria-label="Previous placement"
               >
                 <FiChevronLeft />
               </button>
 
               <button
+                type="button"
                 className={`${classes.carouselBtn} ${classes.nextBtn}`}
                 onClick={nextSlide}
-                aria-label="Next slide"
+                aria-label="Next placement"
               >
                 <FiChevronRight />
               </button>
+
+              {/* Indicators */}
+              <div className={classes.carouselIndicators}>
+                {images.map((_, index) => (
+                  <button
+                    key={index}
+                    type="button"
+                    onClick={() => goToSlide(index)}
+                    aria-label={`Go to slide ${index + 1}`}
+                    className={
+                      index === currentSlide
+                        ? `${classes.indicator} ${classes.active}`
+                        : classes.indicator
+                    }
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>

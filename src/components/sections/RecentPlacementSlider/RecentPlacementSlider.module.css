@@ -165,11 +165,11 @@
   }
 
   .carousel {
-    height: 320px;
+    height: 350px;
   }
 
   .carouselImage {
-    width: min(94%, 300px);
+    width: min(96%, 350px);
   }
 
   .carouselIndicators {
