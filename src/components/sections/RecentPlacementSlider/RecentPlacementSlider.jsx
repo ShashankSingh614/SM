@@ -89,22 +89,6 @@ const RecentPlacementSlider = () => {
                 <FiChevronRight />
               </button>
 
-              {/* Indicators */}
-              <div className={classes.carouselIndicators}>
-                {images.map((_, index) => (
-                  <button
-                    key={index}
-                    type="button"
-                    onClick={() => goToSlide(index)}
-                    aria-label={`Go to slide ${index + 1}`}
-                    className={
-                      index === currentSlide
-                        ? `${classes.indicator} ${classes.active}`
-                        : classes.indicator
-                    }
-                  />
-                ))}
-              </div>
             </div>
           </div>
         </div>
