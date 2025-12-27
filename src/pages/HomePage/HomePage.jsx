@@ -7,11 +7,10 @@ import InstituteFeaturesSection from '../../components/sections/InstituteFeature
 import CentersGallery from '../../components/sections/CentersGallery/CentersGallery';
 import TestimonialsSection from '../../components/sections/TestimonialsSection/TestimonialsSection';
 import PartnersSection from '../../components/sections/PartnersSection/PartnersSection';
+import RecentPlacementSlider from '../../components/sections/RecentPlacementSlider/RecentPlacementSlider'; // NEW IMPORT
 import styles from './HomePage.module.css';
 import { useSEO } from '../../hooks/useSEO';
 import { helmetConfig, structuredData } from '../../utils/helmet';
-import RecentPlacementCurved from '../../components/sections/RecentPlacementCurved/RecentPlacementCurved';
-import RecentPlacementHorizontal from '../../components/sections/RecentPlacementHorizontal/RecentPlacementHorizontal';
 
 export default function HomePage() {
   useSEO({
@@ -55,9 +54,7 @@ const HomePageContent = () => {
     >
       <HeroSection />
 
-      <RecentPlacementCurved />
-
-      <RecentPlacementHorizontal />
+      <RecentPlacementSlider />
 
       <TestimonialsSection />
 

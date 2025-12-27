@@ -166,6 +166,8 @@ export const HERO_CONTENT = {
   banners: [
     '/images/courses/gra1.png',
     '/images/courses/web1.png',
+    '/images/courses/3d1.png',
+    '/images/courses/all1.png'
   ],
   
 };

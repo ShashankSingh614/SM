@@ -14,8 +14,7 @@ import PartnersSection from '../../components/sections/PartnersSection/PartnersS
 import styles from './PlacementsPage.module.css';
 import { useSEO } from '../../hooks/useSEO';
 import { helmetConfig } from '../../utils/helmet';
-import RecentPlacementCurved from '../../components/sections/RecentPlacementCurved/RecentPlacementCurved';
-
+import RecentPlacementSlider from '../../components/sections/RecentPlacementSlider/RecentPlacementSlider'; // NEW IMPORT
 
 const PlacementsPageContent = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -421,8 +420,7 @@ const PlacementsPageContent = () => {
           <p>Discover the success stories of our students who have secured excellent positions in leading companies worldwide</p>
         </div>
 
-        {/* Recent Placements Section */}
-        <RecentPlacementCurved />
+        <RecentPlacementSlider />
 
         {/* Testimonials Section */}
         <motion.section 
