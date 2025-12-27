@@ -582,3 +582,7 @@
   align-items: center;
   gap: 0.5rem;
 }
+
+.mobileNavLinkContact {
+  border-bottom: none;  /* no line under "Contact" */
+}

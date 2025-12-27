@@ -144,10 +144,11 @@ const Header = () => {
             <Link
               key={item.path}
               to={item.path}
-              className={`${styles.mobileNavLink} ${
-                location.pathname === item.path ? styles.active : ''
-              }`}
-              onClick={() => setIsMenuOpen(false)}
+              className={
+                item.label === 'Contact'
+                  ? `${styles.mobileNavLink} ${styles.mobileNavLinkContact}`
+                  : styles.mobileNavLink
+              }
             >
               {item.label}
             </Link>
