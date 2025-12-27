@@ -2,7 +2,10 @@
 
 .section {
   padding: 1rem 0;
-  background: #ffffff;
+  background-image: url('/public//images//sliderbg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
@@ -88,7 +91,6 @@
   max-height: 90%;
   object-fit: contain; /* no cropping */
   display: block;
-  background: #ffffff;
 }
 
 /* Navigation buttons */

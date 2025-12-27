@@ -6,10 +6,7 @@ import classes from './RecentPlacementSlider.module.css';
 const RecentPlacementSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const images = Array.from(
-    { length: 18 },
-    (_, i) => `/images/instaPlacements/${i + 1}.jpeg`
-  );
+  const images = Array.from({ length: 18 }, (_, i) => `/images/instaPlacements/${i + 1}.jpeg`);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % images.length);
@@ -22,7 +19,6 @@ const RecentPlacementSlider = () => {
   return (
     <section className={classes.section}>
       <div className={classes.container}>
-
         {/* Header */}
         <motion.div
           className={classes.sectionHeader}
@@ -38,9 +34,7 @@ const RecentPlacementSlider = () => {
         {/* Slider */}
         <div className={classes.sliderWrapper}>
           <div className={classes.carousel}>
-
             <div className={classes.carouselContainer}>
-
               {/* Slide */}
               <AnimatePresence mode="wait">
                 <motion.div
@@ -76,11 +70,9 @@ const RecentPlacementSlider = () => {
               >
                 <FiChevronRight />
               </button>
-
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

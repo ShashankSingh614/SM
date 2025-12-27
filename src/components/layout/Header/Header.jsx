@@ -42,7 +42,7 @@ const Header = () => {
     { name: 'Malad', phone: '+91 9223439986' },
     { name: 'Mulund', phone: '+91 9619177392' },
     { name: 'Nalasopara', phone: '+91 7021382816' },
-    { name: 'Santacruz', phone: '+91 7304157986' }
+    { name: 'Santacruz', phone: '+91 7304157986' },
   ];
 
   return (
@@ -53,9 +53,9 @@ const Header = () => {
             {/* Logo */}
             <div className={styles.logo}>
               <Link to="/">
-                <img 
-                  src="/images/logowhite.png" 
-                  alt="Shankar Multimedia" 
+                <img
+                  src="/images/logowhite.png"
+                  alt="Shankar Multimedia"
                   className={styles.logoImg}
                 />
               </Link>
@@ -74,9 +74,9 @@ const Header = () => {
                   {item.label}
                 </Link>
               ))}
-              
+
               {/* Branch Dropdown */}
-              <div 
+              <div
                 className={styles.branchDropdown}
                 onMouseEnter={() => setIsBranchDropdownOpen(true)}
                 onMouseLeave={() => setIsBranchDropdownOpen(false)}
@@ -84,12 +84,16 @@ const Header = () => {
                 <button className={styles.branchToggle}>
                   <FiPhone className={styles.phoneIcon} />
                   <span>Call Us</span>
-                  <FiChevronDown className={`${styles.chevron} ${isBranchDropdownOpen ? styles.chevronOpen : ''}`} />
+                  <FiChevronDown
+                    className={`${styles.chevron} ${
+                      isBranchDropdownOpen ? styles.chevronOpen : ''
+                    }`}
+                  />
                 </button>
-                
+
                 <AnimatePresence>
                   {isBranchDropdownOpen && (
-                    <motion.div 
+                    <motion.div
                       className={styles.branchDropdownMenu}
                       initial={{ opacity: 0, y: -10 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -97,7 +101,7 @@ const Header = () => {
                       transition={{ duration: 0.2 }}
                     >
                       {branches.map((branch) => (
-                        <a 
+                        <a
                           key={branch.name}
                           href={`tel:${branch.phone.replace(/\s/g, '')}`}
                           className={styles.branchItem}
@@ -148,7 +152,7 @@ const Header = () => {
               {item.label}
             </Link>
           ))}
-          
+
           {/* Mobile Branch Contacts */}
           <div className={styles.mobileBranchSection}>
             <h4 className={styles.mobileBranchTitle}>
@@ -156,7 +160,7 @@ const Header = () => {
             </h4>
             <div className={styles.mobileBranchList}>
               {branches.map((branch) => (
-                <a 
+                <a
                   key={branch.name}
                   href={`tel:${branch.phone.replace(/\s/g, '')}`}
                   className={styles.mobileBranchItem}
