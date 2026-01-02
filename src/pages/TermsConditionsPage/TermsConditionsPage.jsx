@@ -34,14 +34,8 @@ const TermsConditionsPage = () => {
         >
           {/* Interpretation and Definitions */}
           <section className={styles.section}>
-            <h2>Interpretation and Definitions</h2>
-            
-            <h3>Interpretation</h3>
-            <p>
-              The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
-            </p>
+            <h2>Definitions</h2>
 
-            <h3>Definitions</h3>
             <p>For the purposes of these Terms and Conditions:</p>
             <ul className={styles.list}>
               <li><strong className={styles.highlight}>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Shankar Multimedia, an educational institution located in Mumbai, Maharashtra, India.</li>

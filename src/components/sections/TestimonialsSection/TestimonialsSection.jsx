@@ -261,7 +261,7 @@ const TestimonialsSection = () => {
       rating: 5
     }
   ];
-
+  
   const nextTestimonial = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % testimonials.length);
   }, [testimonials.length]);
@@ -276,7 +276,6 @@ const TestimonialsSection = () => {
 
   useEffect(() => {
     if (isHovered) return;
-
     const interval = setInterval(nextTestimonial, 4500);
     return () => clearInterval(interval);
   }, [isHovered, nextTestimonial]);
@@ -293,10 +292,13 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Testimonial Slider */}
-        <div
-          className={styles.testimonialContainer}
+        <div 
+          className={`${styles.testimonialContainer} ${isHovered ? styles.carouselhover : styles.carouselnothover}`}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
+          onTouchStart={() => setIsHovered(true)}
+          onTouchEnd={() => setIsHovered(false)}
+          onTouchCancel={() => setIsHovered(false)}
         >
           <AnimatePresence mode="wait">
             <motion.div
@@ -305,19 +307,22 @@ const TestimonialsSection = () => {
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.6, ease: 'easeInOut' }}
+              transition={{ 
+                duration: isHovered ? 0 : 0.6, 
+                ease: 'easeInOut' 
+              }}
             >
               <div className={styles.testimonialContent}>
                 {/* Quote Icon */}
                 <div className={styles.quoteIcon}>
-                  <span>“</span>
+                  <span>&quot;</span>
                 </div>
 
                 {/* Testimonial Text & Rating */}
                 <div className={styles.testimonialText}>
                   <p>{current.content}</p>
                   <div className={styles.testimonialRating}>
-                    {[...Array(current.rating)].map((_, i) => (
+                    {Array(current.rating).fill(0).map((_, i) => (
                       <FiStar key={i} className={styles.star} />
                     ))}
                   </div>
@@ -338,16 +343,17 @@ const TestimonialsSection = () => {
             </motion.div>
           </AnimatePresence>
 
-          {/* Controls - Prev/Next Buttons (hidden by CSS) & Indicators */}
+          {/* Controls - Prev/Next Buttons (hidden by CSS) */}
           <div className={styles.testimonialControls}>
-            <button
-              className={styles.controlBtn}
+            <button 
+              className={styles.controlBtn} 
               onClick={prevTestimonial}
               aria-label="Previous testimonial"
             >
               <FiChevronLeft />
             </button>
 
+            {/* Indicators */}
             <div className={styles.testimonialIndicators}>
               {testimonials.map((_, index) => (
                 <button
@@ -359,8 +365,8 @@ const TestimonialsSection = () => {
               ))}
             </div>
 
-            <button
-              className={styles.controlBtn}
+            <button 
+              className={styles.controlBtn} 
               onClick={nextTestimonial}
               aria-label="Next testimonial"
             >

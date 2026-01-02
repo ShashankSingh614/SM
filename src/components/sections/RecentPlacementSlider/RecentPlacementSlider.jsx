@@ -35,72 +35,74 @@ const RecentPlacementSlider = () => {
     (currentSlide + offset + images.length) % images.length;
 
   return (
-    <section className={classes.section}>
-      <div className={classes.container}>
-        {/* Header */}
-        <div className={classes.sectionHeader}>
-          <h2>Recent Placements</h2>
-        </div>
+    <>
+      {/* Header - Outside background section */}
+      <div className={classes.sectionHeader}>
+        <h2>Recent Placements</h2>
+        <p>Our students are making their mark across top companies worldwide</p>
+      </div>
 
-        {/* Slider */}
-        <div className={classes.sliderWrapper}>
-          <div
-            className={classes.carousel}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            <div className={classes.carouselTrack}>
-              {/* Previous Slide */}
-              <div className={classes.carouselSlide}>
-                <img
-                  src={images[getSlideIndex(-1)]}
-                  alt="Previous placement"
-                  className={classes.carouselImage}
-                  draggable="false"
-                />
+      <section className={classes.section}>
+        <div className={classes.container}>
+          {/* Slider */}
+          <div className={classes.sliderWrapper}>
+            <div
+              className={classes.carousel}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              <div className={classes.carouselTrack}>
+                {/* Previous Slide */}
+                <div className={classes.carouselSlide}>
+                  <img
+                    src={images[getSlideIndex(-1)]}
+                    alt="Previous placement"
+                    className={classes.carouselImage}
+                    draggable="false"
+                  />
+                </div>
+
+                {/* Current / Center Slide */}
+                <div className={`${classes.carouselSlide} ${classes.center}`}>
+                  <img
+                    src={images[currentSlide]}
+                    alt={`Recent placement ${currentSlide + 1}`}
+                    className={classes.carouselImage}
+                    draggable="false"
+                  />
+                </div>
+
+                {/* Next Slide */}
+                <div className={classes.carouselSlide}>
+                  <img
+                    src={images[getSlideIndex(1)]}
+                    alt="Next placement"
+                    className={classes.carouselImage}
+                    draggable="false"
+                  />
+                </div>
               </div>
 
-              {/* Current / Center Slide */}
-              <div className={`${classes.carouselSlide} ${classes.center}`}>
-                <img
-                  src={images[currentSlide]}
-                  alt={`Recent placement ${currentSlide + 1}`}
-                  className={classes.carouselImage}
-                  draggable="false"
-                />
-              </div>
-
-              {/* Next Slide */}
-              <div className={classes.carouselSlide}>
-                <img
-                  src={images[getSlideIndex(1)]}
-                  alt="Next placement"
-                  className={classes.carouselImage}
-                  draggable="false"
-                />
-              </div>
+              {/* Navigation Buttons at Bottom */}
+              <button
+                className={`${classes.carouselBtn} ${classes.prevBtn}`}
+                onClick={prevSlide}
+                aria-label="Previous placement"
+              >
+                <FiChevronLeft />
+              </button>
+              <button
+                className={`${classes.carouselBtn} ${classes.nextBtn}`}
+                onClick={nextSlide}
+                aria-label="Next placement"
+              >
+                <FiChevronRight />
+              </button>
             </div>
-
-            {/* Navigation Buttons at Bottom */}
-            <button
-              className={`${classes.carouselBtn} ${classes.prevBtn}`}
-              onClick={prevSlide}
-              aria-label="Previous placement"
-            >
-              <FiChevronLeft />
-            </button>
-            <button
-              className={`${classes.carouselBtn} ${classes.nextBtn}`}
-              onClick={nextSlide}
-              aria-label="Next placement"
-            >
-              <FiChevronRight />
-            </button>
-
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
