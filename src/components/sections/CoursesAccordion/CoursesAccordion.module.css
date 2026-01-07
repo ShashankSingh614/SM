@@ -51,6 +51,10 @@
   background: linear-gradient(135deg, #FFC107 0%, #FF8F00 100%);
 }
 
+.dm_bg {
+  background: linear-gradient(135deg, #FFC107 0%, #FF8F00 100%);
+}
+
 .courseHeader {
   padding: 1.5rem 2rem;
   cursor: pointer;

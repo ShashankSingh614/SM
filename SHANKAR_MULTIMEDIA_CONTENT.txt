@@ -414,6 +414,85 @@ PROFESSIONAL DIPLOMA COURSES OFFERED
    • Construction Manager
    • BIM Specialist
 
+9.DIGITAL MARKETING COURSE
+   ────────────────────────────────────────────────────────────────────────────
+   Duration: 6 Months 
+
+   COURSE DETAILS:
+   • Introduction to Digital Marketing & Online Business Models
+   • Marketing Fundamentals & Digital Ecosystem
+   • Search Engine Optimization (SEO)
+   • Social Media Marketing (Organic & Paid)
+   • Google Ads & Performance Marketing
+   • Content Strategy & Copywriting
+   • Email & WhatsApp Marketing
+   • Analytics, Tracking & Data-Driven Marketing
+   • AI Tools & Marketing Automation
+   • Live Campaigns & Portfolio Building
+
+   SOFTWARE COVERED:
+
+   ✓ WordPress
+     - Website & landing page creation
+     - Blog setup and optimization
+     - Lead capture forms & integrations
+     - Basic website automation
+
+   ✓ SEO Tools (Yoast SEO, Rank Math, Google Search Console)
+     - On-page SEO optimization
+     - Technical SEO (sitemaps, indexing)
+     - Keyword performance tracking
+     - SEO audits & error fixing
+
+   ✓ Google Ads
+     - Search & display campaign setup
+     - Keyword planning & match types
+     - Ad copywriting & extensions
+     - Conversion tracking & optimization
+
+   ✓ Meta Ads Manager (Facebook & Instagram Ads)
+     - Campaign objectives & structure
+     - Audience targeting & retargeting
+     - Creative & ad copy strategy
+     - Performance optimization
+
+   ✓ Social Media Platforms (Instagram, Facebook, LinkedIn, YouTube)
+     - Business account setup
+     - Content strategy & calendars
+     - Community engagement
+     - Organic growth techniques
+
+   ✓ Google Analytics 4 & Google Tag Manager
+     - GA4 property & event setup
+     - Conversion tracking
+     - Funnel & user behavior analysis
+     - Automated reports & dashboards
+
+   ✓ Email Marketing Tools (Mailchimp, Zoho Campaigns)
+     - List building & segmentation
+     - Campaign creation
+     - Automation & drip sequences
+     - Performance analysis
+
+   ✓ Marketing Automation & AI Tools (Zapier, ChatGPT, Claude, Perplexity)
+     - Workflow automation
+     - AI-powered content creation
+     - Lead automation
+     - Productivity enhancement
+
+   CAREER PROSPECTS:
+   • Digital Marketing Executive
+   • SEO Specialist
+   • Performance Marketing Executive
+   • Social Media Manager
+   • Google Ads Specialist
+   • Content & Growth Marketer
+   • Marketing Automation Executive
+   • Freelance Digital Marketer
+   • Digital Marketing Consultant
+   • Agency & In-house Marketing Roles
+
+
 
 ═══════════════════════════════════════════════════════════════════════════════
 ADDITIONAL LEARNING TOOLS & TECHNOLOGIES

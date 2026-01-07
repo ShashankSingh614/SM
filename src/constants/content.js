@@ -134,6 +134,17 @@ export const COURSES_DATA = [
     category: 'Development'
   },
   {
+    id: 'digital-marketing',
+    name: 'Digital Marketing',
+    title: 'DIPLOMA IN ADVANCED DIGITAL MARKETING WITH AI INTEGRATION & AUTOMATION',
+    description:'Become a job-ready digital marketer with hands-on training in SEO, Ads, Social Media, Analytics, AI tools and Marketing Automation with live campaigns.',
+    image: '/images/courses/digital1.png',
+    banner: '/images/courses/digital1.png',
+    background: '/images/courses/DM_bg.png',
+    tools: ['WordPress','Yoast SEO','Rank Math','Canva','Google Trends','Google Analytics 4','Google Search Console','Google Keyword Planner','Google Ads','Google Business Manager','Meta Ads Manager','Instagram','Facebook','YouTube','LinkedIn','Mailchimp','ZOHO Campaigns','Buffer','Zapier','AI Tools'],
+    category: 'Marketing'
+  },
+  {
     id: 'multimedia-animation-vfx',
     name: 'Multimedia Animation & VFX',
     title: 'DIPLOMA IN ADVANCED MULTIMEDIA ANIMATION & VFX',

@@ -665,6 +665,257 @@ const CoursesAccordion = () => {
       ]
     },
     {
+      id: 'digital-marketing',
+      title: 'DIPLOMA IN ADVANCED DIGITAL MARKETING WITH AI INTEGRATION & AUTOMATION',
+      className: 'dm_bg',
+      softwares: [
+        'WordPress',
+        'Yoast SEO',
+        'Rank Math',
+        'Canva',
+        'Google Trends',
+        'Google Analytics 4',
+        'Google Search Console',
+        'Google Keyword Planner',
+        'Google Ads',
+        'Google Business Manager',
+        'Meta Ads Manager',
+        'Instagram',
+        'Facebook',
+        'Youtube',
+        'LinkedIn',
+        'Mailchimp',
+        'ZOHO Campaigns',
+        'Buffer',
+        'Zapier',
+        'AI Tools'
+      ],
+      duration: ['6 Months'],
+      sections: [
+        {
+          title: 'INTRODUCTION TO DIGITAL MARKETING',
+          skills: [
+            'Role of Digital Marketer',
+            'Traditional vs Digital Marketing',
+            'Advantages of Digital Marketing',
+            'Digital Marketing Channels',
+            'Career Scope & Industry Overview'
+          ]
+        },
+        {
+          title: 'MARKETING & DIGITAL FUNDAMENTALS',
+          skills: [
+            'Digital Marketing Ecosystem',
+            'Sales Funnel Models (AIDA, TOFU–MOFU–BOFU)',
+            'Branding, Positioning & USP',
+            'Market Research & Competitor Analysis (Google Trends)',
+            'B2B vs B2C Marketing',
+            'Performance Metrics (CPM, CPC, CTR, CPA, ROAS)'
+          ]
+        },
+        {
+          title: 'WEBSITE DEVELOPMENT (WORDPRESS)',
+          skills: [
+            'Domain & Hosting Basics',
+            'WordPress Installation & Setup',
+            'Theme Customization',
+            'Page & Landing Page Creation',
+            'Website Optimization Basics',
+            'Form Integration & Lead Capture',
+            'Plugin-based Automation'
+          ]
+        },
+        {
+          title: 'SEARCH ENGINE OPTIMIZATION (SEO)',
+          skills: [
+            'Introduction to SEO',
+            'Paid vs Organic Search',
+            'Keyword Research & Planning',
+            'Types of Keywords',
+            'Google Algorithms Overview',
+            'On-Page Optimization (Yoast SEO, Rank Math)',
+            'Off-Page Optimization (Backlinks, Citations)',
+            'Technical SEO Basics',
+            'SEO Metrics & Reports',
+            'Automated SEO Audits & Alerts'
+          ]
+        },
+        {
+          title: 'GOOGLE SEARCH CONSOLE',
+          skills: [
+            'Introduction to Google Search Console',
+            'Property Setup & Verification',
+            'Sitemap Submission (Auto-sync)',
+            'Search Appearance & Rich Results',
+            'Performance & CTR Analysis',
+            'Indexing & Coverage Reports',
+            'Automated Indexing Monitoring'
+          ]
+        },
+        {
+          title: 'GOOGLE TAG MANAGER (GTM)',
+          skills: [
+            'GTM Account & Container Setup',
+            'Implementing Tags',
+            'Triggers & Variables',
+            'Data Layer Basics',
+            'Event Tracking & Testing',
+            'Automated Event Tracking'
+          ]
+        },
+        {
+          title: 'GOOGLE ANALYTICS 4 (GA4)',
+          skills: [
+            'Introduction to GA4',
+            'Property Setup',
+            'Event & Conversion Setup',
+            'Enhanced Reporting',
+            'Cross-Platform Tracking',
+            'Funnel & User Analysis',
+            'Automated Reports & Dashboards'
+          ]
+        },
+        {
+          title: 'GOOGLE ADS',
+          skills: [
+            'Google Ads Account Setup',
+            'Search Campaign Creation',
+            'Keyword Match Types',
+            'Ad Copy Writing',
+            'Budgeting & Bidding',
+            'Performance Optimization',
+            'Smart Bidding Automation',
+            'Automated Rules & Alerts'
+          ]
+        },
+        {
+          title: 'GOOGLE BUSINESS PROFILE (GMB)',
+          skills: [
+            'Business Profile Creation',
+            'Profile Optimization',
+            'Posts & Updates (Scheduled)',
+            'Reviews & Ratings Management',
+            'Local SEO Importance',
+            'Insights & Performance',
+            'Auto Notifications & Review Alerts'
+          ]
+        },
+        {
+          title: 'CONTENT STRATEGY & COPYWRITING',
+          skills: [
+            'Writing for Ads',
+            'Website Copywriting',
+            'Social Media Content',
+            'Blog Writing',
+            'SEO Content Strategy',
+            'AI-Assisted Content Automation'
+          ]
+        },
+        {
+          title: 'SOCIAL MEDIA MARKETING (ORGANIC – SMO)',
+          skills: [
+            'Introduction to Social Media Optimization',
+            'Platform Selection Strategy',
+            'Profile Optimization',
+            'Content Planning & Calendars',
+            'Engagement & Community Building',
+            'Hashtag Strategy',
+            'Post Scheduling Automation'
+          ]
+        },
+        {
+          title: 'FACEBOOK MARKETING',
+          skills: [
+            'Facebook Business Page Creation',
+            'Page Management',
+            'Facebook Marketing Strategy',
+            'Creatives Best Practices',
+            'Audience Targeting',
+            'Insights & Reporting',
+            'Auto Replies & Lead Forms'
+          ]
+        },
+        {
+          title: 'INSTAGRAM MARKETING',
+          skills: [
+            'Instagram Overview',
+            'Business Account Setup',
+            'Content Strategy (Posts, Reels, Stories)',
+            'Visuals & Creatives',
+            'Hashtag Strategy',
+            'Engagement & Community Building',
+            'Auto DM Replies & Scheduling'
+          ]
+        },
+        {
+          title: 'LINKEDIN MARKETING',
+          skills: [
+            'Introduction to LinkedIn',
+            'Profile Optimization',
+            'Company Page Creation',
+            'Personal Branding',
+            'Network Building',
+            'LinkedIn Analytics',
+            'Lead Form Automation'
+          ]
+        },
+        {
+          title: 'YOUTUBE MARKETING',
+          skills: [
+            'Channel Creation & Setup',
+            'YouTube SEO Basics',
+            'Content Strategy',
+            'Video Optimization',
+            'Audience Growth',
+            'Monetization Overview',
+            'Auto Publishing & Tracking'
+          ]
+        },
+        {
+          title: 'EMAIL MARKETING',
+          skills: [
+            'Introduction to Email Marketing',
+            'Mailchimp & Zoho Campaigns',
+            'List Building & Segmentation',
+            'Campaign Creation',
+            'Automation & Drip Campaigns',
+            'Analytics & Optimization',
+            'Behaviour-based Automation'
+          ]
+        },
+        {
+          title: 'WHATSAPP BUSINESS MARKETING',
+          skills: [
+            'WhatsApp Business Setup',
+            'Business Profile Optimization',
+            'Broadcast Lists',
+            'Customer Communication',
+            'Lead Follow-ups',
+            'Auto Replies & Lead Automation'
+          ]
+        },
+        {
+          title: 'DATA DRIVEN MARKETING',
+          skills: [
+            'KPI Tracking',
+            'Data Analysis & Interpretation',
+            'A/B Testing',
+            'Performance Optimization',
+            'Automated Dashboards & Reports'
+          ]
+        },
+        {
+          title: 'AI & MARKETING AUTOMATION',
+          skills: [
+            'AI Content Creation',
+            'AI for Ads & SEO',
+            'AI Creatives',
+            'Workflow Automation'
+          ]
+        }
+      ]
+    },
+    {
       id: 'multimedia-vfx',
       title: 'DIPLOMA IN ADVANCED MULTIMEDIA ANIMATION & VFX',
       className: 'nuke_bg',

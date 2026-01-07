@@ -5,7 +5,7 @@ export const createLocalBusinessSchemas = () => {
       '@type': 'LocalBusiness',
       '@id': 'https://shankarmultimedia.com#goregaon',
       'name': 'Shankar Multimedia - Goregaon',
-      'description': 'Shankar Multimedia Goregaon center offers professional diploma courses in Graphic Design, Web Development, Animation, VFX, and more.',
+      'description': 'Shankar Multimedia Goregaon center offers professional diploma courses in Graphic Design, Web Development, Animation, VFX, Multimedia Animation, Digital Marketing, AI Automations, 3Ds Max and AutoCAD.',
       'url': 'https://shankarmultimedia.com',
       'telephone': '+91-9819508524',
       'email': 'info@shankarmultimedia.com',
@@ -61,7 +61,7 @@ export const createLocalBusinessSchemas = () => {
       '@type': 'LocalBusiness',
       '@id': 'https://shankarmultimedia.com#malad',
       'name': 'Shankar Multimedia - Malad',
-      'description': 'Shankar Multimedia Malad center offers professional diploma courses in Graphic Design, Web Development, Animation, VFX, and more.',
+      'description': 'Shankar Multimedia Malad center center offers professional diploma courses in Graphic Design, Web Development, Animation, VFX, Multimedia Animation, Digital Marketing, AI Automations, 3Ds Max and AutoCAD.',
       'url': 'https://shankarmultimedia.com',
       'telephone': '+91-9223439986',
       'email': 'info@shankarmultimedia.com',
@@ -117,7 +117,7 @@ export const createLocalBusinessSchemas = () => {
       '@type': 'LocalBusiness',
       '@id': 'https://shankarmultimedia.com#mulund',
       'name': 'Shankar Multimedia - Mulund',
-      'description': 'Shankar Multimedia Mulund center offers professional diploma courses in Graphic Design, Web Development, Animation, VFX, and more.',
+      'description': 'Shankar Multimedia Mulund center center offers professional diploma courses in Graphic Design, Web Development, Animation, VFX, Multimedia Animation, Digital Marketing, AI Automations, 3Ds Max and AutoCAD.',
       'url': 'https://shankarmultimedia.com',
       'telephone': '+91-9619177392',
       'email': 'info@shankarmultimedia.com',
@@ -173,7 +173,7 @@ export const createLocalBusinessSchemas = () => {
       '@type': 'LocalBusiness',
       '@id': 'https://shankarmultimedia.com#nalasopara',
       'name': 'Shankar Multimedia - Nalasopara',
-      'description': 'Shankar Multimedia Nalasopara center offers professional diploma courses in Graphic Design, Web Development, Animation, VFX, and more.',
+      'description': 'Shankar Multimedia Nalasopara center offers professional diploma courses in Graphic Design, Web Development, Animation, VFX, Multimedia Animation, Digital Marketing, AI Automations, 3Ds Max and AutoCAD.',
       'url': 'https://shankarmultimedia.com',
       'telephone': '+91-7021382816',
       'email': 'info@shankarmultimedia.com',
@@ -229,7 +229,7 @@ export const createLocalBusinessSchemas = () => {
       '@type': 'LocalBusiness',
       '@id': 'https://shankarmultimedia.com#santacruz',
       'name': 'Shankar Multimedia - Santacruz',
-      'description': 'Shankar Multimedia Santacruz center offers professional diploma courses in Graphic Design, Web Development, Animation, VFX, and more.',
+      'description': 'Shankar Multimedia Santacruz center offers professional diploma courses in Graphic Design, Web Development, Animation, VFX, Multimedia Animation, Digital Marketing, AI Automations, 3Ds Max and AutoCAD.',
       'url': 'https://shankarmultimedia.com',
       'telephone': '+91-7304157986',
       'email': 'info@shankarmultimedia.com',
@@ -285,7 +285,7 @@ export const createLocalBusinessSchemas = () => {
       '@type': 'LocalBusiness',
       '@id': 'https://shankarmultimedia.com#ghatkopar',
       'name': 'Shankar Multimedia - Ghatkopar',
-      'description': 'Shankar Multimedia Ghatkopar center offers professional diploma courses in Graphic Design, Web Development, Animation, VFX, and more.',
+      'description': 'Shankar Multimedia Ghatkopar center offers professional diploma courses in Graphic Design, Web Development, Animation, VFX, Multimedia Animation, Digital Marketing, AI Automations, 3Ds Max and AutoCAD.',
       'url': 'https://shankarmultimedia.com',
       'telephone': '+91-9819508524',
       'email': 'info@shankarmultimedia.com',
@@ -336,174 +336,6 @@ export const createLocalBusinessSchemas = () => {
         '@id': 'https://shankarmultimedia.com#organization'
       }
     },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'LocalBusiness',
-      '@id': 'https://shankarmultimedia.com#andheri',
-      'name': 'Shankar Multimedia - Andheri',
-      'description': 'Shankar Multimedia Andheri center offers professional diploma courses in Graphic Design, Web Development, Animation, VFX, and more.',
-      'url': 'https://shankarmultimedia.com',
-      'telephone': '+91-9819508524',
-      'email': 'info@shankarmultimedia.com',
-      'address': {
-        '@type': 'PostalAddress',
-        'streetAddress': '[Full Address]',
-        'addressLocality': 'Andheri',
-        'addressRegion': 'Maharashtra',
-        'postalCode': '400069',
-        'addressCountry': 'IN'
-      },
-      'geo': {
-        '@type': 'GeoCoordinates',
-        'latitude': 19.1136,
-        'longitude': 72.8697
-      },
-      'openingHoursSpecification': [
-        {
-          '@type': 'OpeningHoursSpecification',
-          'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-          'opens': '08:00',
-          'closes': '21:00'
-        },
-        {
-          '@type': 'OpeningHoursSpecification',
-          'dayOfWeek': ['Sunday'],
-          'opens': '09:00',
-          'closes': '14:00'
-        }
-      ],
-      'priceRange': '₹30,000 - ₹84,000',
-      'aggregateRating': {
-        '@type': 'AggregateRating',
-        'ratingValue': '4.9',
-        'reviewCount': '950',
-        'bestRating': '5',
-        'worstRating': '1'
-      },
-      'sameAs': [
-        'https://www.google.com/maps/place/Shankar+Multimedia+Andheri',
-        'https://www.facebook.com/shankarmultimedia',
-        'https://www.instagram.com/shankarmultimedia'
-      ],
-      'areaServed': ['Andheri', 'Goregaon', 'Malad', 'Borivali'],
-      'availableLanguage': ['en', 'hi', 'mr'],
-      'worksFor': {
-        '@type': 'Organization',
-        '@id': 'https://shankarmultimedia.com#organization'
-      }
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'LocalBusiness',
-      '@id': 'https://shankarmultimedia.com#borivali',
-      'name': 'Shankar Multimedia - Borivali',
-      'description': 'Shankar Multimedia Borivali center offers professional diploma courses in Graphic Design, Web Development, Animation, VFX, and more.',
-      'url': 'https://shankarmultimedia.com',
-      'telephone': '+91-9819508524',
-      'email': 'info@shankarmultimedia.com',
-      'address': {
-        '@type': 'PostalAddress',
-        'streetAddress': '[Full Address]',
-        'addressLocality': 'Borivali',
-        'addressRegion': 'Maharashtra',
-        'postalCode': '400092',
-        'addressCountry': 'IN'
-      },
-      'geo': {
-        '@type': 'GeoCoordinates',
-        'latitude': 19.2183,
-        'longitude': 72.8197
-      },
-      'openingHoursSpecification': [
-        {
-          '@type': 'OpeningHoursSpecification',
-          'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-          'opens': '08:00',
-          'closes': '21:00'
-        },
-        {
-          '@type': 'OpeningHoursSpecification',
-          'dayOfWeek': ['Sunday'],
-          'opens': '09:00',
-          'closes': '14:00'
-        }
-      ],
-      'priceRange': '₹30,000 - ₹84,000',
-      'aggregateRating': {
-        '@type': 'AggregateRating',
-        'ratingValue': '4.7',
-        'reviewCount': '650',
-        'bestRating': '5',
-        'worstRating': '1'
-      },
-      'sameAs': [
-        'https://www.google.com/maps/place/Shankar+Multimedia+Borivali',
-        'https://www.facebook.com/shankarmultimedia',
-        'https://www.instagram.com/shankarmultimedia'
-      ],
-      'areaServed': ['Borivali', 'Kandivali', 'Dahisar', 'Mira Road'],
-      'availableLanguage': ['en', 'hi', 'mr'],
-      'worksFor': {
-        '@type': 'Organization',
-        '@id': 'https://shankarmultimedia.com#organization'
-      }
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'LocalBusiness',
-      '@id': 'https://shankarmultimedia.com#kandivali',
-      'name': 'Shankar Multimedia - Kandivali',
-      'description': 'Shankar Multimedia Kandivali center offers professional diploma courses in Graphic Design, Web Development, Animation, VFX, and more.',
-      'url': 'https://shankarmultimedia.com',
-      'telephone': '+91-9819508524',
-      'email': 'info@shankarmultimedia.com',
-      'address': {
-        '@type': 'PostalAddress',
-        'streetAddress': '[Full Address]',
-        'addressLocality': 'Kandivali',
-        'addressRegion': 'Maharashtra',
-        'postalCode': '400067',
-        'addressCountry': 'IN'
-      },
-      'geo': {
-        '@type': 'GeoCoordinates',
-        'latitude': 19.2183,
-        'longitude': 72.8197
-      },
-      'openingHoursSpecification': [
-        {
-          '@type': 'OpeningHoursSpecification',
-          'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-          'opens': '08:00',
-          'closes': '21:00'
-        },
-        {
-          '@type': 'OpeningHoursSpecification',
-          'dayOfWeek': ['Sunday'],
-          'opens': '09:00',
-          'closes': '14:00'
-        }
-      ],
-      'priceRange': '₹30,000 - ₹84,000',
-      'aggregateRating': {
-        '@type': 'AggregateRating',
-        'ratingValue': '4.8',
-        'reviewCount': '750',
-        'bestRating': '5',
-        'worstRating': '1'
-      },
-      'sameAs': [
-        'https://www.google.com/maps/place/Shankar+Multimedia+Kandivali',
-        'https://www.facebook.com/shankarmultimedia',
-        'https://www.instagram.com/shankarmultimedia'
-      ],
-      'areaServed': ['Kandivali', 'Borivali', 'Dahisar', 'Malad'],
-      'availableLanguage': ['en', 'hi', 'mr'],
-      'worksFor': {
-        '@type': 'Organization',
-        '@id': 'https://shankarmultimedia.com#organization'
-      }
-    }
   ];
 };
 
@@ -559,34 +391,7 @@ export const centersData = [
     lat: 19.0282,
     lng: 72.9289,
     address: '[Full Address]',
-    phone: '[Phone Number]',
+    phone: '+91-9223439986',
     email: 'ghatkopar@shankarmultimedia.com'
   },
-  {
-    id: 'andheri',
-    name: 'Andheri',
-    lat: 19.1136,
-    lng: 72.8697,
-    address: '[Full Address]',
-    phone: '[Phone Number]',
-    email: 'andheri@shankarmultimedia.com'
-  },
-  {
-    id: 'borivali',
-    name: 'Borivali',
-    lat: 19.2183,
-    lng: 72.8197,
-    address: '[Full Address]',
-    phone: '[Phone Number]',
-    email: 'borivali@shankarmultimedia.com'
-  },
-  {
-    id: 'kandivali',
-    name: 'Kandivali',
-    lat: 19.2183,
-    lng: 72.8197,
-    address: '[Full Address]',
-    phone: '[Phone Number]',
-    email: 'kandivali@shankarmultimedia.com'
-  }
 ];
