@@ -154,9 +154,7 @@ const PlacementsPageContent = () => {
               {currentPage >= totalFilteredPages && filteredStudents.length === 0 ? (
                 <div className={`${styles.studentCard} ${styles.moreCard}`}>
                   <div className={styles.moreCardContent}>
-                    {/* Add your "many more..." content here */}
                     <h3>Many More Success Stories</h3>
-                    <p>100% Placement Assistance</p>
                   </div>
                 </div>
               ) : null}

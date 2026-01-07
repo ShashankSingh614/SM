@@ -1,7 +1,7 @@
 /* Recent Placement Slider - Curved Multi-Slide with Ultra-Smooth Center Zoom */
 .section {
   padding: 2rem 0 6rem;
-  background-image: url('/public/images/sliderbg.png');
+  background-image: url('/public/images/sliderbg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,13 +17,13 @@
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
+  padding: 0 1rem;
 }
 
 /* Header - Outside background section */
 .sectionHeader {
   text-align: center;
   padding: 3rem 1rem 2rem;
-  background: var(--bg-primary);
   position: relative;
   z-index: 2;
   width: 100vw;
@@ -34,7 +34,7 @@
   font-size: 3rem;
   font-weight: 800;
   color: var(--text-primary);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   position: relative;
 }
 
@@ -239,10 +239,6 @@
 
   .sectionHeader {
     padding: 1.5rem 1rem 1rem;
-  }
-
-  .sectionHeader h2 {
-    font-size: 1.75rem;
   }
   
   .sectionHeader p {
