@@ -664,7 +664,7 @@ const CoursesAccordion = () => {
         }
       ]
     },
-    {
+    /*{
       id: 'digital-marketing',
       title: 'DIPLOMA IN ADVANCED DIGITAL MARKETING WITH AI INTEGRATION & AUTOMATION',
       className: 'dm_bg',
@@ -914,7 +914,7 @@ const CoursesAccordion = () => {
           ]
         }
       ]
-    },
+    },*/
     {
       id: 'multimedia-vfx',
       title: 'DIPLOMA IN ADVANCED MULTIMEDIA ANIMATION & VFX',
