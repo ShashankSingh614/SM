@@ -669,6 +669,8 @@ const CoursesAccordion = () => {
       title: 'DIPLOMA IN ADVANCED DIGITAL MARKETING WITH AI INTEGRATION & AUTOMATION',
       className: 'dm_bg',
       softwares: [
+        'Adobe Photoshop',
+        'Adobe Illustrator',
         'WordPress',
         'Yoast SEO',
         'Rank Math',
@@ -685,13 +687,58 @@ const CoursesAccordion = () => {
         'Youtube',
         'LinkedIn',
         'Mailchimp',
-        'ZOHO Campaigns',
         'Buffer',
-        'Zapier',
         'AI Tools'
       ],
       duration: ['6 Months'],
       sections: [
+        {
+          title: 'Raster Graphics',
+          skills: [
+            'Photoshop Interface & Tools',
+            'Color Correction & Grading',
+            'Photo Retouching (Spot, Patch, Glamour Skin)',
+            'Model, Fashion & Portrait Retouching',
+            'Product Retouching (Jewelry, Apparel, Furniture, Real Estate)',
+            'Wedding Album Design',
+            'Image Restoration (Vintage & Damaged Photos)',
+            'Masking Techniques (Layer, Photo, Hair, Ghost Mannequin)',
+            'Clipping Path & Color Changing',
+            'Black & White to Color Conversion',
+            'Image Manipulation & Effects',
+            'Banner, Poster & Catalog Design',
+            'Page Effects & Border Effects',
+            'Frame & Shadow Effects',
+            'Water & Mirror Effects',
+            '3D Box & Text Effects',
+            'Karizma Album Design',
+            'Generative AI (Generative Fill, Neural Filters, Content-Aware Fill)',
+            'AI Object Selection'
+          ]
+        },
+        {
+          title: 'Vector Graphics',
+          skills: [
+            'Vector vs Raster Graphics',
+            'CorelDRAW Basics & Interface',
+            'Digital Illustration Techniques',
+            'Logo Design & Tracing',
+            'Corporate Identity & Branding',
+            'Print Collaterals (Brochure, Business Card, Leaflets)',
+            'Visiting Card Design (3.5" x 2" with Bleed)',
+            'Packaging & Label Design',
+            'Advertising Design & Hoardings',
+            'Drawing & Shape Tools',
+            'Shaping Operations (Weld, Trim, Intersect, Combine)',
+            'Fill Types (Fountain, Pattern, Texture, Mesh)',
+            'Special Effects (Contour, Extrude, Blend, Shadow, PowerClip)',
+            'Magazine Cover Design',
+            'Text to Vector with AI (Adobe Firefly)',
+            'Generative Recolor',
+            'Retype (AI OCR)',
+            'Image Trace & Vectorization'
+          ]
+        },
         {
           title: 'INTRODUCTION TO DIGITAL MARKETING',
           skills: [
