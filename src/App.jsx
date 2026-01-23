@@ -14,7 +14,7 @@ import ScrollToTop from './components/ui/ScrollToTop/ScrollToTop';
 import WhatsAppButton from './components/ui/WhatsAppButton/WhatsAppButton';
 import './App.css';
 import { HelmetProvider } from 'react-helmet-async';
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
