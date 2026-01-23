@@ -14,12 +14,14 @@ import ScrollToTop from './components/ui/ScrollToTop/ScrollToTop';
 import WhatsAppButton from './components/ui/WhatsAppButton/WhatsAppButton';
 import './App.css';
 import { HelmetProvider } from 'react-helmet-async';
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function App() {
   return (
     <HelmetProvider>
       <Analytics />
+      <SpeedInsights />
       <Router>
         <div className="app">
           <Header />
