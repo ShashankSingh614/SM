@@ -175,7 +175,7 @@ export const HERO_CONTENT = {
   description: 'ISO 9001:2015 Certified Institute | Job Placement Support | Industry-Driven Sessions | Expert-Led Sessions | Global Alumni Network',
   
   banners: [
-    '/images/courses/all1.png'
+    '/images/courses/all1.png',
     '/images/courses/gra1.png',
     '/images/courses/web1.png',
     '/images/courses/3d1.png',
