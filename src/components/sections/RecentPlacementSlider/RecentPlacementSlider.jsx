@@ -3,7 +3,7 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import classes from './RecentPlacementSlider.module.css';
 
 const images = Array.from(
-  { length: 18 },
+  { length: 30 },
   (_, i) => `/images/instaPlacements/${i + 1}.jpeg`
 );
 
