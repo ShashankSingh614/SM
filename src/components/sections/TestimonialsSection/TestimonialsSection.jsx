@@ -10,29 +10,29 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Bharat Bhadwalkar',
-      role: '3D Designer',
-      location: 'Santacruz',
-      content: 'The 3D design course was completely industry-oriented. We were trained on the latest software and rendering techniques used in big studios today. The placement team provided excellent support until I secured a role that matched my skills perfectly.',
-      image: '/images/place/5BHARAT-ASHOK-BHADWALKAR-Santacruz-3d.jpg',
+      name: 'Priti Jha',
+      role: 'Motion Graphics Designer & Video Editor',
+      location: 'Kandivali',
+      videoUrl: 'https://www.youtube.com/embed/MfERrATXbRQ',
+      image: '/images/place/priti-jha.png',
       rating: 5
     },
     {
       id: 2,
-      name: 'Sumit Gawade',
-      role: 'Frontend Developer',
-      location: 'Andheri (W)',
-      content: 'I was looking for a course that offered both affordability and quality, and I found it here. The web development syllabus is updated with the latest technologies. The best part is the placement support they guide you even after you join a company.',
-      image: '/images/place/7Sumit-Gawade-Andheri (W).jpg',
+      name: 'Avishkar Bhadvale',
+      role: '3D Designer',
+      location: 'Mumbai',
+      videoUrl: 'https://www.youtube.com/embed/aOShLvK40iQ',
+      image: '/images/place/Avishkar-Bhadvale.jpeg',
       rating: 5
     },
     {
       id: 3,
-      name: 'Sandesh More',
-      role: 'Video Editor & Graphics Designer',
-      location: 'Goregaon',
-      content: 'Learning both Video Editing and Graphics gave me a huge advantage in the job market. The institute focuses on practical portfolio building rather than just theory. Their placement assistance is genuine and very proactive.',
-      image: '/images/place/16Sandesh More - Goregaon- Video Editor-Graphics Designer.jpg',
+      name: 'Neelam Rajvanshi',
+      role: '3D Designer',
+      location: 'Mumbai',
+      videoUrl: 'https://www.youtube.com/embed/Fe9fWM2PqXQ',
+      image: '/images/place/neelam-rajvanshi.jpeg',
       rating: 5
     },
     {
@@ -259,6 +259,33 @@ const TestimonialsSection = () => {
       content: 'The faculty is very patient and skilled. They helped me build a creative portfolio that stood out. I am really happy with the placement assistance provided; they stood by me until I got my offer letter.',
       image: '/images/place/97NUTAN CHIKHALE gra - Borivali.jpg',
       rating: 5
+    },
+    {
+      id: 29,
+      name: 'Bharat Bhadwalkar',
+      role: '3D Designer',
+      location: 'Santacruz',
+      content: 'The 3D design course was completely industry-oriented. We were trained on the latest software and rendering techniques used in big studios today. The placement team provided excellent support until I secured a role that matched my skills perfectly.',
+      image: '/images/place/5BHARAT-ASHOK-BHADWALKAR-Santacruz-3d.jpg',
+      rating: 5
+    },
+    {
+      id: 30,
+      name: 'Sumit Gawade',
+      role: 'Frontend Developer',
+      location: 'Andheri (W)',
+      content: 'I was looking for a course that offered both affordability and quality, and I found it here. The web development syllabus is updated with the latest technologies. The best part is the placement support they guide you even after you join a company.',
+      image: '/images/place/7Sumit-Gawade-Andheri (W).jpg',
+      rating: 5
+    },
+    {
+      id: 31,
+      name: 'Sandesh More',
+      role: 'Video Editor & Graphics Designer',
+      location: 'Goregaon',
+      content: 'Learning both Video Editing and Graphics gave me a huge advantage in the job market. The institute focuses on practical portfolio building rather than just theory. Their placement assistance is genuine and very proactive.',
+      image: '/images/place/16Sandesh More - Goregaon- Video Editor-Graphics Designer.jpg',
+      rating: 5
     }
   ];
   
@@ -317,6 +344,20 @@ const TestimonialsSection = () => {
                 <div className={styles.quoteIcon}>
                   <span>&quot;</span>
                 </div>
+
+                {/* Video Testimonial */}
+                {current.videoUrl && (
+                  <div className={styles.videoContainer}>
+                    <iframe
+                      src={current.videoUrl}
+                      title={`${current.name} testimonial`}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className={styles.testimonialVideo}
+                    ></iframe>
+                  </div>
+                )}
 
                 {/* Testimonial Text & Rating */}
                 <div className={styles.testimonialText}>

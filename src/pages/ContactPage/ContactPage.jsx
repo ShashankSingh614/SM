@@ -60,6 +60,13 @@ const ContactPageContent = () => {
         >
           <motion.div className={styles.sectionHeader} variants={itemVariants}>
             <h2>Institute Centers</h2>
+            <motion.img
+              src="/images/mumbai.png"
+              className={styles.headerImage}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+            />
           </motion.div>
 
           <div className={styles.branchesContainer}>

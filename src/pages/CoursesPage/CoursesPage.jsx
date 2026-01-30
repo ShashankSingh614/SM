@@ -1,27 +1,28 @@
 // Students Work Page - Showcasing Student Portfolios
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   FiSearch, 
   FiEye,
   FiArrowRight,
+  FiX, 
+  FiChevronLeft, 
+  FiChevronRight
 } from 'react-icons/fi';
 import styles from './CoursesPage.module.css';
 import { useSEO } from '../../hooks/useSEO';
 import { helmetConfig, structuredData } from '../../utils/helmet';
+import HallOfFameSection from '../../components/sections/HallOfFame/HallOfFameSection.jsx';
 
 const CoursesPageContent = () => {
   const [selectedCategory] = useState('All');
   const [searchTerm] = useState('');
   const [expandedCategories, setExpandedCategories] = useState({});
-
-  // Toggle expanded state for categories
-  const toggleCategory = (categoryId) => {
-    setExpandedCategories(prev => ({
-      ...prev,
-      [categoryId]: !prev[categoryId]
-    }));
-  };
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentCategoryImages, setCurrentCategoryImages] = useState([]);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   // Student Work Categories with actual portfolio data
   const portfolioCategories = [
@@ -30,20 +31,20 @@ const CoursesPageContent = () => {
       title: 'Graphic & UI/UX Designing',
       description: 'Showcasing layouts, branding, UI/UX, and packaging design work by our talented students',
       works: [
-        { id: 1, image: '/images/img2/gra/1.jpg', title: 'Brand Identity Design', student: 'Student Portfolio' },
-        { id: 2, image: '/images/img2/gra/2.jpg', title: 'UI/UX Design Project', student: 'Student Portfolio' },
-        { id: 3, image: '/images/img2/gra/3.jpg', title: 'Logo & Branding', student: 'Student Portfolio' },
-        { id: 4, image: '/images/img2/gra/4.jpg', title: 'Print Design Work', student: 'Student Portfolio' },
-        { id: 5, image: '/images/img2/gra/5.jpg', title: 'Digital Artwork', student: 'Student Portfolio' },
-        { id: 6, image: '/images/img2/gra/6.jpg', title: 'Creative Design', student: 'Student Portfolio' }
+        { id: 1, image: '/images/img2/gra/1.jpg', title: 'Brand Packaging Design', student: 'Student Portfolio' },
+        { id: 2, image: '/images/img2/gra/2.jpg', title: 'Cinematic Poster Design', student: 'Student Portfolio' },
+        { id: 3, image: '/images/img2/gra/3.jpg', title: 'Vector Art', student: 'Student Portfolio' },
+        { id: 4, image: '/images/img2/gra/4.jpg', title: 'Cinematic Poster Design', student: 'Student Portfolio' },
+        { id: 5, image: '/images/img2/gra/5.jpg', title: 'Brand Social Media Layout', student: 'Student Portfolio' },
+        { id: 6, image: '/images/img2/gra/6.jpg', title: 'Brand Packaging Design', student: 'Student Portfolio' }
       ],
       moreWorks: [
-        { id: 101, image: '/images/img2/gra/7.jpg', title: 'Advanced Graphic Design', student: 'Student Portfolio' },
-        { id: 102, image: '/images/img2/gra/8.jpg', title: 'Brand Campaign Design', student: 'Student Portfolio' },
-        { id: 103, image: '/images/img2/gra/9.jpg', title: 'Digital Marketing Design', student: 'Student Portfolio' },
-        { id: 104, image: '/images/img2/gra/10.jpg', title: 'Corporate Identity', student: 'Student Portfolio' },
-        { id: 105, image: '/images/img2/gra/11.jpg', title: 'Package Design', student: 'Student Portfolio' },
-        { id: 106, image: '/images/img2/gra/12.jpg', title: 'Poster Design', student: 'Student Portfolio' }
+        { id: 101, image: '/images/img2/gra/7.jpg', title: 'Mobile App UI Design', student: 'Student Portfolio' },
+        { id: 102, image: '/images/img2/gra/8.jpg', title: 'Photo Retouching', student: 'Student Portfolio' },
+        { id: 103, image: '/images/img2/gra/9.jpg', title: 'Vector Art', student: 'Student Portfolio' },
+        { id: 104, image: '/images/img2/gra/10.jpg', title: 'Website Layout Design', student: 'Student Portfolio' },
+        { id: 105, image: '/images/img2/gra/11.jpg', title: 'Brand Social Media Layout', student: 'Student Portfolio' },
+        { id: 106, image: '/images/img2/gra/12.jpg', title: 'Brand Packaging Design', student: 'Student Portfolio' }
       ]
     },
     {
@@ -51,20 +52,20 @@ const CoursesPageContent = () => {
       title: '3D Modelling & Animation',
       description: 'Showcasing stall, interior, exterior, bungalow, and architectural design work by our talented students',
       works: [
-        { id: 13, image: '/images/img2/3d/1.jpg', title: '3D Character Design', student: 'Student Portfolio' },
-        { id: 14, image: '/images/img2/3d/2.jpg', title: 'Architectural Visualization', student: 'Student Portfolio' },
-        { id: 15, image: '/images/img2/3d/3.jpg', title: 'Product Modeling', student: 'Student Portfolio' },
-        { id: 16, image: '/images/img2/3d/4.jpg', title: '3D Animation Scene', student: 'Student Portfolio' },
-        { id: 17, image: '/images/img2/3d/5.jpg', title: 'Environment Design', student: 'Student Portfolio' },
-        { id: 18, image: '/images/img2/3d/6.jpg', title: 'Visual Effects', student: 'Student Portfolio' }
+        { id: 13, image: '/images/img2/3d/1.jpg', title: 'Exhibition Stall Design', student: 'Student Portfolio' },
+        { id: 14, image: '/images/img2/3d/2.jpg', title: 'Exhibition Stall Design', student: 'Student Portfolio' },
+        { id: 15, image: '/images/img2/3d/3.jpg', title: 'Living Room Interior Design', student: 'Student Portfolio' },
+        { id: 16, image: '/images/img2/3d/4.jpg', title: 'Living Room Interior Design', student: 'Student Portfolio' },
+        { id: 17, image: '/images/img2/3d/5.jpg', title: 'Modular Kitchen Interior Design', student: 'Student Portfolio' },
+        { id: 18, image: '/images/img2/3d/6.jpg', title: 'Building Architecture Design', student: 'Student Portfolio' }
       ],
       moreWorks: [
-        { id: 113, image: '/images/img2/3d/7.jpg', title: 'Game Asset Design', student: 'Student Portfolio' },
-        { id: 114, image: '/images/img2/3d/8.jpg', title: 'Interior Visualization', student: 'Student Portfolio' },
-        { id: 115, image: '/images/img2/3d/9.jpg', student: 'Student Portfolio' },
-        { id: 116, image: '/images/img2/3d/10.jpg', title: 'Organic Modeling', student: 'Student Portfolio' },
-        { id: 117, image: '/images/img2/3d/11.jpg', title: 'Lighting Study', student: 'Student Portfolio' },
-        { id: 118, image: '/images/img2/3d/12.jpg', title: 'Motion Graphics', student: 'Student Portfolio' }
+        { id: 113, image: '/images/img2/3d/7.jpg', title: 'Residential Bungalow Design', student: 'Student Portfolio' },
+        { id: 114, image: '/images/img2/3d/8.jpg', title: 'Corporate Reception Design', student: 'Student Portfolio' },
+        { id: 115, image: '/images/img2/3d/9.jpg', title: 'Commercial Parking Design', student: 'Student Portfolio' },
+        { id: 116, image: '/images/img2/3d/10.jpg', title: 'Bedroom Interior Design', student: 'Student Portfolio' },
+        { id: 117, image: '/images/img2/3d/11.jpg', title: 'Living Room Interior Design', student: 'Student Portfolio' },
+        { id: 118, image: '/images/img2/3d/12.jpg', title: 'Modular Kitchen Interior Design', student: 'Student Portfolio' }
       ]
     },
     {
@@ -85,15 +86,81 @@ const CoursesPageContent = () => {
       title: 'Web Designing & Development',
       description: 'Showcasing responsive website designs and interactive user interfaces created by our students',
       works: [
-        { id: 7, image: '/images/img2/web/1.jpg', title: 'E-commerce Website', student: 'Student Portfolio' },
-        { id: 8, image: '/images/img2/web/2.jpg', title: 'Corporate Website', student: 'Student Portfolio' },
-        { id: 9, image: '/images/img2/web/3.jpg', title: 'Portfolio Website', student: 'Student Portfolio' },
-        { id: 10, image: '/images/img2/web/4.jpg', title: 'Web Application', student: 'Student Portfolio' },
-        { id: 11, image: '/images/img2/web/5.jpg', title: 'Landing Page Design', student: 'Student Portfolio' },
-        { id: 12, image: '/images/img2/web/6.jpg', title: 'Responsive Design', student: 'Student Portfolio' }
+        { id: 7, image: '/images/img2/web/1.jpg', title: 'Industrial Services Website', student: 'Student Portfolio' },
+        { id: 8, image: '/images/img2/web/2.jpg', title: 'E-Commerce Website', student: 'Student Portfolio' },
+        { id: 9, image: '/images/img2/web/3.jpg', title: 'Real Estate Industry Website', student: 'Student Portfolio' },
+        { id: 10, image: '/images/img2/web/4.jpg', title: 'Real Estate Industry Website', student: 'Student Portfolio' },
+        { id: 11, image: '/images/img2/web/5.jpg', title: 'Healthcare Industry Website', student: 'Student Portfolio' },
+        { id: 12, image: '/images/img2/web/6.jpg', title: 'Automotive Industry Website', student: 'Student Portfolio' }
       ],
     }
   ];
+  
+  // Toggle expanded state for categories
+  const toggleCategory = (categoryId) => {
+    setExpandedCategories(prev => ({
+      ...prev,
+      [categoryId]: !prev[categoryId]
+    }));
+  };
+
+  // Open lightbox with image
+  const openLightbox = (image, categoryId) => {
+    const category = portfolioCategories.find(cat => cat.id === categoryId);
+    if (category && category.works) {
+      const allImages = [...category.works, ...(category.moreWorks || [])];
+      const imageIndex = allImages.findIndex(img => img.id === image.id);
+      
+      setCurrentCategoryImages(allImages);
+      setCurrentImageIndex(imageIndex);
+      setCurrentImage(image);
+      setImageLoaded(false);
+      setLightboxOpen(true);
+      document.body.style.overflow = 'hidden';
+    }
+  };
+
+  // Close lightbox
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+    setCurrentImage(null);
+    setImageLoaded(false);
+    document.body.style.overflow = 'unset';
+  };
+
+  // Navigate to next image
+  const nextImage = (e) => {
+    e?.stopPropagation();
+    setImageLoaded(false);
+    const nextIndex = (currentImageIndex + 1) % currentCategoryImages.length;
+    setCurrentImageIndex(nextIndex);
+    setCurrentImage(currentCategoryImages[nextIndex]);
+  };
+
+  // Navigate to previous image
+  const prevImage = (e) => {
+    e?.stopPropagation();
+    setImageLoaded(false);
+    const prevIndex = currentImageIndex === 0 ? currentCategoryImages.length - 1 : currentImageIndex - 1;
+    setCurrentImageIndex(prevIndex);
+    setCurrentImage(currentCategoryImages[prevIndex]);
+  };
+
+  // Keyboard navigation
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!lightboxOpen) return;
+      
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') nextImage();
+      if (e.key === 'ArrowLeft') prevImage();
+    };
+
+    if (lightboxOpen) {
+      window.addEventListener('keydown', handleKeyDown);
+      return () => window.removeEventListener('keydown', handleKeyDown);
+    }
+  }, [lightboxOpen, currentImageIndex]);
 
   const categories = ['All', 'Graphic & UI/UX', 'Web Design', '3D Animation', 'Motion Graphics'];
 
@@ -182,6 +249,7 @@ const CoursesPageContent = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.4, delay: index * 0.1 }}
                         whileHover={{ y: -8, scale: 1.02 }}
+                        onClick={() => openLightbox(work, category.id)}
                       >
                         <div
                           className={
@@ -196,9 +264,9 @@ const CoursesPageContent = () => {
                               <h4>{work.title}</h4>
                               <p>{work.student}</p>
                             </div>
-                            <button className={styles.viewBtn}>
-                              <FiEye />
-                            </button>
+                            <div className={styles.imageOverlay}>
+                              <FiEye className={styles.eyeIcon} />
+                            </div>
                           </div>
                         </div>
                       </motion.div>
@@ -213,6 +281,7 @@ const CoursesPageContent = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.4, delay: index * 0.1 }}
                         whileHover={{ y: -8, scale: 1.02 }}
+                        onClick={() => openLightbox(work, category.id)}
                       >
                         <div
                           className={
@@ -294,9 +363,108 @@ const CoursesPageContent = () => {
             </motion.div>
           )}
         </motion.section>
-
-        
       </div>
+
+      {/* Lightbox Modal */}
+      <AnimatePresence>
+        {lightboxOpen && currentImage && (
+          <motion.div
+            className={styles.lightboxOverlay}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            onClick={closeLightbox}
+          >
+            {/* Close Button */}
+            <motion.button
+              className={styles.lightboxClose}
+              onClick={closeLightbox}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ delay: 0.1 }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <FiX />
+            </motion.button>
+
+            {/* Previous Button */}
+            {currentCategoryImages.length > 1 && (
+              <motion.button
+                className={`${styles.lightboxNav} ${styles.lightboxPrev}`}
+                onClick={prevImage}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{ delay: 0.1 }}
+                whileHover={{ scale: 1.1, x: -5 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <FiChevronLeft />
+              </motion.button>
+            )}
+
+            {/* Next Button */}
+            {currentCategoryImages.length > 1 && (
+              <motion.button
+                className={`${styles.lightboxNav} ${styles.lightboxNext}`}
+                onClick={nextImage}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 20 }}
+                transition={{ delay: 0.1 }}
+                whileHover={{ scale: 1.1, x: 5 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <FiChevronRight />
+              </motion.button>
+            )}
+
+            {/* Image Container */}
+            <motion.div
+              className={styles.lightboxContent}
+              onClick={(e) => e.stopPropagation()}
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ duration: 0.3, ease: 'easeOut' }}
+            >
+              {!imageLoaded && (
+                <div className={styles.lightboxLoader}>
+                  <div className={styles.spinner}></div>
+                </div>
+              )}
+              
+              <motion.img
+                key={currentImage.id}
+                src={currentImage.image}
+                alt={currentImage.title}
+                className={styles.lightboxImage}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: imageLoaded ? 1 : 0 }}
+                transition={{ duration: 0.3 }}
+                onLoad={() => setImageLoaded(true)}
+              />
+
+              {/* Image Info */}
+              <motion.div
+                className={styles.lightboxInfo}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: imageLoaded ? 1 : 0, y: imageLoaded ? 0 : 20 }}
+                transition={{ delay: 0.2 }}
+              >
+                <h3>{currentImage.title}</h3>
+                <p>{currentImage.student}</p>
+                <span className={styles.imageCounter}>
+                  {currentImageIndex + 1} / {currentCategoryImages.length}
+                </span>
+              </motion.div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 };

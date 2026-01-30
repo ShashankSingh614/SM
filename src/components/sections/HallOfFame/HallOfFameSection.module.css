@@ -1,0 +1,246 @@
+.hallOfFameSection {
+  padding: 5rem 0;
+  background: #1a1a1a; /* Not too black - dark gray */
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.hallOfFameSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 59, 48, 0.05) 0%, rgba(255, 204, 0, 0.03) 100%);
+  z-index: 1;
+}
+
+.contentWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  padding: 0 1rem;
+}
+
+/* Text Content - Left Side */
+.textContent {
+  color: white;
+}
+
+.title {
+  font-size: 3rem; /* Matching testimonials section */
+  font-weight: 800;
+  color: white;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.titleUnderline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-yellow) 100%);
+  border-radius: var(--radius-full);
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-size: 1.3rem; /* Matching testimonials section description */
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.5rem;
+}
+
+.stats {
+  display: flex;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.statItem {
+  text-align: left;
+}
+
+.statItem h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-yellow) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.statItem p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+/* Image Content - Right Side */
+.imageContent {
+  position: relative;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  transition: transform var(--transition-base);
+}
+
+.imageWrapper:hover {
+  transform: translateY(-10px);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg, 
+    rgba(255, 59, 48, 0.15) 0%, 
+    rgba(255, 204, 0, 0.15) 100%
+  );
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  border-radius: var(--radius-xl);
+}
+
+/* Decorative Elements */
+.imageWrapper::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-yellow) 100%);
+  border-radius: var(--radius-xl);
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contentWrapper {
+    gap: 3rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+
+  .stats {
+    gap: 2rem;
+  }
+
+  .statItem h3 {
+    font-size: 2rem;
+  }
+
+  .statItem p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hallOfFameSection {
+    padding: 3rem 0;
+  }
+
+  .contentWrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .textContent {
+    text-align: center;
+  }
+
+  .titleUnderline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title {
+    font-size: 2.5rem; /* Matching mobile testimonials */
+  }
+
+  .description {
+    font-size: 1.1rem; /* Matching mobile testimonials */
+  }
+
+  .stats {
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .statItem {
+    text-align: center;
+  }
+
+  .statItem h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .stats {
+    gap: 1.5rem;
+  }
+
+  .statItem h3 {
+    font-size: 1.8rem;
+  }
+
+  .statItem p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Animation Effects */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.textContent,
+.imageContent {
+  animation: fadeInUp 0.8s ease-out;
+}
