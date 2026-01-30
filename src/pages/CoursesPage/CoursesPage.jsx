@@ -1,5 +1,5 @@
 // Students Work Page - Showcasing Student Portfolios
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   FiSearch, 
@@ -12,7 +12,6 @@ import {
 import styles from './CoursesPage.module.css';
 import { useSEO } from '../../hooks/useSEO';
 import { helmetConfig, structuredData } from '../../utils/helmet';
-import HallOfFameSection from '../../components/sections/HallOfFame/HallOfFameSection.jsx';
 
 const CoursesPageContent = () => {
   const [selectedCategory] = useState('All');
@@ -121,30 +120,34 @@ const CoursesPageContent = () => {
   };
 
   // Close lightbox
-  const closeLightbox = () => {
+  const closeLightbox = useCallback(() => {
     setLightboxOpen(false);
     setCurrentImage(null);
     setImageLoaded(false);
     document.body.style.overflow = 'unset';
-  };
+  }, []);
 
   // Navigate to next image
-  const nextImage = (e) => {
+  const nextImage = useCallback((e) => {
     e?.stopPropagation();
     setImageLoaded(false);
-    const nextIndex = (currentImageIndex + 1) % currentCategoryImages.length;
-    setCurrentImageIndex(nextIndex);
-    setCurrentImage(currentCategoryImages[nextIndex]);
-  };
+    setCurrentImageIndex((prevIndex) => {
+      const nextIndex = (prevIndex + 1) % currentCategoryImages.length;
+      setCurrentImage(currentCategoryImages[nextIndex]);
+      return nextIndex;
+    });
+  }, [currentCategoryImages]);
 
   // Navigate to previous image
-  const prevImage = (e) => {
+  const prevImage = useCallback((e) => {
     e?.stopPropagation();
     setImageLoaded(false);
-    const prevIndex = currentImageIndex === 0 ? currentCategoryImages.length - 1 : currentImageIndex - 1;
-    setCurrentImageIndex(prevIndex);
-    setCurrentImage(currentCategoryImages[prevIndex]);
-  };
+    setCurrentImageIndex((prevIndex) => {
+      const newIndex = prevIndex === 0 ? currentCategoryImages.length - 1 : prevIndex - 1;
+      setCurrentImage(currentCategoryImages[newIndex]);
+      return newIndex;
+    });
+  }, [currentCategoryImages]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -160,7 +163,7 @@ const CoursesPageContent = () => {
       window.addEventListener('keydown', handleKeyDown);
       return () => window.removeEventListener('keydown', handleKeyDown);
     }
-  }, [lightboxOpen, currentImageIndex]);
+  }, [lightboxOpen, closeLightbox, nextImage, prevImage]);
 
   const categories = ['All', 'Graphic & UI/UX', 'Web Design', '3D Animation', 'Motion Graphics'];
 

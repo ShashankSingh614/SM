@@ -1,5 +1,5 @@
 // Centers Gallery Component - Simple cards showing all centers
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './CentersGallery.module.css';
 import { 
@@ -52,30 +52,34 @@ const CentersGallery = () => {
   };
 
   // Close lightbox
-  const closeLightbox = () => {
+  const closeLightbox = useCallback(() => {
     setLightboxOpen(false);
     setCurrentImage(null);
     setImageLoaded(false);
     document.body.style.overflow = 'unset';
-  };
+  }, []);
 
   // Navigate to next image
-  const nextImage = (e) => {
+  const nextImage = useCallback((e) => {
     e?.stopPropagation();
     setImageLoaded(false);
-    const nextIndex = (currentImageIndex + 1) % centerImages.length;
-    setCurrentImageIndex(nextIndex);
-    setCurrentImage(centerImages[nextIndex]);
-  };
+    setCurrentImageIndex((prevIndex) => {
+      const nextIndex = (prevIndex + 1) % centerImages.length;
+      setCurrentImage(centerImages[nextIndex]);
+      return nextIndex;
+    });
+  }, [centerImages]);
 
   // Navigate to previous image
-  const prevImage = (e) => {
+  const prevImage = useCallback((e) => {
     e?.stopPropagation();
     setImageLoaded(false);
-    const prevIndex = currentImageIndex === 0 ? centerImages.length - 1 : currentImageIndex - 1;
-    setCurrentImageIndex(prevIndex);
-    setCurrentImage(centerImages[prevIndex]);
-  };
+    setCurrentImageIndex((prevIndex) => {
+      const newIndex = prevIndex === 0 ? centerImages.length - 1 : prevIndex - 1;
+      setCurrentImage(centerImages[newIndex]);
+      return newIndex;
+    });
+  }, [centerImages]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -91,7 +95,7 @@ const CentersGallery = () => {
       window.addEventListener('keydown', handleKeyDown);
       return () => window.removeEventListener('keydown', handleKeyDown);
     }
-  }, [lightboxOpen, currentImageIndex]);
+  }, [lightboxOpen, closeLightbox, nextImage, prevImage]);
 
   const containerVariants = {
     hidden: { opacity: 0 },

@@ -36,7 +36,7 @@ const HallOfFameSection = () => {
           >
             <div className={styles.imageWrapper}>
               <img 
-                src="/images/halloffame/rohit-gade.jpg"
+                src="/images/halloffame/rohit-gade.webp"
                 alt="Hall of Fame" 
                 className={styles.image}
               />
