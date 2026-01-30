@@ -93,7 +93,7 @@ const CentersGallery = () => {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [lightboxOpen, closeLightbox, nextImage, prevImage]);
+  },  [lightboxOpen, closeLightbox, nextImage, prevImage]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
