@@ -261,10 +261,6 @@ const CoursesPageContent = () => {
                         >
                           <img src={work.image} alt={work.title} loading="lazy" />
                           <div className={styles.workOverlay}>
-                            <div className={styles.workInfo}>
-                              <h4>{work.title}</h4>
-                              <p>{work.student}</p>
-                            </div>
                             <div className={styles.imageOverlay}>
                               <FiEye className={styles.eyeIcon} />
                             </div>
