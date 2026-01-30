@@ -1,5 +1,5 @@
 // Centers Gallery Component - Simple cards showing all centers
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './CentersGallery.module.css';
 import { 
@@ -15,7 +15,7 @@ const CentersGallery = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [imageLoaded, setImageLoaded] = useState(false);
 
-  const centerImages = [
+  const centerImages = useMemo(() => [
     { id: 1, src: '/images/institute/1.jpg', alt: 'Campus view' },
     { id: 2, src: '/images/institute/2.jpg', alt: 'Campus view' },
     { id: 3, src: '/images/institute/3.jpg', alt: 'Campus view' },
@@ -40,7 +40,7 @@ const CentersGallery = () => {
     { id: 22, src: '/images/institute/22.jpg', alt: 'Mulund Center' },
     { id: 23, src: '/images/institute/23.jpg', alt: 'Nalasopara Center' },
     { id: 24, src: '/images/institute/24.jpg', alt: 'Santacruz Center' }
-  ];
+  ], []);
 
   // Open lightbox with image
   const openLightbox = (image, index) => {
@@ -83,18 +83,16 @@ const CentersGallery = () => {
 
   // Keyboard navigation
   useEffect(() => {
+    if (!lightboxOpen) return;
+
     const handleKeyDown = (e) => {
-      if (!lightboxOpen) return;
-      
       if (e.key === 'Escape') closeLightbox();
       if (e.key === 'ArrowRight') nextImage();
       if (e.key === 'ArrowLeft') prevImage();
     };
 
-    if (lightboxOpen) {
-      window.addEventListener('keydown', handleKeyDown);
-      return () => window.removeEventListener('keydown', handleKeyDown);
-    }
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, [lightboxOpen, closeLightbox, nextImage, prevImage]);
 
   const containerVariants = {
@@ -137,6 +135,7 @@ const CentersGallery = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
+            loading="lazy"
           />
         </motion.div>
 

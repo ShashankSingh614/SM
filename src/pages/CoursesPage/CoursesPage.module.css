@@ -4,6 +4,36 @@
   padding-top: 80px;
 }
 
+/* Image Overlay with Eye Icon */
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.centerCard:hover .imageOverlay {
+  opacity: 1;
+}
+
+.eyeIcon {
+  font-size: 3rem;
+  color: white;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+
+.centerCard:hover .eyeIcon {
+  transform: scale(1);
+}
+
 .pageHeader {
   text-align: center;
   margin-bottom: 4rem;
@@ -736,6 +766,10 @@
     width: 40px;
     height: 40px;
     font-size: 1.2rem;
+  }
+
+  .eyeIcon {
+    font-size: 2.5rem;
   }
 }
 

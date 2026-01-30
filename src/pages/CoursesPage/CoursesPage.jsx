@@ -1,5 +1,5 @@
 // Students Work Page - Showcasing Student Portfolios
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   FiSearch, 
@@ -24,7 +24,7 @@ const CoursesPageContent = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   // Student Work Categories with actual portfolio data
-  const portfolioCategories = [
+  const portfolioCategories = useMemo(() => [
     {
       id: 'graphic',
       title: 'Graphic & UI/UX Designing',
@@ -93,7 +93,7 @@ const CoursesPageContent = () => {
         { id: 12, image: '/images/img2/web/6.jpg', title: 'Automotive Industry Website', student: 'Student Portfolio' }
       ],
     }
-  ];
+  ], []);
   
   // Toggle expanded state for categories
   const toggleCategory = (categoryId) => {
@@ -151,18 +151,16 @@ const CoursesPageContent = () => {
 
   // Keyboard navigation
   useEffect(() => {
+    if (!lightboxOpen) return;
+
     const handleKeyDown = (e) => {
-      if (!lightboxOpen) return;
-      
       if (e.key === 'Escape') closeLightbox();
       if (e.key === 'ArrowRight') nextImage();
       if (e.key === 'ArrowLeft') prevImage();
     };
 
-    if (lightboxOpen) {
-      window.addEventListener('keydown', handleKeyDown);
-      return () => window.removeEventListener('keydown', handleKeyDown);
-    }
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, [lightboxOpen, closeLightbox, nextImage, prevImage]);
 
   const categories = ['All', 'Graphic & UI/UX', 'Web Design', '3D Animation', 'Motion Graphics'];
@@ -261,7 +259,7 @@ const CoursesPageContent = () => {
                               : styles.workImage
                           }
                         >
-                          <img src={work.image} alt={work.title} />
+                          <img src={work.image} alt={work.title} loading="lazy" />
                           <div className={styles.workOverlay}>
                             <div className={styles.workInfo}>
                               <h4>{work.title}</h4>
@@ -293,15 +291,15 @@ const CoursesPageContent = () => {
                               : styles.workImage
                           }
                         >
-                          <img src={work.image} alt={work.title} />
+                          <img src={work.image} alt={work.title} loading="lazy" />
                           <div className={styles.workOverlay}>
                             <div className={styles.workInfo}>
                               <h4>{work.title}</h4>
                               <p>{work.student}</p>
                             </div>
-                            <button className={styles.viewBtn}>
-                              <FiEye />
-                            </button>
+                            <div className={styles.imageOverlay}>
+                              <FiEye className={styles.eyeIcon} />
+                            </div>
                           </div>
                         </div>
                       </motion.div>
@@ -449,6 +447,7 @@ const CoursesPageContent = () => {
                 animate={{ opacity: imageLoaded ? 1 : 0 }}
                 transition={{ duration: 0.3 }}
                 onLoad={() => setImageLoaded(true)}
+                loading="lazy"
               />
 
               {/* Image Info */}
