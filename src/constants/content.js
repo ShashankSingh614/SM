@@ -3,7 +3,7 @@
 
 export const COMPANY_INFO = {
   name: 'Shankar Multimedia',
-  tagline: 'Best Graphic Designing 100% Job Guarantee in Mumbai',
+  tagline: 'oin Shankar Multimedia, leading & top rated animation institute in Mumbai for graphic design, UI/UX, motion graphic design, video editing, vfx, 3D animation, digital marketing & multimedia animation courses with 100% job assistance & placements. Expert hands-on training in Goregaon, Malad, Santacruz, Mulund, Nalasopara & Ghatkopar. Enroll now!',
   founded: 'Early 1990s',
   experience: '36+ years',
   certification: 'ISO 9001:2015-certified',
