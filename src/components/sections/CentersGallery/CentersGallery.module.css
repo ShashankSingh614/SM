@@ -394,3 +394,178 @@
     font-size: 2.5rem;
   }
 }
+
+/* Institute Centers Section */
+.instituteCentersSection {
+  padding: 4rem 0;
+  background: var(--white);
+}
+
+.locationsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.locationCard {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all var(--transition-base);
+  border: 1px solid var(--gray-200);
+  display: flex;
+  flex-direction: column;
+}
+
+.locationCard:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary-red);
+}
+
+.locationHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.locationIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-yellow) 100%);
+  border-radius: var(--radius-md);
+  color: white;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.locationHeader h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.locationAddress {
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.locationAddress p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  white-space: pre-line;
+  margin: 0;
+}
+
+.locationManager {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.locationManager strong {
+  font-size: 0.95rem;
+  color: var(--primary-red);
+}
+
+.locationContact {
+  margin-bottom: 1.5rem;
+}
+
+.locationPhone {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  transition: color var(--transition-base);
+}
+
+.locationPhone:hover {
+  color: var(--primary-red);
+}
+
+.locationPhone svg {
+  color: var(--primary-red);
+  font-size: 1.2rem;
+}
+
+.locationActions {
+  display: flex;
+  gap: 1rem;
+}
+
+.directionsBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-yellow) 100%);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.directionsBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(231, 54, 46, 0.3);
+}
+
+.directionsBtn:active {
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .locationsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .locationCard {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .locationsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .instituteCentersSection {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .locationsGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .locationCard {
+    padding: 1.25rem;
+  }
+
+  .locationHeader h3 {
+    font-size: 1.25rem;
+  }
+
+  .locationAddress p {
+    font-size: 0.85rem;
+  }
+}

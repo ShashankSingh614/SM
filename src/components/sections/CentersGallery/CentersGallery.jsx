@@ -6,8 +6,12 @@ import {
   FiEye,
   FiX, 
   FiChevronLeft, 
-  FiChevronRight 
+  FiChevronRight,
+  FiPhone,
+  FiMapPin,
+  FiExternalLink
 } from 'react-icons/fi';
+import { locations } from '../../../data/locations';
 
 const CentersGallery = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -128,9 +132,8 @@ const CentersGallery = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2>Our Centers</h2>
+          <h2>CAMPUS VIEW</h2>
           <motion.img
-            src="/images/mumbai.png"
             className={styles.headerImage}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -269,6 +272,83 @@ const CentersGallery = () => {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Institute Centers Section */}
+      <div className={styles.instituteCentersSection}>
+        <div className="container">
+          <motion.div 
+            className={styles.sectionHeader}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2>INSTITUTE CENTERS</h2>
+            <motion.img
+              src="/images/mumbai.png"
+              className={styles.headerImage}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+              loading="lazy"
+            />
+          </motion.div>
+
+          <motion.div 
+            className={styles.locationsGrid}
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            {locations.map((location, index) => (
+              <motion.div 
+                key={location.id} 
+                className={styles.locationCard}
+                variants={itemVariants}
+                whileHover={{ y: -8, boxShadow: '0 12px 30px rgba(0, 0, 0, 0.15)' }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className={styles.locationHeader}>
+                  <div className={styles.locationIcon}>
+                    <FiMapPin />
+                  </div>
+                  <h3>{location.name}</h3>
+                </div>
+                
+                <div className={styles.locationAddress}>
+                  <p>{location.address}</p>
+                </div>
+                
+                {location.contactPerson && (
+                  <div className={styles.locationManager}>
+                    <strong>{location.contactPerson}</strong>
+                  </div>
+                )}
+                
+                <div className={styles.locationContact}>
+                  <a href={`tel:${location.phone}`} className={styles.locationPhone}>
+                    <FiPhone />
+                    <span>{location.phone}</span>
+                  </a>
+                </div>
+                
+                <div className={styles.locationActions}>
+                  <a 
+                    href={location.googleMapsLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className={styles.directionsBtn}
+                  >
+                    <FiExternalLink />
+                    <span>Get Directions</span>
+                  </a>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </div>
     </section>
   );
 };

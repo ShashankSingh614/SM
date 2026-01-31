@@ -53,7 +53,7 @@ const Footer = ({ logoSrc, logoAlt, socialLinks }) => {
             </ul>
           </div>
 
-          {/* Social Media Section */}
+          {/* GET IN TOUCH */}
           <div className="col-md-2 mt-5">
             <ul>
               <li>

@@ -32,8 +32,7 @@ const Footer = () => {
                 </div>
               </div>
               <p className={styles.footerDescription}>
-                With over 36 years of Excellence, Shankar Multimedia is Mumbai's leading 
-                ISO 9001:2015 certified institute for IT and multimedia animation training.
+                With over 36 years of excellence, Shankar Multimedia is Mumbai’s leading and top-rated, government-recognized animation institute, offering courses in Graphic Design, UI/UX, Motion Graphic Design, Video Editing, VFX, 3D Animation, Digital Marketing, and Multimedia Animation. We are an ISO 9001:2015 certified institute for IT and multimedia animation training.
               </p>
               <div className={styles.socialLinks}>
                 <a href={SOCIAL_LINKS.facebook} className={styles.socialLink} aria-label="Facebook" target="_blank" rel="noopener noreferrer">
@@ -69,7 +68,7 @@ const Footer = () => {
 
             {/* Contact Info */}
             <div className={styles.footerColumn}>
-              <h3 className={styles.footerTitle}>GET IN TOUCH</h3>
+              <h3 className={styles.footerTitle}>Get in Touch</h3>
               <div className={styles.contactInfo}>
                 <div className={styles.contactItem}>
                   <FiMail />
@@ -79,6 +78,17 @@ const Footer = () => {
                   <FiClock />
                   <span>Monday To Saturday 8am To 9pm | Sunday 9am To 2pm</span>
                 </div>
+              </div>
+              <br></br>
+              <h3 className={styles.footerTitle}>Institute Centers</h3>
+              <div className={styles.contactInfo}>
+                <ul className={styles.footerLinks}>
+                  <li><a href="https://maps.google.com/?q=Shankar+Multimedia+Goregaon+Mumbai" target="_blank" rel="noopener noreferrer">Goregaon</a></li>
+                  <li><a href="https://maps.google.com/?q=Shankar+Multimedia+Malad+Mumbai" target="_blank" rel="noopener noreferrer">Malad</a></li>
+                  <li><a href="https://maps.google.com/?q=Shankar+Multimedia+Santacruz+Mumbai" target="_blank" rel="noopener noreferrer">Santacruz</a></li>
+                  <li><a href="https://maps.google.com/?q=Shankar+Multimedia+Mulund+Mumbai" target="_blank" rel="noopener noreferrer">Mulund</a></li>
+                  <li><a href="https://maps.google.com/?q=Shankar+Multimedia+Nalasopara+Mumbai" target="_blank" rel="noopener noreferrer">Nalasopara</a></li>
+                </ul>
               </div>
             </div>
           </div>
