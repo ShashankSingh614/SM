@@ -59,12 +59,12 @@ const CoursesPageContent = () => {
         { id: 18, image: '/images/img2/3d/6.jpg', title: 'Building Architecture Design', student: 'Student Portfolio' }
       ],
       moreWorks: [
-        { id: 113, image: '/images/img2/3d/7.jpg', title: 'Residential Bungalow Design', student: 'Student Portfolio' },
-        { id: 114, image: '/images/img2/3d/8.jpg', title: 'Corporate Reception Design', student: 'Student Portfolio' },
-        { id: 115, image: '/images/img2/3d/9.jpg', title: 'Commercial Parking Design', student: 'Student Portfolio' },
-        { id: 116, image: '/images/img2/3d/10.jpg', title: 'Bedroom Interior Design', student: 'Student Portfolio' },
-        { id: 117, image: '/images/img2/3d/11.jpg', title: 'Living Room Interior Design', student: 'Student Portfolio' },
-        { id: 118, image: '/images/img2/3d/12.jpg', title: 'Modular Kitchen Interior Design', student: 'Student Portfolio' }
+        { id: 107, image: '/images/img2/3d/7.jpg', title: 'Residential Bungalow Design', student: 'Student Portfolio' },
+        { id: 108, image: '/images/img2/3d/8.jpg', title: 'Corporate Reception Design', student: 'Student Portfolio' },
+        { id: 109, image: '/images/img2/3d/9.jpg', title: 'Commercial Parking Design', student: 'Student Portfolio' },
+        { id: 110, image: '/images/img2/3d/10.jpg', title: 'Bedroom Interior Design', student: 'Student Portfolio' },
+        { id: 111, image: '/images/img2/3d/11.jpg', title: 'Living Room Interior Design', student: 'Student Portfolio' },
+        { id: 112, image: '/images/img2/3d/12.jpg', title: 'Modular Kitchen Interior Design', student: 'Student Portfolio' }
       ]
     },
     {
@@ -72,12 +72,20 @@ const CoursesPageContent = () => {
       title: 'Motion Graphics, Video Editing & VFX',
       description: 'Showcasing engaging animations, video projects, and visual effects created by our talented students',
       videos: [
-        { id: 19, videoId: 'C1uzUPeUQx4', student: 'Student Portfolio' },
-        { id: 20, videoId: 'ohlXoVDXQCg', student: 'Student Portfolio' },
-        { id: 21, videoId: 'Dazby5AsOGU', student: 'Student Portfolio' },
-        { id: 22, videoId: '1qd2K5WU9vQ', student: 'Student Portfolio' },
-        { id: 23, videoId: 'VdScuMrT5h0', student: 'Student Portfolio' },
-        { id: 24, videoId: 'S19qSluZnNc', student: 'Student Portfolio'}
+        { id: 19, videoId: '68JZqQIursM', student: 'Student Portfolio' },
+        { id: 20, videoId: 'WiQ8_1MafPk', student: 'Student Portfolio' },
+        { id: 21, videoId: 'qb53NKJEOY8', student: 'Student Portfolio' },
+        { id: 22, videoId: '8r-DeWA6sis', student: 'Student Portfolio' },
+        { id: 23, videoId: '1gI4DriWEgg', student: 'Student Portfolio' },
+        { id: 24, videoId: 'NF7YdTuNjDc', student: 'Student Portfolio' }
+      ],
+      moreWorks: [
+        { id: 113, videoId: 'C1uzUPeUQx4', student: 'Student Portfolio' },
+        { id: 114, videoId: 'ohlXoVDXQCg', student: 'Student Portfolio' },
+        { id: 115, videoId: 'Dazby5AsOGU', student: 'Student Portfolio' },
+        { id: 116, videoId: '1qd2K5WU9vQ', student: 'Student Portfolio' },
+        { id: 117, videoId: 'GQexNiswwKo', student: 'Student Portfolio' },
+        { id: 118, videoId: 'S19qSluZnNc', student: 'Student Portfolio' }
       ]
     },
     {
@@ -320,6 +328,29 @@ const CoursesPageContent = () => {
                             height="315"
                             src={`https://www.youtube.com/embed/${video.videoId}`}
                             title={video.title}
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          ></iframe>
+                        </div>
+                      </motion.div>
+                    ))}
+
+                    {/* Additional video works when expanded */}
+                    {expandedCategories[category.id] && category.moreWorks && category.moreWorks.map((video, idx) => (
+                      <motion.div
+                        key={video.id}
+                        className={styles.videoCard}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.4, delay: (category.videos?.length || 0) * 0.1 + idx * 0.1 }}
+                      >
+                        <div className={styles.videoWrapper}>
+                          <iframe
+                            width="100%"
+                            height="315"
+                            src={`https://www.youtube.com/embed/${video.videoId}`}
+                            title={video.title || 'Student Work'}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
