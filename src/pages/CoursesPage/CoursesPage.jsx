@@ -217,8 +217,8 @@ const CoursesPageContent = () => {
     >
       <div className="container">
         <div className={styles.pageHeader}>
-          <h1>Students Work</h1>
-          <p>Explore the creative portfolios and projects created by our talented students across various multimedia disciplines</p>
+          <h1>Student Portfolio</h1>
+          <p className={styles.pageDescription}>Comprehensive exploration of exceptional creative portfolios and professionally executed projects demonstrating the sophisticated design, animation, and technical capabilities developed by our accomplished students across diverse multimedia specializations and creative disciplines</p>
         </div>
         
         {/* Portfolio Categories */}

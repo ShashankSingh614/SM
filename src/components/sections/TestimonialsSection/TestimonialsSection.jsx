@@ -37,6 +37,15 @@ const TestimonialsSection = () => {
     },
     {
       id: 4,
+      name: 'Omkaresh S. Sawant',
+      role: 'Motion Graphics Designer & Video Editor',
+      location: 'Worli',
+      videoUrl: 'https://www.youtube.com/embed/NpUiGactzms',
+      image: '/images/place/omkaresh-sawant.jpeg',
+      rating: 5
+    },
+    {
+      id: 5,
       name: 'Amit Gaikwad',
       role: 'VFX Artist',
       location: 'Goregaon East',
@@ -45,7 +54,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 5,
+      id: 6,
       name: 'Sanjivani More',
       role: 'Web Designer',
       location: 'Goregaon',
@@ -54,7 +63,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 6,
+      id: 7,
       name: 'Priti Toraskar',
       role: '3D Interior Designer',
       location: 'Mumbai',
@@ -63,7 +72,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 7,
+      id: 8,
       name: 'Abhit Gharat',
       role: 'Web Designer',
       location: 'Umroli',
@@ -72,7 +81,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 8,
+      id: 9,
       name: 'Amruta Shivalkar',
       role: 'Graphic Designer',
       location: 'Alibaug',
@@ -81,7 +90,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 9,
+      id: 11,
       name: 'Shrutika Dudhare',
       role: 'Graphic Designer',
       location: 'Vile Parle',
@@ -90,7 +99,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 10,
+      id: 12,
       name: 'Mahesh Rajak',
       role: 'VFX Artist',
       location: 'Jogeshwari',
@@ -99,7 +108,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 11,
+      id: 13,
       name: 'Prashant Salkar',
       role: 'Web Designer',
       location: 'Naigaon',
@@ -108,7 +117,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 12,
+      id: 14,
       name: 'Saish Gokarankar',
       role: '3D Designer',
       location: 'Dombivali',
@@ -117,7 +126,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 13,
+      id: 15,
       name: 'Prasad Ghevade',
       role: 'Senior Designer',
       location: 'Mumbai',
@@ -126,7 +135,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 14,
+      id: 16,
       name: 'Ajit Gupta',
       role: 'Web Designer',
       location: 'Nalasopara',
@@ -135,7 +144,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 15,
+      id: 17,
       name: 'Avinash Gawade',
       role: 'Graphic Designer',
       location: 'Kandivali',
@@ -144,7 +153,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 16,
+      id: 18,
       name: 'Zakir Shaikh',
       role: 'Web Designer',
       location: 'Malad',
@@ -153,7 +162,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 17,
+      id: 19,
       name: 'Akshay Sawant',
       role: '3D Designer',
       location: 'Jogeshwari',
@@ -162,7 +171,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 18,
+      id: 20,
       name: 'Viraj Raut',
       role: 'Web Designer',
       location: 'Alibaug',
@@ -171,7 +180,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 19,
+      id: 21,
       name: 'Sandesh Salekar',
       role: 'Graphic Designer',
       location: 'Mulund',
@@ -180,7 +189,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 20,
+      id: 22,
       name: 'Pankaj Sawant',
       role: '3D Designer',
       location: 'Parel',
@@ -189,7 +198,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 21,
+      id: 23,
       name: 'Pravin Sakpal',
       role: 'Web Designer',
       location: 'Kurla',
@@ -198,7 +207,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 22,
+      id: 24,
       name: 'Sachin Mistry',
       role: 'Graphic Designer',
       location: 'Kurla',
@@ -207,7 +216,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 23,
+      id: 25,
       name: 'Ankita Tulaskar',
       role: '3D Designer',
       location: 'Santacruz',
@@ -216,7 +225,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 24,
+      id: 26,
       name: 'Swapnali Sawant',
       role: 'Graphic Designer',
       location: 'Andheri',
@@ -225,7 +234,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 25,
+      id: 27,
       name: 'Dinesh Kadam',
       role: '3D Designer',
       location: 'Goregaon East',
@@ -234,7 +243,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 26,
+      id: 28,
       name: 'Manoj Katalkar',
       role: 'VFX Artist',
       location: 'Vile Parle',
@@ -243,7 +252,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 27,
+      id: 29,
       name: 'Kalpesh Khandagale',
       role: 'Web Designer',
       location: 'Jogeshwari',
@@ -252,7 +261,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 28,
+      id: 30,
       name: 'Nutan Chikhale',
       role: 'Graphic Designer',
       location: 'Borivali',
@@ -261,7 +270,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 29,
+      id: 31,
       name: 'Bharat Bhadwalkar',
       role: '3D Designer',
       location: 'Santacruz',
@@ -270,7 +279,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 30,
+      id: 32,
       name: 'Sumit Gawade',
       role: 'Frontend Developer',
       location: 'Andheri (W)',
@@ -279,7 +288,7 @@ const TestimonialsSection = () => {
       rating: 5
     },
     {
-      id: 31,
+      id: 33,
       name: 'Sandesh More',
       role: 'Video Editor & Graphics Designer',
       location: 'Goregaon',
@@ -314,8 +323,8 @@ const TestimonialsSection = () => {
       <div className="container">
         {/* Section Header */}
         <div className={styles.sectionHeader}>
-          <h2>Student Testimonials</h2>
-          <p>Hear from our successful students who have transformed their careers with us</p>
+          <h2>Student Testimonials & Career Success Stories</h2>
+          <p className={styles.headerSubtitle}>Distinctive accounts from our accomplished alumni whose professional trajectories have been substantially transformed through comprehensive training and dedicated placement support mechanisms offered by Shankar Multimedia</p>
         </div>
 
         {/* Testimonial Slider */}

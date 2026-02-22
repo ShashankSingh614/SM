@@ -50,6 +50,7 @@ const PartnersSection = () => {
           viewport={{ once: true }}
         >
           <h2>Career Destinations</h2>
+          <p className={styles.headerDescription}>Our graduates have been successfully recruited by leading multinational corporations, creative studios, technology companies, and digital agencies. These prestigious industry partners consistently recognize the caliber of talent and competency cultivated through our comprehensive training methodologies</p>
         </motion.div>
 
         <motion.div 

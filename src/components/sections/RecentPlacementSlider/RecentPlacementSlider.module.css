@@ -50,6 +50,15 @@
   border-radius: var(--radius-full);
 }
 
+.sectionDescription {
+  font-size: 1.05rem;
+  color: #666;
+  max-width: 900px;
+  margin: 1rem auto 0;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
 .sectionHeader p {
   font-size: 1.1rem;
   color: var(--text-secondary);

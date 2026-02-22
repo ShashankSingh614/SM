@@ -1,0 +1,577 @@
+/* Course Landing Page Styles - Red, Orange, Yellow Theme with Black Text */
+
+:root {
+  --primary-red: #E53935;
+  --primary-orange: #FB8500;
+  --primary-yellow: #FFC107;
+  --dark-red: #C62828;
+  --text-black: #000000;
+  --text-dark-gray: #1a1a1a;
+  --bg-light: #f9f9f9;
+  --border-color: #e0e0e0;
+}
+
+.coursePageContainer {
+  width: 100%;
+  background-color: white;
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
+
+/* Hero Section */
+.heroSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, rgba(229, 57, 53, 0.05) 0%, rgba(251, 133, 0, 0.05) 100%);
+}
+
+.mainHeading {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text-black);
+  margin-bottom: 25px;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+  text-transform: capitalize;
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+}
+
+.introText {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-dark-gray);
+  margin: 0;
+  max-width: 900px;
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+}
+
+/* Portfolio Section */
+.portfolioSection {
+  max-width: 1200px;
+  margin: 60px auto 0;
+  padding: 0 20px;
+}
+
+.sectionHeading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-black);
+  margin-bottom: 12px;
+  position: relative;
+  padding-bottom: 15px;
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+}
+
+.sectionHeading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-red) 0%, var(--primary-orange) 50%, var(--primary-yellow) 100%);
+  border-radius: 2px;
+}
+
+.sectionDesc {
+  font-size: 15px;
+  color: var(--text-dark-gray);
+  margin-bottom: 25px;
+  line-height: 1.6;
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+}
+
+.portfolioList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolioList li {
+  padding: 15px 0;
+  padding-left: 30px;
+  position: relative;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-dark-gray);
+  border-bottom: 1px solid var(--border-color);
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+}
+
+.portfolioList li:last-child {
+  border-bottom: none;
+}
+
+.portfolioList li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--primary-red);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.portfolioList strong {
+  color: var(--text-black);
+  font-weight: 700;
+}
+
+/* CTA Section */
+.ctaSection {
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-orange) 50%, var(--primary-yellow) 100%);
+  padding: 50px 40px;
+  margin: 60px 0;
+  text-align: center;
+}
+
+.ctaText {
+  color: white;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+}
+
+.ctaText strong {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Course Details Section */
+.courseDetailsSection {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.courseInfo {
+  background: white;
+}
+
+.courseHeader {
+  margin-bottom: 35px;
+  padding: 25px 0;
+  border-bottom: 3px solid var(--primary-yellow);
+}
+
+.courseHeader h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-black);
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.courseMeta {
+  display: flex;
+  gap: 30px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.duration {
+  font-size: 16px;
+  color: var(--text-dark-gray);
+  font-weight: 600;
+}
+
+.duration strong {
+  color: var(--primary-red);
+}
+
+/* Software Tools Section */
+.softwaresContainer {
+  margin-bottom: 40px;
+}
+
+.softwaresContainer h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-black);
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.softwaresList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.softwareBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-light);
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-black);
+  border: 2px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.softwareBadge:hover {
+  background: var(--primary-yellow);
+  border-color: var(--primary-yellow);
+  color: var(--text-black);
+}
+
+.softwareBadge svg {
+  font-size: 16px;
+  color: var(--primary-red);
+}
+
+/* Curriculum Accordion */
+.curriculumAccordion {
+  margin-top: 40px;
+}
+
+.curriculumAccordion h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-black);
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.courseItem {
+  margin-bottom: 12px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.courseItem:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.courseButton {
+  width: 100%;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-orange) 100%);
+  color: white;
+  border: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.courseButton:hover {
+  background: linear-gradient(135deg, var(--dark-red) 0%, #e67e00 100%);
+  padding-left: 24px;
+}
+
+.courseTitle {
+  flex: 1;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+}
+
+.courseIcon {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  margin-left: 15px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.courseButton:hover .courseIcon {
+  transform: scale(1.1);
+}
+
+/* Course Content (Expanded) */
+.courseContent {
+  background: var(--bg-light);
+  padding: 25px 20px;
+}
+
+.skillsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skillsList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-dark-gray);
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+}
+
+.checkIcon {
+  color: var(--primary-red);
+  font-size: 1.2rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+/* Testimonials Section */
+.testimonialsSection {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.testimonialCard {
+  background: white;
+  padding: 25px;
+  border-left: 5px solid var(--primary-red);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.testimonialCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.testimonialQuote {
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-dark-gray);
+  margin: 0 0 15px 0;
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+}
+
+.testimonialAuthor {
+  font-size: 14px;
+  color: var(--text-black);
+  margin: 0;
+  font-weight: 600;
+}
+
+.testimonialAuthor strong {
+  color: var(--primary-red);
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Placements Section */
+.placementsSection {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.placementsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.placementItem {
+  background: white;
+  border-top: 4px solid var(--primary-orange);
+  padding: 25px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.placementItem:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.placementItem h4 {
+  font-size: 1.05rem;
+  color: var(--text-black);
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.placementItem p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-dark-gray);
+  margin: 0;
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+}
+
+/* Final CTA Section */
+.finalCtaSection {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, rgba(229, 57, 53, 0.1) 0%, rgba(251, 133, 0, 0.1) 100%);
+  border-left: 6px solid var(--primary-red);
+  border-radius: 4px;
+}
+
+.finalCtaSection h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-black);
+  margin: 0 0 15px 0;
+  text-transform: capitalize;
+}
+
+.finalCtaSection p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-dark-gray);
+  margin: 0;
+}
+
+.notFound {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 18px;
+  color: var(--text-black);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mainHeading {
+    font-size: 1.8rem;
+  }
+
+  .sectionHeading {
+    font-size: 1.4rem;
+  }
+
+  .heroSection {
+    padding: 40px 15px;
+  }
+
+  .portfolioList li {
+    padding-left: 25px;
+    font-size: 14px;
+  }
+
+  .ctaSection {
+    padding: 30px 20px;
+  }
+
+  .ctaText {
+    font-size: 15px;
+  }
+
+  .courseHeader h3 {
+    font-size: 1.2rem;
+  }
+
+  .softwaresList {
+    gap: 8px;
+  }
+
+  .softwareBadge {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .courseButton {
+    padding: 14px 15px;
+    font-size: 0.95rem;
+  }
+
+  .skillsList li {
+    font-size: 14px;
+  }
+
+  .testimonialsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .placementsList {
+    grid-template-columns: 1fr;
+  }
+
+  .finalCtaSection {
+    padding: 25px 20px;
+    margin: 40px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainHeading {
+    font-size: 1.5rem;
+  }
+
+  .sectionHeading {
+    font-size: 1.2rem;
+  }
+
+  .introText {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .courseHeader {
+    padding: 15px 0;
+  }
+
+  .courseButton {
+    padding: 12px 10px;
+    font-size: 0.9rem;
+  }
+
+  .courseTitle {
+    font-size: 0.9rem;
+  }
+
+  .skillsList li {
+    font-size: 13px;
+  }
+}

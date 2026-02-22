@@ -52,7 +52,13 @@
   margin: 0 auto 3rem;
   line-height: 1.6;
 }
-
+.headerDescription {
+  font-size: 1.05rem !important;
+  color: #666 !important;
+  max-width: 950px !important;
+  line-height: 1.7 !important;
+  font-weight: 500 !important;
+}
 /* Stats Bar */
 .statsBar {
   display: flex;

@@ -1181,7 +1181,10 @@ const CoursesAccordion = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h1>DIPLOMA COURSES</h1>
+          <h2>Diploma Courses in Multimedia, Animation & Digital Design</h2>
+          <p className={styles.sectionDescription}>
+            Discover our extensive range of industry-recognized diploma courses meticulously designed to equip aspiring professionals with advanced knowledge and practical expertise. Each program is structured to encompass cutting-edge technologies, real-world applications, and hands-on training methodologies that have been proven to enhance student competency and career readiness across multiple sectors of the creative and digital industries.
+          </p>
         </motion.div>
 
         <div className={styles.accordionContainer}>

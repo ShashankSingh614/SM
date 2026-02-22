@@ -53,6 +53,14 @@ const HeroSection = () => {
       <div className="container">
         <div className={styles.heroContent}>
 
+          {/* Main H1 Heading with Keywords */}
+          <motion.div
+            className={styles.heroHeading}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+          >
+          </motion.div>
 
           {/* Carousel Section */}
           <motion.div 

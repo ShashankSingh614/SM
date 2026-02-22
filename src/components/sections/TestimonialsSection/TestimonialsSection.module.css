@@ -70,6 +70,14 @@
   line-height: 1.6;
 }
 
+.headerSubtitle {
+  font-size: 1.05rem !important;
+  color: #555 !important;
+  max-width: 850px !important;
+  line-height: 1.7 !important;
+  font-weight: 500 !important;
+}
+
 /* Testimonial Container */
 .testimonialContainer {
   max-width: 900px;

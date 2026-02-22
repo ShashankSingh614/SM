@@ -10,12 +10,22 @@
   margin-bottom: 3rem;
 }
 
-.sectionHeader h1 {
+.sectionHeader h2 {
   font-size: 2.5rem;
   font-weight: 700;
   color: white;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
+  text-transform: capitalize;
+  margin-bottom: 1.2rem;
+  line-height: 1.4;
+}
+
+.headerDescription {
+  font-size: 1.05rem;
+  color: #d0d0d0;
+  max-width: 1000px;
+  line-height: 1.7;
+  margin: 0;
+  font-weight: 500;
 }
 
 .featuresContainer {

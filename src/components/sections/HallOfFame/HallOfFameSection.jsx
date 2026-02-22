@@ -14,14 +14,11 @@ const HallOfFameSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className={styles.title}>Hall of Fame</h2>
+            <h2 className={styles.title}>Distinguished Alumni Hall of Fame</h2>
             <div className={styles.titleUnderline}></div>
             
             <p className={styles.description}>
-              Celebrating our exceptional students who have excelled in their fields 
-              and made remarkable contributions to the creative industry. Their dedication, 
-              talent, and hard work serve as an inspiration to aspiring designers and 
-              developers worldwide.
+              We proudly recognize and honor our exceptionally talented alumni who have been acknowledged for extraordinary accomplishments and significant contributions within the creative, multimedia, and technology sectors. These distinguished individuals have been acknowledged as industry leaders whose dedication, innovative thinking, and professional excellence continue to establish exemplary standards throughout the digital design and animation industries globally.
             </p>
 
           </motion.div>

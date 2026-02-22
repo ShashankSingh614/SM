@@ -133,6 +133,7 @@ const CentersGallery = () => {
           viewport={{ once: true }}
         >
           <h2>CAMPUS VIEW</h2>
+          <p className={styles.headerDescription}>Explore our architecturally designed, state-of-the-art training facilities strategically located across Mumbai's prominent business districts. Each center has been meticulously equipped with comprehensive technical infrastructure, collaborative learning spaces, and professional infrastructure supporting comprehensive multimedia education excellence</p>
           <motion.img
             className={styles.headerImage}
             initial={{ opacity: 0, y: 10 }}

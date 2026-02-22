@@ -39,8 +39,8 @@ const RecentPlacementSlider = () => {
       <div className={classes.container}>
         {/* Header - Inside background section */}
         <div className={classes.sectionHeader}>
-          <h2>Recent Placements</h2>
-          <p>Our students are making their mark across top companies worldwide</p>
+          <h2>Recent Placements & Career Success</h2>
+          <p className={classes.sectionDescription}>Our comprehensively trained students are establishing successful careers across leading multinational companies, creative studios, and technology enterprises worldwide, demonstrating the caliber of professional expertise cultivated through our rigorous educational programs</p>
         </div>
 
         {/* Slider */}

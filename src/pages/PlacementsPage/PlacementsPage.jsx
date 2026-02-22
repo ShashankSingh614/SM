@@ -114,11 +114,6 @@ const PlacementsPageContent = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="container">
-        <div className={styles.pageHeader}>
-          <h1>Placements</h1>
-          <p>Discover the success stories of our students who have secured excellent positions in leading companies worldwide</p>
-        </div>
-
         <RecentPlacementSlider />
         
         <TestimonialsSection />

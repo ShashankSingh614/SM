@@ -43,6 +43,15 @@
   color: var(--text-secondary);
 }
 
+.pageDescription {
+  font-size: 1.05rem !important;
+  color: #666 !important;
+  max-width: 950px !important;
+  margin: 0 auto !important;
+  line-height: 1.7 !important;
+  font-weight: 500 !important;
+}
+
 /* Hero Section */
 .heroSection {
   background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--primary-yellow-dark) 100%);
