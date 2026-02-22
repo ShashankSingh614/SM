@@ -1,9 +1,19 @@
 User-agent: *
 Allow: /
+Allow: /course/
 Disallow: /admin
 Disallow: /private
 Disallow: /*.json$
 Disallow: /node_modules/
+
+# Allow all text content for AI crawling
+User-agent: Googlebot
+Allow: /
+Allow: /course/
+
+User-agent: Bingbot
+Allow: /
+Allow: /course/
 
 # Sitemap location
 Sitemap: https://shankarmultimedia.com/sitemap.xml
