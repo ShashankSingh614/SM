@@ -85,7 +85,7 @@ const CourseLandingPage = () => {
           <h2 className={styles.sectionHeading}>Comprehensive Course Curriculum & Training Details</h2>
           <div className={styles.courseInfo}>
             <div className={styles.courseHeader}>
-              <h3>{courseData.title}</h3>
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#000', marginBottom: '15px' }}>{courseData.title}</h3>
               <div className={styles.courseMeta}>
                 <span className={styles.duration}><strong>Duration:</strong> {courseData.duration}</span>
               </div>
