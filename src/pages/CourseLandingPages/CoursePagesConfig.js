@@ -6,7 +6,7 @@ export const coursesConfig = [
     slug: 'graphic-design-uiux',
     title: 'DIPLOMA IN ADVANCED GRAPHIC DESIGNING & UI/UX DESIGN WITH AI INTEGRATION',
     duration: '4 Months',
-    h1: 'Best Advanced Graphic Designing & UI/UX Design Course in Mumbai with AI Integration & 100% Job Placements 2026',
+    h1: 'Diploma in Advanced Graphic Designing & UI/UX Design with AI Integration - Course in Mumbai 2026',
     intro: 'Transform your creative passion into a lucrative career with Shankar Multimedia\'s industry-leading Diploma in Advanced Graphic Designing & UI/UX Design with AI Integration—Mumbai\'s most trusted animation and multimedia institute with 36+ years of proven excellence, ISO 9001:2015 certification, and an unmatched 100% job placement record. Our comprehensive, hands-on curriculum combines cutting-edge design principles, professional-grade industry tools (Adobe Creative Suite, Figma, Sketch, XD, Midjourney, and Adobe Firefly), and real-world project experience to equip you with the exact skills top agencies and tech companies demand.',
     softwares: ['Adobe Photoshop', 'CorelDRAW', 'Adobe Illustrator', 'Adobe InDesign', 'Adobe XD', 'Figma', 'Canva', 'Midjourney', 'Adobe Firefly'],
     portfolioItems: [
@@ -55,7 +55,7 @@ export const coursesConfig = [
     slug: 'advanced-graphic-vfx',
     title: 'DIPLOMA IN ADVANCED GRAPHIC DESIGNING, UI/UX, MOTION GRAPHIC, VIDEO EDITING & VFX',
     duration: '6 Months',
-    h1: 'Best Advanced Graphic Design, Motion Graphics & Video Editing Course in Mumbai with 100% Job Placements 2026',
+    h1: 'Diploma in Advanced Graphic Designing, UI/UX, Motion Graphics, Video Editing & VFX - Course in Mumbai',
     intro: 'Master comprehensive multimedia design with Shankar Multimedia\'s 6-month Diploma in Advanced Graphic Designing, UI/UX, Motion Graphics, Video Editing & VFX—Mumbai\'s leading institute combining static design, dynamic motion, professional video editing, and visual effects into one powerful career-launching program. Learn industry-standard tools including Adobe Creative Suite, Premiere Pro, After Effects, and cutting-edge VFX techniques used by top studios.',
     softwares: ['Adobe Photoshop', 'CorelDRAW', 'Adobe Illustrator', 'Adobe XD', 'Figma', 'Adobe After Effects', 'Adobe Premiere Pro', 'Adobe Media Encoder'],
     portfolioItems: [
@@ -92,7 +92,7 @@ export const coursesConfig = [
     slug: '3d-animation',
     title: 'DIPLOMA IN ADVANCED 3D MODELLING & ANIMATION',
     duration: '6 Months',
-    h1: 'Best 3D Modelling & Animation Course in Mumbai with Professional Studio Training & 100% Jobs 2026',
+    h1: 'Diploma in Advanced 3D Modelling & Animation - Course in Mumbai 2026',
     intro: 'Launch your 3D animation career with Shankar Multimedia\'s comprehensive 6-month Diploma in Advanced 3D Modelling & Animation—Mumbai\'s premier institute with 36+ years training industry professionals. Master 3Ds Max, professional rendering with V-Ray and Corona, architectural visualization, character animation, and portfolio development for careers in studios, film, architecture, and game development.',
     softwares: ['3Ds Max', 'V-Ray Rendering', 'Corona Render', 'Adobe Photoshop', 'AutoCAD', 'SketchUp'],
     portfolioItems: [
@@ -129,7 +129,7 @@ export const coursesConfig = [
     slug: '3d-vfx',
     title: 'DIPLOMA IN ADVANCED 3D MODELLING & ANIMATION & VFX',
     duration: '8 Months',
-    h1: 'Best 3D Animation & VFX Course in Mumbai - Professional Studio Training with 100% Jobs 2026',
+    h1: 'Diploma in Advanced 3D Modelling & Animation & VFX - Course in Mumbai 2026',
     intro: 'Become a professional VFX artist with Shankar Multimedia\'s comprehensive 8-month Diploma in Advanced 3D Modelling, Animation & VFX—Mumbai\'s most trusted institute. Combine 3D studio skills (3Ds Max, V-Ray) with professional visual effects (After Effects, Fusion) to create Hollywood-grade content for films, TV, and digital platforms.',
     softwares: ['3Ds Max', 'V-Ray', 'Corona Render', 'Adobe After Effects', 'Adobe Premiere Pro', 'Nuke', 'AutoCAD'],
     portfolioItems: [
@@ -166,7 +166,7 @@ export const coursesConfig = [
     slug: 'web-design',
     title: 'DIPLOMA IN ADVANCED WEB DESIGNING & DEVELOPMENT WITH ADVANCED UI/UX',
     duration: '6 Months',
-    h1: 'Best Web Design & Development Course in Mumbai with React & Full-Stack Skills 2026',
+    h1: 'Diploma in Advanced Web Designing & Development with Advanced UI/UX - Course in Mumbai',
     intro: 'Build web applications and premium websites with Shankar Multimedia\'s 6-month Diploma in Advanced Web Designing & Development with Advanced UI/UX—combining modern UI/UX design (Figma, Adobe XD) with professional web development (HTML5, CSS3, JavaScript, React.js, WordPress). Master responsive design, user experience, frontend development, and deployment for 100% job placement.',
     softwares: ['Adobe XD', 'Figma', 'HTML5', 'CSS3', 'JavaScript', 'React.js', 'Bootstrap', 'WordPress', 'Visual Studio Code'],
     portfolioItems: [
@@ -203,7 +203,7 @@ export const coursesConfig = [
     slug: 'digital-marketing',
     title: 'DIPLOMA IN ADVANCED DIGITAL MARKETING WITH AI INTEGRATION & AUTOMATION',
     duration: '4 Months',
-    h1: 'Best Digital Marketing Course in Mumbai with AI, SEO & Automation - 100% Jobs 2026',
+    h1: 'Diploma in Advanced Digital Marketing with AI Integration & Automation - Course in Mumbai 2026',
     intro: 'Master Digital Marketing with Shankar Multimedia\'s 4-month Diploma in Advanced Digital Marketing with AI Integration & Automation—combining SEO, paid ads (Google, Facebook), social media marketing, email automation, analytics, and cutting-edge AI tools. Learn from industry experts to launch or accelerate your marketing career with guaranteed 100% job placement.',
     softwares: ['Google Analytics 4', 'Google Search Console', 'Google Ads', 'Facebook Ads Manager', 'Mailchimp', 'Semrush', 'Ahrefs', 'Hootsuite', 'Canva'],
     portfolioItems: [
@@ -240,7 +240,7 @@ export const coursesConfig = [
     slug: 'multimedia-animation',
     title: 'DIPLOMA IN ADVANCED MULTIMEDIA ANIMATION & VFX',
     duration: '10 Months',
-    h1: 'Best Multimedia Animation & VFX Course in Mumbai - 10 Month Comprehensive Training 2026',
+    h1: 'Diploma in Advanced Multimedia Animation & VFX - 10 Month Course in Mumbai 2026',
     intro: 'Become a complete multimedia professional with Shankar Multimedia\'s 10-month Diploma in Advanced Multimedia Animation & VFX—Mumbai\'s most comprehensive program combining graphic design, video editing, 3D animation, and professional VFX. Master industry tools used by Industry, Media Houses (3Ds Max, After Effects, Premiere Pro, V-Ray) with guaranteed 100% job placement in premium studios.',
     softwares: ['Adobe Creative Suite', '3Ds Max', 'After Effects', 'Premiere Pro', 'V-Ray', 'Corona Render', 'Figma', 'AutoCAD', 'Nuke'],
     portfolioItems: [
