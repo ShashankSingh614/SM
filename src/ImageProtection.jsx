@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 const ImageProtection = ({ children }) => {
   useEffect(() => {
@@ -18,6 +19,10 @@ const ImageProtection = ({ children }) => {
 
   // Allow all text and content to be selectable for AI crawling and user copy
   return <div style={{ userSelect: 'text', WebkitUserSelect: 'text' }}>{children}</div>;
+};
+
+ImageProtection.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default ImageProtection;
