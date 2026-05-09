@@ -250,7 +250,7 @@ export const PLACEMENT_COMPANIES = [
   { id: 13, name: 'Accenture', logo: '/images/company/13.png' },
   { id: 14, name: 'Patni', logo: '/images/company/14.png' },
   { id: 15, name: 'Lionbridge', logo: '/images/company/15.png' },
-  { id: 16, name: 'Publicis', logo: '/images/company/16.png' },
+  { id: 16, name: 'Publicis', logo: '/images/company/16.png'} ,
   { id: 17, name: 'Vistaprint', logo: '/images/company/17.png' },
   { id: 18, name: 'TATA Consultancy Services', logo: '/images/company/18.png' },
   { id: 19, name: 'DNEG', logo: '/images/company/19.png' },
@@ -264,7 +264,10 @@ export const PLACEMENT_COMPANIES = [
   { id: 27, name: 'WITS Interactive', logo: '/images/company/27.png' },
   { id: 28, name: 'Directi', logo: '/images/company/28.png' },
   { id: 29, name: 'Reliance Digital', logo: '/images/company/29.png' },
-  { id: 30, name: '& many more...', logo: '' }
+  { id: 30, name: 'SONY', logo: '/images/company/30.png' },
+  { id: 31, name: 'Indusind Nippon Life Insurance', logo: '/images/company/31.png' },
+  { id: 32, name: 'DMart', logo: '/images/company/32.png' },
+  { id: 33, name: '& many more...', logo: '' }
 ];
 
 const CONTENT_DATA = {

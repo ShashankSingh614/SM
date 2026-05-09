@@ -10,7 +10,7 @@ const PartnersSection = () => {
   // Get top 12 companies for display (first row)
   const topCompanies = PLACEMENT_COMPANIES.slice(0, 15);
   // Get additional companies for "View More" functionality
-  const additionalCompanies = PLACEMENT_COMPANIES.slice(15, 30);
+  const additionalCompanies = PLACEMENT_COMPANIES.slice(15, 33);
   
   const toggleShowMore = () => {
     setShowMore(!showMore);
