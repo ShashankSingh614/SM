@@ -49,6 +49,25 @@ export const courseDetailBreadcrumb = (courseId, courseName) => createBreadcrumb
   { name: courseName, url: `/courses/${courseId}` }
 ]);
 
+// Course-Specific FAQ Schema
+export const createCourseFAQSchema = (courseName, faqs) => {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map(faq => ({
+      '@type': 'Question',
+      'name': faq.question,
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': faq.answer
+      }
+    }))
+  };
+};
+
+// Graphic Design Course FAQ Schema
+export const graphicDesignFAQSchema = (faqs) => createCourseFAQSchema('Graphic Design & UI/UX Design Course', faqs);
+
 export const helmetConfig = {
   home: {
     title: 'Shankar Multimedia | Graphic Design with AI Integration, Motion Graphic Design with AI Integration, 3D Animation, VFX Courses in Mumbai',

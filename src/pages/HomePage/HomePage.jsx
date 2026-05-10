@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import HeroSection from '../../components/sections/HeroSection/HeroSection';
 import CoursesAccordion from '../../components/sections/CoursesAccordion/CoursesAccordion';
+import FAQSection from '../../components/sections/FAQ/FAQSection';
 import InstituteFeaturesSection from '../../components/sections/InstituteFeaturesSection/InstituteFeaturesSection';
 import CentersGallery from '../../components/sections/CentersGallery/CentersGallery';
 import TestimonialsSection from '../../components/sections/TestimonialsSection/TestimonialsSection';
@@ -74,7 +75,10 @@ const HomePageContent = () => {
 
       <InstituteFeaturesSection />
 
+      <FAQSection />
+
       <CentersGallery />
+
     </motion.div>
   );
 };
