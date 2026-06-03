@@ -102,4 +102,4 @@ For licensing agreements, legal inquiries, or authorized use requests, please co
 
 ---
 
-**Last Updated**: December 2025
+**Last Updated**: June 2026
