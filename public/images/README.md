@@ -29,7 +29,7 @@ This folder contains all the images used in the Shankar Multimedia website.
 - Project galleries
 - Portfolio images
 
-### `/placements/`
+### `/studentPlacements/`
 - Company logos
 - Placement success stories
 - Achievement certificates

@@ -45,7 +45,7 @@ export const createLocalBusinessSchemas = () => {
         'worstRating': '1'
       },
       'sameAs': [
-        'https://www.google.com/maps/place/Shankar+Multimedia+Goregaon',
+        'https://www.google.com/maps/studentPlacements/Shankar+Multimedia+Goregaon',
         'https://www.facebook.com/shankarmultimedia',
         'https://www.instagram.com/shankarmultimedia'
       ],
@@ -101,7 +101,7 @@ export const createLocalBusinessSchemas = () => {
         'worstRating': '1'
       },
       'sameAs': [
-        'https://www.google.com/maps/place/Shankar+Multimedia+Malad',
+        'https://www.google.com/maps/studentPlacements/Shankar+Multimedia+Malad',
         'https://www.facebook.com/shankarmultimedia',
         'https://www.instagram.com/shankarmultimedia'
       ],
@@ -157,7 +157,7 @@ export const createLocalBusinessSchemas = () => {
         'worstRating': '1'
       },
       'sameAs': [
-        'https://www.google.com/maps/place/Shankar+Multimedia+Mulund',
+        'https://www.google.com/maps/studentPlacements/Shankar+Multimedia+Mulund',
         'https://www.facebook.com/shankarmultimedia',
         'https://www.instagram.com/shankarmultimedia'
       ],
@@ -213,7 +213,7 @@ export const createLocalBusinessSchemas = () => {
         'worstRating': '1'
       },
       'sameAs': [
-        'https://www.google.com/maps/place/Shankar+Multimedia+Nalasopara',
+        'https://www.google.com/maps/studentPlacements/Shankar+Multimedia+Nalasopara',
         'https://www.facebook.com/shankarmultimedia',
         'https://www.instagram.com/shankarmultimedia'
       ],
@@ -269,7 +269,7 @@ export const createLocalBusinessSchemas = () => {
         'worstRating': '1'
       },
       'sameAs': [
-        'https://www.google.com/maps/place/Shankar+Multimedia+Santacruz',
+        'https://www.google.com/maps/studentPlacements/Shankar+Multimedia+Santacruz',
         'https://www.facebook.com/shankarmultimedia',
         'https://www.instagram.com/shankarmultimedia'
       ],
@@ -325,7 +325,7 @@ export const createLocalBusinessSchemas = () => {
         'worstRating': '1'
       },
       'sameAs': [
-        'https://www.google.com/maps/place/Shankar+Multimedia+Ghatkopar',
+        'https://www.google.com/maps/studentPlacements/Shankar+Multimedia+Ghatkopar',
         'https://www.facebook.com/shankarmultimedia',
         'https://www.instagram.com/shankarmultimedia'
       ],
