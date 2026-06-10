@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom';
 import { 
   FiMail, 
   FiArrowUp,
-  FiClock
+  FiClock,
+  FiDownload
 } from 'react-icons/fi';
 import { SOCIAL_LINKS } from '../../../constants/content';
 import styles from './Footer.module.css';
+
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -106,18 +108,20 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Scroll to Top Button */}
-      <motion.button
-        className={styles.scrollToTop}
-        onClick={scrollToTop}
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        aria-label="Scroll to top"
+      {/* Download Brochure Button */}
+      <motion.a
+        href="/Shankar Multimedia Brochure.pdf"
+        download="Shankar Multimedia Brochure.pdf"
+        className={styles.downloadBrochure}
+        initial={{ opacity: 0, y: 20 }} 
+        animate={{ opacity: 1, y: 0 }} 
+        whileHover={{ scale: 1.05 }} 
+        whileTap={{ scale: 0.95 }} 
+        aria-label="Download Brochure"
       >
-        <FiArrowUp />
-      </motion.button>
+        <FiDownload /> 
+        <span>Download Brochure</span>
+      </motion.a>
     </footer>
   );
 };
