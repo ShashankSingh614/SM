@@ -195,8 +195,8 @@
   
 .downloadBrochure:hover 
 { 
-  background: #000000; 
-  color: #ffffff; 
+  background: linear-gradient(135deg, #FFC107 0%, #FB8500 100%); 
+  color: #000000; 
   transform: translateY(-2px); 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
 } 
