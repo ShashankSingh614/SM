@@ -1,6 +1,101 @@
-// Course Configuration for all 7 diplomas with detailed curriculum
+// Course Configuration for all 8 diplomas with detailed curriculum
 
 export const coursesConfig = [
+  {
+    id: 'graphic-design',
+    slug: 'graphic-design',
+    title: 'GRAPHIC DESIGN COURSE IN MUMBAI WITH PORTFOLIO & PLACEMENT SUPPORT',
+    className: 'ps_bg',
+    duration: '3 Months',
+    h1: 'Graphic Design Course in Mumbai',
+    intro: 'Learn design principles, industry software, and practical project work that helps you build a strong portfolio for jobs, freelance work, and creative careers in Mumbai. Our training is focused on skill, confidence, and real output — not just theory.',
+    courseOverview: 'This course is ideal for students, beginners, and career changers who want to enter the creative field with practical graphic design skills. You will learn how to create posters, social media creatives, branding materials, advertisements, and portfolio-ready design projects using professional software.',
+    whatYouWillLearn: [
+      'Design basics: layout, typography, color, branding concepts',
+      'Software skills: Adobe Photoshop, Illustrator, CorelDRAW or related creative tools',
+      'Real work formats: poster design, brochure design, social media posts, logo concepts, print-ready creatives'
+    ],
+    portfolioText: 'Students build a portfolio with real-style creative projects that can be used for interviews, internships, and freelance opportunities. Each project shows the design brief, software used, and final output so visitors can clearly see the value of the course.',
+    careerOutcomes: 'After completing the course, students can apply for roles such as Graphic Designer, Social Media Designer, Visualizer, Branding Executive, and Junior Creative Designer. This works especially well for students targeting entry-level creative jobs in Mumbai.',
+    ctaText: 'Start your creative career with a Graphic Design course that helps you learn, create, and get job-ready.',
+    softwares: ['Adobe Photoshop', 'Adobe Illustrator', 'CorelDRAW', 'Canva'],
+    portfolioItems: [
+      { title: 'Poster Design Portfolio', desc: 'Creative poster designs for events, products, and promotional campaigns demonstrating layout and typography skills using Adobe Photoshop and Illustrator.' },
+      { title: 'Social Media Creative Suites', desc: 'Complete social media graphics optimized for Instagram, Facebook, LinkedIn showcasing brand consistency and design brief execution.' },
+      { title: 'Branding Materials', desc: 'Logo concepts, business cards, letterheads, and brand identity packages for various industries created with CorelDRAW and Illustrator.' },
+      { title: 'Advertisement Designs', desc: 'Print-ready advertisements for newspapers, magazines, and outdoor media with compelling visual hierarchy and color theory application.' },
+      { title: 'Digital Marketing Collateral', desc: 'Email headers, web banners, promotional graphics for digital campaigns optimized for different platforms and sizes.' },
+      { title: 'Print Production Work', desc: 'Brochure designs, flyer layouts, packaging concepts demonstrating production-ready skills with proper bleeds and print specifications.' }
+    ],
+    testimonials: [
+      { name: 'Riya P.', role: 'Graphic Designer, Marketing Agency', batch: '2025', quote: 'The course gave me confidence to work with real clients. I started freelancing within 2 months of completing the course and built a strong portfolio.' },
+      { name: 'Kunal S.', role: 'Social Media Designer, Startup', batch: '2026', quote: 'Learning Adobe Photoshop and Illustrator properly changed my career. Got hired immediately after showing my portfolio with real-style creative projects.' },
+      { name: 'Ananya M.', role: 'Junior Creative Designer', batch: '2025', quote: 'The practical projects helped me understand what employers actually want. My portfolio stood out in interviews and I received multiple job offers.' },
+      { name: 'Siddharth K.', role: 'Visualizer, Ad Agency', batch: '2026', quote: 'Real-world poster and branding projects gave me hands-on experience that theory alone cannot provide. Now working on national brand campaigns.' },
+      { name: 'Priyanka D.', role: 'Freelance Designer', batch: '2025', quote: 'The software training was thorough and job-focused. I landed three freelance clients before course completion with placement support from the institute.' }
+    ],
+    placements: [
+      { title: 'Graphic Designer', desc: 'Digital marketing agencies, advertising firms, corporate communication teams across Mumbai with salaries ranging from ₹2.5-4.5 LPA.' },
+      { title: 'Social Media Designer', desc: 'E-commerce companies, social media agencies managing brand content creation for multiple clients and platforms.' },
+      { title: 'Visualizer', desc: 'Creative agencies working on campaign concepts, client presentations, and brand identity development.' },
+      { title: 'Branding Executive', desc: 'Branding studios and marketing departments creating visual identity systems, logo designs, and brand guidelines.' },
+      { title: 'Junior Creative Designer', desc: 'Entry-level creative roles in agencies and startups with growth opportunities into senior designer positions.' }
+    ],
+    curriculum: [
+      {
+        title: 'Design Basics & Fundamentals',
+        skills: [
+          'Layout Principles',
+          'Typography Essentials',
+          'Color Theory',
+          'Visual Hierarchy',
+          'Branding Concepts',
+          'Design Composition',
+          'Grid Systems',
+          'Design Thinking'
+        ]
+      },
+      {
+        title: 'Adobe Photoshop',
+        skills: [
+          'Photoshop Interface & Tools',
+          'Layer Management',
+          'Selection Techniques',
+          'Photo Manipulation',
+          'Text Effects',
+          'Image Optimization',
+          'Social Media Graphics',
+          'Poster Design'
+        ]
+      },
+      {
+        title: 'Adobe Illustrator & CorelDRAW',
+        skills: [
+          'Vector Graphics Fundamentals',
+          'Pen Tool Mastery',
+          'Logo Design',
+          'Icon Creation',
+          'Business Card Design',
+          'Brochure Layout',
+          'Print-Ready Files',
+          'Brand Collateral'
+        ]
+      },
+      {
+        title: 'Real Work Formats',
+        skills: [
+          'Poster Design',
+          'Brochure Design',
+          'Social Media Posts',
+          'Logo Concepts',
+          'Print-Ready Creatives',
+          'Portfolio Development',
+          'Client Briefs',
+          'Job-Ready Projects'
+        ]
+      }
+    ]
+  },
   {
     id: 'graphic-design-uiux',
     slug: 'graphic-design-uiux',

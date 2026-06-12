@@ -9,7 +9,7 @@ export const locations = [
     latitude: 19.1652383,
     longitude: 72.8504476,
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.686!2d72.8504476!3d19.1652383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b652db07127b%3A0xf3b080b7f8685b45!2sShankar%20Multimedia%20Goregaon!5e0!3m2!1sen!2sin!4v1234567890',
-    googleMapsLink: 'https://maps.app.goo.gl/CmusG4Bn3CLpvCm68',
+    googleMapsLink: 'https://www.google.com/maps/studentPlacements/Shankar+Multimedia+Goregaon+Mumbai+%7C+Graphic+Designing+UI%2FUX+%7C+Video+Editing+%7C+Film+VFX+%7C+Motion+Graphics+%7C+3D+Animation/@19.165238,72.850448,16z/data=!4m6!3m5!1s0x3be7b652db07127b:0xf3b080b7f8685b45!8m2!3d19.1652383!4d72.8504476!16s%2Fg%2F1q67v9txx?hl=en&entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: '2',
@@ -20,7 +20,7 @@ export const locations = [
     latitude: 19.1882418,
     longitude: 72.8536065,
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.4!2d72.8536065!3d19.1882418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b742e88680c1%3A0xa24b7c53abee4b69!2sShankar%20Multimedia%20Malad!5e0!3m2!1sen!2sin!4v1234567891',
-    googleMapsLink: 'https://maps.app.goo.gl/ifqYs1kLckpHP9Qu9',
+    googleMapsLink: 'https://www.google.com/maps/studentPlacements/Shankar+Multimedia+Malad+Mumbai+%7C+Graphic+%26+UI%2FUX+%7C+Motion+Graphic+%7C+Web+Designing+%7C+3D+Animation+%7C+Video+Editing+%7C+VFX/@19.188242,72.853607,14z/data=!4m6!3m5!1s0x3be7b742e88680c1:0xa24b7c53abee4b69!8m2!3d19.1882418!4d72.8536065!16s%2Fg%2F11kpsv6zzx?hl=en&entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: '3',
@@ -31,7 +31,7 @@ export const locations = [
     latitude: 19.1739317,
     longitude: 72.9557494,
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.5!2d72.9557494!3d19.1739317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b9af02db2c83%3A0xf82e39a8858c9b6b!2sShankar%20Multimedia%20Mulund!5e0!3m2!1sen!2sin!4v1234567892',
-    googleMapsLink: 'https://maps.app.goo.gl/FPdhzViQUQArpMZX6',
+    googleMapsLink: 'https://www.google.com/maps/studentPlacements/Shankar+Multimedia+Mulund+%7C+Graphic+Design+Courses+UI%2FUX+%7C+Web+Designing+%7C+3D+Animation+%7C+Video+Editing+Motion+Graphics+%7C+VFX/@19.173932,72.955749,15z/data=!4m6!3m5!1s0x3be7b9af02db2c83:0xf82e39a8858c9b6b!8m2!3d19.1739317!4d72.9557494!16s%2Fg%2F11t14wgkh4?hl=en&entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: '4',
@@ -42,7 +42,7 @@ export const locations = [
     latitude: 19.4209828,
     longitude: 72.8190156,
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.8!2d72.8190156!3d19.4209828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x49133f8a8a9a9721%3A0xa50b7762dc524abd!2sShankar%20Multimedia%20Nalasopara!5e0!3m2!1sen!2sin!4v1234567893',
-    googleMapsLink: 'https://maps.app.goo.gl/3Qu4KCVJ1YwPDPyK9',
+    googleMapsLink: 'https://www.google.com/maps/studentPlacements/Shankar+Multimedia+Nalasopara+%7C+Graphic+Design+Courses+UI%2FUX+%7C+Web+%7C+3D+Animation+%7C+Video+Editing+Motion+Graphics+%7C+VFX/@19.420983,72.819016,13z/data=!4m6!3m5!1s0x49133f8a8a9a9721:0xa50b7762dc524abd!8m2!3d19.4209828!4d72.8190156!16s%2Fg%2F11ss87nmr2?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D',
   },
   {
     id: '5',
@@ -53,6 +53,6 @@ export const locations = [
     latitude: 19.0810422,
     longitude: 72.8393971,
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2!2d72.8393971!3d19.0810422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c95dd1d12b6b%3A0xae948c5d76d8e95c!2sShankar%20Multimedia%20Santacruz!5e0!3m2!1sen!2sin!4v1234567894',
-    googleMapsLink: 'https://maps.app.goo.gl/aKJrfA4JNn4h8Pus8',
+    googleMapsLink: 'https://www.google.com/maps/studentPlacements/Shankar+Multimedia+Santacruz+West+%7C+Graphic+%26+UI%2FUX+%7C+Motion+Graphic+%7C+Web+Designing+%7C+3D+Animation+%7C+Video+Editing+%7C+VFX/@19.0816402,72.8446327,15z/data=!4m6!3m5!1s0x3be7c95dd1d12b6b:0xae948c5d76d8e95c!8m2!3d19.0810422!4d72.8393971!16s%2Fg%2F11y50jx25z?hl=en&entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D',
   },
 ];
