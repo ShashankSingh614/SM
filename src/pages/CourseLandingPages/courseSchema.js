@@ -41,9 +41,9 @@ export const generateCourseSchema = (courseData, baseUrl = 'https://shankarmulti
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.8',
-      ratingCount: courseData.testimonials.length
+      ratingCount: (courseData.testimonials ?? []).length
     },
-    review: courseData.testimonials.map(testimonial => ({
+    review: (courseData.testimonials ?? []).map(testimonial => ({
       '@type': 'Review',
       reviewRating: {
         '@type': 'Rating',

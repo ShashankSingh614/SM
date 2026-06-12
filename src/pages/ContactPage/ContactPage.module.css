@@ -242,7 +242,7 @@
 .branchCard {
   background: white;
   border-radius: var(--radius-xl);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-lg);
   border: 1px solid var(--gray-200);
   transition: all var(--transition-base);
   position: relative;
@@ -266,7 +266,7 @@
 
 .branchCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-xl);
 }
 
 .branchInfo {

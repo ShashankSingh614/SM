@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './styles/global.css';
 import App from './App';
 import ImageProtection from './ImageProtection';
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

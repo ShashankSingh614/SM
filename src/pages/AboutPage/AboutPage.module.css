@@ -105,9 +105,9 @@
 .statCard {
   background: var(--card-background);
   padding: 2rem;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   text-align: center;
-  box-shadow: var(--shadow-light);
+  box-shadow: var(--shadow-sm);
   border: 1px solid var(--border-color);
 }
 
@@ -144,8 +144,8 @@
   width: 100%;
   max-width: 300px;
   height: auto;
-  border-radius: 12px;
-  box-shadow: var(--shadow-medium);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
 }
 
 .founderInfo h3 {
@@ -193,8 +193,8 @@
   gap: 2rem;
   background: var(--card-background);
   padding: 2rem;
-  border-radius: 12px;
-  box-shadow: var(--shadow-light);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
   border: 1px solid var(--border-color);
   align-items: start;
 }
@@ -207,8 +207,8 @@
   width: 100%;
   max-width: 250px;
   height: auto;
-  border-radius: 8px;
-  box-shadow: var(--shadow-medium);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
 }
 
 .memberInfo h4 {
@@ -246,9 +246,9 @@
 .visionCard {
   background: var(--card-background);
   padding: 2.5rem;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   text-align: center;
-  box-shadow: var(--shadow-light);
+  box-shadow: var(--shadow-sm);
   border: 1px solid var(--border-color);
 }
 
@@ -316,9 +316,9 @@
 .featureCard {
   background: var(--card-background);
   padding: 2rem;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   text-align: center;
-  box-shadow: var(--shadow-light);
+  box-shadow: var(--shadow-sm);
   border: 1px solid var(--border-color);
 }
 
