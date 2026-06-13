@@ -150,7 +150,7 @@ const CourseLandingPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.34 }}
             >
-              <a href="/contacts" className={styles.btnPrimary}>
+              <a href="/contact" className={styles.btnPrimary}>
                 Book Free Counselling <FiArrowRight />
               </a>
               <a href="#curriculum" className={styles.btnOutline}>
