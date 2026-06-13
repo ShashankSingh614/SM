@@ -99,6 +99,17 @@ const Footer = () => {
 
       <div className={styles.footerBottom}>
         <div className="container">
+          <h3 className={styles.footerTitle}>Certified Programs with Job Placement Assurance</h3>
+          <div className={styles.footerBottomContent}>
+            <p className={styles.footerLinks}>
+              <Link to="/courses/advanced-graphic-&-uiux-design">Graphic & UI/UX Design Course in Mumbai</Link> | <Link to="/courses/advanced-motion-graphic-&-video-editing">Motion Graphic & Video Editing Course in Mumbai</Link> | <Link to="/courses/advanced-3d-animation-&-modeling">3D Animation & Modeling Course in Mumbai</Link> | <Link to="/courses/advanced-interior-design">Interior Design Course in Mumbai</Link> | <Link to="/courses/advanced-3d-animation-&-vfx">3D Animation & VFX Course in Mumbai</Link> | <Link to="/courses/advanced-web-design-&-development">Full Stack Web Development Course in Mumbai</Link> | <Link to="/courses/advanced-digital-marketing">Digital Marketing Course in Mumbai</Link> | <Link to="/courses/advanced-multimedia-animation-&-vfx">Multimedia Animation & VFX Course in Mumbai</Link>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.footerBottom}>
+        <div className="container">
           <div className={styles.footerBottomContent}>
             <p className={styles.copyright}>
               Shankar Multimedia. All Rights Reserved ©{new Date().getFullYear()}

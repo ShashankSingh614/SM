@@ -1,18 +1,16 @@
-/* Featured Courses Section Styles */
 .featuredCourses {
   padding: 5rem 0;
   background: linear-gradient(135deg, var(--gray-50) 0%, white 100%);
   position: relative;
   overflow: hidden;
+  font-family: 'Inter', 'DM Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 .featuredCourses::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   background: linear-gradient(135deg, rgba(211, 47, 47, 0.02) 0%, rgba(255, 193, 7, 0.02) 100%);
   z-index: 1;
 }
@@ -26,10 +24,13 @@
 }
 
 .sectionHeader h2 {
-  font-size: 3rem;
+  font-family: 'Sora', 'DM Sans', system-ui, sans-serif;
+  font-size: clamp(1.75rem, 3.5vw, 2.4rem);
   font-weight: 800;
   color: var(--text-primary);
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.5rem;
+  line-height: 1.18;
+  letter-spacing: -0.5px;
   position: relative;
 }
 
@@ -46,11 +47,12 @@
 }
 
 .sectionHeader p {
-  font-size: 1.3rem;
+  font-family: 'Inter', 'DM Sans', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
   color: var(--text-secondary);
   max-width: 600px;
   margin: 0 auto 2.5rem;
-  line-height: 1.6;
 }
 
 .headerStats {
@@ -69,6 +71,8 @@
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--gray-200);
+  font-family: 'Inter', 'DM Sans', system-ui, sans-serif;
+  font-size: 14px;
   font-weight: 600;
   color: var(--text-primary);
 }
@@ -102,10 +106,7 @@
 .courseCard::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-yellow) 100%);
   opacity: 0;
   transition: opacity var(--transition-base);
@@ -117,11 +118,8 @@
   border-color: var(--primary-yellow);
 }
 
-.courseCard:hover::before {
-  opacity: 0.03;
-}
+.courseCard:hover::before { opacity: 0.03; }
 
-/* Course Image */
 .courseImage {
   position: relative;
   height: 220px;
@@ -135,9 +133,7 @@
   transition: transform var(--transition-slow);
 }
 
-.courseCard:hover .courseImage img {
-  transform: scale(1.1);
-}
+.courseCard:hover .courseImage img { transform: scale(1.1); }
 
 .courseCategory {
   position: absolute;
@@ -147,8 +143,10 @@
   color: white;
   padding: 0.5rem 1rem;
   border-radius: var(--radius-full);
-  font-size: 0.875rem;
+  font-family: 'Inter', 'DM Sans', system-ui, sans-serif;
+  font-size: 12px;
   font-weight: 600;
+  letter-spacing: 0.3px;
   z-index: 2;
 }
 
@@ -160,7 +158,8 @@
   color: var(--gray-900);
   padding: 0.5rem 1rem;
   border-radius: var(--radius-full);
-  font-size: 0.875rem;
+  font-family: 'Inter', 'DM Sans', system-ui, sans-serif;
+  font-size: 12px;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -168,9 +167,7 @@
   z-index: 2;
 }
 
-.courseBadge svg {
-  font-size: 1rem;
-}
+.courseBadge svg { font-size: 1rem; }
 
 /* Course Content */
 .courseContent {
@@ -178,21 +175,23 @@
 }
 
 .courseContent h3 {
-  font-size: 1.5rem;
+  font-family: 'Sora', 'DM Sans', system-ui, sans-serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 1rem;
-  line-height: 1.3;
+  margin: 0 0 12px;
+  line-height: 1.25;
+  letter-spacing: -0.3px;
 }
 
 .courseContent p {
+  font-family: 'Inter', 'DM Sans', system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.75;
   color: var(--text-secondary);
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
+  margin: 0 0 1.5rem;
 }
 
-/* Course Features */
 .courseFeatures {
   display: flex;
   gap: 1.5rem;
@@ -204,40 +203,34 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--text-secondary);
-  font-size: 0.9rem;
+  font-family: 'Inter', 'DM Sans', system-ui, sans-serif;
+  font-size: 13px;
   font-weight: 500;
+  color: var(--text-secondary);
 }
 
-.feature svg {
-  color: var(--primary-red);
-  font-size: 1rem;
-}
+.feature svg { color: var(--primary-red); font-size: 1rem; }
 
-/* Course Tools */
-.courseTools {
-  margin-bottom: 2rem;
-}
+.courseTools { margin-bottom: 2rem; }
 
 .courseTools h4 {
-  font-size: 1rem;
-  font-weight: 600;
+  font-family: 'Sora', 'DM Sans', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
   color: var(--text-primary);
-  margin-bottom: 0.75rem;
+  margin: 0 0 0.75rem;
 }
 
-.toolsList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
+.toolsList { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 
 .tool {
   background: var(--primary-yellow);
   color: var(--gray-900);
   padding: 0.4rem 0.8rem;
   border-radius: var(--radius-full);
-  font-size: 0.875rem;
+  font-family: 'Inter', 'DM Sans', system-ui, sans-serif;
+  font-size: 12px;
   font-weight: 500;
 }
 
@@ -246,7 +239,8 @@
   color: var(--text-secondary);
   padding: 0.4rem 0.8rem;
   border-radius: var(--radius-full);
-  font-size: 0.875rem;
+  font-family: 'Inter', 'DM Sans', system-ui, sans-serif;
+  font-size: 12px;
   font-weight: 500;
 }
 
@@ -266,15 +260,19 @@
 }
 
 .priceLabel {
-  font-size: 0.875rem;
-  color: var(--text-secondary);
+  font-family: 'Inter', 'DM Sans', system-ui, sans-serif;
+  font-size: 12px;
   font-weight: 500;
+  color: var(--text-secondary);
 }
 
 .price {
-  font-size: 1.5rem;
+  font-family: 'Sora', 'DM Sans', system-ui, sans-serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
   font-weight: 800;
   color: var(--primary-red);
+  line-height: 1;
+  letter-spacing: -0.3px;
 }
 
 .enrollBtn {
@@ -283,14 +281,15 @@
   border: none;
   padding: 0.75rem 1.5rem;
   border-radius: var(--radius-lg);
-  font-weight: 600;
+  font-family: 'Inter', 'DM Sans', system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   text-decoration: none;
   cursor: pointer;
   transition: all var(--transition-base);
-  font-size: 0.95rem;
 }
 
 .enrollBtn:hover {
@@ -307,91 +306,37 @@
 }
 
 .sectionFooter p {
-  font-size: 1.2rem;
+  font-family: 'Inter', 'DM Sans', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
   color: var(--text-secondary);
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
   max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 1200px) {
-  .coursesGrid {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-  }
+  .coursesGrid { grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
 }
 
 @media (max-width: 768px) {
-  .featuredCourses {
-    padding: 3rem 0;
-  }
-
-  .sectionHeader h2 {
-    font-size: 2.5rem;
-  }
-
-  .sectionHeader p {
-    font-size: 1.1rem;
-  }
-
-  .headerStats {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .coursesGrid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .courseFeatures {
-    justify-content: space-between;
-  }
-
-  .courseFooter {
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: stretch;
-  }
-
-  .enrollBtn {
-    justify-content: center;
-  }
+  .featuredCourses { padding: 3rem 0; }
+  .sectionHeader p { font-size: 15px; }
+  .headerStats { flex-direction: column; align-items: center; gap: 1rem; }
+  .coursesGrid { grid-template-columns: 1fr; gap: 2rem; }
+  .courseFeatures { justify-content: space-between; }
+  .courseFooter { flex-direction: column; gap: 1.5rem; align-items: stretch; }
+  .enrollBtn { justify-content: center; }
 }
 
 @media (max-width: 480px) {
-  .courseContent {
-    padding: 1.5rem;
-  }
-
-  .courseImage {
-    height: 180px;
-  }
-
-  .courseFeatures {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  .sectionHeader h2 {
-    font-size: 2rem;
-  }
+  .courseContent { padding: 1.5rem; }
+  .courseImage { height: 180px; }
+  .courseFeatures { flex-direction: column; gap: 0.75rem; }
 }
 
-/* Animation Enhancements */
+/* Animation */
 @keyframes pulse {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.05); }
-}
-
-.courseBadge {
-  animation: pulse 2s infinite;
-}
-
-.courseCard:hover .courseBadge {
-  animation: none;
-  transform: scale(1.1);
 }

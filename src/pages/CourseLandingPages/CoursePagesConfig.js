@@ -3,7 +3,7 @@
 export const coursesConfig = [
   {
     id: 'graphic-design-uiux',
-    slug: 'graphic-design-uiux',
+    slug: 'advanced-graphic-&-uiux-design',
     title: 'Diploma in Advanced Graphic Designing & UI/UX Design with AI Integration',
     duration: '4 Months',
     h1: 'Diploma in Advanced Graphic Designing & UI/UX Design with AI Integration - Course in Mumbai 2026',
@@ -74,7 +74,7 @@ export const coursesConfig = [
   },
   {
     id: 'advanced-graphic-vfx',
-    slug: 'advanced-graphic-vfx',
+    slug: 'advanced-motion-graphic-&-video-editing',
     title: 'Diploma in Advanced Graphic Designing, UI/UX, Motion Graphic, Video Editing & VFX',
     duration: '6 Months',
     h1: 'Diploma in Advanced Graphic Designing, UI/UX, Motion Graphics, Video Editing & VFX - Course in Mumbai 2026',
@@ -196,7 +196,7 @@ export const coursesConfig = [
   },
   {
     id: '3d-animation',
-    slug: '3d-animation',
+    slug: 'advanced-3d-animation-&-modeling',
     title: 'Diploma in Advanced 3D Modelling & Animation',
     duration: '6 Months',
     h1: 'Diploma in Advanced 3D Modelling & Animation - Course in Mumbai 2026',
@@ -291,25 +291,112 @@ export const coursesConfig = [
           'Perspective Views',
           '2D to 3D Conversion'
         ]
+      }
+    ]
+  },
+  {
+    id: 'interior-design',
+    slug: 'advanced-interior-design',
+    title: 'Diploma in Advanced Interior Design',
+    duration: '6 Months',
+    h1: 'Diploma in Advanced Interior Design - Course in Mumbai 2026',
+    intro: 'Launch your interior design career with Shankar Multimedia\'s comprehensive 6-month Diploma in Advanced Interior Design—Mumbai\'s premier institute with 36+ years training industry professionals. Master AutoCAD, SketchUp, 3Ds Max, and other industry-standard software for careers in interior design, architecture, and related fields.',
+    softwares: ['Adobe Photoshop','CorelDRAW','3Ds Max', 'V-Ray Rendering', 'Corona Render', 'AutoCAD', 'SketchUp'],
+    curriculum: [
+      {
+        title: 'Raster Graphics',
+        skills: [
+          'Photoshop Interface & Tools',
+          'Color Correction & Grading',
+          'Photo Retouching (Spot, Patch, Glamour Skin)',
+          'Model, Fashion & Portrait Retouching',
+          'Product Retouching (Jewelry, Apparel, Furniture, Real Estate)',
+          'Wedding Album Design',
+          'Image Restoration (Vintage & Damaged Photos)',
+          'Masking Techniques (Layer, Photo, Hair, Ghost Mannequin)',
+          'Clipping Path & Color Changing',
+          'Black & White to Color Conversion',
+          'Image Manipulation & Effects',
+          'Banner, Poster & Catalog Design',
+          'Page Effects & Border Effects',
+          'Frame & Shadow Effects',
+          'Water & Mirror Effects',
+          '3D Box & Text Effects',
+          'Karizma Album Design',
+          'Generative AI (Generative Fill, Neural Filters, Content-Aware Fill)',
+          'AI Object Selection'
+        ]
       },
       {
-        title: 'Visualization & Storyboarding',
+        title: 'Vector Graphics',
         skills: [
-          'Artistic Visualization',
-          'Drawing Fundamentals',
-          'Sketching Techniques (Lines, Shading, Tracing)',
-          'Character Development',
-          'Storyboard Creation',
-          'Classical Animation Principles',
-          'FlipBook Design with Light Box',
-          'Animation Layout & Design'
+          'Vector vs Raster Graphics',
+          'CorelDRAW Basics & Interface',
+          'Digital Illustration Techniques',
+          'Logo Design & Tracing',
+          'Corporate Identity & Branding',
+          'Print Collaterals (Brochure, Business Card, Leaflets)',
+          'Visiting Card Design (3.5" x 2" with Bleed)',
+          'Packaging & Label Design',
+          'Advertising Design & Hoardings',
+          'Drawing & Shape Tools',
+          'Shaping Operations (Weld, Trim, Intersect, Combine)',
+          'Fill Types (Fountain, Pattern, Texture, Mesh)',
+          'Special Effects (Contour, Extrude, Blend, Shadow, PowerClip)',
+          'Magazine Cover Design',
+          'Text to Vector with AI (Adobe Firefly)',
+          'Generative Recolor',
+          'Retype (AI OCR)',
+          'Image Trace & Vectorization'
+        ]
+      },
+      {
+        title: '3D Modeling',
+        skills: [
+          'Exhibition & Event Design (Standard Sizes)',
+          'Exhibition Stall Design (3m, 6m, 10m)',
+          'Reception Counter Design (Small, Medium, Large)',
+          'Fascia/Name Board Design',
+          'Podium & Meeting Room Layout',
+          'Pantry Room Design',
+          'Interior Design & Space Planning',
+          'Measurement Systems (Metric & Imperial)',
+          'Low Poly & High Poly Modeling',
+          'Advanced Texturing & UV Mapping',
+          'Camera Setup & Composition',
+          'Lighting Techniques (3-Point, HDRI)',
+          '3D Object Painting',
+          'V-Ray & Corona Rendering',
+          'Visual Effects Integration'
+        ]
+      },
+      {
+        title: '3D Animation',
+        skills: [
+          'Animation Principles',
+          'Object & Transform Animation',
+          'Character Rigging & Animation',
+          'Architectural Walkthroughs',
+          '3D Special Effects',
+          'Camera Animation',
+          'Digital Filmmaking Concepts'
+        ]
+      },
+      {
+        title: 'AutoCAD',
+        skills: [
+          'Technical Drawing Basics',
+          'Layout Plans & Elevations',
+          'Working Drawings & Detailing',
+          'Perspective Views',
+          '2D to 3D Conversion'
         ]
       }
     ]
   },
   {
     id: '3d-vfx',
-    slug: '3d-vfx',
+    slug: 'advanced-3d-animation-&-vfx',
     title: 'Diploma in Advanced 3D Modelling & Animation & VFX',
     duration: '8 Months',
     h1: 'Diploma in Advanced 3D Modelling & Animation & VFX - Course in Mumbai 2026',
@@ -406,19 +493,6 @@ export const coursesConfig = [
         ]
       },
       {
-        title: 'Visualization & Storyboarding',
-        skills: [
-          'Artistic Visualization',
-          'Drawing Fundamentals',
-          'Sketching Techniques (Lines, Shading, Tracing)',
-          'Character Development',
-          'Storyboard Creation',
-          'Classical Animation Principles',
-          'FlipBook Design with Light Box',
-          'Animation Layout & Design'
-        ]
-      },
-      {
         title: 'Adobe After Effects',
         skills: [
           'Project Setup & Composition',
@@ -473,7 +547,7 @@ export const coursesConfig = [
   },
   {
     id: 'web-design',
-    slug: 'web-design',
+    slug: 'advanced-web-design-&-development',
     title: 'Diploma in Advanced Web Designing & Development with Advanced UI/UX',
     duration: '6 Months',
     h1: 'Diploma in Advanced Web Designing & Development with Advanced UI/UX - Course in Mumbai 2026',
@@ -602,7 +676,7 @@ export const coursesConfig = [
   },
   {
     id: 'digital-marketing',
-    slug: 'digital-marketing',
+    slug: 'advanced-digital-marketing',
     title: 'Diploma in Advanced Digital Marketing with AI Integration & Automation',
     duration: '4 Months',
     h1: 'Diploma in Advanced Digital Marketing with AI Integration & Automation - Course in Mumbai 2026',
@@ -900,7 +974,7 @@ export const coursesConfig = [
   },
   {
     id: 'multimedia-animation',
-    slug: 'multimedia-animation',
+    slug: 'advanced-multimedia-animation-&-vfx',
     title: 'Diploma in Advanced Multimedia Animation & VFX',
     duration: '10 Months',
     h1: 'Diploma in Advanced Multimedia Animation & VFX - Course in Mumbai 2026',
@@ -1021,19 +1095,6 @@ export const coursesConfig = [
           'Working Drawings & Detailing',
           'Perspective Views',
           '2D to 3D Conversion'
-        ]
-      },
-      {
-        title: 'Visualization & Storyboarding',
-        skills: [
-          'Artistic Visualization',
-          'Drawing Fundamentals',
-          'Sketching Techniques (Lines, Shading, Tracing)',
-          'Character Development',
-          'Storyboard Creation',
-          'Classical Animation Principles',
-          'FlipBook Design with Light Box',
-          'Animation Layout & Design'
         ]
       },
       {

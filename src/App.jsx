@@ -40,7 +40,7 @@ function App() {
                 <Route path="/terms-conditions" element={<TermsConditionsPage />} />
                 <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
                 {/* Dynamic Course Landing Page Route */}
-                <Route path="/course/:courseSlug" element={<CourseLandingPage />} />
+                <Route path="/courses/:courseSlug" element={<CourseLandingPage />} />
               </Routes>
             </motion.main>
           </AnimatePresence>

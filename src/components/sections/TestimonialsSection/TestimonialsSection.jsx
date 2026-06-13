@@ -297,6 +297,15 @@ const TestimonialsSection = () => {
       rating: 5
     }
   ];
+
+  const reviewPlatforms = [
+    { id: 1, name: 'Google', logo: '/images/reviewCompanyLogo/google.png', rating: 5 },
+    { id: 2, name: 'CollegeDunia', logo: '/images/reviewCompanyLogo/cd.jpg', rating: 4.9 },
+    { id: 3, name: 'JustDial', logo: '/images/reviewCompanyLogo/justdial.png', rating: 5 },
+    { id: 4, name: 'Sulekha', logo: '/images/reviewCompanyLogo/suleka.jpg', rating: 4.4 },
+    { id: 5, name: 'AmbitionBox', logo: '/images/reviewCompanyLogo/ambition box.png', rating: 5 },
+    { id: 6, name: 'SGNI', logo: '/images/reviewCompanyLogo/sgni.png', rating: 5 },
+  ];
   
   const nextTestimonial = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % testimonials.length);
@@ -325,6 +334,27 @@ const TestimonialsSection = () => {
         <div className={styles.sectionHeader}>
           <h2>Student Testimonials & Career Success Stories</h2>
           <p className={styles.headerSubtitle}>Distinctive accounts from our accomplished alumni whose professional trajectories have been substantially transformed through comprehensive training and dedicated placement support mechanisms offered by Shankar Multimedia</p>
+        </div>
+
+        {/* Review Platforms */}
+        <div className={styles.reviewPlatforms}>
+          {reviewPlatforms.map((platform) => (
+            <div key={platform.id} className={styles.reviewPlatformItem}>
+              <div className={styles.platformLogo}>
+                <img src={platform.logo} alt={platform.name} />
+              </div>
+              <p className={styles.platformName}>{platform.name}</p>
+              <div className={styles.platformRating}>
+                {Array(5).fill(0).map((_, i) => (
+                  <FiStar
+                    key={i}
+                    className={`${styles.platformStar} ${i < Math.round(platform.rating) ? styles.platformStarFilled : ''}`}
+                  />
+                ))}
+                <span className={styles.platformRatingValue}>{platform.rating}</span>
+              </div>
+            </div>
+          ))}
         </div>
 
         {/* Testimonial Slider */}

@@ -7,3 +7,24 @@
 .homePage * {
   scroll-behavior: smooth;
 }
+/* ===== Unified Typography (matches CourseLandingPage system) ===== */
+.homePage h1, .homePage h2, .homePage h3, .homePage h4, .homePage h5, .homePage h6 {
+  font-family: 'Sora', 'DM Sans', system-ui, sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.homePage p {
+  font-family: 'Inter', 'DM Sans', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .homePage p { font-size: 15px; line-height: 1.7; }
+}
+
+@media (max-width: 480px) {
+  .homePage p { font-size: 14px; line-height: 1.65; }
+}
+/* ===== End Unified Typography ===== */

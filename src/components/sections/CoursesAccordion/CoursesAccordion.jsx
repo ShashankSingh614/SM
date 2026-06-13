@@ -330,19 +330,6 @@ const CoursesAccordion = () => {
             '2D to 3D Conversion'
           ]
         },
-        {
-          title: 'Visualization & Storyboarding',
-          skills: [
-            'Artistic Visualization',
-            'Drawing Fundamentals',
-            'Sketching Techniques (Lines, Shading, Tracing)',
-            'Character Development',
-            'Storyboard Creation',
-            'Classical Animation Principles',
-            'FlipBook Design with Light Box',
-            'Animation Layout & Design'
-          ]
-        }
       ]
     },
     {
@@ -452,19 +439,6 @@ const CoursesAccordion = () => {
             'Working Drawings & Detailing',
             'Perspective Views',
             '2D to 3D Conversion'
-          ]
-        },
-        {
-          title: 'Visualization & Storyboarding',
-          skills: [
-            'Artistic Visualization',
-            'Drawing Fundamentals',
-            'Sketching Techniques (Lines, Shading, Tracing)',
-            'Character Development',
-            'Storyboard Creation',
-            'Classical Animation Principles',
-            'FlipBook Design with Light Box',
-            'Animation Layout & Design'
           ]
         },
         {
@@ -1087,19 +1061,6 @@ const CoursesAccordion = () => {
             'Working Drawings & Detailing',
             'Perspective Views',
             '2D to 3D Conversion'
-          ]
-        },
-        {
-          title: 'Visualization & Storyboarding',
-          skills: [
-            'Artistic Visualization',
-            'Drawing Fundamentals',
-            'Sketching Techniques (Lines, Shading, Tracing)',
-            'Character Development',
-            'Storyboard Creation',
-            'Classical Animation Principles',
-            'FlipBook Design with Light Box',
-            'Animation Layout & Design'
           ]
         },
         {

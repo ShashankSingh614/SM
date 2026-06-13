@@ -94,7 +94,7 @@ const CourseLandingPage = () => {
         <meta name="description" content={courseData.intro.substring(0, 160)} />
         <meta
           name="keywords"
-          content={`${courseTitle} course Mumbai, ${courseTitle} after 12th, ${courseTitle} after graduation, best ${courseTitle} institute Mumbai, ${courseTitle} training near me, ${courseTitle} diploma Mumbai 2026, Shankar Multimedia`}
+          content={`best ${courseTitle} course near me,${courseTitle} institute with placement Mumbai,${courseTitle} course fees Mumbai,${courseTitle} course duration Mumbai,${courseTitle} certification course Mumbai,${courseTitle} diploma course with placement,${courseTitle} training institute near me,top-rated ${courseTitle} classes Mumbai,affordable ${courseTitle} course Mumbai,professional ${courseTitle} institute near me,weekend ${courseTitle} classes near me,government recognized ${courseTitle} course Mumbai,job-oriented ${courseTitle} training institute Mumbai,advanced ${courseTitle} diploma Mumbai 2026,best ${courseTitle} academy in Mumbai,,Shankar Multimedia`}
         />
         <link rel="canonical" href={`https://shankarmultimedia.com/course/${courseData.slug}`} />
 
@@ -150,7 +150,7 @@ const CourseLandingPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.34 }}
             >
-              <a href="#counselling" className={styles.btnPrimary}>
+              <a href="/contacts" className={styles.btnPrimary}>
                 Book Free Counselling <FiArrowRight />
               </a>
               <a href="#curriculum" className={styles.btnOutline}>
@@ -275,12 +275,12 @@ const CourseLandingPage = () => {
         <section className={styles.counsellingSection} id="counselling">
           <div className={styles.counsellingInner}>
             <Reveal>
-              <p className={styles.eyebrowDark}>Free · No Obligation · Expert Guidance</p>
+              <p className={styles.eyebrowDark}>Industry Oriented · Placement Assurance · Expert Guidance</p>
               <h2 className={styles.counsellingHeading}>
                 Start Your Career in {courseTitle} Today
               </h2>
               <p className={styles.counsellingDesc}>
-                Speak directly with our course advisors — they'll walk you through curriculum, batch schedules, fee structure, EMI options, and your personal placement pathway. Seats are limited; secure yours before the next batch fills up.
+                Speak directly with our course advisors. They'll walk you through curriculum, batch schedules, fee structure, EMI options, and your personal placement pathway. Seats are limited! Secure yours before the next batch fills up.
               </p>
 
               <div className={styles.counsellingPoints}>

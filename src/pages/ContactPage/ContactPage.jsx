@@ -47,7 +47,7 @@ const ContactPageContent = () => {
       <div className="container">
         <div className={styles.pageHeader}>
           <h1>Contact Us</h1>
-          <p>Don’t wait. Join now and build your future in multimedia and IT education. Visit us today</p>
+          <p>Speak directly with our course advisors. They'll walk you through curriculum, batch schedules, fee structure, EMI options, and your personal placement pathway. Seats are limited! Secure yours before the next batch fills up.</p>
         </div>
        
         {/* Branch Locations */}
