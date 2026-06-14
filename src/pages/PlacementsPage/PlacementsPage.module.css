@@ -32,11 +32,17 @@
 .testimonialsSection h2,
 .studentsSection h2 {
   text-align: center;
-  font-size: 2.5rem;
-  font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 1rem;
   position: relative;
+  margin-bottom: 1.5rem;
+  font-family: 'Sora', 'DM Sans', system-ui, sans-serif;
+  font-size: clamp(1.75rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  text-transform: capitalize;
+  margin: 0 0 1.2rem;
+  line-height: 1.18;
+  letter-spacing: -0.5px;
 }
 
 .testimonialsSection h2::after,
@@ -176,7 +182,7 @@
 
 .testimonialsSection h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 3rem;
@@ -356,7 +362,7 @@
 .studentsSection h2 {
   text-align: center;
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--text-primary);
   margin-bottom: 3rem;
 }
@@ -546,105 +552,81 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-  .statsGrid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-
-  .studentsGrid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-  }
-}
 
 @media (max-width: 768px) {
   .placementsPage {
-    padding-top: 60px;
+    padding-top: 0px;
   }
-
   .heroContent h1 {
     font-size: 2.5rem;
   }
-
   .heroContent p {
     font-size: 1.1rem;
   }
-
   .heroImage {
     gap: 1rem;
   }
-
   .heroImage img {
     height: 60px;
   }
-
   .statsGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
-
   .statCard {
     padding: 1.5rem 1rem;
     flex-direction: column;
     text-align: center;
     gap: 0.75rem;
   }
-
   .testimonial {
     padding: 2rem;
   }
-
   .testimonialContent {
     gap: 1.5rem;
   }
-
   .testimonialAuthor {
     flex-direction: column;
     text-align: center;
     gap: 1rem;
   }
-
   .filtersContainer {
     flex-direction: column;
     align-items: stretch;
     gap: 1rem;
   }
-
   .searchBox {
     min-width: auto;
   }
-
   .categoryFilters {
     justify-content: center;
     flex-wrap: wrap;
   }
-
   .resultsInfo {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
-
   .studentsGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
-
   .pagination {
     gap: 0.25rem;
   }
-
   .pageBtn {
     width: 35px;
     height: 35px;
     font-size: 0.9rem;
   }
-
   .companiesGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+  .studentsSection h2 {
+    font-size: 1.75rem; margin-top: 1rem; 
+  }
+
 
 }
 
@@ -692,7 +674,7 @@
 /* ===== Unified Typography (matches CourseLandingPage system) ===== */
 .pageHeader h1 {
   font-family: 'Sora', 'DM Sans', system-ui, sans-serif;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 1.15;
   letter-spacing: -0.5px;
 }
@@ -704,11 +686,6 @@
   margin-bottom: 1rem;
 }
 
-h2, h3, h4, h5, h6 {
-  font-family: 'Sora', 'DM Sans', system-ui, sans-serif;
-  letter-spacing: -0.5px;
-}
-
 p {
   font-family: 'Inter', 'DM Sans', system-ui, sans-serif;
   font-size: 16px;
@@ -717,12 +694,12 @@ p {
 }
 
 @media (max-width: 768px) {
-  .pageHeader h1 { font-size: 2rem; }
-  p { font-size: 15px; line-height: 1.7; }
+  .pageHeader h1 { font-size: 1.75rem; }
+  p { font-size: 13px; line-height: 1.7; }
 }
 
 @media (max-width: 480px) {
-  .pageHeader h1 { font-size: 1.5rem; }
-  p { font-size: 14px; line-height: 1.65; }
+  .pageHeader h1 { font-size: 13px; }
+  p { font-size: 13px; line-height: 1.65; }
 }
 /* ===== End Unified Typography ===== */

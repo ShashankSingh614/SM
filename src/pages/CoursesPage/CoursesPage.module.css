@@ -1,7 +1,7 @@
 /* Students Work Portfolio Page Styles */
 .coursesPage {
+  padding: 5rem 0 4rem;
   min-height: 100vh;
-  padding-top: 80px;
 }
 
 /* Image Overlay with Eye Icon */
@@ -44,12 +44,12 @@
 }
 
 .pageDescription {
-  font-size: 1.05rem !important;
-  color: #666 !important;
-  max-width: 950px !important;
-  margin: 0 auto !important;
-  line-height: 1.7 !important;
-  font-weight: 500 !important;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  position: relative;
 }
 
 /* Hero Section */
@@ -215,7 +215,7 @@
 }
 
 .categoryHeader h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 1rem;
@@ -235,7 +235,7 @@
 }
 
 .categoryHeader p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--text-secondary);
   max-width: 600px;
   margin: 0 auto;
@@ -605,100 +605,37 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-  .worksGrid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-  }
-
-  .videosGrid {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 1.5rem;
-  }
-
-  .heroStats {
-    gap: 2rem;
-  }
-
-  .lightboxNav {
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-  }
-
-  .lightboxPrev {
-    left: 1rem;
-  }
-
-  .lightboxNext {
-    right: 1rem;
-  }
-}
-
 @media (max-width: 768px) {
-  .coursesPage {
-    padding-top: 60px;
-  }
-
-  .heroContent h1 {
-    font-size: 2.5rem;
-  }
-
-  .heroContent p {
-    font-size: 1.1rem;
-  }
-
+  .coursesPage {padding-top: 60px;}
+  .heroContent h1 {font-size: 2rem;}
+  .heroContent p {font-size: 1.1rem;}
   .heroStats {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
-
   .filtersContainer {
     flex-direction: column;
     align-items: stretch;
     gap: 1rem;
   }
-
-  .searchBox {
-    min-width: auto;
-  }
-
-  .filterSelect {
-    min-width: auto;
-  }
-
-  .categoryHeader h2 {
-    font-size: 2rem;
-  }
-
-  .categoryHeader p {
-    font-size: 1rem;
-  }
-
+  .searchBox {min-width: auto;}
+  .filterSelect {min-width: auto;}
+  .categoryHeader h2 {font-size: 1.5rem;}
+  .categoryHeader p {font-size: 1rem;}
   .worksGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
-
   .videosGrid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-
-  .videoWrapper {
-    height: 200px;
-  }
+  .videoWrapper {height: 200px;}
 
   /* Lightbox Mobile Adjustments */
-  .lightboxOverlay {
-    padding: 1rem;
-  }
-
-  .lightboxImage {
-    max-height: calc(90vh - 100px);
-  }
-
+  .lightboxOverlay {padding: 1rem;}
+  .lightboxImage {max-height: calc(90vh - 100px);}
   .lightboxClose {
     top: 1rem;
     right: 1rem;
@@ -706,80 +643,48 @@
     height: 45px;
     font-size: 1.3rem;
   }
-
   .lightboxNav {
     width: 45px;
     height: 45px;
     font-size: 1.3rem;
   }
-
-  .lightboxPrev {
-    left: 0.5rem;
-  }
-
-  .lightboxNext {
-    right: 0.5rem;
-  }
-
+  .lightboxPrev {left: 0.5rem;}
+  .lightboxNext {right: 0.5rem;}
   .lightboxInfo {
     padding: 1rem 1.5rem;
     min-width: auto;
     width: 100%;
   }
-
-  .lightboxInfo h3 {
-    font-size: 1.2rem;
-  }
-
-  .lightboxInfo p {
-    font-size: 0.9rem;
-  }
+  .lightboxInfo h3 {font-size: 1.2rem;}
+  .lightboxInfo p {font-size: 0.9rem;}
 }
 
 @media (max-width: 480px) {
-  .heroContent h1 {
-    font-size: 2rem;
-  }
-
+  .heroContent h1 {font-size: 2rem;}
   .worksGrid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-
-  .workImage {
-    height: 200px;
-  }
-
-  .videoWrapper {
-    height: 180px;
-  }
-
-  .workOverlay {
-    padding: 1.5rem;
-  }
-
+  .workImage {height: 200px;}
+  .videoWrapper {height: 180px;}
+  .workOverlay {padding: 1.5rem;}
   .viewBtn {
     width: 40px;
     height: 40px;
     font-size: 1.2rem;
   }
-
   /* Lightbox Ultra Mobile */
   .lightboxNav {
     width: 40px;
     height: 40px;
     font-size: 1.2rem;
   }
-
   .lightboxClose {
     width: 40px;
     height: 40px;
     font-size: 1.2rem;
   }
-
-  .eyeIcon {
-    font-size: 2.5rem;
-  }
+  .eyeIcon {font-size: 2.5rem;}
 }
 
 /* Animation Enhancements */
@@ -838,7 +743,7 @@ p {
 }
 
 @media (max-width: 480px) {
-  .pageHeader h1 { font-size: 1.5rem; }
+  .pageHeader h1 { font-size: 2rem; }
   p { font-size: 14px; line-height: 1.65; }
 }
 /* ===== End Unified Typography ===== */
