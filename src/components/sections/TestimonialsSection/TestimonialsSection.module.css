@@ -1,5 +1,6 @@
 .testimonialsSection {
-  padding: 5rem 0;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
   background: linear-gradient(135deg, var(--gray-50) 0%, white 100%);
   position: relative;
   overflow: hidden;
@@ -257,7 +258,6 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .testimonialssection { padding: 1.5rem 0 5rem; min-height: 500px; }
   .sectionHeader h2 { padding: 2rem 1rem 1.5rem; }
   .sectionHeader p { font-size: 14px; margin-top: 1rem; }
   .sectionDescription { font-size: 13px; }
@@ -282,6 +282,15 @@
   .authorInfo h4 {font-size: 1.3rem;}
   .authorRole {font-size: 1rem;}
   .testimonialControls {gap: 1.5rem;}
+  .testimonialsSection {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  background: linear-gradient(135deg, var(--gray-50) 0%, white 100%);
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
 }
 
 @media (max-width: 480px) {
@@ -298,6 +307,15 @@
     left: -1rem;
   }
   .authorInfo h4 {font-size: 1.1rem;}
+  .testimonialsSection {
+  padding-bottom: 0;
+  padding-top: 0;
+  background: linear-gradient(135deg, var(--gray-50) 0%, white 100%);
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
 }
 
 /* Animation Enhancements */
@@ -497,16 +515,16 @@
     gap: 0.75rem;
     margin: 2.5rem auto 4rem;
   }
-
   .reviewPlatformItem {
     flex: 0 0 160px;
     min-width: 160px;
     padding: 0.9rem 0.7rem;
   }
-
-  .platformName {
-    font-size: 0.8rem;
-  }
+  .platformName {font-size: 0.8rem;}
+  .section { padding: 1.5rem 0 5rem; min-height: 500px; }
+  .sectionHeader { padding: 2rem 1rem 1.5rem; }
+  .sectionHeader p { font-size: 14px; margin-top: 1rem; }
+  .sectionDescription { font-size: 13px; }
 }
 
 /* Mobile */
@@ -517,22 +535,17 @@
     margin: 2rem auto 3.5rem;
     padding: 0 1rem;
   }
-
   .reviewPlatformItem {
     flex: 0 0 140px;
     min-width: 140px;
   }
-
-  .platformName {
-    font-size: 0.75rem;
-  }
-
-  .platformRatingValue {
-    font-size: 0.7rem;
-  }
-
+  .platformName {font-size: 0.75rem;}
+  .platformRatingValue {font-size: 0.7rem;}
   .platformLogo {
     width: 36px;
     height: 36px;
   }
+  .section { padding: 0.8rem 0 4rem; min-height: 400px; }
+  .sectionHeader { padding: 1.5rem 1rem 1rem; }
+  .sectionHeader p { font-size: 13px; margin-top: 1rem; }
 }

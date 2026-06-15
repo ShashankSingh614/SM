@@ -40,11 +40,12 @@ const RecentPlacementSlider = () => {
         {/* Header - Inside background section */}
         <div className={classes.sectionHeader}>
           <h2>Recent Placements & Career Success</h2>
-          <p className={classes.sectionDescription}>Our comprehensively trained students are establishing successful careers across leading multinational companies, creative studios, and technology enterprises worldwide, demonstrating the caliber of professional expertise cultivated through our rigorous educational programs</p>
+          <p className={classes.headerSubtitle}>Our comprehensively trained students are establishing successful careers across leading multinational companies, creative studios, and technology enterprises worldwide, demonstrating the caliber of professional expertise cultivated through our rigorous educational programs</p>
         </div>
 
         {/* Slider */}
         <div className={classes.sliderWrapper}>
+          
           <div
             className={classes.carousel}
             onMouseEnter={() => setIsHovered(true)}
