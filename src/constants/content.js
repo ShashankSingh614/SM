@@ -24,7 +24,9 @@ export const CONTACT_INFO = {
       phone: '+91 9819508524',
       href: 'tel:9819508524',
       contactPerson: 'Mr. Deepak Singh',
-      address: '501 & 507, 5th Floor, Accord Complex\nOpp. Railway Station & Bus Depot\nGoregaon East, Mumbai - 400 063',
+      address: `501, 503, 504, 505 & 507, 5th Floor, Accord Complex\nOpp. Railway Station & Bus Depot\nGoregaon East, Mumbai - 400 063
+      
+      603,6th Floor, Accord Classic\nAarey Road Near Railway Station\nGoregaon East, Mumbai - 400 063`,
       mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.686!2d72.8504476!3d19.1652383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b652db07127b%3A0xf3b080b7f8685b45!2sShankar%20Multimedia%20Goregaon!5e0!3m2!1sen!2sin!4v1234567890',
       googleMapsLink: 'https://maps.app.goo.gl/CmusG4Bn3CLpvCm68'
     },
@@ -60,7 +62,7 @@ export const CONTACT_INFO = {
       phone: '+91 7304157986',
       href: 'tel:7304157986',
       contactPerson: 'Mr. Shashank Singh',
-      address: '804, 8th Floor, Orion West, Station Road\nNear Railway Station\nSantacruz West, Mumbai - 400 054',
+      address: '804, 8th Floor, Orion West, Station Road\nNear Railway Station, Near Burger King\nSantacruz West, Mumbai - 400 054',
       mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2!2d72.8393971!3d19.0810422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c95dd1d12b6b%3A0xae948c5d76d8e95c!2sShankar%20Multimedia%20Santacruz!5e0!3m2!1sen!2sin!4v1234567894',
       googleMapsLink: 'https://maps.app.goo.gl/aKJrfA4JNn4h8Pus8'
     }

@@ -87,7 +87,9 @@ const ContactPageContent = () => {
                   </div>
                   
                   <div className={styles.branchAddress}>
-                    <p>{location.address}</p>
+                    <p style={{ whiteSpace: 'pre-line' }}>
+                      {location.address}
+                    </p>
                   </div>
                   
                   {location.contactPerson && (

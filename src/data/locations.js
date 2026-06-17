@@ -3,7 +3,7 @@ export const locations = [
   {
     id: '1',
     name: 'Goregaon',
-    address: '501 & 507, 5th Floor, Accord Complex\nOpp. Railway Station & Bus Depot\nGoregaon East, Mumbai - 400 063',
+    address: '501, 503, 504, 505 & 507, 5th Floor, Accord Complex\nOpp. Railway Station & Bus Depot\nGoregaon East, Mumbai - 400 063',
     phone: '+91 9819508524',
     contactPerson: 'Mr. Deepak Singh',
     latitude: 19.1652383,
