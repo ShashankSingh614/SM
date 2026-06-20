@@ -2,7 +2,7 @@
 
 // Main brand assets
 export const BRAND_IMAGES = {
-  logo: '/images/logo.png',
+  logo: '/images/logo.webp',
   favicon: '/favicon.ico',
 };
 
@@ -10,84 +10,84 @@ export const BRAND_IMAGES = {
 export const COURSE_IMAGES = {
   // 3D Animation & VFX
   '3d': {
-    background: '/images/courses/3d.jpg',
-    icon: '/images/courses/courses/3d.jpg',
-    icon2: '/images/courses/courses/3d.jpg',
+    background: '/images/courses/3d.webp',
+    icon: '/images/courses/courses/3d.webp',
+    icon2: '/images/courses/courses/3d.webp',
   },
   
   // Web Development
   web: {
-    background: '/images/courses/web1.png',
-    icon: '/images/courses/web1.png',
-    icon2: '/images/courses/web1.png',
+    background: '/images/courses/web1.webp',
+    icon: '/images/courses/web1.webp',
+    icon2: '/images/courses/web1.webp',
   },
   
   // Graphic Design
   graphics: {
-    background: '/images/courses/gra1.png',
-    icon: '/images/courses/gra1.png',
-    icon2: '/images/courses/gra1.png',
+    background: '/images/courses/gra1.webp',
+    icon: '/images/courses/gra1.webp',
+    icon2: '/images/courses/gra1.webp',
   }
 
 };
 
 // Background images for hero and sections
 export const BACKGROUND_IMAGES = {
-  banner1: '/images/backgrounds/banner-1.png',
-  banner2: '/images/backgrounds/banner-11.png',
-  bannerP: '/images/backgrounds/banner-p.png',
-  bannerP1: '/images/backgrounds/banner-p1.png',
-  bannerP2: '/images/backgrounds/banner-p2.png',
+  banner1: '/images/backgrounds/banner-1.webp',
+  banner2: '/images/backgrounds/banner-11.webp',
+  bannerP: '/images/backgrounds/banner-p.webp',
+  bannerP1: '/images/backgrounds/banner-p1.webp',
+  bannerP2: '/images/backgrounds/banner-p2.webp',
 };
 
 // Team member photos
 export const TEAM_IMAGES = {
-  anurag: '/images/team/anurag_singh.jpg',
-  deepak: '/images/team/deepak_singh.jpg',
-  dharmendra: '/images/team/dharmendra_singh.jpg',
-  saurabh: '/images/team/saurabh_singh.jpg',
+  anurag: '/images/team/anurag_singh.webp',
+  deepak: '/images/team/deepak_singh.webp',
+  dharmendra: '/images/team/dharmendra_singh.webp',
+  saurabh: '/images/team/saurabh_singh.webp',
 };
 
 // Social media icons
 export const SOCIAL_ICONS = {
-  facebook: '/images/icons/icons8-facebook-40.png',
-  instagram: '/images/icons/icons8-instagram-40.png',
-  instagram42: '/images/icons/icons8-instagram-42.png',
-  linkedin: '/images/icons/icons8-linkedin-40.png',
-  whatsapp: '/images/icons/icons8-whatsapp-40.png',
-  youtube: '/images/icons/icons8-youtube-40.png',
+  facebook: '/images/icons/icons8-facebook-40.webp',
+  instagram: '/images/icons/icons8-instagram-40.webp',
+  instagram42: '/images/icons/icons8-instagram-42.webp',
+  linkedin: '/images/icons/icons8-linkedin-40.webp',
+  whatsapp: '/images/icons/icons8-whatsapp-40.webp',
+  youtube: '/images/icons/icons8-youtube-40.webp',
 };
 
 // Gallery images (student work samples)
 export const GALLERY_IMAGES = {
   graphics: Array.from({ length: 22 }, (_, i) => {
-    const num = i === 3 ? 5 : i === 4 ? 6 : i < 3 ? i + 1 : i + 2; // Skip 4.jpg as it doesn't exist
-    return `/images/gallery/${num}.jpg`;
-  }).filter(path => !path.includes('4.jpg')), // Remove the non-existent 4.jpg
+    const num = i === 3 ? 5 : i === 4 ? 6 : i < 3 ? i + 1 : i + 2; // Skip 4.webp as it doesn't exist
+    return `/images/gallery/${num}.webp`;
+  }).filter(path => !path.includes('4.webp')), // Remove the non-existent 4.webp
 };
 
 // Sample placement images (first 20 for performance)
 export const PLACEMENT_IMAGES = [
-  '/images/studentPlacements/100Pooja Gra Stu Malad.jpg',
-  '/images/studentPlacements/101Pradeep Maurya Gra Stu Goregaon West.jpg',
-  '/images/studentPlacements/102Pragati Hinghu Gra Stu Borivali.jpg',
-  '/images/studentPlacements/103Prasad Dike Gra Stu Nallasopara East.jpg',
-  '/images/studentPlacements/104Prasad Gra Jogeshwari.jpg',
-  '/images/studentPlacements/105Prashant patil-Gra - Palghar.jpg',
-  '/images/studentPlacements/106Pratik Khot Gra Stu - Santacruz.jpg',
-  '/images/studentPlacements/107Priti Toraskar. 3D Interior Designer.jpg',
-  '/images/studentPlacements/108Priyanka Chikne Gra Stu WhatsApp Number Nalasopara East.jpg',
-  '/images/studentPlacements/109Rahul Rikame Gra Stu Goregaon East.jpg',
-  '/images/studentPlacements/110Raj Tambade Gra Stu Goregaon East.jpg',
-  '/images/studentPlacements/111Rakesh Kandekar Gra Stu Warli.jpg',
-  '/images/studentPlacements/112Rakesh Lotankar Gra Stu Jogeshwari.jpg',
-  '/images/studentPlacements/113Ram Shinde Gra Student Goregaon East.jpg',
-  '/images/studentPlacements/114Ravindra Ramane Gra Stu Jogeshwari East.jpg',
-  '/images/studentPlacements/115Reetu  Maurya Gra Stu Goregaon West.jpg',
-  '/images/studentPlacements/116Rohan kadam Gra Stu Dadar.jpg',
-  '/images/studentPlacements/117Rohan ratate - gra- nalasopara.jpg',
-  '/images/studentPlacements/118Rohit sable Gra Stu Jogeshwari.jpg',
-  '/images/studentPlacements/119Rohit Shriwant gra - goregaon.jpg',
+  '/images/studentPlacements/100Pooja Gra Stu Malad.webp',
+  '/images/studentPlacements/101Pradeep Maurya Gra Stu Goregaon West.webp',
+  '/images/studentPlacements/102Pragati Hinghu Gra Stu Borivali.webp',
+  '/images/studentPlacements/103Prasad Dike Gra Stu Nallasopara East.webp',
+  '/images/studentPlacements/104Prasad Gra Jogeshwari.webp',
+  '/images/studentPlacements/105Prashant patil-Gra - Palghar.webp',
+  '/images/studentPlacements/106Pratik Khot Gra Stu - Santacruz.webp',
+  '/images/studentPlacements/107Priti Toraskar. 3D Interior Designer.webp',
+  '/images/studentPlacements/108Priyanka Chikne Gra Stu WhatsApp Number Nalasopara East.webp',
+  '/images/studentPlacements/109Rahul Rikame Gra Stu Goregaon East.webp',
+  '/images/studentPlacements/110Raj Tambade Gra Stu Goregaon East.webp',
+  '/images/studentPlacements/111Rakesh Kandekar Gra Stu Warli.webp',
+  '/images/studentPlacements/112Rakesh Lotankar Gra Stu Jogeshwari.webp',
+  '/images/studentPlacements/113Ram Shinde Gra Student Goregaon East.webp',
+  '/images/studentPlacements/114Ravindra Ramane Gra Stu Jogeshwari East.webp',
+  '/images/studentPlacements/115Reetu  Maurya Gra Stu Goregaon West.webp',
+  '/images/studentPlacements/116Rohan kadam Gra Stu Dadar.webp',
+  '/images/studentPlacements/117Rohan ratate - gra- nalasopara.webp',
+  '/images/studentPlacements/118Rohit sable Gra Stu Jogeshwari.webp',
+  '/images/studentPlacements/119Rohit Shriwant gra - goregaon.webp',
 ];
 
 // Helper function to get random placement images

@@ -4,7 +4,7 @@ import classes from './RecentPlacementSlider.module.css';
 
 const images = Array.from(
   { length: 30 },
-  (_, i) => `/images/instaPlacements/${i + 1}.jpeg`
+  (_, i) => `/images/instaPlacements/${i + 1}.webp`
 );
 
 const RecentPlacementSlider = () => {

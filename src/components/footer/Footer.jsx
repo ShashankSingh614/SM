@@ -106,32 +106,32 @@ Footer.propTypes = {
 };
 
 Footer.defaultProps = {
-  logoSrc: '/assets/images/logo.png',
+  logoSrc: '/assets/images/logo.webp',
   logoAlt: 'Shankar Multimedia Logo',
   socialLinks: [
     {
       id: '1',
       name: 'Instagram',
       url: 'https://www.instagram.com/shankarmultimedia/',
-      icon: '/assets/images/int.png',
+      icon: '/assets/images/int.webp',
     },
     {
       id: '2',
       name: 'Facebook',
       url: 'https://www.facebook.com/people/Shankar-Multimedia/pfbid0KrYer6RVgUrWPWEZDcAD9XN7UsdfNHavcq53Q6BVuvMHU62vj5QwKvog6QeiHJKol/?rdid=h8Wzjw4Rc1WQG8qI&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Aq8BsLAL2%2F',
-      icon: '/assets/images/fb.png',
+      icon: '/assets/images/fb.webp',
     },
     {
       id: '3',
       name: 'YouTube',
       url: 'https://www.youtube.com/@ShankarMultimediaMumbai',
-      icon: '/assets/images/yt.png',
+      icon: '/assets/images/yt.webp',
     },
     {
       id: '4',
       name: 'LinkedIn',
       url: 'https://in.linkedin.com/logo/shankar-multimedia-9223439986',
-      icon: '/assets/images/li.png',
+      icon: '/assets/images/li.webp',
     },
   ],
 };

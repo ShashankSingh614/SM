@@ -61,7 +61,8 @@ const ContactPageContent = () => {
           <motion.div className={styles.sectionHeader} variants={itemVariants}>
             <h2>Institute Centers</h2>
             <motion.img
-              src="/images/mumbai.png"
+              src="/images/mumbai.webp"
+              alt="Shankar Multimedia Campus View"
               className={styles.headerImage}
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}

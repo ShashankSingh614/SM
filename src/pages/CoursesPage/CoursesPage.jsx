@@ -30,20 +30,20 @@ const CoursesPageContent = () => {
       title: 'Graphic & UI/UX Designing',
       description: 'Showcasing layouts, branding, UI/UX, and packaging design work by our talented students',
       works: [
-        { id: 1, image: '/images/img2/gra/1.jpg', title: 'Brand Packaging Design', student: 'Student Portfolio' },
-        { id: 2, image: '/images/img2/gra/2.jpg', title: 'Cinematic Poster Design', student: 'Student Portfolio' },
-        { id: 3, image: '/images/img2/gra/3.jpg', title: 'Vector Art', student: 'Student Portfolio' },
-        { id: 4, image: '/images/img2/gra/4.jpg', title: 'Cinematic Poster Design', student: 'Student Portfolio' },
-        { id: 5, image: '/images/img2/gra/5.jpg', title: 'Brand Social Media Layout', student: 'Student Portfolio' },
-        { id: 6, image: '/images/img2/gra/6.jpg', title: 'Brand Packaging Design', student: 'Student Portfolio' }
+        { id: 1, image: '/images/img2/gra/1.webp', title: 'Brand Packaging Design', student: 'Student Portfolio' },
+        { id: 2, image: '/images/img2/gra/2.webp', title: 'Cinematic Poster Design', student: 'Student Portfolio' },
+        { id: 3, image: '/images/img2/gra/3.webp', title: 'Vector Art', student: 'Student Portfolio' },
+        { id: 4, image: '/images/img2/gra/4.webp', title: 'Cinematic Poster Design', student: 'Student Portfolio' },
+        { id: 5, image: '/images/img2/gra/5.webp', title: 'Brand Social Media Layout', student: 'Student Portfolio' },
+        { id: 6, image: '/images/img2/gra/6.webp', title: 'Brand Packaging Design', student: 'Student Portfolio' }
       ],
       moreWorks: [
-        { id: 101, image: '/images/img2/gra/7.jpg', title: 'Mobile App UI Design', student: 'Student Portfolio' },
-        { id: 102, image: '/images/img2/gra/8.jpg', title: 'Photo Retouching', student: 'Student Portfolio' },
-        { id: 103, image: '/images/img2/gra/9.jpg', title: 'Vector Art', student: 'Student Portfolio' },
-        { id: 104, image: '/images/img2/gra/10.jpg', title: 'Website Layout Design', student: 'Student Portfolio' },
-        { id: 105, image: '/images/img2/gra/11.jpg', title: 'Brand Social Media Layout', student: 'Student Portfolio' },
-        { id: 106, image: '/images/img2/gra/12.jpg', title: 'Brand Packaging Design', student: 'Student Portfolio' }
+        { id: 101, image: '/images/img2/gra/7.webp', title: 'Mobile App UI Design', student: 'Student Portfolio' },
+        { id: 102, image: '/images/img2/gra/8.webp', title: 'Photo Retouching', student: 'Student Portfolio' },
+        { id: 103, image: '/images/img2/gra/9.webp', title: 'Vector Art', student: 'Student Portfolio' },
+        { id: 104, image: '/images/img2/gra/10.webp', title: 'Website Layout Design', student: 'Student Portfolio' },
+        { id: 105, image: '/images/img2/gra/11.webp', title: 'Brand Social Media Layout', student: 'Student Portfolio' },
+        { id: 106, image: '/images/img2/gra/12.webp', title: 'Brand Packaging Design', student: 'Student Portfolio' }
       ]
     },
     {
@@ -51,20 +51,20 @@ const CoursesPageContent = () => {
       title: '3D Modelling & Animation',
       description: 'Showcasing stall, interior, exterior, bungalow, and architectural design work by our talented students',
       works: [
-        { id: 13, image: '/images/img2/3d/1.jpg', title: 'Exhibition Stall Design', student: 'Student Portfolio' },
-        { id: 14, image: '/images/img2/3d/2.jpg', title: 'Exhibition Stall Design', student: 'Student Portfolio' },
-        { id: 15, image: '/images/img2/3d/3.jpg', title: 'Living Room Interior Design', student: 'Student Portfolio' },
-        { id: 16, image: '/images/img2/3d/4.jpg', title: 'Living Room Interior Design', student: 'Student Portfolio' },
-        { id: 17, image: '/images/img2/3d/5.jpg', title: 'Modular Kitchen Interior Design', student: 'Student Portfolio' },
-        { id: 18, image: '/images/img2/3d/6.jpg', title: 'Building Architecture Design', student: 'Student Portfolio' }
+        { id: 13, image: '/images/img2/3d/1.webp', title: 'Exhibition Stall Design', student: 'Student Portfolio' },
+        { id: 14, image: '/images/img2/3d/2.webp', title: 'Exhibition Stall Design', student: 'Student Portfolio' },
+        { id: 15, image: '/images/img2/3d/3.webp', title: 'Living Room Interior Design', student: 'Student Portfolio' },
+        { id: 16, image: '/images/img2/3d/4.webp', title: 'Living Room Interior Design', student: 'Student Portfolio' },
+        { id: 17, image: '/images/img2/3d/5.webp', title: 'Modular Kitchen Interior Design', student: 'Student Portfolio' },
+        { id: 18, image: '/images/img2/3d/6.webp', title: 'Building Architecture Design', student: 'Student Portfolio' }
       ],
       moreWorks: [
-        { id: 107, image: '/images/img2/3d/7.jpg', title: 'Residential Bungalow Design', student: 'Student Portfolio' },
-        { id: 108, image: '/images/img2/3d/8.jpg', title: 'Corporate Reception Design', student: 'Student Portfolio' },
-        { id: 109, image: '/images/img2/3d/9.jpg', title: 'Commercial Parking Design', student: 'Student Portfolio' },
-        { id: 110, image: '/images/img2/3d/10.jpg', title: 'Bedroom Interior Design', student: 'Student Portfolio' },
-        { id: 111, image: '/images/img2/3d/11.jpg', title: 'Living Room Interior Design', student: 'Student Portfolio' },
-        { id: 112, image: '/images/img2/3d/12.jpg', title: 'Modular Kitchen Interior Design', student: 'Student Portfolio' }
+        { id: 107, image: '/images/img2/3d/7.webp', title: 'Residential Bungalow Design', student: 'Student Portfolio' },
+        { id: 108, image: '/images/img2/3d/8.webp', title: 'Corporate Reception Design', student: 'Student Portfolio' },
+        { id: 109, image: '/images/img2/3d/9.webp', title: 'Commercial Parking Design', student: 'Student Portfolio' },
+        { id: 110, image: '/images/img2/3d/10.webp', title: 'Bedroom Interior Design', student: 'Student Portfolio' },
+        { id: 111, image: '/images/img2/3d/11.webp', title: 'Living Room Interior Design', student: 'Student Portfolio' },
+        { id: 112, image: '/images/img2/3d/12.webp', title: 'Modular Kitchen Interior Design', student: 'Student Portfolio' }
       ]
     },
     {
@@ -93,12 +93,12 @@ const CoursesPageContent = () => {
       title: 'Web Designing & Development',
       description: 'Showcasing responsive website designs and interactive user interfaces created by our students',
       works: [
-        { id: 7, image: '/images/img2/web/1.jpg', title: 'Industrial Services Website', student: 'Student Portfolio' },
-        { id: 8, image: '/images/img2/web/2.jpg', title: 'E-Commerce Website', student: 'Student Portfolio' },
-        { id: 9, image: '/images/img2/web/3.jpg', title: 'Real Estate Industry Website', student: 'Student Portfolio' },
-        { id: 10, image: '/images/img2/web/4.jpg', title: 'Real Estate Industry Website', student: 'Student Portfolio' },
-        { id: 11, image: '/images/img2/web/5.jpg', title: 'Healthcare Industry Website', student: 'Student Portfolio' },
-        { id: 12, image: '/images/img2/web/6.jpg', title: 'Automotive Industry Website', student: 'Student Portfolio' }
+        { id: 7, image: '/images/img2/web/1.webp', title: 'Industrial Services Website', student: 'Student Portfolio' },
+        { id: 8, image: '/images/img2/web/2.webp', title: 'E-Commerce Website', student: 'Student Portfolio' },
+        { id: 9, image: '/images/img2/web/3.webp', title: 'Real Estate Industry Website', student: 'Student Portfolio' },
+        { id: 10, image: '/images/img2/web/4.webp', title: 'Real Estate Industry Website', student: 'Student Portfolio' },
+        { id: 11, image: '/images/img2/web/5.webp', title: 'Healthcare Industry Website', student: 'Student Portfolio' },
+        { id: 12, image: '/images/img2/web/6.webp', title: 'Automotive Industry Website', student: 'Student Portfolio' }
       ],
     }
   ], []);

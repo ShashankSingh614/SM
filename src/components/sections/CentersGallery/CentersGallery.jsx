@@ -20,30 +20,30 @@ const CentersGallery = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   const centerImages = useMemo(() => [
-    { id: 1, src: '/images/institute/1.jpg', alt: 'Campus view' },
-    { id: 2, src: '/images/institute/2.jpg', alt: 'Campus view' },
-    { id: 3, src: '/images/institute/3.jpg', alt: 'Campus view' },
-    { id: 4, src: '/images/institute/4.jpg', alt: 'Campus view' },
-    { id: 5, src: '/images/institute/5.jpg', alt: 'Campus view' },
-    { id: 6, src: '/images/institute/6.jpg', alt: 'Campus view' },
-    { id: 7, src: '/images/institute/7.jpg', alt: 'Campus view' },
-    { id: 8, src: '/images/institute/8.jpg', alt: 'Campus view' },
-    { id: 9, src: '/images/institute/9.jpg', alt: 'Campus view' },
-    { id: 10, src: '/images/institute/10.jpg', alt: 'Campus view' },
-    { id: 11, src: '/images/institute/11.jpg', alt: 'Campus view' },
-    { id: 12, src: '/images/institute/12.jpg', alt: 'Campus view' },
-    { id: 13, src: '/images/institute/13.jpg', alt: 'Campus view' },
-    { id: 14, src: '/images/institute/14.jpg', alt: 'Campus view' },
-    { id: 15, src: '/images/institute/15.jpg', alt: 'Campus view' },
-    { id: 16, src: '/images/institute/16.jpg', alt: 'Campus view' },
-    { id: 17, src: '/images/institute/17.jpg', alt: 'Campus view' },
-    { id: 18, src: '/images/institute/18.jpg', alt: 'Campus view' },
-    { id: 19, src: '/images/institute/19.jpg', alt: 'Goregaon Center' },
-    { id: 20, src: '/images/institute/20.jpg', alt: 'Goregaon Center' },
-    { id: 21, src: '/images/institute/21.jpg', alt: 'Malad Center' },
-    { id: 22, src: '/images/institute/22.jpg', alt: 'Mulund Center' },
-    { id: 23, src: '/images/institute/23.jpg', alt: 'Nalasopara Center' },
-    { id: 24, src: '/images/institute/24.jpg', alt: 'Santacruz Center' }
+    { id: 1, src: '/images/institute/1.webp', alt: 'Campus view' },
+    { id: 2, src: '/images/institute/2.webp', alt: 'Campus view' },
+    { id: 3, src: '/images/institute/3.webp', alt: 'Campus view' },
+    { id: 4, src: '/images/institute/4.webp', alt: 'Campus view' },
+    { id: 5, src: '/images/institute/5.webp', alt: 'Campus view' },
+    { id: 6, src: '/images/institute/6.webp', alt: 'Campus view' },
+    { id: 7, src: '/images/institute/7.webp', alt: 'Campus view' },
+    { id: 8, src: '/images/institute/8.webp', alt: 'Campus view' },
+    { id: 9, src: '/images/institute/9.webp', alt: 'Campus view' },
+    { id: 10, src: '/images/institute/10.webp', alt: 'Campus view' },
+    { id: 11, src: '/images/institute/11.webp', alt: 'Campus view' },
+    { id: 12, src: '/images/institute/12.webp', alt: 'Campus view' },
+    { id: 13, src: '/images/institute/13.webp', alt: 'Campus view' },
+    { id: 14, src: '/images/institute/14.webp', alt: 'Campus view' },
+    { id: 15, src: '/images/institute/15.webp', alt: 'Campus view' },
+    { id: 16, src: '/images/institute/16.webp', alt: 'Campus view' },
+    { id: 17, src: '/images/institute/17.webp', alt: 'Campus view' },
+    { id: 18, src: '/images/institute/18.webp', alt: 'Campus view' },
+    { id: 19, src: '/images/institute/19.webp', alt: 'Goregaon Center' },
+    { id: 20, src: '/images/institute/20.webp', alt: 'Goregaon Center' },
+    { id: 21, src: '/images/institute/21.webp', alt: 'Malad Center' },
+    { id: 22, src: '/images/institute/22.webp', alt: 'Mulund Center' },
+    { id: 23, src: '/images/institute/23.webp', alt: 'Nalasopara Center' },
+    { id: 24, src: '/images/institute/24.webp', alt: 'Santacruz Center' }
   ], []);
 
   // Open lightbox with image
@@ -136,6 +136,7 @@ const CentersGallery = () => {
           <p className={styles.headerDescription}>Explore our architecturally designed, state-of-the-art training facilities strategically located across Mumbai's prominent business districts. Each center has been meticulously equipped with comprehensive technical infrastructure, collaborative learning spaces, and professional infrastructure supporting comprehensive multimedia education excellence</p>
           <motion.img
             className={styles.headerImage}
+            alt="Shankar Multimedia Campus View"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
@@ -286,7 +287,7 @@ const CentersGallery = () => {
           >
             <h2>INSTITUTE CENTERS</h2>
             <motion.img
-              src="/images/mumbai.png"
+              src="/images/mumbai.webp"
               className={styles.headerImage}
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}

@@ -54,7 +54,7 @@ const Header = () => {
             <div className={styles.logo}>
               <Link to="/">
                 <img
-                  src="/images/logowhite.png"
+                  src="/images/logowhite.webp"
                   alt="Shankar Multimedia"
                   className={styles.logoImg}
                 />

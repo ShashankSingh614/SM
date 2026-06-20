@@ -25,12 +25,12 @@ const Footer = () => {
             <div className={styles.footerColumn}>
               <div className={styles.footerLogos}>
                 <div className={styles.mainLogo}>
-                  <img src="/images/logowhite.png" alt="Shankar Multimedia" />
+                  <img src="/images/logowhite.webp" alt="Shankar Multimedia" />
                 </div>
                 <div className={styles.certificationLogos}>
-                  <img src="/images/img2/35 LOGO.png" alt="36 years Excellence" className={styles.certLogo} />
-                  <img src="/images/img2/wwe.png" alt="WWE Certification" className={styles.certLogo} />
-                  <img src="/images/img2/msme.png" alt="msme Certification" className={styles.certLogo} />
+                  <img src="/images/img2/35 LOGO.webp" alt="36 years Excellence" className={styles.certLogo} />
+                  <img src="/images/img2/wwe.webp" alt="WWE Certification" className={styles.certLogo} />
+                  <img src="/images/img2/msme.webp" alt="msme Certification" className={styles.certLogo} />
                 </div>
               </div>
               <p className={styles.footerDescription}>
@@ -38,18 +38,18 @@ const Footer = () => {
               </p>
               <div className={styles.socialLinks}>
                 <a href={SOCIAL_LINKS.facebook} className={styles.socialLink} aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-                  <img src="/images/img2/fb.png" alt="Facebook" />
+                  <img src="/images/img2/fb.webp" alt="Facebook" />
                 </a>
                 <a href={SOCIAL_LINKS.instagram} className={styles.socialLink} aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                  <img src="/images/img2/int.png" alt="Instagram" />
+                  <img src="/images/img2/int.webp" alt="Instagram" />
                 </a>
                 
                 <a href={SOCIAL_LINKS.youtube} className={styles.socialLink} aria-label="YouTube" target="_blank" rel="noopener noreferrer">
-                  <img src="/images/img2/yt.png" alt="YouTube" />
+                  <img src="/images/img2/yt.webp" alt="YouTube" />
                 </a>
 
                 <a href={SOCIAL_LINKS.threads} className={styles.socialLink} aria-label="Threads" target="_blank" rel="noopener noreferrer">
-                  <img src="/images/img2/threads.png" alt="Threads" />
+                  <img src="/images/img2/threads.webp" alt="Threads" />
                 </a>
               </div>
             </div>

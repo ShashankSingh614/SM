@@ -25,10 +25,29 @@
   "scripts": {
     "start": "react-scripts start",
     "dev": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.{js,jsx}"
+  },
+  "reactSnap": {
+    "include": [
+      "/",
+      "/students-work",
+      "/about",
+      "/placements",
+      "/contact",
+      "/course/graphic-design-uiux",
+      "/course/advanced-graphic-vfx",
+      "/course/3d-animation",
+      "/course/3d-vfx",
+      "/course/web-design",
+      "/course/digital-marketing",
+      "/course/multimedia-animation"
+    ],
+    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+    "skipThirdPartyRequests": true,
+    "waitFor": 1000
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +70,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^14.4.3"
+    "@testing-library/user-event": "^14.4.3",
+    "react-snap": "^1.23.0"
   }
 }

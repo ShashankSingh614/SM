@@ -1,135 +1,338 @@
-// Modern Hero Section with working carousel
-import { useState, useEffect, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { 
-  FiChevronLeft, 
-  FiChevronRight
-} from 'react-icons/fi';
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import { motion, AnimatePresence, useInView } from 'framer-motion';
+import PropTypes from 'prop-types';
+import { FiAward, FiBriefcase, FiUsers, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { Helmet } from 'react-helmet-async';
 import { HERO_CONTENT } from '../../../constants/content';
 import styles from './HeroSection.module.css';
 
+const AUTOPLAY_MS = 4500;
+
+/* ─── Fade-in wrapper, identical timing/easing to CourseLandingPage's Reveal ─── */
+const Reveal = ({ children, delay = 0, className = '' }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-80px' });
+  return (
+    <motion.div
+      ref={ref}
+      className={className}
+      initial={{ opacity: 0, y: 32 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.55, delay, ease: [0.22, 1, 0.36, 1] }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+Reveal.propTypes = {
+  children: PropTypes.node,
+  delay: PropTypes.number,
+  className: PropTypes.string,
+};
+
+/* ─── Animated counter, identical logic to CourseLandingPage's Counter ─── */
+const Counter = ({ target, suffix = '' }) => {
+  const [count, setCount] = useState(0);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  useEffect(() => {
+    if (!isInView) return;
+    let start = 0;
+    const step = Math.ceil(target / 40);
+    const timer = setInterval(() => {
+      start += step;
+      if (start >= target) { setCount(target); clearInterval(timer); }
+      else setCount(start);
+    }, 30);
+    return () => clearInterval(timer);
+  }, [isInView, target]);
+  return <span ref={ref}>{count}{suffix}</span>;
+};
+
+Counter.propTypes = {
+  target: PropTypes.number.isRequired,
+  suffix: PropTypes.string,
+};
+
+/* ══════════════════════════════════════════════════════════ */
+
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const banners = useMemo(() => HERO_CONTENT.banners || [], []);
+  const [isPaused, setIsPaused] = useState(false);
+  const touchStartX = useRef(0);
 
-  // Preload images on component mount
-  useEffect(() => {
-    banners.forEach((bannerUrl) => {
-      const link = document.createElement('link');
-      link.rel = 'preload';
-      link.as = 'image';
-      link.href = bannerUrl;
-      document.head.appendChild(link);
+  const partnerLogos = HERO_CONTENT.partnerLogos || [];
+
+  // Slides come from HERO_CONTENT.banners, accepting either plain URL
+  // strings (legacy) or { src, alt, label } objects.
+  const slides = useMemo(() => {
+    const raw = HERO_CONTENT.banners || [];
+    return raw.map((item, i) => {
+      if (typeof item === 'string') {
+        return {
+          src: item,
+          alt: `Shankar Multimedia campus and student work, highlight ${i + 1}`,
+          label: HERO_CONTENT.slideTopics?.[i] || '',
+        };
+      }
+      return {
+        src: item.src,
+        alt: item.alt || `Shankar Multimedia campus and student work, highlight ${i + 1}`,
+        label: item.label || item.courseLabel || '',
+      };
     });
-  }, [banners]);
+  }, []);
 
-  // Auto-slide functionality
+  // Preload the first slide with high priority (it is the LCP candidate);
+  // lazily preload the rest so they don't compete for bandwidth.
   useEffect(() => {
-    if (banners.length > 1) {
-      const interval = setInterval(() => {
-        setCurrentSlide((prev) => (prev + 1) % banners.length);
-      }, 4000);
-      return () => clearInterval(interval);
-    }
-  }, [banners.length]);
+    if (!slides.length) return;
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % banners.length);
+    const firstLink = document.createElement('link');
+    firstLink.rel = 'preload';
+    firstLink.as = 'image';
+    firstLink.href = slides[0].src;
+    firstLink.setAttribute('fetchpriority', 'high');
+    document.head.appendChild(firstLink);
+
+    const idleId = window.requestIdleCallback
+      ? window.requestIdleCallback(() => {
+        slides.slice(1).forEach((s) => {
+          const link = document.createElement('link');
+          link.rel = 'preload';
+          link.as = 'image';
+          link.href = s.src;
+          document.head.appendChild(link);
+        });
+      })
+      : setTimeout(() => {
+        slides.slice(1).forEach((s) => {
+          const link = document.createElement('link');
+          link.rel = 'preload';
+          link.as = 'image';
+          link.href = s.src;
+          document.head.appendChild(link);
+        });
+      }, 300);
+
+    return () => {
+      if (window.cancelIdleCallback && typeof idleId === 'number') {
+        window.cancelIdleCallback(idleId);
+      }
+    };
+  }, [slides]);
+
+  // Autoplay — pauses on hover/focus/touch so it never fights the user.
+  useEffect(() => {
+    if (slides.length <= 1 || isPaused) return;
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, AUTOPLAY_MS);
+    return () => clearInterval(interval);
+  }, [slides.length, isPaused]);
+
+  const nextSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  }, [slides.length]);
+
+  const prevSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  }, [slides.length]);
+
+  const goToSlide = (index) => setCurrentSlide(index);
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+  const handleTouchEnd = (e) => {
+    const delta = e.changedTouches[0].clientX - touchStartX.current;
+    if (Math.abs(delta) < 40) return;
+    if (delta < 0) nextSlide();
+    else prevSlide();
   };
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + banners.length) % banners.length);
-  };
-
-  const goToSlide = (index) => {
-    setCurrentSlide(index);
-  };
+  // Same shape/values as the stats bar on CourseLandingPage, so the two
+  // pages feel like one product. suffix drives the Counter's "+"/"%".
+  const stats = [
+    { icon: <FiAward aria-hidden="true" />, value: 36, suffix: '+', label: 'Years of Excellence' },
+    { icon: <FiBriefcase aria-hidden="true" />, value: 100, suffix: '%', label: 'Job Placement Support' },
+    { icon: <FiUsers aria-hidden="true" />, value: 4500, suffix: '+', label: 'Students Trained' },
+  ];
 
   return (
-    <section className={styles.hero}>
-      
+    <>
+      {/* Page-level SEO for the homepage hero. Complements the static tags
+          already in index.html so hydrated/JS-executing crawlers see
+          consistent metadata. */}
+      <Helmet>
+        <title>Shankar Multimedia | #1 Graphic Design, UI/UX, 3D Animation, VFX, Digital Marketing Institute in Mumbai</title>
+        <meta
+          name="description"
+          content="Shankar Multimedia is Mumbai's top-rated institute for Graphic Design, UI/UX, Motion Graphic Design, 3D Animation, VFX, Web Design & Digital Marketing. 36+ years, ISO 9001:2015 certified, 100% placement support across Mumbai."
+        />
+        <link rel="canonical" href="https://shankarmultimedia.com/" />
+      </Helmet>
 
-      {/* Main Hero Content */}
-      <div className="container">
-        <div className={styles.heroContent}>
+      <section className={styles.hero} aria-label="Introduction to Shankar Multimedia">
+        <div className={styles.heroPanel}>
 
-          {/* Main H1 Heading with Keywords */}
-          <motion.div
-            className={styles.heroHeading}
-            initial={{ opacity: 0, y: -20 }}
+          <motion.p
+            className={styles.eyebrow}
+            initial={{ opacity: 0, y: -12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.1 }}
+            transition={{ duration: 0.6 }}
           >
+          Leading Multimedia & Animation Institute in Mumbai
+          </motion.p>
+
+          <motion.h1
+            className={styles.heroHeading}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.15 }}
+          >
+          Graphic Design, UI/UX, 3D Animation, VFX, Digital Marketing Courses in Mumbai
+          </motion.h1>
+
+          <motion.p
+            className={styles.heroSubtitle}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+          >
+          Our programs are backed by government and industry credentials
+          </motion.p>
+
+          <motion.div
+            className={styles.heroCtas}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.45 }}
+          >
+            <a href="/contact" className={styles.btnPrimary}>
+              Book Your Free Counselling Session
+            </a>
           </motion.div>
 
-          {/* Carousel Section */}
-          <motion.div 
-            className={styles.carouselSection}
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0 }}
-          >
-            <div className={styles.carousel}>
-              <div className={styles.carouselContainer}>
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={currentSlide}
-                    className={styles.carouselSlide}
-                    initial={{ opacity: 0, x: 300 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -300 }}
-                    transition={{ duration: 0.5, ease: 'easeInOut' }}
-                  >
-                    <img 
-                      src={banners[currentSlide]} 
-                      alt={`Shankar Multimedia Course ${currentSlide + 1}`}
-                      className={styles.carouselImage}
-                      loading="eager"
-                      decoding="async"
-                    />
-                  </motion.div>
-                </AnimatePresence>
-
-                {/* Navigation Controls */}
-                {banners.length > 1 && (
-                  <>
-                    <button 
-                      className={`${styles.carouselBtn} ${styles.prevBtn}`}
-                      onClick={prevSlide}
-                      aria-label="Previous slide"
-                    >
-                      <FiChevronLeft />
-                    </button>
-                    
-                    <button 
-                      className={`${styles.carouselBtn} ${styles.nextBtn}`}
-                      onClick={nextSlide}
-                      aria-label="Next slide"
-                    >
-                      <FiChevronRight />
-                    </button>
-
-                    {/* Indicators */}
-                    <div className={styles.carouselIndicators}>
-                      {banners.map((_, index) => (
-                        <button
-                          key={index}
-                          className={`${styles.indicator} ${index === currentSlide ? styles.active : ''}`}
-                          onClick={() => goToSlide(index)}
-                          aria-label={`Go to slide ${index + 1}`}
-                        />
-                      ))}
-                    </div>
-                  </>
-                )}
+          {partnerLogos.length > 0 && (
+            <motion.div
+              className={styles.partnersBlock}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.6 }}
+            >
+              <p className={styles.partnersLabel}>Our programs are backed by</p>
+              <div className={styles.partnersRow}>
+                {partnerLogos.map((logo, i) => (
+                  <img
+                    key={i}
+                    src={logo.src}
+                    alt={logo.alt || `${logo.name || 'Partner'} logo`}
+                    className={styles.partnerLogo}
+                    loading="lazy"
+                    decoding="async"
+                    width="120"
+                    height="40"
+                  />
+                ))}
               </div>
-            </div>
-          </motion.div>
-
-          
+            </motion.div>
+          )}
         </div>
-      </div>
-    </section>
+
+        <motion.div
+          className={styles.heroShowcase}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.9, delay: 0.1 }}
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Shankar Multimedia campus and student work highlights"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+          onFocus={() => setIsPaused(true)}
+          onBlur={() => setIsPaused(false)}
+        >
+          <div
+            className={styles.carouselFrame}
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+          >
+            <AnimatePresence mode="wait">
+              {slides[currentSlide] && (
+                <motion.figure
+                  key={currentSlide}
+                  className={styles.carouselSlide}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.6, ease: 'easeInOut' }}
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label={`${currentSlide + 1} of ${slides.length}`}
+                >
+                  <img
+                    src={slides[currentSlide].src}
+                    alt={slides[currentSlide].alt}
+                    className={styles.carouselImage}
+                    width="1920"
+                    height="1280"
+                    loading={currentSlide === 0 ? 'eager' : 'lazy'}
+                    decoding="async"
+                    fetchPriority={currentSlide === 0 ? 'high' : 'auto'}
+                  />
+                  {slides[currentSlide].label && (
+                    <figcaption className={styles.carouselCaption}>
+                      {slides[currentSlide].label}
+                    </figcaption>
+                  )}
+                </motion.figure>
+              )}
+            </AnimatePresence>
+
+            <div className={styles.carouselFade} aria-hidden="true" />
+
+            {slides.length > 1 && (
+              <>
+                <button
+                  type="button"
+                  className={`${styles.carouselBtn} ${styles.prevBtn}`}
+                  onClick={prevSlide}
+                  aria-label="Show previous highlight"
+                >
+                  <FiChevronLeft aria-hidden="true" />
+                </button>
+
+                <button
+                  type="button"
+                  className={`${styles.carouselBtn} ${styles.nextBtn}`}
+                  onClick={nextSlide}
+                  aria-label="Show next highlight"
+                >
+                  <FiChevronRight aria-hidden="true" />
+                </button>
+
+                <div className={styles.carouselIndicators} role="tablist" aria-label="Choose a highlight to display">
+                  {slides.map((s, index) => (
+                    <button
+                      key={index}
+                      type="button"
+                      role="tab"
+                      aria-selected={index === currentSlide}
+                      className={`${styles.indicator} ${index === currentSlide ? styles.active : ''}`}
+                      onClick={() => goToSlide(index)}
+                      aria-label={`Show highlight ${index + 1}`}
+                    />
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        </motion.div>
+      </section>
+
+    </>
   );
 };
 

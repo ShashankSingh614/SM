@@ -7,7 +7,7 @@ export const generateCourseSchema = (courseData, baseUrl = 'https://shankarmulti
     name: courseData.title,
     description: courseData.intro,
     url: `${baseUrl}/course/${courseData.slug}`,
-    image: `${baseUrl}/images/course-${courseData.slug}.jpg`,
+    image: `${baseUrl}/images/course-${courseData.slug}.webp`,
     author: {
       '@type': 'Organization',
       name: 'Shankar Multimedia',

@@ -18,7 +18,7 @@ const PlacementCard = ({ student, index }) => {
           alt={student.name}
           loading="lazy"
           onError={(e) => {
-            e.target.src = '/images/placeholder-student.jpg';
+            e.target.src = '/images/placeholder-student.webp';
           }}
         />
       </div>

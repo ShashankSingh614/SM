@@ -128,7 +128,7 @@ Navigation.propTypes = {
 };
 
 Navigation.defaultProps = {
-  logoSrc: '/assets/images/logo.png',
+  logoSrc: '/assets/images/logo.webp',
   logoAlt: 'Shankar Multimedia Logo',
 };
 
