@@ -1,4 +1,9 @@
 /* Footer Component Styles */
+:root{
+  --grad-fire:    linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%);
+  --grad-fire-r:  linear-gradient(135deg, #FF8F00 0%, #E65100 55%, #D32F2F 100%);
+}
+
 .footer {
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   color: white;
@@ -195,10 +200,10 @@
   
 .downloadBrochure:hover 
 { 
-  background: linear-gradient(135deg, #FFC107 0%, #FB8500 100%); 
-  color: #000000; 
+  background: var(--grad-fire);
+  color: #ffffff; 
   transform: translateY(-2px); 
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+
 } 
   
 .downloadBrochure svg 

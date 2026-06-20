@@ -64,7 +64,7 @@
   transform: translateX(-50%);
   width: 80px;
   height: 4px;
-  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-yellow) 100%);
+  background: linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%);
   border-radius: var(--radius-full);
 }
 
@@ -113,7 +113,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-yellow) 100%);
+  background: linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%);
   opacity: 0.02;
   z-index: 1;
 }

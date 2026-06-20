@@ -162,7 +162,7 @@
 }
 
 .branchItem:hover {
-  background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--primary-yellow-dark) 100%);
+  background: linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%);
 }
 
 .branchItem:hover .branchName,
@@ -308,7 +308,7 @@
 
 .mobileBranchItem:hover,
 .mobileBranchItem:active {
-  background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--primary-yellow-dark) 100%);
+  background: linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%);
   border-color: transparent;
 }
 
@@ -555,7 +555,7 @@
   }
 
   .mobileBranchItem:active {
-    background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--primary-yellow-dark) 100%);
+    background: linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%);
   }
 
   .mobileBranchItem:active .mobileBranchName,

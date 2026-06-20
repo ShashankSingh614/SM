@@ -45,12 +45,12 @@
 }
 
 /* Course Background Colors */
-.ps_bg   { background: linear-gradient(135deg, #FFC107 0%, #FF8F00 100%); }
-.php_bg1 { background: linear-gradient(135deg, #FFC107 0%, #FF8F00 100%); }
-.three_dbg { background: linear-gradient(135deg, #FFC107 0%, #FF8F00 100%); }
-.nuke_bg { background: linear-gradient(135deg, #FFC107 0%, #FF8F00 100%); }
-.dw_bg   { background: linear-gradient(135deg, #FFC107 0%, #FF8F00 100%); }
-.dm_bg   { background: linear-gradient(135deg, #FFC107 0%, #FF8F00 100%); }
+.ps_bg   { background: linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%); }
+.php_bg1 { background: linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%); }
+.three_dbg { background: linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%); }
+.nuke_bg { background: linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%); }
+.dw_bg   { background: linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%); }
+.dm_bg   { background: linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%); }
 
 .courseHeader {
   padding: 1.5rem 2rem;

@@ -63,6 +63,7 @@ Counter.propTypes = {
 const CourseLandingPage = () => {
   const { courseSlug } = useParams();
   const [expandedSection, setExpandedSection] = useState(0);
+  const [expandedFaq, setExpandedFaq] = useState(null);
 
   const courseData = coursesConfig.find(c => c.slug === courseSlug);
 
@@ -72,6 +73,10 @@ const CourseLandingPage = () => {
 
   const toggleSection = (idx) => {
     setExpandedSection(expandedSection === idx ? null : idx);
+  };
+
+  const toggleFaq = (id) => {
+    setExpandedFaq(expandedFaq === id ? null : id);
   };
 
   const courseSchema = generateCourseSchema(courseData);
@@ -165,7 +170,7 @@ const CourseLandingPage = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.46 }}
             >
-              {courseData.softwares.map((s, i) => (
+              {(courseData.softwares || []).map((s, i) => (
                 <span key={i} className={styles.pill}>{s}</span>
               ))}
             </motion.div>
@@ -222,7 +227,7 @@ const CourseLandingPage = () => {
 
             {/* Accordion modules */}
             <div className={styles.accordion}>
-              {courseData.curriculum.map((module, idx) => (
+              {(courseData.curriculum || []).map((module, idx) => (
                 <Reveal key={idx} delay={idx * 0.06}>
                   <div className={styles.accordionItem}>
                     <button
@@ -248,7 +253,7 @@ const CourseLandingPage = () => {
                           className={styles.accordionPanel}
                         >
                           <ul className={styles.skillGrid}>
-                            {module.skills.map((skill, si) => (
+                            {(courseData.faqs || []).map((skill, si) => (
                               <li key={si} className={styles.skillItem}>
                                 <FiCheckSquare className={styles.checkIcon} />
                                 {skill}
@@ -270,6 +275,95 @@ const CourseLandingPage = () => {
         <TestimonialsSection />
 
         <PartnersSection />
+
+        {/* FAQ Section */}
+        <section className={styles.faqSection}>
+          <div className="container">
+            <motion.div
+              className={styles.sectionHeader}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <h2>Frequently Asked Questions</h2>
+
+              <p className={styles.sectionDescription}>
+                Find answers about fees, batch timings, placements, certification,
+                course duration, software covered and career opportunities.
+              </p>
+            </motion.div>
+
+            <div className={styles.accordionContainer}>
+              <motion.div
+                className={styles.categoryBlock}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+              >
+                {(courseData.faqs || []).map((item, index) => {
+                  const itemId = `faq-${index}`;
+                  const isOpen = expandedFaq === itemId;
+
+                  return (
+                    <motion.div
+                      key={itemId}
+                      className={`${styles.faqAccordion} ${styles.cat_courses}`}
+                      initial={{ opacity: 0, y: 10 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{
+                        duration: 0.4,
+                        delay: index * 0.05
+                      }}
+                      viewport={{ once: true }}
+                    >
+                      <div
+                        className={styles.faqHeader}
+                        onClick={() => toggleFaq(itemId)}
+                        role="button"
+                        aria-expanded={isOpen}
+                      >
+                        <h3 className={styles.faqQuestion}>
+                          {item.q}
+                        </h3>
+
+                        <div className={styles.expandIcon}>
+                          {isOpen ? <FiMinus /> : <FiPlus />}
+                        </div>
+                      </div>
+
+                      <AnimatePresence>
+                        {isOpen && (
+                          <motion.div
+                            className={styles.faqContent}
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{
+                              height: 'auto',
+                              opacity: 1
+                            }}
+                            exit={{
+                              height: 0,
+                              opacity: 0
+                            }}
+                            transition={{
+                              duration: 0.5,
+                              ease: 'easeInOut'
+                            }}
+                          >
+                            <div className={styles.faqAnswer}>
+                              <p>{item.a}</p>
+                            </div>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </motion.div>
+                  );
+                })}
+              </motion.div>
+            </div>
+          </div>
+        </section>
 
         {/* ── 7. COUNSELLING CTA ────────────────────────────────── */}
         <section className={styles.counsellingSection} id="counselling">

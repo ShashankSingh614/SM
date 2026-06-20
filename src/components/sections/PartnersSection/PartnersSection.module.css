@@ -43,7 +43,7 @@
   transform: translateX(-50%);
   width: 80px;
   height: 4px;
-  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-yellow) 100%);
+  background: linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%);
   border-radius: var(--radius-full);
 }
 
@@ -130,7 +130,7 @@
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-yellow) 100%);
+  background: linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%);
   opacity: 0;
   transition: opacity var(--transition-base);
 }
@@ -199,7 +199,7 @@
 }
 
 .viewMoreBtn:hover {
-  background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--primary-yellow-dark) 100%);
+  background: linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%);
   color: var(--gray-900);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
@@ -217,7 +217,7 @@
 .industryTags { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
 
 .tag {
-  background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--primary-yellow-dark) 100%);
+  background: linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%);
   color: var(--gray-900);
   padding: 0.75rem 1.5rem;
   border-radius: var(--radius-full);

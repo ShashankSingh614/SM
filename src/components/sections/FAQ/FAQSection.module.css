@@ -72,7 +72,7 @@
 }
 
 /* ─── Category Color Themes ── */
-.cat_courses    { background: linear-gradient(135deg, #FFC107 0%, #FF8F00 100%); }
+.cat_courses    { background: linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%); }
 .cat_admissions { background: linear-gradient(135deg, #4CAF50 0%, #1B5E20 100%); }
 .cat_fees       { background: linear-gradient(135deg, #2196F3 0%, #0D47A1 100%); }
 .cat_placements { background: linear-gradient(135deg, #9C27B0 0%, #4A148C 100%); }

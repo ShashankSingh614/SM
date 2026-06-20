@@ -34,7 +34,7 @@
   transform: translateX(-50%);
   width: 80px;
   height: 4px;
-  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-yellow) 100%);
+  background: linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%);
   border-radius: var(--radius-full);
 }
 
@@ -446,7 +446,7 @@
   justify-content: center;
   width: 48px;
   height: 48px;
-  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-yellow) 100%);
+  background: linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%);
   border-radius: var(--radius-md);
   color: white;
   font-size: 1.5rem;
@@ -517,7 +517,7 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-yellow) 100%);
+  background: linear-gradient(135deg, #D32F2F 0%, #E65100 55%, #FF8F00 100%);
   color: white;
   border: none;
   border-radius: var(--radius-md);
