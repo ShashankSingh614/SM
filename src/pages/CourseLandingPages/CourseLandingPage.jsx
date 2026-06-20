@@ -227,7 +227,7 @@ const CourseLandingPage = () => {
 
             {/* Accordion modules */}
             <div className={styles.accordion}>
-              {(courseData.curriculum || []).map((module, idx) => (
+              {courseData.curriculum.map((module, idx) => (
                 <Reveal key={idx} delay={idx * 0.06}>
                   <div className={styles.accordionItem}>
                     <button
@@ -253,7 +253,7 @@ const CourseLandingPage = () => {
                           className={styles.accordionPanel}
                         >
                           <ul className={styles.skillGrid}>
-                            {(courseData.faqs || []).map((skill, si) => (
+                            {module.skills.map((skill, si) => (
                               <li key={si} className={styles.skillItem}>
                                 <FiCheckSquare className={styles.checkIcon} />
                                 {skill}

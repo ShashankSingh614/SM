@@ -11,6 +11,68 @@ export const coursesConfig = [
     h1: 'Diploma in Advanced Graphic Designing & UI/UX Design with AI Integration - Program in Mumbai 2026',
     intro: 'Transform your creative passion into a lucrative career with Shankar Multimedia\'s industry-leading Diploma in Advanced Graphic Designing & UI/UX Design with AI Integration—Mumbai\'s most trusted animation and multimedia institute with 36+ years of proven excellence, ISO 9001:2015 certification, and an unmatched 100% job placement record. Our comprehensive, hands-on curriculum combines cutting-edge design principles, professional-grade industry tools (Adobe Creative Suite, Figma, Sketch, XD, Midjourney, and Adobe Firefly), and real-world project experience to equip you with the exact skills top agencies and tech companies demand.',
     softwares: ['Adobe Photoshop', 'CorelDRAW', 'Adobe Illustrator', 'Adobe InDesign', 'Adobe XD', 'Figma', 'Canva'],
+    curriculum: [
+      {
+        title: 'Raster Graphics',
+        skills: [
+          'Photoshop Interface & Tools',
+          'Color Correction & Grading',
+          'Photo Retouching (Spot, Patch, Glamour Skin)',
+          'Model, Fashion & Portrait Retouching',
+          'Product Retouching (Jewelry, Apparel, Furniture, Real Estate)',
+          'Wedding Album Design',
+          'Image Restoration (Vintage & Damaged Photos)',
+          'Masking Techniques (Layer, Photo, Hair, Ghost Mannequin)',
+          'Clipping Path & Color Changing',
+          'Black & White to Color Conversion',
+          'Image Manipulation & Effects',
+          'Banner, Poster & Catalog Design',
+          'Page Effects & Border Effects',
+          'Frame & Shadow Effects',
+          'Water & Mirror Effects',
+          '3D Box & Text Effects',
+          'Karizma Album Design',
+          'Generative AI (Generative Fill, Neural Filters, Content-Aware Fill)',
+          'AI Object Selection'
+        ]
+      },
+      {
+        title: 'Vector Graphics',
+        skills: [
+          'Vector vs Raster Graphics',
+          'CorelDRAW Basics & Interface',
+          'Digital Illustration Techniques',
+          'Logo Design & Tracing',
+          'Corporate Identity & Branding',
+          'Print Collaterals (Brochure, Business Card, Leaflets)',
+          'Visiting Card Design (3.5" x 2" with Bleed)',
+          'Packaging & Label Design',
+          'Advertising Design & Hoardings',
+          'Drawing & Shape Tools',
+          'Shaping Operations (Weld, Trim, Intersect, Combine)',
+          'Fill Types (Fountain, Pattern, Texture, Mesh)',
+          'Special Effects (Contour, Extrude, Blend, Shadow, PowerClip)',
+          'Magazine Cover Design',
+          'Text to Vector with AI (Adobe Firefly)',
+          'Generative Recolor',
+          'Retype (AI OCR)',
+          'Image Trace & Vectorization'
+        ]
+      },
+      {
+        title: 'UI/UX Design',
+        skills: [
+          'Adobe XD & Figma Fundamentals',
+          'User Interface Design Principles',
+          'User Experience Research',
+          'Wireframing & Prototyping',
+          'Artboard & Repeat Grid',
+          'Interactive Prototypes',
+          'Figma Collaboration',
+          'Design Systems'
+        ]
+      }
+    ],
     faqs: [
       {
         q: 'What skills are taught in the Diploma in Advanced Graphic Designing & UI/UX Design with AI Integration in Mumbai?',
@@ -46,6 +108,119 @@ export const coursesConfig = [
     h1: 'Diploma in Advanced Graphic Designing, UI/UX, Motion Graphics, Video Editing & VFX - Program in Mumbai 2026',
     intro: 'Master comprehensive multimedia design with Shankar Multimedia\'s 6-month Diploma in Advanced Graphic Designing, UI/UX, Motion Graphics, Video Editing & VFX—Mumbai\'s leading institute combining static design, dynamic motion, professional video editing, and visual effects into one powerful career-launching program. Learn industry-standard tools including Adobe Creative Suite, Premiere Pro, After Effects, and cutting-edge VFX techniques used by top studios.',
     softwares: ['Adobe Photoshop', 'CorelDRAW', 'Adobe Illustrator', 'Adobe XD', 'Figma', 'Adobe After Effects', 'Adobe Premiere Pro', 'Adobe Media Encoder'],
+    curriculum: [
+      {
+        title: 'Raster Graphics',
+        skills: [
+          'Photoshop Interface & Tools',
+          'Color Correction & Grading',
+          'Photo Retouching (Spot, Patch, Glamour Skin)',
+          'Model, Fashion & Portrait Retouching',
+          'Product Retouching (Jewelry, Apparel, Furniture, Real Estate)',
+          'Wedding Album Design',
+          'Image Restoration (Vintage & Damaged Photos)',
+          'Masking Techniques (Layer, Photo, Hair, Ghost Mannequin)',
+          'Clipping Path & Color Changing',
+          'Black & White to Color Conversion',
+          'Image Manipulation & Effects',
+          'Banner, Poster & Catalog Design',
+          'Page Effects & Border Effects',
+          'Frame & Shadow Effects',
+          'Water & Mirror Effects',
+          '3D Box & Text Effects',
+          'Karizma Album Design',
+          'Generative AI (Generative Fill, Neural Filters, Content-Aware Fill)',
+          'AI Object Selection'
+        ]
+      },
+      {
+        title: 'Vector Graphics',
+        skills: [
+          'Vector vs Raster Graphics',
+          'CorelDRAW Basics & Interface',
+          'Digital Illustration Techniques',
+          'Logo Design & Tracing',
+          'Corporate Identity & Branding',
+          'Print Collaterals (Brochure, Business Card, Leaflets)',
+          'Visiting Card Design (3.5" x 2" with Bleed)',
+          'Packaging & Label Design',
+          'Advertising Design & Hoardings',
+          'Drawing & Shape Tools',
+          'Shaping Operations (Weld, Trim, Intersect, Combine)',
+          'Fill Types (Fountain, Pattern, Texture, Mesh)',
+          'Special Effects (Contour, Extrude, Blend, Shadow, PowerClip)',
+          'Magazine Cover Design',
+          'Text to Vector with AI (Adobe Firefly)',
+          'Generative Recolor',
+          'Retype (AI OCR)',
+          'Image Trace & Vectorization'
+        ]
+      },
+      {
+        title: 'UI/UX Design',
+        skills: [
+          'Adobe XD & Figma Fundamentals',
+          'User Interface Design Principles',
+          'User Experience Research',
+          'Wireframing & Prototyping',
+          'Artboard & Repeat Grid',
+          'Interactive Prototypes',
+          'Figma Collaboration',
+          'Design Systems'
+        ]
+      },
+      {
+        title: 'Adobe After Effects',
+        skills: [
+          'Project Setup & Composition',
+          'Animation & Keyframing Basics',
+          'Image Scale & Shape Animation',
+          'Text Animation with Path',
+          'Hold Keyframes & Text Effects',
+          'Masking Techniques',
+          'Lower Third Design (Mask Path)',
+          'Trim Path (Counter Animation)',
+          'Layer Animation & Audio Integration',
+          'Shatter & CC Split Effects',
+          'CC Scatterize & Particle Systems',
+          'Fire & Light Effects',
+          'CC Rainfall & Radio Waves',
+          '3D Layers & Camera Animation',
+          'Alpha & Luma Matte',
+          'Graph Editor & Repeater',
+          'Time Control & Double Roll',
+          'Green/Blue Screen Keying',
+          'Null Objects & Parenting',
+          'Loop Expressions (loopOut)',
+          'Motion Tracking & Wiggler',
+          'Roto Brush 2/3 (AI-Powered)',
+          'Content-Aware Fill for Video',
+          'Scene Edit Detection',
+          'AI Face & Motion Tracking',
+          'Final Render & Collect Files'
+        ]
+      },
+      {
+        title: 'Adobe Premiere Pro',
+        skills: [
+          'Video Editing Fundamentals',
+          'Timeline & Clip Management',
+          'Text-Based Editing (AI Transcription)',
+          'Auto Ducking & AI Audio Tagging',
+          'Scene Edit Detection',
+          'Auto Reframe',
+          'Green/Blue Screen Removal',
+          'Track Matte Key',
+          'Video & Audio Transitions',
+          'Freeze Frame & Timecode',
+          'Color Grading (Leave Color, CC Color)',
+          'Lighting Effects & Camera Blur',
+          'Legacy Title & Essential Graphics',
+          'Noise Removal (DeNoise)',
+          'Professional Export & Rendering'
+        ]
+      }
+    ],
     faqs: [
       {
         q: 'What core post-production frameworks are taught in the 6-Month Advanced Graphic, UI/UX, Motion Graphics & VFX program?',
@@ -81,6 +256,97 @@ export const coursesConfig = [
     h1: 'Diploma in Advanced 3D Modelling & Animation - Program in Mumbai 2026',
     intro: 'Launch your technical 3D visualization career with Shankar Multimedia\'s comprehensive 6-month Diploma in Advanced 3D Modelling & Animation—Mumbai\'s premier institute with 36+ years training industry professionals. Master 3Ds Max, professional rendering with V-Ray and Corona, building architecture design, interior layout rendering, and exhibition stall design for architectural firms, real estate developers, and top spatial design studios.',
     softwares: ['Adobe Photoshop','CorelDRAW','3Ds Max', 'V-Ray Rendering', 'Corona Render', 'AutoCAD', 'SketchUp'],
+    curriculum: [
+      {
+        title: 'Raster Graphics',
+        skills: [
+          'Photoshop Interface & Tools',
+          'Color Correction & Grading',
+          'Photo Retouching (Spot, Patch, Glamour Skin)',
+          'Model, Fashion & Portrait Retouching',
+          'Product Retouching (Jewelry, Apparel, Furniture, Real Estate)',
+          'Wedding Album Design',
+          'Image Restoration (Vintage & Damaged Photos)',
+          'Masking Techniques (Layer, Photo, Hair, Ghost Mannequin)',
+          'Clipping Path & Color Changing',
+          'Black & White to Color Conversion',
+          'Image Manipulation & Effects',
+          'Banner, Poster & Catalog Design',
+          'Page Effects & Border Effects',
+          'Frame & Shadow Effects',
+          'Water & Mirror Effects',
+          '3D Box & Text Effects',
+          'Karizma Album Design',
+          'Generative AI (Generative Fill, Neural Filters, Content-Aware Fill)',
+          'AI Object Selection'
+        ]
+      },
+      {
+        title: 'Vector Graphics',
+        skills: [
+          'Vector vs Raster Graphics',
+          'CorelDRAW Basics & Interface',
+          'Digital Illustration Techniques',
+          'Logo Design & Tracing',
+          'Corporate Identity & Branding',
+          'Print Collaterals (Brochure, Business Card, Leaflets)',
+          'Visiting Card Design (3.5" x 2" with Bleed)',
+          'Packaging & Label Design',
+          'Advertising Design & Hoardings',
+          'Drawing & Shape Tools',
+          'Shaping Operations (Weld, Trim, Intersect, Combine)',
+          'Fill Types (Fountain, Pattern, Texture, Mesh)',
+          'Special Effects (Contour, Extrude, Blend, Shadow, PowerClip)',
+          'Magazine Cover Design',
+          'Text to Vector with AI (Adobe Firefly)',
+          'Generative Recolor',
+          'Retype (AI OCR)',
+          'Image Trace & Vectorization'
+        ]
+      },
+      {
+        title: '3D Modeling',
+        skills: [
+          'Exhibition & Event Design (Standard Sizes)',
+          'Exhibition Stall Design (3m, 6m, 10m)',
+          'Reception Counter Design (Small, Medium, Large)',
+          'Fascia/Name Board Design',
+          'Podium & Meeting Room Layout',
+          'Pantry Room Design',
+          'Interior Design & Space Planning',
+          'Measurement Systems (Metric & Imperial)',
+          'Low Poly & High Poly Modeling',
+          'Advanced Texturing & UV Mapping',
+          'Camera Setup & Composition',
+          'Lighting Techniques (3-Point, HDRI)',
+          '3D Object Painting',
+          'V-Ray & Corona Rendering',
+          'Visual Effects Integration'
+        ]
+      },
+      {
+        title: '3D Animation',
+        skills: [
+          'Animation Principles',
+          'Object & Transform Animation',
+          'Character Rigging & Animation',
+          'Architectural Walkthroughs',
+          '3D Special Effects',
+          'Camera Animation',
+          'Digital Filmmaking Concepts'
+        ]
+      },
+      {
+        title: 'AutoCAD',
+        skills: [
+          'Technical Drawing Basics',
+          'Layout Plans & Elevations',
+          'Working Drawings & Detailing',
+          'Perspective Views',
+          '2D to 3D Conversion'
+        ]
+      },
+    ],
     faqs: [
       {
         q: 'What specific industries and project types are covered in the Advanced 3D Modeling & Animation program?',
@@ -116,6 +382,97 @@ export const coursesConfig = [
     h1: 'Diploma in Advanced Interior Design - Program in Mumbai 2026',
     intro: 'Launch your interior design career with Shankar Multimedia\'s comprehensive 6-month Diploma in Advanced Interior Design—Mumbai\'s premier institute with 36+ years training industry professionals. Master AutoCAD, SketchUp, 3Ds Max, and professional V-Ray rendering to create production-ready plans for residential spaces, commercial projects, building architectures, and premium exhibition stall designs.',
     softwares: ['Adobe Photoshop','CorelDRAW','3Ds Max', 'V-Ray Rendering', 'Corona Render', 'AutoCAD', 'SketchUp'],
+    curriculum: [
+      {
+        title: 'Raster Graphics',
+        skills: [
+          'Photoshop Interface & Tools',
+          'Color Correction & Grading',
+          'Photo Retouching (Spot, Patch, Glamour Skin)',
+          'Model, Fashion & Portrait Retouching',
+          'Product Retouching (Jewelry, Apparel, Furniture, Real Estate)',
+          'Wedding Album Design',
+          'Image Restoration (Vintage & Damaged Photos)',
+          'Masking Techniques (Layer, Photo, Hair, Ghost Mannequin)',
+          'Clipping Path & Color Changing',
+          'Black & White to Color Conversion',
+          'Image Manipulation & Effects',
+          'Banner, Poster & Catalog Design',
+          'Page Effects & Border Effects',
+          'Frame & Shadow Effects',
+          'Water & Mirror Effects',
+          '3D Box & Text Effects',
+          'Karizma Album Design',
+          'Generative AI (Generative Fill, Neural Filters, Content-Aware Fill)',
+          'AI Object Selection'
+        ]
+      },
+      {
+        title: 'Vector Graphics',
+        skills: [
+          'Vector vs Raster Graphics',
+          'CorelDRAW Basics & Interface',
+          'Digital Illustration Techniques',
+          'Logo Design & Tracing',
+          'Corporate Identity & Branding',
+          'Print Collaterals (Brochure, Business Card, Leaflets)',
+          'Visiting Card Design (3.5" x 2" with Bleed)',
+          'Packaging & Label Design',
+          'Advertising Design & Hoardings',
+          'Drawing & Shape Tools',
+          'Shaping Operations (Weld, Trim, Intersect, Combine)',
+          'Fill Types (Fountain, Pattern, Texture, Mesh)',
+          'Special Effects (Contour, Extrude, Blend, Shadow, PowerClip)',
+          'Magazine Cover Design',
+          'Text to Vector with AI (Adobe Firefly)',
+          'Generative Recolor',
+          'Retype (AI OCR)',
+          'Image Trace & Vectorization'
+        ]
+      },
+      {
+        title: '3D Modeling',
+        skills: [
+          'Exhibition & Event Design (Standard Sizes)',
+          'Exhibition Stall Design (3m, 6m, 10m)',
+          'Reception Counter Design (Small, Medium, Large)',
+          'Fascia/Name Board Design',
+          'Podium & Meeting Room Layout',
+          'Pantry Room Design',
+          'Interior Design & Space Planning',
+          'Measurement Systems (Metric & Imperial)',
+          'Low Poly & High Poly Modeling',
+          'Advanced Texturing & UV Mapping',
+          'Camera Setup & Composition',
+          'Lighting Techniques (3-Point, HDRI)',
+          '3D Object Painting',
+          'V-Ray & Corona Rendering',
+          'Visual Effects Integration'
+        ]
+      },
+      {
+        title: '3D Animation',
+        skills: [
+          'Animation Principles',
+          'Object & Transform Animation',
+          'Character Rigging & Animation',
+          'Architectural Walkthroughs',
+          '3D Special Effects',
+          'Camera Animation',
+          'Digital Filmmaking Concepts'
+        ]
+      },
+      {
+        title: 'AutoCAD',
+        skills: [
+          'Technical Drawing Basics',
+          'Layout Plans & Elevations',
+          'Working Drawings & Detailing',
+          'Perspective Views',
+          '2D to 3D Conversion'
+        ]
+      }
+    ],
     faqs: [
       {
         q: 'How does the Diploma in Advanced Interior Design prepare students for real-world space planning blueprints?',
@@ -151,6 +508,148 @@ export const coursesConfig = [
     h1: 'Diploma in Advanced 3D Modelling & Animation & VFX - Program in Mumbai 2026',
     intro: 'Become an advanced visualization and VFX professional with Shankar Multimedia\'s comprehensive 8-month Diploma in Advanced 3D Modelling, Animation & VFX. Combine core spatial design workflows (building architecture design, interior layout rendering, exhibition stall modeling in 3Ds Max) with professional cinematic post-production and visual effects (After Effects, Premiere Pro) to deliver commercial walkthroughs and media-ready production assets.',
     softwares: ['Adobe Photoshop','CorelDRAW','3Ds Max', 'V-Ray Rendering', 'Corona Render', 'AutoCAD', 'SketchUp', 'Adobe After Effects', 'Adobe Premiere Pro', 'Adobe Media Encoder'],
+    curriculum: [
+      {
+        title: 'Raster Graphics',
+        skills: [
+          'Photoshop Interface & Tools',
+          'Color Correction & Grading',
+          'Photo Retouching (Spot, Patch, Glamour Skin)',
+          'Model, Fashion & Portrait Retouching',
+          'Product Retouching (Jewelry, Apparel, Furniture, Real Estate)',
+          'Wedding Album Design',
+          'Image Restoration (Vintage & Damaged Photos)',
+          'Masking Techniques (Layer, Photo, Hair, Ghost Mannequin)',
+          'Clipping Path & Color Changing',
+          'Black & White to Color Conversion',
+          'Image Manipulation & Effects',
+          'Banner, Poster & Catalog Design',
+          'Page Effects & Border Effects',
+          'Frame & Shadow Effects',
+          'Water & Mirror Effects',
+          '3D Box & Text Effects',
+          'Karizma Album Design',
+          'Generative AI (Generative Fill, Neural Filters, Content-Aware Fill)',
+          'AI Object Selection'
+        ]
+      },
+      {
+        title: 'Vector Graphics',
+        skills: [
+          'Vector vs Raster Graphics',
+          'CorelDRAW Basics & Interface',
+          'Digital Illustration Techniques',
+          'Logo Design & Tracing',
+          'Corporate Identity & Branding',
+          'Print Collaterals (Brochure, Business Card, Leaflets)',
+          'Visiting Card Design (3.5" x 2" with Bleed)',
+          'Packaging & Label Design',
+          'Advertising Design & Hoardings',
+          'Drawing & Shape Tools',
+          'Shaping Operations (Weld, Trim, Intersect, Combine)',
+          'Fill Types (Fountain, Pattern, Texture, Mesh)',
+          'Special Effects (Contour, Extrude, Blend, Shadow, PowerClip)',
+          'Magazine Cover Design',
+          'Text to Vector with AI (Adobe Firefly)',
+          'Generative Recolor',
+          'Retype (AI OCR)',
+          'Image Trace & Vectorization'
+        ]
+      },
+      {
+        title: '3D Modeling',
+        skills: [
+          'Exhibition & Event Design (Standard Sizes)',
+          'Exhibition Stall Design (3m, 6m, 10m)',
+          'Reception Counter Design (Small, Medium, Large)',
+          'Fascia/Name Board Design',
+          'Podium & Meeting Room Layout',
+          'Pantry Room Design',
+          'Interior Design & Space Planning',
+          'Measurement Systems (Metric & Imperial)',
+          'Low Poly & High Poly Modeling',
+          'Advanced Texturing & UV Mapping',
+          'Camera Setup & Composition',
+          'Lighting Techniques (3-Point, HDRI)',
+          '3D Object Painting',
+          'V-Ray & Corona Rendering',
+          'Visual Effects Integration'
+        ]
+      },
+      {
+        title: '3D Animation',
+        skills: [
+          'Animation Principles',
+          'Object & Transform Animation',
+          'Character Rigging & Animation',
+          'Architectural Walkthroughs',
+          '3D Special Effects',
+          'Camera Animation',
+          'Digital Filmmaking Concepts'
+        ]
+      },
+      {
+        title: 'AutoCAD',
+        skills: [
+          'Technical Drawing Basics',
+          'Layout Plans & Elevations',
+          'Working Drawings & Detailing',
+          'Perspective Views',
+          '2D to 3D Conversion'
+        ]
+      },
+      {
+        title: 'Adobe After Effects',
+        skills: [
+          'Project Setup & Composition',
+          'Animation & Keyframing Basics',
+          'Image Scale & Shape Animation',
+          'Text Animation with Path',
+          'Hold Keyframes & Text Effects',
+          'Masking Techniques',
+          'Lower Third Design (Mask Path)',
+          'Trim Path (Counter Animation)',
+          'Layer Animation & Audio Integration',
+          'Shatter & CC Split Effects',
+          'CC Scatterize & Particle Systems',
+          'Fire & Light Effects',
+          'CC Rainfall & Radio Waves',
+          '3D Layers & Camera Animation',
+          'Alpha & Luma Matte',
+          'Graph Editor & Repeater',
+          'Time Control & Double Roll',
+          'Green/Blue Screen Keying',
+          'Null Objects & Parenting',
+          'Loop Expressions (loopOut)',
+          'Motion Tracking & Wiggler',
+          'Roto Brush 2/3 (AI-Powered)',
+          'Content-Aware Fill for Video',
+          'Scene Edit Detection',
+          'AI Face & Motion Tracking',
+          'Final Render & Collect Files'
+        ]
+      },
+      {
+        title: 'Adobe Premiere Pro',
+        skills: [
+          'Video Editing Fundamentals',
+          'Timeline & Clip Management',
+          'Text-Based Editing (AI Transcription)',
+          'Auto Ducking & AI Audio Tagging',
+          'Scene Edit Detection',
+          'Auto Reframe',
+          'Green/Blue Screen Removal',
+          'Track Matte Key',
+          'Video & Audio Transitions',
+          'Freeze Frame & Timecode',
+          'Color Grading (Leave Color, CC Color)',
+          'Lighting Effects & Camera Blur',
+          'Legacy Title & Essential Graphics',
+          'Noise Removal (DeNoise)',
+          'Professional Export & Rendering'
+        ]
+      }
+    ],
     faqs: [
       {
         q: 'What makes the 8-Month Advanced 3D Modeling, Animation & VFX Diploma distinct from standard tracks?',
@@ -186,6 +685,126 @@ export const coursesConfig = [
     h1: 'Diploma in Advanced Web Designing & Development with Advanced UI/UX - Program in Mumbai 2026',
     intro: 'Build web applications and premium websites with Shankar Multimedia\'s 6-month Diploma in Advanced Web Designing & Development with Advanced UI/UX—combining modern UI/UX design (Figma, Adobe XD) with professional web development (HTML5, CSS3, JavaScript, React.js, WordPress). Master responsive design, user experience, frontend development, and deployment for 100% job placement.',
     softwares: ['Adobe Photoshop','Adobe XD','Figma','Adobe Dreamweaver','HTML5','CSS3 / SCSS','JavaScript / jQuery','React.js','Bootstrap 4 & 5','WordPress','Notepad++','Sublime Text','Visual Studio Code','Brackets'],
+    curriculum: [
+      {
+        title: 'Raster Graphics',
+        skills: [
+          'Photoshop Interface & Tools',
+          'Color Correction & Grading',
+          'Photo Retouching (Spot, Patch, Glamour Skin)',
+          'Model, Fashion & Portrait Retouching',
+          'Product Retouching (Jewelry, Apparel, Furniture, Real Estate)',
+          'Wedding Album Design',
+          'Image Restoration (Vintage & Damaged Photos)',
+          'Masking Techniques (Layer, Photo, Hair, Ghost Mannequin)',
+          'Clipping Path & Color Changing',
+          'Black & White to Color Conversion',
+          'Image Manipulation & Effects',
+          'Banner, Poster & Catalog Design',
+          'Page Effects & Border Effects',
+          'Frame & Shadow Effects',
+          'Water & Mirror Effects',
+          '3D Box & Text Effects',
+          'Karizma Album Design',
+          'Generative AI (Generative Fill, Neural Filters, Content-Aware Fill)',
+          'AI Object Selection'
+        ]
+      },
+      {
+        title: 'Vector Graphics',
+        skills: [
+          'Vector vs Raster Graphics',
+          'CorelDRAW Basics & Interface',
+          'Digital Illustration Techniques',
+          'Logo Design & Tracing',
+          'Corporate Identity & Branding',
+          'Print Collaterals (Brochure, Business Card, Leaflets)',
+          'Visiting Card Design (3.5" x 2" with Bleed)',
+          'Packaging & Label Design',
+          'Advertising Design & Hoardings',
+          'Drawing & Shape Tools',
+          'Shaping Operations (Weld, Trim, Intersect, Combine)',
+          'Fill Types (Fountain, Pattern, Texture, Mesh)',
+          'Special Effects (Contour, Extrude, Blend, Shadow, PowerClip)',
+          'Magazine Cover Design',
+          'Text to Vector with AI (Adobe Firefly)',
+          'Generative Recolor',
+          'Retype (AI OCR)',
+          'Image Trace & Vectorization'
+        ]
+      },
+      {
+        title: 'Web Design Fundamentals',
+        skills: [
+          'Web Layout Standards (1500-1800px Width)',
+          'Working Area Guidelines (980-1170px)',
+          'Header Design (Logo, Menu, Icons)',
+          'Banner Design (1200-1500px)',
+          'Gallery & Product Sections',
+          'Footer Design (Logo, Social Links, Copyright)',
+          'Typography Standards (12-30px)',
+          'PSD to Web Conversion'
+        ]
+      },
+      {
+        title: 'HTML & CSS Development',
+        skills: [
+          'HTML5 Structure & Semantics',
+          'CSS3 Styling & Layouts',
+          'PSD to HTML Conversion',
+          'Responsive Design Techniques',
+          'Bootstrap Framework',
+          'Flexbox & Grid Systems',
+          'Forms & Tables',
+          'Media Elements'
+        ]
+      },
+      {
+        title: 'UI/UX Design',
+        skills: [
+          'Adobe XD & Figma Prototyping',
+          'User Interface Principles',
+          'User Experience Research',
+          'Wireframing & Mockups',
+          'Interactive Prototypes',
+          'Figma Collaboration',
+          'Design Systems & Style Guides'
+        ]
+      },
+      {
+        title: 'JavaScript Development',
+        skills: [
+          'JavaScript Fundamentals',
+          'Functions & Variables',
+          'DOM Manipulation',
+          'Event Handling',
+          'Form Validation',
+          'jQuery Library',
+          'AJAX Requests'
+        ]
+      },
+      {
+        title: 'WordPress Development',
+        skills: [
+          'WordPress Installation',
+          'Theme Customization',
+          'Plugin Integration',
+          'Page & Post Management',
+          'Widget Configuration',
+          'SEO Optimization'
+        ]
+      },
+      {
+        title: 'Advanced Technologies',
+        skills: [
+          'React.js Components',
+          'Server-Side Scripting (PHP)',
+          'Database Management (MySQL)',
+          'CMS Development',
+          'Website Deployment'
+        ]
+      }
+    ],
     faqs: [
       {
         q: 'What core coding frameworks and programming languages are covered in the Web Designing & Development program?',
@@ -221,6 +840,424 @@ export const coursesConfig = [
     h1: 'Diploma in Advanced Digital Marketing with AI Integration & Automation - Program in Mumbai 2026',
     intro: 'Master Digital Marketing with Shankar Multimedia\'s 4-month Diploma in Advanced Digital Marketing with AI Integration & Automation—combining SEO, paid ads (Google, Facebook), social media marketing, email automation, analytics, and cutting-edge AI tools. Learn from industry experts to launch or accelerate your marketing career with guaranteed 100% job placement.',
     softwares: ['Adobe Photoshop', 'Adobe Illustrator', 'WordPress', 'Yoast SEO', 'Rank Math', 'Canva', 'Google Trends', 'Google Analytics 4', 'Google Search Console', 'Google Keyword Planner', 'Google Ads', 'Google Business Manager', 'Meta Ads Manager', 'Instagram', 'Facebook', 'Youtube', 'LinkedIn', 'Mailchimp', 'Buffer', 'AI Tools'],
+    curriculum: [
+      {
+        title: 'Raster Graphics',
+        skills: [
+          'Photoshop Interface & Tools',
+          'Color Correction & Grading',
+          'Photo Retouching (Spot, Patch, Glamour Skin)',
+          'Model, Fashion & Portrait Retouching',
+          'Product Retouching (Jewelry, Apparel, Furniture, Real Estate)',
+          'Wedding Album Design',
+          'Image Restoration (Vintage & Damaged Photos)',
+          'Masking Techniques (Layer, Photo, Hair, Ghost Mannequin)',
+          'Clipping Path & Color Changing',
+          'Black & White to Color Conversion',
+          'Image Manipulation & Effects',
+          'Banner, Poster & Catalog Design',
+          'Page Effects & Border Effects',
+          'Frame & Shadow Effects',
+          'Water & Mirror Effects',
+          '3D Box & Text Effects',
+          'Karizma Album Design',
+          'Generative AI (Generative Fill, Neural Filters, Content-Aware Fill)',
+          'AI Object Selection'
+        ]
+      },
+      {
+        title: 'Vector Graphics',
+        skills: [
+          'Vector vs Raster Graphics',
+          'CorelDRAW Basics & Interface',
+          'Digital Illustration Techniques',
+          'Logo Design & Tracing',
+          'Corporate Identity & Branding',
+          'Print Collaterals (Brochure, Business Card, Leaflets)',
+          'Visiting Card Design (3.5" x 2" with Bleed)',
+          'Packaging & Label Design',
+          'Advertising Design & Hoardings',
+          'Drawing & Shape Tools',
+          'Shaping Operations (Weld, Trim, Intersect, Combine)',
+          'Fill Types (Fountain, Pattern, Texture, Mesh)',
+          'Special Effects (Contour, Extrude, Blend, Shadow, PowerClip)',
+          'Magazine Cover Design',
+          'Text to Vector with AI (Adobe Firefly)',
+          'Generative Recolor',
+          'Retype (AI OCR)',
+          'Image Trace & Vectorization'
+        ]
+      },
+      {
+        title: 'Web Design Fundamentals',
+        skills: [
+          'Web Layout Standards (1500-1800px Width)',
+          'Working Area Guidelines (980-1170px)',
+          'Header Design (Logo, Menu, Icons)',
+          'Banner Design (1200-1500px)',
+          'Gallery & Product curriculum',
+          'Footer Design (Logo, Social Links, Copyright)',
+          'Typography Standards (12-30px)',
+          'PSD to Web Conversion'
+        ]
+      },
+      {
+        title: 'HTML & CSS Development',
+        skills: [
+          'HTML5 Structure & Semantics',
+          'CSS3 Styling & Layouts',
+          'PSD to HTML Conversion',
+          'Responsive Design Techniques',
+          'Bootstrap Framework',
+          'Flexbox & Grid Systems',
+          'Forms & Tables',
+          'Media Elements'
+        ]
+      },
+      {
+        title: 'UI/UX Design',
+        skills: [
+          'Adobe XD & Figma Prototyping',
+          'User Interface Principles',
+          'User Experience Research',
+          'Wireframing & Mockups',
+          'Interactive Prototypes',
+          'Figma Collaboration',
+          'Design Systems & Style Guides'
+        ]
+      },
+      {
+        title: 'JavaScript Development',
+        skills: [
+          'JavaScript Fundamentals',
+          'Functions & Variables',
+          'DOM Manipulation',
+          'Event Handling',
+          'Form Validation',
+          'jQuery Library',
+          'AJAX Requests'
+        ]
+      },
+      {
+        title: 'WordPress Development',
+        skills: [
+          'WordPress Installation',
+          'Theme Customization',
+          'Plugin Integration',
+          'Page & Post Management',
+          'Widget Configuration',
+          'SEO Optimization'
+        ]
+      },
+      {
+        title: 'Advanced Technologies',
+        skills: [
+          'React.js Components',
+          'Server-Side Scripting (PHP)',
+          'Database Management (MySQL)',
+          'CMS Development',
+          'Website Deployment'
+        ]
+      }
+    ]
+  },
+  {
+    id: 'digital-marketing',
+    title: 'DIPLOMA IN ADVANCED DIGITAL MARKETING WITH AI INTEGRATION & AUTOMATION',
+    className: 'dm_bg',
+    softwares: [
+      'Adobe Photoshop',
+      'Adobe Illustrator',
+      'WordPress',
+      'Yoast SEO',
+      'Rank Math',
+      'Canva',
+      'Google Trends',
+      'Google Analytics 4',
+      'Google Search Console',
+      'Google Keyword Planner',
+      'Google Ads',
+      'Google Business Manager',
+      'Meta Ads Manager',
+      'Instagram',
+      'Facebook',
+      'Youtube',
+      'LinkedIn',
+      'Mailchimp',
+      'Buffer',
+      'AI Tools'
+    ],
+    duration: ['6 Months'],
+    curriculum: [
+      {
+        title: 'Raster Graphics',
+        skills: [
+          'Photoshop Interface & Tools',
+          'Color Correction & Grading',
+          'Photo Retouching (Spot, Patch, Glamour Skin)',
+          'Model, Fashion & Portrait Retouching',
+          'Product Retouching (Jewelry, Apparel, Furniture, Real Estate)',
+          'Wedding Album Design',
+          'Image Restoration (Vintage & Damaged Photos)',
+          'Masking Techniques (Layer, Photo, Hair, Ghost Mannequin)',
+          'Clipping Path & Color Changing',
+          'Black & White to Color Conversion',
+          'Image Manipulation & Effects',
+          'Banner, Poster & Catalog Design',
+          'Page Effects & Border Effects',
+          'Frame & Shadow Effects',
+          'Water & Mirror Effects',
+          '3D Box & Text Effects',
+          'Karizma Album Design',
+          'Generative AI (Generative Fill, Neural Filters, Content-Aware Fill)',
+          'AI Object Selection'
+        ]
+      },
+      {
+        title: 'Vector Graphics',
+        skills: [
+          'Vector vs Raster Graphics',
+          'CorelDRAW Basics & Interface',
+          'Digital Illustration Techniques',
+          'Logo Design & Tracing',
+          'Corporate Identity & Branding',
+          'Print Collaterals (Brochure, Business Card, Leaflets)',
+          'Visiting Card Design (3.5" x 2" with Bleed)',
+          'Packaging & Label Design',
+          'Advertising Design & Hoardings',
+          'Drawing & Shape Tools',
+          'Shaping Operations (Weld, Trim, Intersect, Combine)',
+          'Fill Types (Fountain, Pattern, Texture, Mesh)',
+          'Special Effects (Contour, Extrude, Blend, Shadow, PowerClip)',
+          'Magazine Cover Design',
+          'Text to Vector with AI (Adobe Firefly)',
+          'Generative Recolor',
+          'Retype (AI OCR)',
+          'Image Trace & Vectorization'
+        ]
+      },
+      {
+        title: 'INTRODUCTION TO DIGITAL MARKETING',
+        skills: [
+          'Role of Digital Marketer',
+          'Traditional vs Digital Marketing',
+          'Advantages of Digital Marketing',
+          'Digital Marketing Channels',
+          'Career Scope & Industry Overview'
+        ]
+      },
+      {
+        title: 'MARKETING & DIGITAL FUNDAMENTALS',
+        skills: [
+          'Digital Marketing Ecosystem',
+          'Sales Funnel Models (AIDA, TOFU–MOFU–BOFU)',
+          'Branding, Positioning & USP',
+          'Market Research & Competitor Analysis (Google Trends)',
+          'B2B vs B2C Marketing',
+          'Performance Metrics (CPM, CPC, CTR, CPA, ROAS)'
+        ]
+      },
+      {
+        title: 'WEBSITE DEVELOPMENT (WORDPRESS)',
+        skills: [
+          'Domain & Hosting Basics',
+          'WordPress Installation & Setup',
+          'Theme Customization',
+          'Page & Landing Page Creation',
+          'Website Optimization Basics',
+          'Form Integration & Lead Capture',
+          'Plugin-based Automation'
+        ]
+      },
+      {
+        title: 'SEARCH ENGINE OPTIMIZATION (SEO)',
+        skills: [
+          'Introduction to SEO',
+          'Paid vs Organic Search',
+          'Keyword Research & Planning',
+          'Types of Keywords',
+          'Google Algorithms Overview',
+          'On-Page Optimization (Yoast SEO, Rank Math)',
+          'Off-Page Optimization (Backlinks, Citations)',
+          'Technical SEO Basics',
+          'SEO Metrics & Reports',
+          'Automated SEO Audits & Alerts'
+        ]
+      },
+      {
+        title: 'GOOGLE SEARCH CONSOLE',
+        skills: [
+          'Introduction to Google Search Console',
+          'Property Setup & Verification',
+          'Sitemap Submission (Auto-sync)',
+          'Search Appearance & Rich Results',
+          'Performance & CTR Analysis',
+          'Indexing & Coverage Reports',
+          'Automated Indexing Monitoring'
+        ]
+      },
+      {
+        title: 'GOOGLE TAG MANAGER (GTM)',
+        skills: [
+          'GTM Account & Container Setup',
+          'Implementing Tags',
+          'Triggers & Variables',
+          'Data Layer Basics',
+          'Event Tracking & Testing',
+          'Automated Event Tracking'
+        ]
+      },
+      {
+        title: 'GOOGLE ANALYTICS 4 (GA4)',
+        skills: [
+          'Introduction to GA4',
+          'Property Setup',
+          'Event & Conversion Setup',
+          'Enhanced Reporting',
+          'Cross-Platform Tracking',
+          'Funnel & User Analysis',
+          'Automated Reports & Dashboards'
+        ]
+      },
+      {
+        title: 'GOOGLE ADS',
+        skills: [
+          'Google Ads Account Setup',
+          'Search Campaign Creation',
+          'Keyword Match Types',
+          'Ad Copy Writing',
+          'Budgeting & Bidding',
+          'Performance Optimization',
+          'Smart Bidding Automation',
+          'Automated Rules & Alerts'
+        ]
+      },
+      {
+        title: 'GOOGLE BUSINESS PROFILE (GMB)',
+        skills: [
+          'Business Profile Creation',
+          'Profile Optimization',
+          'Posts & Updates (Scheduled)',
+          'Reviews & Ratings Management',
+          'Local SEO Importance',
+          'Insights & Performance',
+          'Auto Notifications & Review Alerts'
+        ]
+      },
+      {
+        title: 'CONTENT STRATEGY & COPYWRITING',
+        skills: [
+          'Writing for Ads',
+          'Website Copywriting',
+          'Social Media Content',
+          'Blog Writing',
+          'SEO Content Strategy',
+          'AI-Assisted Content Automation'
+        ]
+      },
+      {
+        title: 'SOCIAL MEDIA MARKETING (ORGANIC – SMO)',
+        skills: [
+          'Introduction to Social Media Optimization',
+          'Platform Selection Strategy',
+          'Profile Optimization',
+          'Content Planning & Calendars',
+          'Engagement & Community Building',
+          'Hashtag Strategy',
+          'Post Scheduling Automation'
+        ]
+      },
+      {
+        title: 'FACEBOOK MARKETING',
+        skills: [
+          'Facebook Business Page Creation',
+          'Page Management',
+          'Facebook Marketing Strategy',
+          'Creatives Best Practices',
+          'Audience Targeting',
+          'Insights & Reporting',
+          'Auto Replies & Lead Forms'
+        ]
+      },
+      {
+        title: 'INSTAGRAM MARKETING',
+        skills: [
+          'Instagram Overview',
+          'Business Account Setup',
+          'Content Strategy (Posts, Reels, Stories)',
+          'Visuals & Creatives',
+          'Hashtag Strategy',
+          'Engagement & Community Building',
+          'Auto DM Replies & Scheduling'
+        ]
+      },
+      {
+        title: 'LINKEDIN MARKETING',
+        skills: [
+          'Introduction to LinkedIn',
+          'Profile Optimization',
+          'Company Page Creation',
+          'Personal Branding',
+          'Network Building',
+          'LinkedIn Analytics',
+          'Lead Form Automation'
+        ]
+      },
+      {
+        title: 'YOUTUBE MARKETING',
+        skills: [
+          'Channel Creation & Setup',
+          'YouTube SEO Basics',
+          'Content Strategy',
+          'Video Optimization',
+          'Audience Growth',
+          'Monetization Overview',
+          'Auto Publishing & Tracking'
+        ]
+      },
+      {
+        title: 'EMAIL MARKETING',
+        skills: [
+          'Introduction to Email Marketing',
+          'Mailchimp & Zoho Campaigns',
+          'List Building & Segmentation',
+          'Campaign Creation',
+          'Automation & Drip Campaigns',
+          'Analytics & Optimization',
+          'Behaviour-based Automation'
+        ]
+      },
+      {
+        title: 'WHATSAPP BUSINESS MARKETING',
+        skills: [
+          'WhatsApp Business Setup',
+          'Business Profile Optimization',
+          'Broadcast Lists',
+          'Customer Communication',
+          'Lead Follow-ups',
+          'Auto Replies & Lead Automation'
+        ]
+      },
+      {
+        title: 'DATA DRIVEN MARKETING',
+        skills: [
+          'KPI Tracking',
+          'Data Analysis & Interpretation',
+          'A/B Testing',
+          'Performance Optimization',
+          'Automated Dashboards & Reports'
+        ]
+      },
+      {
+        title: 'AI & MARKETING AUTOMATION',
+        skills: [
+          'AI Content Creation',
+          'AI for Ads & SEO',
+          'AI Creatives',
+          'Workflow Automation'
+        ]
+      }
+    ],
     faqs: [
       {
         q: 'What core automation platforms and analysis tracking systems are covered in the Digital Marketing program?',
@@ -256,6 +1293,161 @@ export const coursesConfig = [
     h1: 'Diploma in Advanced Multimedia Animation & VFX - Program in Mumbai 2026',
     intro: 'Become a complete master of design and visualization with Shankar Multimedia\'s 10-month Diploma in Advanced Multimedia Animation & VFX—Mumbai\'s most comprehensive program combining graphic design, UI/UX prototyping, technical AutoCAD drafting, and high-end 3D design mapping (building architecture design, residential interior layout rendering, and commercial exhibition stall modeling) alongside professional post-production and VFX.',
     softwares: ['Adobe Photoshop', 'CorelDRAW', 'Adobe Illustrator', 'Adobe InDesign', 'Adobe XD', 'Figma', 'Canva', 'Adobe After Effects', 'Adobe Premiere Pro', 'Adobe Media Encoder', '3Ds Max', 'V-Ray Rendering', 'Corona Render', 'Autocad', 'SketchUp'],
+    curriculum: [
+      {
+        title: 'Raster Graphics',
+        skills: [
+          'Photoshop Interface & Tools',
+          'Color Correction & Grading',
+          'Photo Retouching (Spot, Patch, Glamour Skin)',
+          'Model, Fashion & Portrait Retouching',
+          'Product Retouching (Jewelry, Apparel, Furniture, Real Estate)',
+          'Wedding Album Design',
+          'Image Restoration (Vintage & Damaged Photos)',
+          'Masking Techniques (Layer, Photo, Hair, Ghost Mannequin)',
+          'Clipping Path & Color Changing',
+          'Black & White to Color Conversion',
+          'Image Manipulation & Effects',
+          'Banner, Poster & Catalog Design',
+          'Page Effects & Border Effects',
+          'Frame & Shadow Effects',
+          'Water & Mirror Effects',
+          '3D Box & Text Effects',
+          'Karizma Album Design',
+          'Generative AI (Generative Fill, Neural Filters, Content-Aware Fill)',
+          'AI Object Selection'
+        ]
+      },
+      {
+        title: 'Vector Graphics',
+        skills: [
+          'Vector vs Raster Graphics',
+          'CorelDRAW Basics & Interface',
+          'Digital Illustration Techniques',
+          'Logo Design & Tracing',
+          'Corporate Identity & Branding',
+          'Print Collaterals (Brochure, Business Card, Leaflets)',
+          'Visiting Card Design (3.5" x 2" with Bleed)',
+          'Packaging & Label Design',
+          'Advertising Design & Hoardings',
+          'Drawing & Shape Tools',
+          'Shaping Operations (Weld, Trim, Intersect, Combine)',
+          'Fill Types (Fountain, Pattern, Texture, Mesh)',
+          'Special Effects (Contour, Extrude, Blend, Shadow, PowerClip)',
+          'Magazine Cover Design',
+          'Text to Vector with AI (Adobe Firefly)',
+          'Generative Recolor',
+          'Retype (AI OCR)',
+          'Image Trace & Vectorization'
+        ]
+      },
+      {
+        title: 'UI/UX Design',
+        skills: [
+          'Adobe XD & Figma Fundamentals',
+          'User Interface Design Principles',
+          'User Experience Research',
+          'Wireframing & Prototyping',
+          'Artboard & Repeat Grid',
+          'Interactive Prototypes',
+          'Figma Collaboration',
+          'Design Systems'
+        ]
+      },
+      {
+        title: '3D Modeling',
+        skills: [
+          'Exhibition & Event Design (Standard Sizes)',
+          'Exhibition Stall Design (3m, 6m, 10m)',
+          'Reception Counter Design (Small, Medium, Large)',
+          'Fascia/Name Board Design',
+          'Podium & Meeting Room Layout',
+          'Pantry Room Design',
+          'Interior Design & Space Planning',
+          'Measurement Systems (Metric & Imperial)',
+          'Low Poly & High Poly Modeling',
+          'Advanced Texturing & UV Mapping',
+          'Camera Setup & Composition',
+          'Lighting Techniques (3-Point, HDRI)',
+          '3D Object Painting',
+          'V-Ray & Corona Rendering',
+          'Visual Effects Integration'
+        ]
+      },
+      {
+        title: '3D Animation',
+        skills: [
+          'Animation Principles',
+          'Object & Transform Animation',
+          'Character Rigging & Animation',
+          'Architectural Walkthroughs',
+          '3D Special Effects',
+          'Camera Animation',
+          'Digital Filmmaking Concepts'
+        ]
+      },
+      {
+        title: 'AutoCAD',
+        skills: [
+          'Technical Drawing Basics',
+          'Layout Plans & Elevations',
+          'Working Drawings & Detailing',
+          'Perspective Views',
+          '2D to 3D Conversion'
+        ]
+      },
+      {
+        title: 'Adobe After Effects',
+        skills: [
+          'Project Setup & Composition',
+          'Animation & Keyframing Basics',
+          'Image Scale & Shape Animation',
+          'Text Animation with Path',
+          'Hold Keyframes & Text Effects',
+          'Masking Techniques',
+          'Lower Third Design (Mask Path)',
+          'Trim Path (Counter Animation)',
+          'Layer Animation & Audio Integration',
+          'Shatter & CC Split Effects',
+          'CC Scatterize & Particle Systems',
+          'Fire & Light Effects',
+          'CC Rainfall & Radio Waves',
+          '3D Layers & Camera Animation',
+          'Alpha & Luma Matte',
+          'Graph Editor & Repeater',
+          'Time Control & Double Roll',
+          'Green/Blue Screen Keying',
+          'Null Objects & Parenting',
+          'Loop Expressions (loopOut)',
+          'Motion Tracking & Wiggler',
+          'Roto Brush 2/3 (AI-Powered)',
+          'Content-Aware Fill for Video',
+          'Scene Edit Detection',
+          'AI Face & Motion Tracking',
+          'Final Render & Collect Files'
+        ]
+      },
+      {
+        title: 'Adobe Premiere Pro',
+        skills: [
+          'Video Editing Fundamentals',
+          'Timeline & Clip Management',
+          'Text-Based Editing (AI Transcription)',
+          'Auto Ducking & AI Audio Tagging',
+          'Scene Edit Detection',
+          'Auto Reframe',
+          'Green/Blue Screen Removal',
+          'Track Matte Key',
+          'Video & Audio Transitions',
+          'Freeze Frame & Timecode',
+          'Color Grading (Leave Color, CC Color)',
+          'Lighting Effects & Camera Blur',
+          'Legacy Title & Essential Graphics',
+          'Noise Removal (DeNoise)',
+          'Professional Export & Rendering'
+        ]
+      }
+    ],
     faqs: [
       {
         q: 'What makes the 10-Month Advanced Multimedia Animation & VFX Track the most comprehensive studio program?',
