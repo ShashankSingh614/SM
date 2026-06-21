@@ -21,7 +21,7 @@ const AboutPageContent = () => {
           <p>{ABOUT_CONTENT.subtitle}</p>
         </div>
 
-        {/* Mission & Vision */}
+        {/* Mission and Vision */}
         <motion.section 
           className={styles.missionVisionSection}
           initial={{ opacity: 0, y: 30 }}

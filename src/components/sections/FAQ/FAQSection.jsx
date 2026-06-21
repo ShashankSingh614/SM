@@ -12,7 +12,7 @@ const faqData = [
     questions: [
       {
         q: 'What multimedia and design courses do you offer?',
-        a: 'We offer industry-oriented diploma programs designed to prepare students for real-world creative careers. Our popular courses include Advanced Graphic Designing & UI/UX Design with AI Integration (4 Months), Graphic Designing, UI/UX, Motion Graphics, Video Editing & VFX (6 Months), Advanced 3D Modelling & Animation (6 Months), 3D Modelling, Animation & VFX (8 Months), Advanced Web Designing & Development with UI/UX (6 Months), Advanced Digital Marketing with AI Integration & Automation (6 Months), and Advanced Multimedia Animation & VFX (10 Months).'
+        a: 'We offer industry-oriented diploma programs designed to prepare students for real-world creative careers. Our popular courses include Advanced Graphic Designing and UI/UX Design with AI Integration (4 Months), Graphic Designing, UI/UX, Motion Graphics, Video Editing and VFX (6 Months), Advanced 3D Modelling and Animation (6 Months), 3D Modelling, Animation and VFX (8 Months), Advanced Web Designing and Development with UI/UX (6 Months), Advanced Digital Marketing with AI Integration and Automation (6 Months), and Advanced Multimedia Animation and VFX (10 Months).'
       },
       {
         q: 'Do your courses include AI-powered tools and technologies?',
@@ -28,7 +28,7 @@ const faqData = [
       },
       {
         q: 'Can college students or working professionals join the courses?',
-        a: 'Absolutely. Our flexible batch timings are specially designed for college students, working professionals, freelancers, and homemakers. We offer morning, afternoon & evening batches so learners can easily manage alongside their daily schedule.'
+        a: 'Absolutely. Our flexible batch timings are specially designed for college students, working professionals, freelancers, and homemakers. We offer morning, afternoon and evening batches so learners can easily manage alongside their daily schedule.'
       },
       {
         q: 'What batch timings are available?',

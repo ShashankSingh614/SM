@@ -27,7 +27,7 @@ const CoursesPageContent = () => {
   const portfolioCategories = useMemo(() => [
     {
       id: 'graphic',
-      title: 'Graphic & UI/UX Designing',
+      title: 'Graphic and UI/UX Designing',
       description: 'Showcasing layouts, branding, UI/UX, and packaging design work by our talented students',
       works: [
         { id: 1, image: '/images/img2/gra/1.webp', title: 'Brand Packaging Design', student: 'Student Portfolio' },
@@ -48,7 +48,7 @@ const CoursesPageContent = () => {
     },
     {
       id: '3d',
-      title: '3D Modelling & Animation',
+      title: '3D Modelling and Animation',
       description: 'Showcasing stall, interior, exterior, bungalow, and architectural design work by our talented students',
       works: [
         { id: 13, image: '/images/img2/3d/1.webp', title: 'Exhibition Stall Design', student: 'Student Portfolio' },
@@ -69,7 +69,7 @@ const CoursesPageContent = () => {
     },
     {
       id: 'motion',
-      title: 'Motion Graphics, Video Editing & VFX',
+      title: 'Motion Graphics, Video Editing and VFX',
       description: 'Showcasing engaging animations, video projects, and visual effects created by our talented students',
       videos: [
         { id: 19, videoId: '68JZqQIursM', student: 'Student Portfolio' },
@@ -90,7 +90,7 @@ const CoursesPageContent = () => {
     },
     {
       id: 'web',
-      title: 'Web Designing & Development',
+      title: 'Web Designing and Development',
       description: 'Showcasing responsive website designs and interactive user interfaces created by our students',
       works: [
         { id: 7, image: '/images/img2/web/1.webp', title: 'Industrial Services Website', student: 'Student Portfolio' },
@@ -171,12 +171,12 @@ const CoursesPageContent = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [lightboxOpen, closeLightbox, nextImage, prevImage]);
 
-  const categories = ['All', 'Graphic & UI/UX', 'Web Design', '3D Animation', 'Motion Graphics'];
+  const categories = ['All', 'Graphic and UI/UX', 'Web Design', '3D Animation', 'Motion Graphics'];
 
   // Filter categories based on selection and search
   const filteredCategories = portfolioCategories.filter(category => {
     const matchesCategory = selectedCategory === 'All' || 
-                           category.title.toLowerCase().includes(selectedCategory.toLowerCase().replace(' & ', ' ').replace('graphics', ''));
+                           category.title.toLowerCase().includes(selectedCategory.toLowerCase().replace(' and ', ' ').replace('graphics', ''));
     
     const matchesSearch = category.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          category.description.toLowerCase().includes(searchTerm.toLowerCase());

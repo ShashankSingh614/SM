@@ -14,7 +14,7 @@ const CoursesAccordion = () => {
   const courses = [
     {
       id: 'graphic-design',
-      title: 'DIPLOMA IN ADVANCED GRAPHIC DESIGNING & UI/UX DESIGN WITH AI INTEGRATION',
+      title: 'DIPLOMA IN ADVANCED GRAPHIC DESIGNING and UI/UX DESIGN WITH AI INTEGRATION',
       className: 'ps_bg',
       softwares: [
         'Adobe Photoshop', 
@@ -32,22 +32,22 @@ const CoursesAccordion = () => {
         {
           title: 'Raster Graphics',
           skills: [
-            'Photoshop Interface & Tools',
-            'Color Correction & Grading',
+            'Photoshop Interface and Tools',
+            'Color Correction and Grading',
             'Photo Retouching (Spot, Patch, Glamour Skin)',
-            'Model, Fashion & Portrait Retouching',
+            'Model, Fashion and Portrait Retouching',
             'Product Retouching (Jewelry, Apparel, Furniture, Real Estate)',
             'Wedding Album Design',
-            'Image Restoration (Vintage & Damaged Photos)',
+            'Image Restoration (Vintage and Damaged Photos)',
             'Masking Techniques (Layer, Photo, Hair, Ghost Mannequin)',
-            'Clipping Path & Color Changing',
-            'Black & White to Color Conversion',
-            'Image Manipulation & Effects',
-            'Banner, Poster & Catalog Design',
-            'Page Effects & Border Effects',
-            'Frame & Shadow Effects',
-            'Water & Mirror Effects',
-            '3D Box & Text Effects',
+            'Clipping Path and Color Changing',
+            'Black and White to Color Conversion',
+            'Image Manipulation and Effects',
+            'Banner, Poster and Catalog Design',
+            'Page Effects and Border Effects',
+            'Frame and Shadow Effects',
+            'Water and Mirror Effects',
+            '3D Box and Text Effects',
             'Karizma Album Design',
             'Generative AI (Generative Fill, Neural Filters, Content-Aware Fill)',
             'AI Object Selection'
@@ -57,15 +57,15 @@ const CoursesAccordion = () => {
           title: 'Vector Graphics',
           skills: [
             'Vector vs Raster Graphics',
-            'CorelDRAW Basics & Interface',
+            'CorelDRAW Basics and Interface',
             'Digital Illustration Techniques',
-            'Logo Design & Tracing',
-            'Corporate Identity & Branding',
+            'Logo Design and Tracing',
+            'Corporate Identity and Branding',
             'Print Collaterals (Brochure, Business Card, Leaflets)',
             'Visiting Card Design (3.5" x 2" with Bleed)',
-            'Packaging & Label Design',
-            'Advertising Design & Hoardings',
-            'Drawing & Shape Tools',
+            'Packaging and Label Design',
+            'Advertising Design and Hoardings',
+            'Drawing and Shape Tools',
             'Shaping Operations (Weld, Trim, Intersect, Combine)',
             'Fill Types (Fountain, Pattern, Texture, Mesh)',
             'Special Effects (Contour, Extrude, Blend, Shadow, PowerClip)',
@@ -73,17 +73,17 @@ const CoursesAccordion = () => {
             'Text to Vector with AI (Adobe Firefly)',
             'Generative Recolor',
             'Retype (AI OCR)',
-            'Image Trace & Vectorization'
+            'Image Trace and Vectorization'
           ]
         },
         {
           title: 'UI/UX Design',
           skills: [
-            'Adobe XD & Figma Fundamentals',
+            'Adobe XD and Figma Fundamentals',
             'User Interface Design Principles',
             'User Experience Research',
-            'Wireframing & Prototyping',
-            'Artboard & Repeat Grid',
+            'Wireframing and Prototyping',
+            'Artboard and Repeat Grid',
             'Interactive Prototypes',
             'Figma Collaboration',
             'Design Systems'
@@ -93,7 +93,7 @@ const CoursesAccordion = () => {
     },
     {
       id: 'advanced-graphic',
-      title: 'DIPLOMA IN ADVANCED GRAPHIC DESIGNING, UI/UX, MOTION GRAPHIC, VIDEO EDITING & VFX',
+      title: 'DIPLOMA IN ADVANCED GRAPHIC DESIGNING, UI/UX, MOTION GRAPHIC, VIDEO EDITING and VFX',
       className: 'php_bg1',
       softwares: [
         'Adobe Photoshop', 
@@ -114,22 +114,22 @@ const CoursesAccordion = () => {
         {
           title: 'Raster Graphics',
           skills: [
-            'Photoshop Interface & Tools',
-            'Color Correction & Grading',
+            'Photoshop Interface and Tools',
+            'Color Correction and Grading',
             'Photo Retouching (Spot, Patch, Glamour Skin)',
-            'Model, Fashion & Portrait Retouching',
+            'Model, Fashion and Portrait Retouching',
             'Product Retouching (Jewelry, Apparel, Furniture, Real Estate)',
             'Wedding Album Design',
-            'Image Restoration (Vintage & Damaged Photos)',
+            'Image Restoration (Vintage and Damaged Photos)',
             'Masking Techniques (Layer, Photo, Hair, Ghost Mannequin)',
-            'Clipping Path & Color Changing',
-            'Black & White to Color Conversion',
-            'Image Manipulation & Effects',
-            'Banner, Poster & Catalog Design',
-            'Page Effects & Border Effects',
-            'Frame & Shadow Effects',
-            'Water & Mirror Effects',
-            '3D Box & Text Effects',
+            'Clipping Path and Color Changing',
+            'Black and White to Color Conversion',
+            'Image Manipulation and Effects',
+            'Banner, Poster and Catalog Design',
+            'Page Effects and Border Effects',
+            'Frame and Shadow Effects',
+            'Water and Mirror Effects',
+            '3D Box and Text Effects',
             'Karizma Album Design',
             'Generative AI (Generative Fill, Neural Filters, Content-Aware Fill)',
             'AI Object Selection'
@@ -139,15 +139,15 @@ const CoursesAccordion = () => {
           title: 'Vector Graphics',
           skills: [
             'Vector vs Raster Graphics',
-            'CorelDRAW Basics & Interface',
+            'CorelDRAW Basics and Interface',
             'Digital Illustration Techniques',
-            'Logo Design & Tracing',
-            'Corporate Identity & Branding',
+            'Logo Design and Tracing',
+            'Corporate Identity and Branding',
             'Print Collaterals (Brochure, Business Card, Leaflets)',
             'Visiting Card Design (3.5" x 2" with Bleed)',
-            'Packaging & Label Design',
-            'Advertising Design & Hoardings',
-            'Drawing & Shape Tools',
+            'Packaging and Label Design',
+            'Advertising Design and Hoardings',
+            'Drawing and Shape Tools',
             'Shaping Operations (Weld, Trim, Intersect, Combine)',
             'Fill Types (Fountain, Pattern, Texture, Mesh)',
             'Special Effects (Contour, Extrude, Blend, Shadow, PowerClip)',
@@ -155,17 +155,17 @@ const CoursesAccordion = () => {
             'Text to Vector with AI (Adobe Firefly)',
             'Generative Recolor',
             'Retype (AI OCR)',
-            'Image Trace & Vectorization'
+            'Image Trace and Vectorization'
           ]
         },
         {
           title: 'UI/UX Design',
           skills: [
-            'Adobe XD & Figma Fundamentals',
+            'Adobe XD and Figma Fundamentals',
             'User Interface Design Principles',
             'User Experience Research',
-            'Wireframing & Prototyping',
-            'Artboard & Repeat Grid',
+            'Wireframing and Prototyping',
+            'Artboard and Repeat Grid',
             'Interactive Prototypes',
             'Figma Collaboration',
             'Design Systems'
@@ -174,59 +174,59 @@ const CoursesAccordion = () => {
         {
           title: 'Adobe After Effects',
           skills: [
-            'Project Setup & Composition',
-            'Animation & Keyframing Basics',
-            'Image Scale & Shape Animation',
+            'Project Setup and Composition',
+            'Animation and Keyframing Basics',
+            'Image Scale and Shape Animation',
             'Text Animation with Path',
-            'Hold Keyframes & Text Effects',
+            'Hold Keyframes and Text Effects',
             'Masking Techniques',
             'Lower Third Design (Mask Path)',
             'Trim Path (Counter Animation)',
-            'Layer Animation & Audio Integration',
-            'Shatter & CC Split Effects',
-            'CC Scatterize & Particle Systems',
-            'Fire & Light Effects',
-            'CC Rainfall & Radio Waves',
-            '3D Layers & Camera Animation',
-            'Alpha & Luma Matte',
-            'Graph Editor & Repeater',
-            'Time Control & Double Roll',
+            'Layer Animation and Audio Integration',
+            'Shatter and CC Split Effects',
+            'CC Scatterize and Particle Systems',
+            'Fire and Light Effects',
+            'CC Rainfall and Radio Waves',
+            '3D Layers and Camera Animation',
+            'Alpha and Luma Matte',
+            'Graph Editor and Repeater',
+            'Time Control and Double Roll',
             'Green/Blue Screen Keying',
-            'Null Objects & Parenting',
+            'Null Objects and Parenting',
             'Loop Expressions (loopOut)',
-            'Motion Tracking & Wiggler',
+            'Motion Tracking and Wiggler',
             'Roto Brush 2/3 (AI-Powered)',
             'Content-Aware Fill for Video',
             'Scene Edit Detection',
-            'AI Face & Motion Tracking',
-            'Final Render & Collect Files'
+            'AI Face and Motion Tracking',
+            'Final Render and Collect Files'
           ]
         },
         {
           title: 'Adobe Premiere Pro',
           skills: [
             'Video Editing Fundamentals',
-            'Timeline & Clip Management',
+            'Timeline and Clip Management',
             'Text-Based Editing (AI Transcription)',
-            'Auto Ducking & AI Audio Tagging',
+            'Auto Ducking and AI Audio Tagging',
             'Scene Edit Detection',
             'Auto Reframe',
             'Green/Blue Screen Removal',
             'Track Matte Key',
-            'Video & Audio Transitions',
-            'Freeze Frame & Timecode',
+            'Video and Audio Transitions',
+            'Freeze Frame and Timecode',
             'Color Grading (Leave Color, CC Color)',
-            'Lighting Effects & Camera Blur',
-            'Legacy Title & Essential Graphics',
+            'Lighting Effects and Camera Blur',
+            'Legacy Title and Essential Graphics',
             'Noise Removal (DeNoise)',
-            'Professional Export & Rendering'
+            'Professional Export and Rendering'
           ]
         }
       ]
     },
     {
       id: '3d-animation',
-      title: 'DIPLOMA IN ADVANCED 3D MODELLING & ANIMATION',
+      title: 'DIPLOMA IN ADVANCED 3D MODELLING and ANIMATION',
       className: 'three_dbg',
       softwares: [
         'Adobe Photoshop', 
@@ -244,22 +244,22 @@ const CoursesAccordion = () => {
         {
           title: 'Raster Graphics',
           skills: [
-            'Photoshop Interface & Tools',
-            'Color Correction & Grading',
+            'Photoshop Interface and Tools',
+            'Color Correction and Grading',
             'Photo Retouching (Spot, Patch, Glamour Skin)',
-            'Model, Fashion & Portrait Retouching',
+            'Model, Fashion and Portrait Retouching',
             'Product Retouching (Jewelry, Apparel, Furniture, Real Estate)',
             'Wedding Album Design',
-            'Image Restoration (Vintage & Damaged Photos)',
+            'Image Restoration (Vintage and Damaged Photos)',
             'Masking Techniques (Layer, Photo, Hair, Ghost Mannequin)',
-            'Clipping Path & Color Changing',
-            'Black & White to Color Conversion',
-            'Image Manipulation & Effects',
-            'Banner, Poster & Catalog Design',
-            'Page Effects & Border Effects',
-            'Frame & Shadow Effects',
-            'Water & Mirror Effects',
-            '3D Box & Text Effects',
+            'Clipping Path and Color Changing',
+            'Black and White to Color Conversion',
+            'Image Manipulation and Effects',
+            'Banner, Poster and Catalog Design',
+            'Page Effects and Border Effects',
+            'Frame and Shadow Effects',
+            'Water and Mirror Effects',
+            '3D Box and Text Effects',
             'Karizma Album Design',
             'Generative AI (Generative Fill, Neural Filters, Content-Aware Fill)',
             'AI Object Selection'
@@ -269,15 +269,15 @@ const CoursesAccordion = () => {
           title: 'Vector Graphics',
           skills: [
             'Vector vs Raster Graphics',
-            'CorelDRAW Basics & Interface',
+            'CorelDRAW Basics and Interface',
             'Digital Illustration Techniques',
-            'Logo Design & Tracing',
-            'Corporate Identity & Branding',
+            'Logo Design and Tracing',
+            'Corporate Identity and Branding',
             'Print Collaterals (Brochure, Business Card, Leaflets)',
             'Visiting Card Design (3.5" x 2" with Bleed)',
-            'Packaging & Label Design',
-            'Advertising Design & Hoardings',
-            'Drawing & Shape Tools',
+            'Packaging and Label Design',
+            'Advertising Design and Hoardings',
+            'Drawing and Shape Tools',
             'Shaping Operations (Weld, Trim, Intersect, Combine)',
             'Fill Types (Fountain, Pattern, Texture, Mesh)',
             'Special Effects (Contour, Extrude, Blend, Shadow, PowerClip)',
@@ -285,26 +285,26 @@ const CoursesAccordion = () => {
             'Text to Vector with AI (Adobe Firefly)',
             'Generative Recolor',
             'Retype (AI OCR)',
-            'Image Trace & Vectorization'
+            'Image Trace and Vectorization'
           ]
         },
         {
           title: '3D Modeling',
           skills: [
-            'Exhibition & Event Design (Standard Sizes)',
+            'Exhibition and Event Design (Standard Sizes)',
             'Exhibition Stall Design (3m, 6m, 10m)',
             'Reception Counter Design (Small, Medium, Large)',
             'Fascia/Name Board Design',
-            'Podium & Meeting Room Layout',
+            'Podium and Meeting Room Layout',
             'Pantry Room Design',
-            'Interior Design & Space Planning',
-            'Measurement Systems (Metric & Imperial)',
-            'Low Poly & High Poly Modeling',
-            'Advanced Texturing & UV Mapping',
-            'Camera Setup & Composition',
+            'Interior Design and Space Planning',
+            'Measurement Systems (Metric and Imperial)',
+            'Low Poly and High Poly Modeling',
+            'Advanced Texturing and UV Mapping',
+            'Camera Setup and Composition',
             'Lighting Techniques (3-Point, HDRI)',
             '3D Object Painting',
-            'V-Ray & Corona Rendering',
+            'V-Ray and Corona Rendering',
             'Visual Effects Integration'
           ]
         },
@@ -312,8 +312,8 @@ const CoursesAccordion = () => {
           title: '3D Animation',
           skills: [
             'Animation Principles',
-            'Object & Transform Animation',
-            'Character Rigging & Animation',
+            'Object and Transform Animation',
+            'Character Rigging and Animation',
             'Architectural Walkthroughs',
             '3D Special Effects',
             'Camera Animation',
@@ -324,8 +324,8 @@ const CoursesAccordion = () => {
           title: 'AutoCAD',
           skills: [
             'Technical Drawing Basics',
-            'Layout Plans & Elevations',
-            'Working Drawings & Detailing',
+            'Layout Plans and Elevations',
+            'Working Drawings and Detailing',
             'Perspective Views',
             '2D to 3D Conversion'
           ]
@@ -334,7 +334,7 @@ const CoursesAccordion = () => {
     },
     {
       id: '3d-vfx',
-      title: 'DIPLOMA IN ADVANCED 3D MODELLING & ANIMATION & VFX',
+      title: 'DIPLOMA IN ADVANCED 3D MODELLING and ANIMATION and VFX',
       className: 'nuke_bg',
       softwares: [
         'Adobe Photoshop', 
@@ -355,22 +355,22 @@ const CoursesAccordion = () => {
         {
           title: 'Raster Graphics',
           skills: [
-            'Photoshop Interface & Tools',
-            'Color Correction & Grading',
+            'Photoshop Interface and Tools',
+            'Color Correction and Grading',
             'Photo Retouching (Spot, Patch, Glamour Skin)',
-            'Model, Fashion & Portrait Retouching',
+            'Model, Fashion and Portrait Retouching',
             'Product Retouching (Jewelry, Apparel, Furniture, Real Estate)',
             'Wedding Album Design',
-            'Image Restoration (Vintage & Damaged Photos)',
+            'Image Restoration (Vintage and Damaged Photos)',
             'Masking Techniques (Layer, Photo, Hair, Ghost Mannequin)',
-            'Clipping Path & Color Changing',
-            'Black & White to Color Conversion',
-            'Image Manipulation & Effects',
-            'Banner, Poster & Catalog Design',
-            'Page Effects & Border Effects',
-            'Frame & Shadow Effects',
-            'Water & Mirror Effects',
-            '3D Box & Text Effects',
+            'Clipping Path and Color Changing',
+            'Black and White to Color Conversion',
+            'Image Manipulation and Effects',
+            'Banner, Poster and Catalog Design',
+            'Page Effects and Border Effects',
+            'Frame and Shadow Effects',
+            'Water and Mirror Effects',
+            '3D Box and Text Effects',
             'Karizma Album Design',
             'Generative AI (Generative Fill, Neural Filters, Content-Aware Fill)',
             'AI Object Selection'
@@ -380,15 +380,15 @@ const CoursesAccordion = () => {
           title: 'Vector Graphics',
           skills: [
             'Vector vs Raster Graphics',
-            'CorelDRAW Basics & Interface',
+            'CorelDRAW Basics and Interface',
             'Digital Illustration Techniques',
-            'Logo Design & Tracing',
-            'Corporate Identity & Branding',
+            'Logo Design and Tracing',
+            'Corporate Identity and Branding',
             'Print Collaterals (Brochure, Business Card, Leaflets)',
             'Visiting Card Design (3.5" x 2" with Bleed)',
-            'Packaging & Label Design',
-            'Advertising Design & Hoardings',
-            'Drawing & Shape Tools',
+            'Packaging and Label Design',
+            'Advertising Design and Hoardings',
+            'Drawing and Shape Tools',
             'Shaping Operations (Weld, Trim, Intersect, Combine)',
             'Fill Types (Fountain, Pattern, Texture, Mesh)',
             'Special Effects (Contour, Extrude, Blend, Shadow, PowerClip)',
@@ -396,26 +396,26 @@ const CoursesAccordion = () => {
             'Text to Vector with AI (Adobe Firefly)',
             'Generative Recolor',
             'Retype (AI OCR)',
-            'Image Trace & Vectorization'
+            'Image Trace and Vectorization'
           ]
         },
         {
           title: '3D Modeling',
           skills: [
-            'Exhibition & Event Design (Standard Sizes)',
+            'Exhibition and Event Design (Standard Sizes)',
             'Exhibition Stall Design (3m, 6m, 10m)',
             'Reception Counter Design (Small, Medium, Large)',
             'Fascia/Name Board Design',
-            'Podium & Meeting Room Layout',
+            'Podium and Meeting Room Layout',
             'Pantry Room Design',
-            'Interior Design & Space Planning',
-            'Measurement Systems (Metric & Imperial)',
-            'Low Poly & High Poly Modeling',
-            'Advanced Texturing & UV Mapping',
-            'Camera Setup & Composition',
+            'Interior Design and Space Planning',
+            'Measurement Systems (Metric and Imperial)',
+            'Low Poly and High Poly Modeling',
+            'Advanced Texturing and UV Mapping',
+            'Camera Setup and Composition',
             'Lighting Techniques (3-Point, HDRI)',
             '3D Object Painting',
-            'V-Ray & Corona Rendering',
+            'V-Ray and Corona Rendering',
             'Visual Effects Integration'
           ]
         },
@@ -423,8 +423,8 @@ const CoursesAccordion = () => {
           title: '3D Animation',
           skills: [
             'Animation Principles',
-            'Object & Transform Animation',
-            'Character Rigging & Animation',
+            'Object and Transform Animation',
+            'Character Rigging and Animation',
             'Architectural Walkthroughs',
             '3D Special Effects',
             'Camera Animation',
@@ -435,8 +435,8 @@ const CoursesAccordion = () => {
           title: 'AutoCAD',
           skills: [
             'Technical Drawing Basics',
-            'Layout Plans & Elevations',
-            'Working Drawings & Detailing',
+            'Layout Plans and Elevations',
+            'Working Drawings and Detailing',
             'Perspective Views',
             '2D to 3D Conversion'
           ]
@@ -444,59 +444,59 @@ const CoursesAccordion = () => {
         {
           title: 'Adobe After Effects',
           skills: [
-            'Project Setup & Composition',
-            'Animation & Keyframing Basics',
-            'Image Scale & Shape Animation',
+            'Project Setup and Composition',
+            'Animation and Keyframing Basics',
+            'Image Scale and Shape Animation',
             'Text Animation with Path',
-            'Hold Keyframes & Text Effects',
+            'Hold Keyframes and Text Effects',
             'Masking Techniques',
             'Lower Third Design (Mask Path)',
             'Trim Path (Counter Animation)',
-            'Layer Animation & Audio Integration',
-            'Shatter & CC Split Effects',
-            'CC Scatterize & Particle Systems',
-            'Fire & Light Effects',
-            'CC Rainfall & Radio Waves',
-            '3D Layers & Camera Animation',
-            'Alpha & Luma Matte',
-            'Graph Editor & Repeater',
-            'Time Control & Double Roll',
+            'Layer Animation and Audio Integration',
+            'Shatter and CC Split Effects',
+            'CC Scatterize and Particle Systems',
+            'Fire and Light Effects',
+            'CC Rainfall and Radio Waves',
+            '3D Layers and Camera Animation',
+            'Alpha and Luma Matte',
+            'Graph Editor and Repeater',
+            'Time Control and Double Roll',
             'Green/Blue Screen Keying',
-            'Null Objects & Parenting',
+            'Null Objects and Parenting',
             'Loop Expressions (loopOut)',
-            'Motion Tracking & Wiggler',
+            'Motion Tracking and Wiggler',
             'Roto Brush 2/3 (AI-Powered)',
             'Content-Aware Fill for Video',
             'Scene Edit Detection',
-            'AI Face & Motion Tracking',
-            'Final Render & Collect Files'
+            'AI Face and Motion Tracking',
+            'Final Render and Collect Files'
           ]
         },
         {
           title: 'Adobe Premiere Pro',
           skills: [
             'Video Editing Fundamentals',
-            'Timeline & Clip Management',
+            'Timeline and Clip Management',
             'Text-Based Editing (AI Transcription)',
-            'Auto Ducking & AI Audio Tagging',
+            'Auto Ducking and AI Audio Tagging',
             'Scene Edit Detection',
             'Auto Reframe',
             'Green/Blue Screen Removal',
             'Track Matte Key',
-            'Video & Audio Transitions',
-            'Freeze Frame & Timecode',
+            'Video and Audio Transitions',
+            'Freeze Frame and Timecode',
             'Color Grading (Leave Color, CC Color)',
-            'Lighting Effects & Camera Blur',
-            'Legacy Title & Essential Graphics',
+            'Lighting Effects and Camera Blur',
+            'Legacy Title and Essential Graphics',
             'Noise Removal (DeNoise)',
-            'Professional Export & Rendering'
+            'Professional Export and Rendering'
           ]
         }
       ]
     },
     {
       id: 'web-design',
-      title: 'DIPLOMA IN ADVANCED WEB DESIGNING & DEVELOPMENT WITH ADVANCED UI/UX',
+      title: 'DIPLOMA IN ADVANCED WEB DESIGNING and DEVELOPMENT WITH ADVANCED UI/UX',
       className: 'dw_bg',
       softwares: [
         'Adobe Photoshop',
@@ -507,7 +507,7 @@ const CoursesAccordion = () => {
         'CSS3 / SCSS',
         'JavaScript / jQuery',
         'React.js',
-        'Bootstrap 4 & 5',
+        'Bootstrap 4 and 5',
         'WordPress',
         'Notepad++',
         'Sublime Text',
@@ -521,22 +521,22 @@ const CoursesAccordion = () => {
         {
           title: 'Raster Graphics',
           skills: [
-            'Photoshop Interface & Tools',
-            'Color Correction & Grading',
+            'Photoshop Interface and Tools',
+            'Color Correction and Grading',
             'Photo Retouching (Spot, Patch, Glamour Skin)',
-            'Model, Fashion & Portrait Retouching',
+            'Model, Fashion and Portrait Retouching',
             'Product Retouching (Jewelry, Apparel, Furniture, Real Estate)',
             'Wedding Album Design',
-            'Image Restoration (Vintage & Damaged Photos)',
+            'Image Restoration (Vintage and Damaged Photos)',
             'Masking Techniques (Layer, Photo, Hair, Ghost Mannequin)',
-            'Clipping Path & Color Changing',
-            'Black & White to Color Conversion',
-            'Image Manipulation & Effects',
-            'Banner, Poster & Catalog Design',
-            'Page Effects & Border Effects',
-            'Frame & Shadow Effects',
-            'Water & Mirror Effects',
-            '3D Box & Text Effects',
+            'Clipping Path and Color Changing',
+            'Black and White to Color Conversion',
+            'Image Manipulation and Effects',
+            'Banner, Poster and Catalog Design',
+            'Page Effects and Border Effects',
+            'Frame and Shadow Effects',
+            'Water and Mirror Effects',
+            '3D Box and Text Effects',
             'Karizma Album Design',
             'Generative AI (Generative Fill, Neural Filters, Content-Aware Fill)',
             'AI Object Selection'
@@ -546,15 +546,15 @@ const CoursesAccordion = () => {
           title: 'Vector Graphics',
           skills: [
             'Vector vs Raster Graphics',
-            'CorelDRAW Basics & Interface',
+            'CorelDRAW Basics and Interface',
             'Digital Illustration Techniques',
-            'Logo Design & Tracing',
-            'Corporate Identity & Branding',
+            'Logo Design and Tracing',
+            'Corporate Identity and Branding',
             'Print Collaterals (Brochure, Business Card, Leaflets)',
             'Visiting Card Design (3.5" x 2" with Bleed)',
-            'Packaging & Label Design',
-            'Advertising Design & Hoardings',
-            'Drawing & Shape Tools',
+            'Packaging and Label Design',
+            'Advertising Design and Hoardings',
+            'Drawing and Shape Tools',
             'Shaping Operations (Weld, Trim, Intersect, Combine)',
             'Fill Types (Fountain, Pattern, Texture, Mesh)',
             'Special Effects (Contour, Extrude, Blend, Shadow, PowerClip)',
@@ -562,7 +562,7 @@ const CoursesAccordion = () => {
             'Text to Vector with AI (Adobe Firefly)',
             'Generative Recolor',
             'Retype (AI OCR)',
-            'Image Trace & Vectorization'
+            'Image Trace and Vectorization'
           ]
         },
         {
@@ -572,42 +572,42 @@ const CoursesAccordion = () => {
             'Working Area Guidelines (980-1170px)',
             'Header Design (Logo, Menu, Icons)',
             'Banner Design (1200-1500px)',
-            'Gallery & Product Sections',
+            'Gallery and Product Sections',
             'Footer Design (Logo, Social Links, Copyright)',
             'Typography Standards (12-30px)',
             'PSD to Web Conversion'
           ]
         },
         {
-          title: 'HTML & CSS Development',
+          title: 'HTML and CSS Development',
           skills: [
-            'HTML5 Structure & Semantics',
-            'CSS3 Styling & Layouts',
+            'HTML5 Structure and Semantics',
+            'CSS3 Styling and Layouts',
             'PSD to HTML Conversion',
             'Responsive Design Techniques',
             'Bootstrap Framework',
-            'Flexbox & Grid Systems',
-            'Forms & Tables',
+            'Flexbox and Grid Systems',
+            'Forms and Tables',
             'Media Elements'
           ]
         },
         {
           title: 'UI/UX Design',
           skills: [
-            'Adobe XD & Figma Prototyping',
+            'Adobe XD and Figma Prototyping',
             'User Interface Principles',
             'User Experience Research',
-            'Wireframing & Mockups',
+            'Wireframing and Mockups',
             'Interactive Prototypes',
             'Figma Collaboration',
-            'Design Systems & Style Guides'
+            'Design Systems and Style Guides'
           ]
         },
         {
           title: 'JavaScript Development',
           skills: [
             'JavaScript Fundamentals',
-            'Functions & Variables',
+            'Functions and Variables',
             'DOM Manipulation',
             'Event Handling',
             'Form Validation',
@@ -621,7 +621,7 @@ const CoursesAccordion = () => {
             'WordPress Installation',
             'Theme Customization',
             'Plugin Integration',
-            'Page & Post Management',
+            'Page and Post Management',
             'Widget Configuration',
             'SEO Optimization'
           ]
@@ -640,7 +640,7 @@ const CoursesAccordion = () => {
     },
     {
       id: 'digital-marketing',
-      title: 'DIPLOMA IN ADVANCED DIGITAL MARKETING WITH AI INTEGRATION & AUTOMATION',
+      title: 'DIPLOMA IN ADVANCED DIGITAL MARKETING WITH AI INTEGRATION and AUTOMATION',
       className: 'dm_bg',
       softwares: [
         'Adobe Photoshop',
@@ -669,22 +669,22 @@ const CoursesAccordion = () => {
         {
           title: 'Raster Graphics',
           skills: [
-            'Photoshop Interface & Tools',
-            'Color Correction & Grading',
+            'Photoshop Interface and Tools',
+            'Color Correction and Grading',
             'Photo Retouching (Spot, Patch, Glamour Skin)',
-            'Model, Fashion & Portrait Retouching',
+            'Model, Fashion and Portrait Retouching',
             'Product Retouching (Jewelry, Apparel, Furniture, Real Estate)',
             'Wedding Album Design',
-            'Image Restoration (Vintage & Damaged Photos)',
+            'Image Restoration (Vintage and Damaged Photos)',
             'Masking Techniques (Layer, Photo, Hair, Ghost Mannequin)',
-            'Clipping Path & Color Changing',
-            'Black & White to Color Conversion',
-            'Image Manipulation & Effects',
-            'Banner, Poster & Catalog Design',
-            'Page Effects & Border Effects',
-            'Frame & Shadow Effects',
-            'Water & Mirror Effects',
-            '3D Box & Text Effects',
+            'Clipping Path and Color Changing',
+            'Black and White to Color Conversion',
+            'Image Manipulation and Effects',
+            'Banner, Poster and Catalog Design',
+            'Page Effects and Border Effects',
+            'Frame and Shadow Effects',
+            'Water and Mirror Effects',
+            '3D Box and Text Effects',
             'Karizma Album Design',
             'Generative AI (Generative Fill, Neural Filters, Content-Aware Fill)',
             'AI Object Selection'
@@ -694,15 +694,15 @@ const CoursesAccordion = () => {
           title: 'Vector Graphics',
           skills: [
             'Vector vs Raster Graphics',
-            'CorelDRAW Basics & Interface',
+            'CorelDRAW Basics and Interface',
             'Digital Illustration Techniques',
-            'Logo Design & Tracing',
-            'Corporate Identity & Branding',
+            'Logo Design and Tracing',
+            'Corporate Identity and Branding',
             'Print Collaterals (Brochure, Business Card, Leaflets)',
             'Visiting Card Design (3.5" x 2" with Bleed)',
-            'Packaging & Label Design',
-            'Advertising Design & Hoardings',
-            'Drawing & Shape Tools',
+            'Packaging and Label Design',
+            'Advertising Design and Hoardings',
+            'Drawing and Shape Tools',
             'Shaping Operations (Weld, Trim, Intersect, Combine)',
             'Fill Types (Fountain, Pattern, Texture, Mesh)',
             'Special Effects (Contour, Extrude, Blend, Shadow, PowerClip)',
@@ -710,7 +710,7 @@ const CoursesAccordion = () => {
             'Text to Vector with AI (Adobe Firefly)',
             'Generative Recolor',
             'Retype (AI OCR)',
-            'Image Trace & Vectorization'
+            'Image Trace and Vectorization'
           ]
         },
         {
@@ -720,16 +720,16 @@ const CoursesAccordion = () => {
             'Traditional vs Digital Marketing',
             'Advantages of Digital Marketing',
             'Digital Marketing Channels',
-            'Career Scope & Industry Overview'
+            'Career Scope and Industry Overview'
           ]
         },
         {
-          title: 'MARKETING & DIGITAL FUNDAMENTALS',
+          title: 'MARKETING and DIGITAL FUNDAMENTALS',
           skills: [
             'Digital Marketing Ecosystem',
             'Sales Funnel Models (AIDA, TOFU–MOFU–BOFU)',
-            'Branding, Positioning & USP',
-            'Market Research & Competitor Analysis (Google Trends)',
+            'Branding, Positioning and USP',
+            'Market Research and Competitor Analysis (Google Trends)',
             'B2B vs B2C Marketing',
             'Performance Metrics (CPM, CPC, CTR, CPA, ROAS)'
           ]
@@ -737,12 +737,12 @@ const CoursesAccordion = () => {
         {
           title: 'WEBSITE DEVELOPMENT (WORDPRESS)',
           skills: [
-            'Domain & Hosting Basics',
-            'WordPress Installation & Setup',
+            'Domain and Hosting Basics',
+            'WordPress Installation and Setup',
             'Theme Customization',
-            'Page & Landing Page Creation',
+            'Page and Landing Page Creation',
             'Website Optimization Basics',
-            'Form Integration & Lead Capture',
+            'Form Integration and Lead Capture',
             'Plugin-based Automation'
           ]
         },
@@ -751,36 +751,36 @@ const CoursesAccordion = () => {
           skills: [
             'Introduction to SEO',
             'Paid vs Organic Search',
-            'Keyword Research & Planning',
+            'Keyword Research and Planning',
             'Types of Keywords',
             'Google Algorithms Overview',
             'On-Page Optimization (Yoast SEO, Rank Math)',
             'Off-Page Optimization (Backlinks, Citations)',
             'Technical SEO Basics',
-            'SEO Metrics & Reports',
-            'Automated SEO Audits & Alerts'
+            'SEO Metrics and Reports',
+            'Automated SEO Audits and Alerts'
           ]
         },
         {
           title: 'GOOGLE SEARCH CONSOLE',
           skills: [
             'Introduction to Google Search Console',
-            'Property Setup & Verification',
+            'Property Setup and Verification',
             'Sitemap Submission (Auto-sync)',
-            'Search Appearance & Rich Results',
-            'Performance & CTR Analysis',
-            'Indexing & Coverage Reports',
+            'Search Appearance and Rich Results',
+            'Performance and CTR Analysis',
+            'Indexing and Coverage Reports',
             'Automated Indexing Monitoring'
           ]
         },
         {
           title: 'GOOGLE TAG MANAGER (GTM)',
           skills: [
-            'GTM Account & Container Setup',
+            'GTM Account and Container Setup',
             'Implementing Tags',
-            'Triggers & Variables',
+            'Triggers and Variables',
             'Data Layer Basics',
-            'Event Tracking & Testing',
+            'Event Tracking and Testing',
             'Automated Event Tracking'
           ]
         },
@@ -789,11 +789,11 @@ const CoursesAccordion = () => {
           skills: [
             'Introduction to GA4',
             'Property Setup',
-            'Event & Conversion Setup',
+            'Event and Conversion Setup',
             'Enhanced Reporting',
             'Cross-Platform Tracking',
-            'Funnel & User Analysis',
-            'Automated Reports & Dashboards'
+            'Funnel and User Analysis',
+            'Automated Reports and Dashboards'
           ]
         },
         {
@@ -803,10 +803,10 @@ const CoursesAccordion = () => {
             'Search Campaign Creation',
             'Keyword Match Types',
             'Ad Copy Writing',
-            'Budgeting & Bidding',
+            'Budgeting and Bidding',
             'Performance Optimization',
             'Smart Bidding Automation',
-            'Automated Rules & Alerts'
+            'Automated Rules and Alerts'
           ]
         },
         {
@@ -814,15 +814,15 @@ const CoursesAccordion = () => {
           skills: [
             'Business Profile Creation',
             'Profile Optimization',
-            'Posts & Updates (Scheduled)',
-            'Reviews & Ratings Management',
+            'Posts and Updates (Scheduled)',
+            'Reviews and Ratings Management',
             'Local SEO Importance',
-            'Insights & Performance',
-            'Auto Notifications & Review Alerts'
+            'Insights and Performance',
+            'Auto Notifications and Review Alerts'
           ]
         },
         {
-          title: 'CONTENT STRATEGY & COPYWRITING',
+          title: 'CONTENT STRATEGY and COPYWRITING',
           skills: [
             'Writing for Ads',
             'Website Copywriting',
@@ -838,8 +838,8 @@ const CoursesAccordion = () => {
             'Introduction to Social Media Optimization',
             'Platform Selection Strategy',
             'Profile Optimization',
-            'Content Planning & Calendars',
-            'Engagement & Community Building',
+            'Content Planning and Calendars',
+            'Engagement and Community Building',
             'Hashtag Strategy',
             'Post Scheduling Automation'
           ]
@@ -852,8 +852,8 @@ const CoursesAccordion = () => {
             'Facebook Marketing Strategy',
             'Creatives Best Practices',
             'Audience Targeting',
-            'Insights & Reporting',
-            'Auto Replies & Lead Forms'
+            'Insights and Reporting',
+            'Auto Replies and Lead Forms'
           ]
         },
         {
@@ -862,10 +862,10 @@ const CoursesAccordion = () => {
             'Instagram Overview',
             'Business Account Setup',
             'Content Strategy (Posts, Reels, Stories)',
-            'Visuals & Creatives',
+            'Visuals and Creatives',
             'Hashtag Strategy',
-            'Engagement & Community Building',
-            'Auto DM Replies & Scheduling'
+            'Engagement and Community Building',
+            'Auto DM Replies and Scheduling'
           ]
         },
         {
@@ -883,24 +883,24 @@ const CoursesAccordion = () => {
         {
           title: 'YOUTUBE MARKETING',
           skills: [
-            'Channel Creation & Setup',
+            'Channel Creation and Setup',
             'YouTube SEO Basics',
             'Content Strategy',
             'Video Optimization',
             'Audience Growth',
             'Monetization Overview',
-            'Auto Publishing & Tracking'
+            'Auto Publishing and Tracking'
           ]
         },
         {
           title: 'EMAIL MARKETING',
           skills: [
             'Introduction to Email Marketing',
-            'Mailchimp & Zoho Campaigns',
-            'List Building & Segmentation',
+            'Mailchimp and Zoho Campaigns',
+            'List Building and Segmentation',
             'Campaign Creation',
-            'Automation & Drip Campaigns',
-            'Analytics & Optimization',
+            'Automation and Drip Campaigns',
+            'Analytics and Optimization',
             'Behaviour-based Automation'
           ]
         },
@@ -912,24 +912,24 @@ const CoursesAccordion = () => {
             'Broadcast Lists',
             'Customer Communication',
             'Lead Follow-ups',
-            'Auto Replies & Lead Automation'
+            'Auto Replies and Lead Automation'
           ]
         },
         {
           title: 'DATA DRIVEN MARKETING',
           skills: [
             'KPI Tracking',
-            'Data Analysis & Interpretation',
+            'Data Analysis and Interpretation',
             'A/B Testing',
             'Performance Optimization',
-            'Automated Dashboards & Reports'
+            'Automated Dashboards and Reports'
           ]
         },
         {
-          title: 'AI & MARKETING AUTOMATION',
+          title: 'AI and MARKETING AUTOMATION',
           skills: [
             'AI Content Creation',
-            'AI for Ads & SEO',
+            'AI for Ads and SEO',
             'AI Creatives',
             'Workflow Automation'
           ]
@@ -938,7 +938,7 @@ const CoursesAccordion = () => {
     },
     {
       id: 'multimedia-vfx',
-      title: 'DIPLOMA IN ADVANCED MULTIMEDIA ANIMATION & VFX',
+      title: 'DIPLOMA IN ADVANCED MULTIMEDIA ANIMATION and VFX',
       className: 'nuke_bg',
       softwares: [
         'Adobe Photoshop', 
@@ -964,22 +964,22 @@ const CoursesAccordion = () => {
         {
           title: 'Raster Graphics',
           skills: [
-            'Photoshop Interface & Tools',
-            'Color Correction & Grading',
+            'Photoshop Interface and Tools',
+            'Color Correction and Grading',
             'Photo Retouching (Spot, Patch, Glamour Skin)',
-            'Model, Fashion & Portrait Retouching',
+            'Model, Fashion and Portrait Retouching',
             'Product Retouching (Jewelry, Apparel, Furniture, Real Estate)',
             'Wedding Album Design',
-            'Image Restoration (Vintage & Damaged Photos)',
+            'Image Restoration (Vintage and Damaged Photos)',
             'Masking Techniques (Layer, Photo, Hair, Ghost Mannequin)',
-            'Clipping Path & Color Changing',
-            'Black & White to Color Conversion',
-            'Image Manipulation & Effects',
-            'Banner, Poster & Catalog Design',
-            'Page Effects & Border Effects',
-            'Frame & Shadow Effects',
-            'Water & Mirror Effects',
-            '3D Box & Text Effects',
+            'Clipping Path and Color Changing',
+            'Black and White to Color Conversion',
+            'Image Manipulation and Effects',
+            'Banner, Poster and Catalog Design',
+            'Page Effects and Border Effects',
+            'Frame and Shadow Effects',
+            'Water and Mirror Effects',
+            '3D Box and Text Effects',
             'Karizma Album Design',
             'Generative AI (Generative Fill, Neural Filters, Content-Aware Fill)',
             'AI Object Selection'
@@ -989,15 +989,15 @@ const CoursesAccordion = () => {
           title: 'Vector Graphics',
           skills: [
             'Vector vs Raster Graphics',
-            'CorelDRAW Basics & Interface',
+            'CorelDRAW Basics and Interface',
             'Digital Illustration Techniques',
-            'Logo Design & Tracing',
-            'Corporate Identity & Branding',
+            'Logo Design and Tracing',
+            'Corporate Identity and Branding',
             'Print Collaterals (Brochure, Business Card, Leaflets)',
             'Visiting Card Design (3.5" x 2" with Bleed)',
-            'Packaging & Label Design',
-            'Advertising Design & Hoardings',
-            'Drawing & Shape Tools',
+            'Packaging and Label Design',
+            'Advertising Design and Hoardings',
+            'Drawing and Shape Tools',
             'Shaping Operations (Weld, Trim, Intersect, Combine)',
             'Fill Types (Fountain, Pattern, Texture, Mesh)',
             'Special Effects (Contour, Extrude, Blend, Shadow, PowerClip)',
@@ -1005,17 +1005,17 @@ const CoursesAccordion = () => {
             'Text to Vector with AI (Adobe Firefly)',
             'Generative Recolor',
             'Retype (AI OCR)',
-            'Image Trace & Vectorization'
+            'Image Trace and Vectorization'
           ]
         },
         {
           title: 'UI/UX Design',
           skills: [
-            'Adobe XD & Figma Fundamentals',
+            'Adobe XD and Figma Fundamentals',
             'User Interface Design Principles',
             'User Experience Research',
-            'Wireframing & Prototyping',
-            'Artboard & Repeat Grid',
+            'Wireframing and Prototyping',
+            'Artboard and Repeat Grid',
             'Interactive Prototypes',
             'Figma Collaboration',
             'Design Systems'
@@ -1024,20 +1024,20 @@ const CoursesAccordion = () => {
         {
           title: '3D Modeling',
           skills: [
-            'Exhibition & Event Design (Standard Sizes)',
+            'Exhibition and Event Design (Standard Sizes)',
             'Exhibition Stall Design (3m, 6m, 10m)',
             'Reception Counter Design (Small, Medium, Large)',
             'Fascia/Name Board Design',
-            'Podium & Meeting Room Layout',
+            'Podium and Meeting Room Layout',
             'Pantry Room Design',
-            'Interior Design & Space Planning',
-            'Measurement Systems (Metric & Imperial)',
-            'Low Poly & High Poly Modeling',
-            'Advanced Texturing & UV Mapping',
-            'Camera Setup & Composition',
+            'Interior Design and Space Planning',
+            'Measurement Systems (Metric and Imperial)',
+            'Low Poly and High Poly Modeling',
+            'Advanced Texturing and UV Mapping',
+            'Camera Setup and Composition',
             'Lighting Techniques (3-Point, HDRI)',
             '3D Object Painting',
-            'V-Ray & Corona Rendering',
+            'V-Ray and Corona Rendering',
             'Visual Effects Integration'
           ]
         },
@@ -1045,8 +1045,8 @@ const CoursesAccordion = () => {
           title: '3D Animation',
           skills: [
             'Animation Principles',
-            'Object & Transform Animation',
-            'Character Rigging & Animation',
+            'Object and Transform Animation',
+            'Character Rigging and Animation',
             'Architectural Walkthroughs',
             '3D Special Effects',
             'Camera Animation',
@@ -1057,8 +1057,8 @@ const CoursesAccordion = () => {
           title: 'AutoCAD',
           skills: [
             'Technical Drawing Basics',
-            'Layout Plans & Elevations',
-            'Working Drawings & Detailing',
+            'Layout Plans and Elevations',
+            'Working Drawings and Detailing',
             'Perspective Views',
             '2D to 3D Conversion'
           ]
@@ -1066,52 +1066,52 @@ const CoursesAccordion = () => {
         {
           title: 'Adobe After Effects',
           skills: [
-            'Project Setup & Composition',
-            'Animation & Keyframing Basics',
-            'Image Scale & Shape Animation',
+            'Project Setup and Composition',
+            'Animation and Keyframing Basics',
+            'Image Scale and Shape Animation',
             'Text Animation with Path',
-            'Hold Keyframes & Text Effects',
+            'Hold Keyframes and Text Effects',
             'Masking Techniques',
             'Lower Third Design (Mask Path)',
             'Trim Path (Counter Animation)',
-            'Layer Animation & Audio Integration',
-            'Shatter & CC Split Effects',
-            'CC Scatterize & Particle Systems',
-            'Fire & Light Effects',
-            'CC Rainfall & Radio Waves',
-            '3D Layers & Camera Animation',
-            'Alpha & Luma Matte',
-            'Graph Editor & Repeater',
-            'Time Control & Double Roll',
+            'Layer Animation and Audio Integration',
+            'Shatter and CC Split Effects',
+            'CC Scatterize and Particle Systems',
+            'Fire and Light Effects',
+            'CC Rainfall and Radio Waves',
+            '3D Layers and Camera Animation',
+            'Alpha and Luma Matte',
+            'Graph Editor and Repeater',
+            'Time Control and Double Roll',
             'Green/Blue Screen Keying',
-            'Null Objects & Parenting',
+            'Null Objects and Parenting',
             'Loop Expressions (loopOut)',
-            'Motion Tracking & Wiggler',
+            'Motion Tracking and Wiggler',
             'Roto Brush 2/3 (AI-Powered)',
             'Content-Aware Fill for Video',
             'Scene Edit Detection',
-            'AI Face & Motion Tracking',
-            'Final Render & Collect Files'
+            'AI Face and Motion Tracking',
+            'Final Render and Collect Files'
           ]
         },
         {
           title: 'Adobe Premiere Pro',
           skills: [
             'Video Editing Fundamentals',
-            'Timeline & Clip Management',
+            'Timeline and Clip Management',
             'Text-Based Editing (AI Transcription)',
-            'Auto Ducking & AI Audio Tagging',
+            'Auto Ducking and AI Audio Tagging',
             'Scene Edit Detection',
             'Auto Reframe',
             'Green/Blue Screen Removal',
             'Track Matte Key',
-            'Video & Audio Transitions',
-            'Freeze Frame & Timecode',
+            'Video and Audio Transitions',
+            'Freeze Frame and Timecode',
             'Color Grading (Leave Color, CC Color)',
-            'Lighting Effects & Camera Blur',
-            'Legacy Title & Essential Graphics',
+            'Lighting Effects and Camera Blur',
+            'Legacy Title and Essential Graphics',
             'Noise Removal (DeNoise)',
-            'Professional Export & Rendering'
+            'Professional Export and Rendering'
           ]
         }
       ]
@@ -1142,7 +1142,7 @@ const CoursesAccordion = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2>Diploma Courses in Multimedia, Animation & Digital Design</h2>
+          <h2>Diploma Courses in Multimedia, Animation and Digital Design</h2>
           <p className={styles.sectionDescription}>
             Discover our extensive range of industry-recognized diploma courses meticulously designed to equip aspiring professionals with advanced knowledge and practical expertise. Each program is structured to encompass cutting-edge technologies, real-world applications, and hands-on training methodologies that have been proven to enhance student competency and career readiness across multiple sectors of the creative and digital industries.
           </p>
@@ -1179,7 +1179,7 @@ const CoursesAccordion = () => {
                   >
                     <div className={styles.courseDetails}>
                       <div className={styles.courseRow}>
-                        {/* Software & Batch Timing Column */}
+                        {/* Software and Batch Timing Column */}
                         <div className={styles.courseColumn}>
                           <div className={styles.detailSection}>
                             <h3 className={styles.sectionTitle}>SOFTWARES COVERED</h3>

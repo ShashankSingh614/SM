@@ -1,5 +1,5 @@
 ═══════════════════════════════════════════════════════════════════════════════
-SHANKAR MULTIMEDIA - COMPREHENSIVE COURSE & PLACEMENT OVERVIEW
+SHANKAR MULTIMEDIA - COMPREHENSIVE COURSE and PLACEMENT OVERVIEW
 ═══════════════════════════════════════════════════════════════════════════════
 
 ABOUT SHANKAR MULTIMEDIA
@@ -20,7 +20,7 @@ LOCATIONS IN MUMBAI
 • Ghatkopar
 
 ═══════════════════════════════════════════════════════════════════════════════
-JOB GUARANTEE & PLACEMENT ASSURANCE
+JOB GUARANTEE and PLACEMENT ASSURANCE
 ═══════════════════════════════════════════════════════════════════════════════
 
 ✓ 100% PLACEMENT ASSURANCE
@@ -39,11 +39,11 @@ PROFESSIONAL DIPLOMA COURSES OFFERED
    Certification: Industry-recognized diploma
    
    COURSE DETAILS:
-   • Introduction to Graphic Design & Design Principles
-   • Color Theory & Typography
-   • Branding & Logo Design
+   • Introduction to Graphic Design and Design Principles
+   • Color Theory and Typography
+   • Branding and Logo Design
    • UI/UX Design Fundamentals
-   • Print Design & Publication Layout
+   • Print Design and Publication Layout
    • Web Design Basics
    • Portfolio Building
    
@@ -56,16 +56,16 @@ PROFESSIONAL DIPLOMA COURSES OFFERED
    
    ✓ Adobe Illustrator (Advanced)
      - Vector graphics creation
-     - Logo & icon design
+     - Logo and icon design
      - Typography manipulation
      - Infographic design
      - Print-ready file preparation
    
    ✓ Adobe InDesign 
-     - Document layout & design
+     - Document layout and design
      - Brochure, flyer, poster creation
-     - Magazine & newsletter design
-     - Master pages & templates
+     - Magazine and newsletter design
+     - Master pages and templates
    
    ✓ CorelDRAW
      - Vector illustration
@@ -87,25 +87,25 @@ PROFESSIONAL DIPLOMA COURSES OFFERED
    Duration: 4-6 Months (Diploma)
    
    COURSE DETAILS:
-   • User Research & Analysis
-   • Wireframing & Prototyping
+   • User Research and Analysis
+   • Wireframing and Prototyping
    • User Interface Design
    • User Experience Best Practices
    • Accessibility in Design
-   • Design Systems & Components
+   • Design Systems and Components
    • Mobile App Design
    • Web Application Design
    • Usability Testing
    
-   SOFTWARE & TOOLS:
+   SOFTWARE and TOOLS:
    ✓ Figma
-     - UI design & prototyping
+     - UI design and prototyping
      - Collaborative design
      - Component libraries
      - Design handoff
    
    ✓ Adobe XD
-     - Wireframing & prototyping
+     - Wireframing and prototyping
      - Interactive prototypes
      - User testing
    
@@ -135,24 +135,24 @@ PROFESSIONAL DIPLOMA COURSES OFFERED
    COURSE DETAILS:
    • Web Design Fundamentals
    • Responsive Web Design
-   • HTML5 & CSS3 Mastery
-   • Web Typography & Colors
+   • HTML5 and CSS3 Mastery
+   • Web Typography and Colors
    • Conversion Rate Optimization
    • E-commerce Website Design
-   • Website Performance & SEO
+   • Website Performance and SEO
    • Accessibility Standards (WCAG)
    • CMS Integration
    
-   PROGRAMMING & SOFTWARE:
+   PROGRAMMING and SOFTWARE:
    ✓ HTML5
      - Semantic markup
-     - Forms & validation
+     - Forms and validation
      - Accessibility
    
    ✓ CSS3
-     - Flexbox & CSS Grid
+     - Flexbox and CSS Grid
      - Responsive design
-     - Animations & transitions
+     - Animations and transitions
      - Bootstrap framework
    
    ✓ JavaScript (Basics)
@@ -182,48 +182,48 @@ PROFESSIONAL DIPLOMA COURSES OFFERED
 
 4. FULL STACK WEB DEVELOPMENT COURSE
    ────────────────────────────────────────────────────────────────────────────
-   Duration: 6-9 Months (Diploma)
+   Duration: 6 Months (Diploma)
    
    COURSE DETAILS:
-   • Web Fundamentals & Internet
+   • Web Fundamentals and Internet
    • Frontend Development
    • Backend Development
    • Database Management
-   • API Development & Integration
+   • API Development and Integration
    • Version Control (Git)
    • Web Security Best Practices
    • Cloud Deployment (AWS, Heroku)
-   • Testing & Debugging
+   • Testing and Debugging
    
    FRONTEND TECHNOLOGIES:
-   ✓ HTML5 & CSS3 (Advanced)
+   ✓ HTML5 and CSS3 (Advanced)
    ✓ JavaScript (Advanced)
      - ES6+ features
      - Asynchronous programming
      - DOM manipulation
    
    ✓ React.js
-     - Components & JSX
+     - Components and JSX
      - State management
-     - Hooks & Context API
+     - Hooks and Context API
      - Redux (if advanced track)
    
-   ✓ Bootstrap & Tailwind CSS
+   ✓ Bootstrap and Tailwind CSS
    ✓ jQuery
    
    BACKEND TECHNOLOGIES:
-   ✓ PHP & Laravel
+   ✓ PHP and Laravel
      - Object-oriented programming
      - MVC architecture
      - Artisan CLI
      - Blade templating
      - Eloquent ORM
    
-   ✓ Node.js & Express.js
+   ✓ Node.js and Express.js
      - Server-side JavaScript
      - REST APIs
      - Middleware
-     - Authentication & authorization
+     - Authentication and authorization
    
    ✓ Python (Basics)
    
@@ -237,13 +237,13 @@ PROFESSIONAL DIPLOMA COURSES OFFERED
      - NoSQL concepts
      - Document-based storage
    
-   TOOLS & FRAMEWORKS:
-   ✓ Git & GitHub
+   TOOLS and FRAMEWORKS:
+   ✓ Git and GitHub
    ✓ Postman (API testing)
    ✓ VS Code
    ✓ Package managers (npm, composer)
    
-   DEPLOYMENT & HOSTING:
+   DEPLOYMENT and HOSTING:
    ✓ AWS (Amazon Web Services)
    ✓ Heroku
    ✓ DigitalOcean
@@ -262,16 +262,16 @@ PROFESSIONAL DIPLOMA COURSES OFFERED
 
 5. 3D ANIMATION COURSE
    ────────────────────────────────────────────────────────────────────────────
-   Duration: 6-9 Months (Diploma)
+   Duration: 6 Months (Diploma)
    
    COURSE DETAILS:
    • 3D Modeling Fundamentals
-   • Texturing & Shading
+   • Texturing and Shading
    • Lighting Techniques
    • Animation Principles
    • Character Animation
    • VFX Basics
-   • Rendering & Compositing
+   • Rendering and Compositing
    • Motion Graphics
    
    SOFTWARE COVERED: 
@@ -292,7 +292,7 @@ PROFESSIONAL DIPLOMA COURSES OFFERED
    • VFX Artist
    • Motion Graphics Designer
    • Game Developer
-   • Film & Video Editor
+   • Film and Video Editor
 
 
 6. 2D ANIMATION COURSE
@@ -301,12 +301,12 @@ PROFESSIONAL DIPLOMA COURSES OFFERED
    
    COURSE DETAILS:
    • Animation Fundamentals
-   • Drawing & Storyboarding
+   • Drawing and Storyboarding
    • Frame-by-frame Animation
    • Character Design
    • Motion Graphics
    • Stop Motion Basics
-   • Lip Sync & Dialogue
+   • Lip Sync and Dialogue
    
    SOFTWARE COVERED:
    ✓ Adobe Animate
@@ -336,17 +336,17 @@ PROFESSIONAL DIPLOMA COURSES OFFERED
    • YouTube Content Creator
 
 
-7. VIDEO EDITING & VFX COURSE
+7. VIDEO EDITING and VFX COURSE
    ────────────────────────────────────────────────────────────────────────────
    Duration: 4-6 Months (Diploma)
    
    COURSE DETAILS:
    • Video Editing Fundamentals
-   • Color Grading & Correction
-   • Audio Mixing & Sync
+   • Color Grading and Correction
+   • Audio Mixing and Sync
    • Visual Effects Creation
    • Compositing Techniques
-   • Motion Graphics & Titles
+   • Motion Graphics and Titles
    • Film Production Workflow
    • YouTube Optimization
    
@@ -354,7 +354,7 @@ PROFESSIONAL DIPLOMA COURSES OFFERED
    ✓ Adobe Premiere Pro
      - Non-linear editing
      - Video composition
-     - Effects & transitions
+     - Effects and transitions
      - Color grading
      - Audio editing
    
@@ -381,7 +381,7 @@ PROFESSIONAL DIPLOMA COURSES OFFERED
    
    COURSE DETAILS:
    • CAD Fundamentals
-   • 2D Drawing & Drafting
+   • 2D Drawing and Drafting
    • 3D Modeling
    • Architectural Drawing
    • Construction Documentation
@@ -419,62 +419,62 @@ PROFESSIONAL DIPLOMA COURSES OFFERED
    Duration: 6 Months 
 
    COURSE DETAILS:
-   • Introduction to Digital Marketing & Online Business Models
-   • Marketing Fundamentals & Digital Ecosystem
+   • Introduction to Digital Marketing and Online Business Models
+   • Marketing Fundamentals and Digital Ecosystem
    • Search Engine Optimization (SEO)
-   • Social Media Marketing (Organic & Paid)
-   • Google Ads & Performance Marketing
-   • Content Strategy & Copywriting
-   • Email & WhatsApp Marketing
-   • Analytics, Tracking & Data-Driven Marketing
-   • AI Tools & Marketing Automation
-   • Live Campaigns & Portfolio Building
+   • Social Media Marketing (Organic and Paid)
+   • Google Ads and Performance Marketing
+   • Content Strategy and Copywriting
+   • Email and WhatsApp Marketing
+   • Analytics, Tracking and Data-Driven Marketing
+   • AI Tools and Marketing Automation
+   • Live Campaigns and Portfolio Building
 
    SOFTWARE COVERED:
 
    ✓ WordPress
-     - Website & landing page creation
+     - Website and landing page creation
      - Blog setup and optimization
-     - Lead capture forms & integrations
+     - Lead capture forms and integrations
      - Basic website automation
 
    ✓ SEO Tools (Yoast SEO, Rank Math, Google Search Console)
      - On-page SEO optimization
      - Technical SEO (sitemaps, indexing)
      - Keyword performance tracking
-     - SEO audits & error fixing
+     - SEO audits and error fixing
 
    ✓ Google Ads
-     - Search & display campaign setup
-     - Keyword planning & match types
-     - Ad copywriting & extensions
-     - Conversion tracking & optimization
+     - Search and display campaign setup
+     - Keyword planning and match types
+     - Ad copywriting and extensions
+     - Conversion tracking and optimization
 
-   ✓ Meta Ads Manager (Facebook & Instagram Ads)
-     - Campaign objectives & structure
-     - Audience targeting & retargeting
-     - Creative & ad copy strategy
+   ✓ Meta Ads Manager (Facebook and Instagram Ads)
+     - Campaign objectives and structure
+     - Audience targeting and retargeting
+     - Creative and ad copy strategy
      - Performance optimization
 
    ✓ Social Media Platforms (Instagram, Facebook, LinkedIn, YouTube)
      - Business account setup
-     - Content strategy & calendars
+     - Content strategy and calendars
      - Community engagement
      - Organic growth techniques
 
-   ✓ Google Analytics 4 & Google Tag Manager
-     - GA4 property & event setup
+   ✓ Google Analytics 4 and Google Tag Manager
+     - GA4 property and event setup
      - Conversion tracking
-     - Funnel & user behavior analysis
-     - Automated reports & dashboards
+     - Funnel and user behavior analysis
+     - Automated reports and dashboards
 
    ✓ Email Marketing Tools (Mailchimp, Zoho Campaigns)
-     - List building & segmentation
+     - List building and segmentation
      - Campaign creation
-     - Automation & drip sequences
+     - Automation and drip sequences
      - Performance analysis
 
-   ✓ Marketing Automation & AI Tools (Zapier, ChatGPT, Claude, Perplexity)
+   ✓ Marketing Automation and AI Tools (Zapier, ChatGPT, Claude, Perplexity)
      - Workflow automation
      - AI-powered content creation
      - Lead automation
@@ -486,30 +486,30 @@ PROFESSIONAL DIPLOMA COURSES OFFERED
    • Performance Marketing Executive
    • Social Media Manager
    • Google Ads Specialist
-   • Content & Growth Marketer
+   • Content and Growth Marketer
    • Marketing Automation Executive
    • Freelance Digital Marketer
    • Digital Marketing Consultant
-   • Agency & In-house Marketing Roles
+   • Agency and In-house Marketing Roles
 
 
 
 ═══════════════════════════════════════════════════════════════════════════════
-ADDITIONAL LEARNING TOOLS & TECHNOLOGIES
+ADDITIONAL LEARNING TOOLS and TECHNOLOGIES
 ═══════════════════════════════════════════════════════════════════════════════
 
-DESIGN & GRAPHICS TOOLS
+DESIGN and GRAPHICS TOOLS
 • Adobe Creative Cloud (Complete Suite)
 • Figma (Cloud-based design tool)
 • SketchUp
 • Adobe XD
 
-DEVELOPMENT TOOLS & IDEs
+DEVELOPMENT TOOLS and IDEs
 • Visual Studio Code
 • Sublime Text
-• Git & GitHub
+• Git and GitHub
 • Postman API Client
-• Nodejs & npm
+• Nodejs and npm
 • Package managers (npm, yarn, composer)
 
 DATABASES
@@ -529,7 +529,7 @@ COURSE BENEFITS
 ═══════════════════════════════════════════════════════════════════════════════
 
 ✓ Hands-on Practical Training
-  - Industry projects & real-world assignments
+  - Industry projects and real-world assignments
   - Portfolio building throughout the course
   - Live project deployments
 
@@ -539,7 +539,7 @@ COURSE BENEFITS
   - Personalized mentoring
 
 ✓ Updated Curriculum
-  - Latest tools & technologies
+  - Latest tools and technologies
   - Current industry standards
   - Regular curriculum updates
 
@@ -563,7 +563,7 @@ COURSE BENEFITS
   - Alumni network
 
 ═══════════════════════════════════════════════════════════════════════════════
-CONTACT & ENROLLMENT
+CONTACT and ENROLLMENT
 ═══════════════════════════════════════════════════════════════════════════════
 
 Phone: +91-9223439986
@@ -577,7 +577,7 @@ YouTube: https://www.youtube.com/@ShankarMultimediaMumbai
 
 ═══════════════════════════════════════════════════════════════════════════════
 
-SHANKAR MULTIMEDIA - YOUR GATEWAY TO A SUCCESSFUL CREATIVE & TECH CAREER!
+SHANKAR MULTIMEDIA - YOUR GATEWAY TO A SUCCESSFUL CREATIVE and TECH CAREER!
 
 Transform your passion into a profession. Get job guaranteed training with 
 guaranteed placement in leading companies. Join thousands of successful 

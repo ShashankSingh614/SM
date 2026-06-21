@@ -11,7 +11,7 @@ export const createLocalBusinessSchemas = () => {
       'email': 'info@shankarmultimedia.com',
       'address': {
         '@type': 'PostalAddress',
-        'streetAddress': '501 & 507, 5th Floor, Accord Complex Opp. Railway Station & Bus Depot Goregaon East',
+        'streetAddress': '501 and 507, 5th Floor, Accord Complex Opp. Railway Station and Bus Depot Goregaon East',
         'addressLocality': 'Goregaon',
         'addressRegion': 'Maharashtra',
         'postalCode': '400063',
@@ -67,7 +67,7 @@ export const createLocalBusinessSchemas = () => {
       'email': 'info@shankarmultimedia.com',
       'address': {
         '@type': 'PostalAddress',
-        'streetAddress': '501 & 502, 5th Floor, Center Plaza, Shivaji Chowk, Daftary Road, Near Railway Station',
+        'streetAddress': '501 and 502, 5th Floor, Center Plaza, Shivaji Chowk, Daftary Road, Near Railway Station',
         'addressLocality': 'Malad East',
         'addressRegion': 'Maharashtra',
         'postalCode': '400097',
@@ -345,7 +345,7 @@ export const centersData = [
     name: 'Goregaon',
     lat: 19.1136,
     lng: 72.8697,
-    address: '501 & 507, 5th Floor, Accord Complex Opp. Railway Station & Bus Depot Goregaon East',
+    address: '501 and 507, 5th Floor, Accord Complex Opp. Railway Station and Bus Depot Goregaon East',
     phone: '+91-9819508524',
     email: 'goregaon@shankarmultimedia.com'
   },
@@ -354,7 +354,7 @@ export const centersData = [
     name: 'Malad',
     lat: 19.1977,
     lng: 72.8476,
-    address: '501 & 502, 5th Floor, Center Plaza, Shivaji Chowk, Daftary Road, Near Railway Station',
+    address: '501 and 502, 5th Floor, Center Plaza, Shivaji Chowk, Daftary Road, Near Railway Station',
     phone: '+91-9223439986',
     email: 'malad@shankarmultimedia.com'
   },

@@ -1,0 +1,7 @@
+# Redirect www to non-www (fixes the duplicate-content issue flagged by the SEO audit)
+https://www.shankarmultimedia.com/*  https://shankarmultimedia.com/:splat  301
+
+# SPA fallback: any route not matched by an actual static file
+# (e.g. the prerendered react-snap pages) falls back to index.html
+# so React Router can handle it client-side instead of 404ing.
+/*  /index.html  200

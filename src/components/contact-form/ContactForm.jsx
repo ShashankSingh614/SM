@@ -12,7 +12,7 @@ const ContactForm = ({ onSubmit }) => {
     contact: '',
     email: '',
     role: 'Student',
-    course: 'Diploma In Advanced Graphic Designing & Ui/Ux Design',
+    course: 'Diploma In Advanced Graphic Designing and Ui/Ux Design',
   };
 
   const { values, errors, handleChange, handleSubmit, isSubmitting } = useForm(

@@ -1,28 +1,28 @@
 // Course options and student role data for forms
 export const courseOptions = [
   {
-    value: 'Diploma In Advanced Graphic Designing & Ui/Ux Design with AI Integration',
-    label: 'Diploma In Advanced Graphic Designing & Ui/Ux Design with AI Integration',
+    value: 'Diploma In Advanced Graphic Designing and Ui/Ux Design with AI Integration',
+    label: 'Diploma In Advanced Graphic Designing and Ui/Ux Design with AI Integration',
   },
   {
     value: 'Web Designing',
-    label: 'Diploma In Advanced Graphic Designing, Ui/Ux , Motion Graphic, Video Editing & VFX',
+    label: 'Diploma In Advanced Graphic Designing, Ui/Ux , Motion Graphic, Video Editing and VFX',
   },
   {
     value: '3D Modelling and Animation',
-    label: 'Diploma In Advanced 3D Modelling & Animation',
+    label: 'Diploma In Advanced 3D Modelling and Animation',
   },
   {
     value: 'Web Programming',
-    label: 'Diploma In Advanced 3D Modelling & Animation & VFX',
+    label: 'Diploma In Advanced 3D Modelling and Animation and VFX',
   },
   {
     value: 'Visual Effect and Conversion',
-    label: 'Diploma In Advanced Web Designing & Development With Advanced Ui/Ux',
+    label: 'Diploma In Advanced Web Designing and Development With Advanced Ui/Ux',
   },
   {
     value: 'other',
-    label: 'Diploma In Advanced Multimedia Animation & VFX',
+    label: 'Diploma In Advanced Multimedia Animation and VFX',
   },
 ];
 

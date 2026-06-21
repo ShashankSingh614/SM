@@ -22,7 +22,7 @@ const InstituteFeaturesSection = () => {
     },
     {
       id: 4,
-      title: 'Hands-On Practice Labs & Latest Technology',
+      title: 'Hands-On Practice Labs and Latest Technology',
       description: 'Practical experience is accumulated through access to high-performance systems and cutting-edge infrastructure equipped with contemporary software and sophisticated hardware technologies utilized across the industry.'
     },
     {
@@ -32,7 +32,7 @@ const InstituteFeaturesSection = () => {
     },
     {
       id: 6,
-      title: 'Lifetime Mentorship & Support',
+      title: 'Lifetime Mentorship and Support',
       description: 'Continuous career and technical guidance is provided perpetually beyond course completion, ensuring sustained professional development and long-term career trajectory optimization for all alumni members.'
     },
     {
@@ -42,7 +42,7 @@ const InstituteFeaturesSection = () => {
     },
     {
       id: 8,
-      title: 'Expert Faculty & Guidance',
+      title: 'Expert Faculty and Guidance',
       description: 'Instruction is facilitated by experienced trainers and seasoned industry professionals whose real-world expertise and practical knowledge are consistently integrated throughout the pedagogical approach and curriculum delivery.'
     },
     {

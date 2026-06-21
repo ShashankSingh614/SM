@@ -2,39 +2,39 @@
 
 All course landing pages use red, orange, yellow color scheme with black text for maximum SEO performance and professional appearance.
 
-### Course Pages & URLs
+### Course Pages and URLs
 
-1. **Graphic Designing & UI/UX with AI Integration**
+1. **Graphic Designing and UI/UX with AI Integration**
    - URL: `/course/graphic-design-uiux`
    - Duration: 4 Months
    - Color: Red to Orange Gradient
 
-2. **Advanced Graphic Design, Motion Graphics, Video Editing & VFX**
+2. **Advanced Graphic Design, Motion Graphics, Video Editing and VFX**
    - URL: `/course/advanced-graphic-vfx`
    - Duration: 6 Months
    - Color: Orange to Yellow Gradient
 
-3. **3D Animation & Modelling**
+3. **3D Animation and Modelling**
    - URL: `/course/3d-animation`
    - Duration: 6 Months
    - Color: Red and Orange
 
-4. **3D Animation, Modelling & VFX**
+4. **3D Animation, Modelling and VFX**
    - URL: `/course/3d-vfx`
    - Duration: 8 Months
    - Color: Orange and Red
 
-5. **Web Design & Development with UI/UX**
+5. **Web Design and Development with UI/UX**
    - URL: `/course/web-design`
    - Duration: 6 Months
    - Color: Red Accent
 
-6. **Digital Marketing with AI Integration & Automation**
+6. **Digital Marketing with AI Integration and Automation**
    - URL: `/course/digital-marketing`
    - Duration: 4 Months
    - Color: Orange Primary
 
-7. **Multimedia Animation & VFX**
+7. **Multimedia Animation and VFX**
    - URL: `/course/multimedia-animation`
    - Duration: 10 Months
    - Color: Red and Orange Mix

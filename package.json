@@ -2,6 +2,7 @@
   "name": "shankar-multimedia-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://shankarmultimedia.com",
   "dependencies": {
     "@portabletext/react": "^6.2.0",
     "@vercel/analytics": "^1.6.1",
@@ -26,6 +27,7 @@
     "start": "react-scripts start",
     "dev": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.{js,jsx}"
@@ -51,6 +53,31 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^14.4.3"
+    "@testing-library/user-event": "^14.4.3",
+    "react-snap": "^1.23.0"
+  },
+  "reactSnap": {
+    "source": "build",
+    "minifyHtml": {
+      "collapseWhitespace": false
+    },
+    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+    "include": [
+      "/",
+      "/students-work",
+      "/about",
+      "/placements",
+      "/contact",
+      "/terms-conditions",
+      "/privacy-policy",
+      "/courses/advanced-graphic-and-uiux-design",
+      "/courses/advanced-motion-graphic-and-video-editing",
+      "/courses/advanced-3d-animation-and-modeling",
+      "/courses/advanced-interior-design",
+      "/courses/advanced-3d-animation-and-vfx",
+      "/courses/advanced-web-design-and-development",
+      "/courses/advanced-digital-marketing",
+      "/courses/advanced-multimedia-animation-and-vfx"
+    ]
   }
 }

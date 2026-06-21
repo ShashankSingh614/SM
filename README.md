@@ -71,7 +71,7 @@ src/
 
 ## License
 
-### Copyright & Intellectual Property
+### Copyright and Intellectual Property
 
 © 2008-2026 **Shankar Multimedia**. All rights reserved.
 
@@ -88,7 +88,7 @@ This website, application, and all associated content are the exclusive property
 - All written content, code, designs, and graphics are protected intellectual property
 - No part of this application may be reproduced, distributed, transmitted, or displayed without prior written permission
 
-**Authentication & Verification**: This is the official Shankar Multimedia website and application. All course certifications and placements are issued only through this authorized platform.
+**Authentication and Verification**: This is the official Shankar Multimedia website and application. All course certifications and placements are issued only through this authorized platform.
 
 **Registered in India**: Shankar Multimedia is registered and operates under the laws of India. Any disputes shall be subject to the jurisdiction of courts in India.
 
@@ -96,7 +96,7 @@ This website, application, and all associated content are the exclusive property
 
 This application is provided "as is" without warranty of any kind, express or implied. Shankar Multimedia shall not be liable for any damages arising from the use or inability to use this application.
 
-### Contact for Licensing & Legal Inquiries
+### Contact for Licensing and Legal Inquiries
 
 For licensing agreements, legal inquiries, or authorized use requests, please contact the Shankar Multimedia legal team.
 

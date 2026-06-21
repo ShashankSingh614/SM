@@ -8,7 +8,7 @@ export const BRAND_IMAGES = {
 
 // Course images and backgrounds
 export const COURSE_IMAGES = {
-  // 3D Animation & VFX
+  // 3D Animation and VFX
   '3d': {
     background: '/images/courses/3d.webp',
     icon: '/images/courses/courses/3d.webp',
@@ -113,7 +113,7 @@ export const COURSES_WITH_IMAGES = [
   },
   {
     id: '3d-animation',
-    title: '3D Animation & VFX',
+    title: '3D Animation and VFX',
     image: COURSE_IMAGES['3d'].icon,
     background: COURSE_IMAGES['3d'].background,
     category: 'Animation',

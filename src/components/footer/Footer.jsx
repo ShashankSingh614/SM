@@ -48,7 +48,7 @@ const Footer = ({ logoSrc, logoAlt, socialLinks }) => {
                 <a href="/privacy-policy">Privacy Policy</a>
               </li>
               <li>
-                <a href="/terms-conditions">Terms & Conditions</a>
+                <a href="/terms-conditions">Terms and Conditions</a>
               </li>
             </ul>
           </div>

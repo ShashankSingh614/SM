@@ -46,7 +46,7 @@ main {
   }
 }
 
-/* Disable image drag & selection */
+/* Disable image drag and selection */
 img {
   -webkit-user-drag: none;
   user-drag: none;

@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Allow: /course/
+Allow: /courses/
 Disallow: /admin
 Disallow: /private
 Disallow: /node_modules/

@@ -3,7 +3,7 @@ export const locations = [
   {
     id: '1',
     name: 'Goregaon',
-    address: '501, 503, 504, 505 & 507, 5th Floor, Accord Complex\nOpp. Railway Station & Bus Depot\nGoregaon East, Mumbai - 400 063',
+    address: '501, 503, 504, 505 and 507, 5th Floor, Accord Complex\nOpp. Railway Station and Bus Depot\nGoregaon East, Mumbai - 400 063',
     phone: '+91 9819508524',
     contactPerson: 'Mr. Deepak Singh',
     latitude: 19.1652383,
@@ -14,7 +14,7 @@ export const locations = [
   {
     id: '2',
     name: 'Malad',
-    address: '501 & 502, 5th Floor, Center Plaza\nShivaji Chowk, Daftary Road\nNear Railway Station, Malad East, Mumbai - 400 097',
+    address: '501 and 502, 5th Floor, Center Plaza\nShivaji Chowk, Daftary Road\nNear Railway Station, Malad East, Mumbai - 400 097',
     phone: '+91 9223439986',
     contactPerson: 'Mr. Dharmendra Singh',
     latitude: 19.1882418,

@@ -3,7 +3,7 @@
 
 export const COMPANY_INFO = {
   name: 'Shankar Multimedia',
-  tagline: 'oin Shankar Multimedia, leading & top rated animation institute in Mumbai for graphic design, UI/UX, motion graphic design, video editing, vfx, 3D animation, digital marketing & multimedia animation courses with 100% job assistance & placements. Expert hands-on training in Goregaon, Malad, Santacruz, Mulund, Nalasopara & Ghatkopar. Enroll now!',
+  tagline: 'oin Shankar Multimedia, leading and top rated animation institute in Mumbai for graphic design, UI/UX, motion graphic design, video editing, vfx, 3D animation, digital marketing and multimedia animation courses with 100% job assistance and placements. Expert hands-on training in Goregaon, Malad, Santacruz, Mulund, Nalasopara and Ghatkopar. Enroll now!',
   founded: 'Early 1990s',
   experience: '36+ years',
   certification: 'ISO 9001:2015-certified',
@@ -24,7 +24,7 @@ export const CONTACT_INFO = {
       phone: '+91 9819508524',
       href: 'tel:9819508524',
       contactPerson: 'Mr. Deepak Singh',
-      address: `501, 503, 504, 505 & 507, 5th Floor, Accord Complex\nOpp. Railway Station & Bus Depot\nGoregaon East, Mumbai - 400 063
+      address: `501, 503, 504, 505 and 507, 5th Floor, Accord Complex\nOpp. Railway Station and Bus Depot\nGoregaon East, Mumbai - 400 063
       
       603,6th Floor, Accord Classic\nAarey Road Near Railway Station\nGoregaon East, Mumbai - 400 063`,
       mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.686!2d72.8504476!3d19.1652383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b652db07127b%3A0xf3b080b7f8685b45!2sShankar%20Multimedia%20Goregaon!5e0!3m2!1sen!2sin!4v1234567890',
@@ -35,7 +35,7 @@ export const CONTACT_INFO = {
       phone: '+91 9223439986', 
       href: 'tel:9223439986',
       contactPerson: 'Mr. Dharmendra Singh',
-      address: '501 & 502, 5th Floor, Center Plaza\nShivaji Chowk, Daftary Road\nNear Railway Station, Malad East, Mumbai - 400 097',
+      address: '501 and 502, 5th Floor, Center Plaza\nShivaji Chowk, Daftary Road\nNear Railway Station, Malad East, Mumbai - 400 097',
       mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.4!2d72.8536065!3d19.1882418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b742e88680c1%3A0xa24b7c53abee4b69!2sShankar%20Multimedia%20Malad!5e0!3m2!1sen!2sin!4v1234567891',
       googleMapsLink: 'https://maps.app.goo.gl/ifqYs1kLckpHP9Qu9'
     },
@@ -82,8 +82,8 @@ export const NAVIGATION_MENU = [
 export const COURSES_DATA = [
   {
     id: 'graphic-design-ui-ux',
-    name: 'Graphic Design & UI/UX',
-    title: 'DIPLOMA IN ADVANCED GRAPHIC DESIGNING & UI/UX DESIGN WITH AI INTEGRATION',
+    name: 'Graphic Design and UI/UX',
+    title: 'DIPLOMA IN ADVANCED GRAPHIC DESIGNING and UI/UX DESIGN WITH AI INTEGRATION',
     description: 'Master visual communication and user experience design with industry-standard tools and techniques.',
     image: '/images/courses/gra1.webp',
     banner: '/images/courses/gra1.webp',
@@ -93,8 +93,8 @@ export const COURSES_DATA = [
   },
   {
     id: 'graphic-design-motion-vfx',
-    name: 'Complete Graphic Design & VFX',
-    title: 'DIPLOMA IN ADVANCED GRAPHIC DESIGNING, UI/UX, MOTION GRAPHIC, VIDEO EDITING & VFX',
+    name: 'Complete Graphic Design and VFX',
+    title: 'DIPLOMA IN ADVANCED GRAPHIC DESIGNING, UI/UX, MOTION GRAPHIC, VIDEO EDITING and VFX',
     description: 'Comprehensive course covering all aspects of digital design, motion graphics, and video production.',
     image: '/images/courses/gra1.webp',
     banner: '/images/courses/gra1.webp',
@@ -105,7 +105,7 @@ export const COURSES_DATA = [
   {
     id: '3d-animation',
     name: '3D Animation',
-    title: 'DIPLOMA IN ADVANCED 3D MODELLING & ANIMATION',
+    title: 'DIPLOMA IN ADVANCED 3D MODELLING and ANIMATION',
     description: 'Create stunning 3D animations and models for games, films, and architectural visualization.',
     image: '/images/courses/3d.webp',
     banner: '/images/courses/3d.webp',
@@ -115,8 +115,8 @@ export const COURSES_DATA = [
   },
   {
     id: '3d-animation-vfx',
-    name: '3D Animation & VFX',
-    title: 'DIPLOMA IN ADVANCED 3D MODELLING & ANIMATION & VFX',
+    name: '3D Animation and VFX',
+    title: 'DIPLOMA IN ADVANCED 3D MODELLING and ANIMATION and VFX',
     description: 'Advanced 3D course with visual effects for film and television industry.',
     image: '/images/courses/3d.webp',
     banner: '/images/courses/3d.webp',
@@ -126,19 +126,19 @@ export const COURSES_DATA = [
   },
   {
     id: 'web-design-development',
-    name: 'Web Design & Development',
-    title: 'DIPLOMA IN ADVANCED WEB DESIGNING & UI/UX',
+    name: 'Web Design and Development',
+    title: 'DIPLOMA IN ADVANCED WEB DESIGNING and UI/UX',
     description: 'Build modern, responsive websites and web applications with latest technologies.',
     image: '/images/courses/web1.webp',
     banner: '/images/courses/web1.webp',
     background: '/images/courses/DW_bg.webp',
-    tools: ['Adobe Photoshop','Adobe XD','Figma','Adobe Dreamweaver','HTML5','CSS3 / SCSS','JavaScript / jQuery','React.js','Bootstrap 4 & 5','WordPress','Notepad++','Sublime Text','Visual Studio Code','Brackets'],
+    tools: ['Adobe Photoshop','Adobe XD','Figma','Adobe Dreamweaver','HTML5','CSS3 / SCSS','JavaScript / jQuery','React.js','Bootstrap 4 and 5','WordPress','Notepad++','Sublime Text','Visual Studio Code','Brackets'],
     category: 'Development'
   },
   {
     id: 'digital-marketing',
     name: 'Digital Marketing',
-    title: 'DIPLOMA IN ADVANCED DIGITAL MARKETING WITH AI INTEGRATION & AUTOMATION',
+    title: 'DIPLOMA IN ADVANCED DIGITAL MARKETING WITH AI INTEGRATION and AUTOMATION',
     description:'Become a job-ready digital marketer with hands-on training in SEO, Ads, Social Media, Analytics, AI tools and Marketing Automation with live campaigns.',
     image: '/images/courses/digital1.webp',
     banner: '/images/courses/digital1.webp',
@@ -148,8 +148,8 @@ export const COURSES_DATA = [
   },
   {
     id: 'multimedia-animation-vfx',
-    name: 'Multimedia Animation & VFX',
-    title: 'DIPLOMA IN ADVANCED MULTIMEDIA ANIMATION & VFX',
+    name: 'Multimedia Animation and VFX',
+    title: 'DIPLOMA IN ADVANCED MULTIMEDIA ANIMATION and VFX',
     description: 'Comprehensive multimedia course covering all aspects of animation and visual effects.',
     image: '/images/courses/p_a.webp',
     banner: '/images/courses/p_a1.webp',
@@ -187,7 +187,7 @@ export const HERO_CONTENT = {
 };
 
 export const ABOUT_CONTENT = {
-  subtitle: '36+ years of Excellence in IT & Multimedia Animation Training',
+  subtitle: '36+ years of Excellence in IT and Multimedia Animation Training',
   description: `With over 36 years of excellence, Shankar Multimedia, an ISO 9001:2015-certified institute based in Mumbai, has been a trusted leader in IT and multimedia animation training. Established in the early 1990s by Dharmendra Kumar Singh, the institute is dedicated to making high-quality technical education accessible to all, empowering individuals to thrive in the digital era regardless of their economic backgrounds.
 Through expert-led training, industry-driven sessions, and a strong global alumni network, Shankar Multimedia equips students with the skills and confidence to succeed in the ever-evolving fields of IT and multimedia animation.The institute ensures that every student is career-ready and prepared to contribute meaningfully to the future of technology and creative industries.
 Shankar Multimedia's Advanced Diploma Programs are meticulously crafted to provide students with industry-relevant expertise in multimedia animation and IT. By fostering a learning environment that prioritizes technical excellence and creative innovation, the institute continues to shape professionals who drive progress and leave a lasting impact on the global digital and animation landscape.`,
@@ -210,7 +210,7 @@ export const MANAGEMENT_TEAM = [
     name: 'Mr. Deepak Singh',
     position: 'Chief Operating Officer',
     image: '/images/team/deepak_singh.webp',
-    description: 'Deepak Singh is one of the founding members of Shankar Multimedia. He serves as the Head–Technical & Operations, leading Shankar Multimedia Training and Placement efforts, as well as establishing and maintaining relationships with Companies. His personal rapport with industry leaders around the world has helped Shankar Multimedia earn respect as a trusted Computer Training Centre. He has 26+ years of experience in Graphics, 3d and Web development with expertise in Digital Photos Training. He is very helpful in nature and disciplined personality.'
+    description: 'Deepak Singh is one of the founding members of Shankar Multimedia. He serves as the Head–Technical and Operations, leading Shankar Multimedia Training and Placement efforts, as well as establishing and maintaining relationships with Companies. His personal rapport with industry leaders around the world has helped Shankar Multimedia earn respect as a trusted Computer Training Centre. He has 26+ years of experience in Graphics, 3d and Web development with expertise in Digital Photos Training. He is very helpful in nature and disciplined personality.'
   },
   {
     id: 3,

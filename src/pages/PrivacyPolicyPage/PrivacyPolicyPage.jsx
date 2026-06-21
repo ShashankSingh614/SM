@@ -41,7 +41,7 @@ const PrivacyPolicyPage = () => {
 
           {/* Data Protection */}
           <section className={styles.section}>
-            <h2>Data Protection & Privacy</h2>
+            <h2>Data Protection and Privacy</h2>
             <p>
               Your personal information collected during offline admission is secured and protected under the <strong className={styles.highlight}>Information Technology Act, 2000</strong> and applicable Indian data protection laws. We are legally bound and committed to the following:
             </p>

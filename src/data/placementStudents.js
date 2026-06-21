@@ -17,7 +17,7 @@ export const PLACEMENT_STUDENTS = [
   { id: 15, name: 'Priyanka Gujar', role: 'Graphic Designer', location: 'Bhayender', image: '/images/studentPlacements/13Priyanka Gujar - Bhayender.webp' },
   { id: 16, name: 'Sachin Mistry', role: 'Graphic Designer', location: 'Kurla', image: '/images/studentPlacements/14Sachin Mistry - gra-Kurla.webp' },
   { id: 17, name: 'Saish Gokarankar', role: '3D Designer', location: 'Dombivali', image: '/images/studentPlacements/15Saish Gokarankar -Dombivali - 3D Designer.webp' },
-  { id: 18, name: 'Sandesh More', role: 'Video Editor & Graphics Designer', location: 'Goregaon', image: '/images/studentPlacements/16Sandesh More - Goregaon- Video Editor-Graphics Designer.webp' },
+  { id: 18, name: 'Sandesh More', role: 'Video Editor and Graphics Designer', location: 'Goregaon', image: '/images/studentPlacements/16Sandesh More - Goregaon- Video Editor-Graphics Designer.webp' },
   { id: 19, name: 'Sandesh Salekar', role: 'Graphic Designer', location: 'Mulund', image: '/images/studentPlacements/17Sandesh Salekar - gra - Mulund.webp' },
   { id: 20, name: 'Sanjivani More', role: 'Web Designer', location: 'Goregaon', image: '/images/studentPlacements/18Sanjivani More Goregaon - Web Designer.webp' },
   { id: 21, name: 'Snehit Kandalgaonkar', role: 'Designer', location: 'Jogeshwari', image: '/images/studentPlacements/19Snehit Kandalgaonkar - Jogeshwari.webp' },

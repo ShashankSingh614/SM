@@ -11,7 +11,7 @@ const TestimonialsSection = () => {
     {
       id: 1,
       name: 'Priti Jha',
-      role: 'Motion Graphics Designer & Video Editor',
+      role: 'Motion Graphics Designer and Video Editor',
       location: 'Kandivali',
       videoUrl: 'https://www.youtube.com/embed/MfERrATXbRQ',
       image: '/images/studentPlacements/priti-jha.webp',
@@ -20,7 +20,7 @@ const TestimonialsSection = () => {
     {
       id: 2,
       name: 'Makrand Patil',
-      role: 'Graphic & UI/UXDesigner',
+      role: 'Graphic and UI/UXDesigner',
       location: 'Mumbai',
       videoUrl: 'https://www.youtube.com/embed/I0nMbRUwyzc',
       image: '/images/studentPlacements/makrand-patil.webp',
@@ -38,7 +38,7 @@ const TestimonialsSection = () => {
     {
       id: 4,
       name: 'Omkaresh S. Sawant',
-      role: 'Motion Graphics Designer & Video Editor',
+      role: 'Motion Graphics Designer and Video Editor',
       location: 'Worli',
       videoUrl: 'https://www.youtube.com/embed/NpUiGactzms',
       image: '/images/studentPlacements/omkaresh-sawant.webp',
@@ -290,7 +290,7 @@ const TestimonialsSection = () => {
     {
       id: 33,
       name: 'Sandesh More',
-      role: 'Video Editor & Graphics Designer',
+      role: 'Video Editor and Graphics Designer',
       location: 'Goregaon',
       content: 'Learning both Video Editing and Graphics gave me a huge advantage in the job market. The institute focuses on practical portfolio building rather than just theory. Their placement assistance is genuine and very proactive.',
       image: '/images/studentPlacements/16Sandesh More - Goregaon- Video Editor-Graphics Designer.webp',
@@ -332,7 +332,7 @@ const TestimonialsSection = () => {
       <div className="container">
         {/* Section Header */}
         <div className={styles.sectionHeader}>
-          <h2>Student Testimonials & Career Success Stories</h2>
+          <h2>Student Testimonials and Career Success Stories</h2>
           <p className={styles.headerSubtitle}>Distinctive accounts from our accomplished alumni whose professional trajectories have been substantially transformed through comprehensive training and dedicated placement support mechanisms offered by Shankar Multimedia</p>
         </div>
 
@@ -398,7 +398,7 @@ const TestimonialsSection = () => {
                   </div>
                 )}
 
-                {/* Testimonial Text & Rating */}
+                {/* Testimonial Text and Rating */}
                 <div className={styles.testimonialText}>
                   <p>{current.content}</p>
                   <div className={styles.testimonialRating}>

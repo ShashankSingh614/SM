@@ -169,7 +169,7 @@ const HeroSection = () => {
         <title>Shankar Multimedia | #1 Graphic Design, UI/UX, 3D Animation, VFX, Digital Marketing Institute in Mumbai</title>
         <meta
           name="description"
-          content="Shankar Multimedia is Mumbai's top-rated institute for Graphic Design, UI/UX, Motion Graphic Design, 3D Animation, VFX, Web Design & Digital Marketing. 36+ years, ISO 9001:2015 certified, 100% placement support across Mumbai."
+          content="Shankar Multimedia is Mumbai's top-rated institute for Graphic Design, UI/UX, Motion Graphic Design, 3D Animation, VFX, Web Design and Digital Marketing. 36+ years, ISO 9001:2015 certified, 100% placement support across Mumbai."
         />
         <link rel="canonical" href="https://shankarmultimedia.com/" />
       </Helmet>
@@ -183,7 +183,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-          Leading Multimedia & Animation Institute in Mumbai
+          Leading Multimedia and Animation Institute in Mumbai
           </motion.p>
 
           <motion.h1

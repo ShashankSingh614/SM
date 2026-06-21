@@ -101,12 +101,12 @@ const CourseLandingPage = () => {
           name="keywords"
           content={`best ${courseTitle} course near me,${courseTitle} institute with placement Mumbai,${courseTitle} course fees Mumbai,${courseTitle} course duration Mumbai,${courseTitle} certification course Mumbai,${courseTitle} diploma course with placement,${courseTitle} training institute near me,top-rated ${courseTitle} classes Mumbai,affordable ${courseTitle} course Mumbai,professional ${courseTitle} institute near me,weekend ${courseTitle} classes near me,government recognized ${courseTitle} course Mumbai,job-oriented ${courseTitle} training institute Mumbai,advanced ${courseTitle} diploma Mumbai 2026,best ${courseTitle} academy in Mumbai,,Shankar Multimedia`}
         />
-        <link rel="canonical" href={`https://shankarmultimedia.com/course/${courseData.slug}`} />
+        <link rel="canonical" href={`https://shankarmultimedia.com/courses/${courseData.slug}`} />
 
         {/* Open Graph */}
         <meta property="og:title" content={`${courseData.h1} | Shankar Multimedia`} />
         <meta property="og:description" content={courseData.intro.substring(0, 160)} />
-        <meta property="og:url" content={`https://shankarmultimedia.com/course/${courseData.slug}`} />
+        <meta property="og:url" content={`https://shankarmultimedia.com/courses/${courseData.slug}`} />
         <meta property="og:type" content="website" />
 
         {/* JSON-LD */}
@@ -214,7 +214,7 @@ const CourseLandingPage = () => {
             {/* Software tools */}
             <Reveal delay={0.1}>
               <div className={styles.toolsRow}>
-                <p className={styles.toolsLabel}>Tools & Software You'll Master:</p>
+                <p className={styles.toolsLabel}>Tools and Software You'll Master:</p>
                 <div className={styles.toolsList}>
                   {courseData.softwares.map((s, i) => (
                     <span key={i} className={styles.toolBadge}>
