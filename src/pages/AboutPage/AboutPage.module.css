@@ -292,6 +292,7 @@
   line-height: 1.7;
   margin-bottom: 1.5rem;
   text-align: justify;
+  margin: 0.5rem;
 }
 
 /* Features Section */
@@ -343,6 +344,10 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .pageHeader h1 { font-size: 2rem; }
+
+  p { font-size: 15px; line-height: 1.7; }
+
   .heroContent {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -383,6 +388,46 @@
   .managementSection h3 {
     font-size: 2rem;
   }
+
+  .descriptionText p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  margin: 0.5rem;
+  }
+
+  .memberInfo p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  text-align: justify;
+  margin: 0.5rem;
+
+}
+}
+
+@media (max-width: 480px) {
+  .pageHeader h1 { font-size: 2rem; }
+
+  p { font-size: 14px; line-height: 1.65; }
+
+  .descriptionText p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  margin: 0.5rem;
+  }
+
+  .memberInfo p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  text-align: justify;
+  margin: 0.5rem;}
 }
 /* ===== Unified Typography (matches CourseLandingPage system) ===== */
 .pageHeader h1 {
@@ -409,15 +454,5 @@ p {
   font-size: 16px;
   line-height: 1.75;
   margin-bottom: 1rem;
-}
-
-@media (max-width: 768px) {
-  .pageHeader h1 { font-size: 2rem; }
-  p { font-size: 15px; line-height: 1.7; }
-}
-
-@media (max-width: 480px) {
-  .pageHeader h1 { font-size: 1.5rem; }
-  p { font-size: 14px; line-height: 1.65; }
 }
 /* ===== End Unified Typography ===== */
