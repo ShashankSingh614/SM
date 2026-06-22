@@ -166,10 +166,10 @@ const HeroSection = () => {
           already in index.html so hydrated/JS-executing crawlers see
           consistent metadata. */}
       <Helmet>
-        <title>Shankar Multimedia | #1 Graphic Design, UI/UX, 3D Animation, VFX, Digital Marketing Institute in Mumbai</title>
+        <title>Shankar Multimedia | Top Design & Animation Institute, Mumbai</title>
         <meta
           name="description"
-          content="Shankar Multimedia is Mumbai's top-rated institute for Graphic Design, UI/UX, Motion Graphic Design, 3D Animation, VFX, Web Design and Digital Marketing. 36+ years, ISO 9001:2015 certified, 100% placement support across Mumbai."
+          content="Mumbai's top-rated institute for Graphic Design, UI/UX, 3D Animation, VFX and Digital Marketing. 36+ years, ISO certified, 100% placement support."
         />
         <link rel="canonical" href="https://shankarmultimedia.com/" />
       </Helmet>

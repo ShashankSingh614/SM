@@ -135,6 +135,7 @@ const CentersGallery = () => {
           <h2>CAMPUS VIEW</h2>
           <p className={styles.headerDescription}>Explore our architecturally designed, state-of-the-art training facilities strategically located across Mumbai's prominent business districts. Each center has been meticulously equipped with comprehensive technical infrastructure, collaborative learning spaces, and professional infrastructure supporting comprehensive multimedia education excellence</p>
           <motion.img
+            src="/images/mumbai.webp"
             className={styles.headerImage}
             alt="Shankar Multimedia Campus View"
             initial={{ opacity: 0, y: 10 }}
@@ -289,6 +290,7 @@ const CentersGallery = () => {
             <motion.img
               src="/images/mumbai.webp"
               className={styles.headerImage}
+              alt="Map of Shankar Multimedia institute centers across Mumbai"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}

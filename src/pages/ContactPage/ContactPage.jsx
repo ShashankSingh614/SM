@@ -156,7 +156,9 @@ const ContactPageContent = () => {
                 <FiMail />
               </div>
               <h3>Email Us</h3>
-              <a href="mailto:info@shankarmultimedia.com">info@shankarmultimedia.com</a>
+              <a href={`mailto:${'info'}${'@'}${'shankarmultimedia.com'}`}>
+                {'info'}{'\u0040'}{'shankarmultimedia.com'}
+              </a>
             </motion.div>
 
             <motion.div className={styles.contactMethod} variants={itemVariants}>

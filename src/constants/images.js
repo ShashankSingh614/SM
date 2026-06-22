@@ -4,6 +4,7 @@
 export const BRAND_IMAGES = {
   logo: '/images/logo.webp',
   favicon: '/favicon.ico',
+  altLogo: '/images/logo-alt.webp',
 };
 
 // Course images and backgrounds
@@ -13,6 +14,7 @@ export const COURSE_IMAGES = {
     background: '/images/courses/3d.webp',
     icon: '/images/courses/courses/3d.webp',
     icon2: '/images/courses/courses/3d.webp',
+    alt: '3D Animation and VFX Course Image',
   },
   
   // Web Development
@@ -20,6 +22,7 @@ export const COURSE_IMAGES = {
     background: '/images/courses/web1.webp',
     icon: '/images/courses/web1.webp',
     icon2: '/images/courses/web1.webp',
+    alt: 'Web Development Course Image',
   },
   
   // Graphic Design
@@ -27,6 +30,7 @@ export const COURSE_IMAGES = {
     background: '/images/courses/gra1.webp',
     icon: '/images/courses/gra1.webp',
     icon2: '/images/courses/gra1.webp',
+    alt: 'Graphic Design Course Image',
   }
 
 };
@@ -110,6 +114,7 @@ export const COURSES_WITH_IMAGES = [
     image: COURSE_IMAGES['graphics'].icon,
     background: COURSE_IMAGES['graphics'].background,
     category: 'Design',
+    alt: 'Graphic Design Course Image',
   },
   {
     id: '3d-animation',
@@ -117,6 +122,7 @@ export const COURSES_WITH_IMAGES = [
     image: COURSE_IMAGES['3d'].icon,
     background: COURSE_IMAGES['3d'].background,
     category: 'Animation',
+    alt: '3D Animation and VFX Course Image',
   },
   {
     id: 'web-development',
@@ -124,6 +130,7 @@ export const COURSES_WITH_IMAGES = [
     image: COURSE_IMAGES['web'].icon,
     background: COURSE_IMAGES['web'].background,
     category: 'Development',
+    alt: 'Web Development Course Image',
   },
 
 ];

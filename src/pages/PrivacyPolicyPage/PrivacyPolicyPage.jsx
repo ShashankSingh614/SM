@@ -57,7 +57,7 @@ const PrivacyPolicyPage = () => {
           <section className={styles.section}>
             <h2>Contact Us</h2>
             <p>
-              For any questions about this Privacy Policy or your personal information, please contact us at <strong className={styles.highlight}>info@shankarmultimedia.com</strong>.
+              For any questions about this Privacy Policy or your personal information, please contact us at <strong className={styles.highlight}>{'info'}{'\u0040'}{'shankarmultimedia.com'}</strong>.
             </p>
           </section>
         </motion.div>

@@ -36,7 +36,7 @@ export const createLocalBusinessSchemas = () => {
           'closes': '14:00'
         }
       ],
-      'priceRange': '₹30,000 - ₹84,000',
+      'priceRange': '₹30,000 - ₹82,000',
       'aggregateRating': {
         '@type': 'AggregateRating',
         'ratingValue': '5.0',
@@ -92,7 +92,7 @@ export const createLocalBusinessSchemas = () => {
           'closes': '14:00'
         }
       ],
-      'priceRange': '₹30,000 - ₹84,000',
+      'priceRange': '₹30,000 - ₹82,000',
       'aggregateRating': {
         '@type': 'AggregateRating',
         'ratingValue': '4.9',
@@ -148,7 +148,7 @@ export const createLocalBusinessSchemas = () => {
           'closes': '14:00'
         }
       ],
-      'priceRange': '₹30,000 - ₹84,000',
+      'priceRange': '₹30,000 - ₹82,000',
       'aggregateRating': {
         '@type': 'AggregateRating',
         'ratingValue': '4.8',
@@ -204,7 +204,7 @@ export const createLocalBusinessSchemas = () => {
           'closes': '14:00'
         }
       ],
-      'priceRange': '₹30,000 - ₹84,000',
+      'priceRange': '₹30,000 - ₹82,000',
       'aggregateRating': {
         '@type': 'AggregateRating',
         'ratingValue': '4.9',
@@ -260,7 +260,7 @@ export const createLocalBusinessSchemas = () => {
           'closes': '14:00'
         }
       ],
-      'priceRange': '₹30,000 - ₹84,000',
+      'priceRange': '₹30,000 - ₹82,000',
       'aggregateRating': {
         '@type': 'AggregateRating',
         'ratingValue': '4.8',
@@ -316,7 +316,7 @@ export const createLocalBusinessSchemas = () => {
           'closes': '14:00'
         }
       ],
-      'priceRange': '₹30,000 - ₹84,000',
+      'priceRange': '₹30,000 - ₹82,000',
       'aggregateRating': {
         '@type': 'AggregateRating',
         'ratingValue': '4.8',
