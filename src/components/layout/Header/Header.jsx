@@ -11,6 +11,10 @@ const Header = () => {
   const [isBranchDropdownOpen, setIsBranchDropdownOpen] = useState(false);
   const location = useLocation();
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -67,6 +71,7 @@ const Header = () => {
                 <Link
                   key={item.path}
                   to={item.path}
+                  onClick={scrollToTop}
                   className={`${styles.navLink} ${
                     location.pathname === item.path ? styles.active : ''
                   }`}
@@ -144,6 +149,7 @@ const Header = () => {
             <Link
               key={item.path}
               to={item.path}
+              onClick={scrollToTop}
               className={
                 item.label === 'Contact'
                   ? `${styles.mobileNavLink} ${styles.mobileNavLinkContact}`

@@ -58,13 +58,13 @@ const Footer = () => {
             <div className={styles.footerColumn}>
               <h3 className={styles.footerTitle}>Quick Links</h3>
               <ul className={styles.footerLinks}>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About Us</Link></li>
-                <li><Link to="/students-work">Students Work</Link></li>
-                <li><Link to="/placements">Placements</Link></li>
-                <li><Link to="/contact">Contact Us</Link></li>
-                <li><Link to="/privacy-policy">Privacy Policy</Link></li>
-                <li><Link to="/terms-conditions">Terms and Conditions</Link></li>
+                <li><Link to="/" onClick={scrollToTop}>Home</Link></li>
+                <li><Link to="/about" onClick={scrollToTop}>About Us</Link></li>
+                <li><Link to="/students-work" onClick={scrollToTop}>Students Work</Link></li>
+                <li><Link to="/placements" onClick={scrollToTop}>Placements</Link></li>
+                <li><Link to="/contact" onClick={scrollToTop}>Contact Us</Link></li>
+                <li><Link to="/privacy-policy" onClick={scrollToTop}>Privacy Policy</Link></li>
+                <li><Link to="/terms-conditions" onClick={scrollToTop}>Terms and Conditions</Link></li>
               </ul>
             </div>
 
@@ -87,23 +87,23 @@ const Footer = () => {
                 <ul className={styles.footerLinks}>
                   <li className={styles.centerItem}>
                     <a href="https://maps.google.com/?q=Shankar+Multimedia+Goregaon+Mumbai" target="_blank" rel="noopener noreferrer">Goregaon</a>
-                    <a href="tel:+919819508524" className={styles.centerPhone}>+91 9819508524</a>
+                    <a href="tel:+919819508524" className={styles.centerPhone}>+91 98195 08524</a>
                   </li>
                   <li className={styles.centerItem}>
                     <a href="https://maps.google.com/?q=Shankar+Multimedia+Malad+Mumbai" target="_blank" rel="noopener noreferrer">Malad</a>
-                    <a href="tel:+919223439986" className={styles.centerPhone}>+91 9223439986</a>
+                    <a href="tel:+919223439986" className={styles.centerPhone}>+91 92234 39986</a>
                   </li>
                   <li className={styles.centerItem}>
                     <a href="https://maps.google.com/?q=Shankar+Multimedia+Santacruz+Mumbai" target="_blank" rel="noopener noreferrer">Santacruz</a>
-                    <a href="tel:+917304157986" className={styles.centerPhone}>+91 7304157986</a>
+                    <a href="tel:+917304157986" className={styles.centerPhone}>+91 73041 57986</a>
                   </li>
                   <li className={styles.centerItem}>
                     <a href="https://maps.google.com/?q=Shankar+Multimedia+Mulund+Mumbai" target="_blank" rel="noopener noreferrer">Mulund</a>
-                    <a href="tel:+919619177392" className={styles.centerPhone}>+91 9619177392</a>
+                    <a href="tel:+919619177392" className={styles.centerPhone}>+91 96191 77392</a>
                   </li>
                   <li className={styles.centerItem}>
                     <a href="https://maps.google.com/?q=Shankar+Multimedia+Nalasopara+Mumbai" target="_blank" rel="noopener noreferrer">Nalasopara</a>
-                    <a href="tel:+917021382816" className={styles.centerPhone}>+91 7021382816</a>
+                    <a href="tel:+917021382816" className={styles.centerPhone}>+91 70213 82816</a>
                   </li>
                 </ul>
               </div>
@@ -117,7 +117,7 @@ const Footer = () => {
           <h3 className={styles.footerTitle}>Certified Programs with Job Placement Assurance</h3>
           <div className={styles.footerBottomContent}>
             <p className={styles.footerLinks}>
-              <Link to="/courses/advanced-graphic-and-uiux-design">Graphic and UI/UX Design Course in Mumbai</Link> | <Link to="/courses/advanced-motion-graphic-and-video-editing">Motion Graphic and Video Editing Course in Mumbai</Link> | <Link to="/courses/advanced-3d-animation-and-modeling">3D Animation and Modeling Course in Mumbai</Link> | <Link to="/courses/advanced-interior-design">Interior Design Course in Mumbai</Link> | <Link to="/courses/advanced-3d-animation-and-vfx">3D Animation and VFX Course in Mumbai</Link> | <Link to="/courses/advanced-web-design-and-development">Full Stack Web Development Course in Mumbai</Link> | <Link to="/courses/advanced-digital-marketing">Digital Marketing Course in Mumbai</Link> | <Link to="/courses/advanced-multimedia-animation-and-vfx">Multimedia Animation and VFX Course in Mumbai</Link>
+              <Link to="/courses/advanced-graphic-and-uiux-design" onClick={scrollToTop}>Graphic and UI/UX Design Course in Mumbai</Link> | <Link to="/courses/advanced-motion-graphic-and-video-editing" onClick={scrollToTop}>Motion Graphic and Video Editing Course in Mumbai</Link> | <Link to="/courses/advanced-3d-animation-and-modeling" onClick={scrollToTop}>3D Animation and Modeling Course in Mumbai</Link> | <Link to="/courses/advanced-interior-design" onClick={scrollToTop}>Interior Design Course in Mumbai</Link> | <Link to="/courses/advanced-3d-animation-and-vfx" onClick={scrollToTop}>3D Animation and VFX Course in Mumbai</Link> | <Link to="/courses/advanced-web-design-and-development" onClick={scrollToTop}>Full Stack Web Development Course in Mumbai</Link> | <Link to="/courses/advanced-digital-marketing" onClick={scrollToTop}>Digital Marketing Course in Mumbai</Link> | <Link to="/courses/advanced-multimedia-animation-and-vfx" onClick={scrollToTop}>Multimedia Animation and VFX Course in Mumbai</Link>
             </p>
           </div>
         </div>

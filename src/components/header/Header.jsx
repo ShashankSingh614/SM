@@ -1,57 +1,198 @@
-// Header component with phone contact information
-import PropTypes from 'prop-types';
+// Modern Header component with unified navigation
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
+import { FiMenu, FiX, FiPhone, FiChevronDown } from 'react-icons/fi';
 import styles from './Header.module.css';
 
-const Header = ({ contacts }) => {
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isBranchDropdownOpen, setIsBranchDropdownOpen] = useState(false);
+  const location = useLocation();
+
+  const scrollToTop = () => {
+    const forceTop = () => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    };
+    forceTop();
+    // Destination page can still be loading images/fonts for a few seconds after
+    // navigation (heavy assets), which shifts layout and undoes the scroll-to-top.
+    // Keep re-applying for a few seconds to survive that.
+    [50, 150, 350, 700, 1200, 2000, 3000].forEach((delay) => {
+      setTimeout(forceTop, delay);
+    });
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+    setIsBranchDropdownOpen(false);
+  }, [location]);
+
+  const navigationItems = [
+    { label: 'Home', path: '/' },
+    { label: 'Students Work', path: '/students-work' },
+    { label: 'Placements', path: '/placements' },
+    { label: 'About Us', path: '/about' },
+    { label: 'Contact', path: '/contact' },
+  ];
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const branches = [
+    { name: 'Goregaon', phone: '+91 9819508524' },
+    { name: 'Malad', phone: '+91 9223439986' },
+    { name: 'Mulund', phone: '+91 9619177392' },
+    { name: 'Nalasopara', phone: '+91 7021382816' },
+    { name: 'Santacruz', phone: '+91 7304157986' },
+  ];
+
   return (
-    <header className={styles.headerWrapper}>
-      {/* Single Line Contact Bar */}
-      <div className={styles.phone}>
+    <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
+      <nav className={styles.nav}>
         <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-6">
-              <div className={styles.hed}>
-                <p>Monday To Saturday 8am To 9pm | Sunday 9am To 2pm</p>
+          <div className={styles.navContent}>
+            {/* Logo */}
+            <div className={styles.logo}>
+              <Link to="/">
+                <img
+                  src="/images/logowhite.webp"
+                  alt="Shankar Multimedia"
+                  className={styles.logoImg}
+                />
+              </Link>
+            </div>
+
+            {/* Desktop Navigation */}
+            <div className={styles.desktopNav}>
+              {navigationItems.map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  onClick={scrollToTop}
+                  className={`${styles.navLink} ${
+                    location.pathname === item.path ? styles.active : ''
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              ))}
+
+              {/* Branch Dropdown */}
+              <div
+                className={styles.branchDropdown}
+                onMouseEnter={() => setIsBranchDropdownOpen(true)}
+                onMouseLeave={() => setIsBranchDropdownOpen(false)}
+              >
+                <button className={styles.branchToggle}>
+                  <FiPhone className={styles.phoneIcon} />
+                  <span>Call Us</span>
+                  <FiChevronDown
+                    className={`${styles.chevron} ${
+                      isBranchDropdownOpen ? styles.chevronOpen : ''
+                    }`}
+                  />
+                </button>
+
+                <AnimatePresence>
+                  {isBranchDropdownOpen && (
+                    <motion.div
+                      className={styles.branchDropdownMenu}
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      {branches.map((branch) => (
+                        <a
+                          key={branch.name}
+                          href={`tel:${branch.phone.replace(/\s/g, '')}`}
+                          className={styles.branchItem}
+                        >
+                          <span className={styles.branchName}>{branch.name}</span>
+                          <span className={styles.branchPhone}>{branch.phone}</span>
+                        </a>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             </div>
-            <div className="col-md-6">
-              <div className={styles.hed}>
-                <ul className={styles.contactList}>
-                  {contacts.map((contact) => (
-                    <li key={contact.id}>
-                      <a href={`tel:+91${contact.phone}`} aria-label={`Call ${contact.location}`}>
-                        {contact.location}: +91 {contact.phone}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+
+            {/* Mobile Menu Toggle */}
+            <button
+              className={styles.mobileToggle}
+              onClick={toggleMenu}
+              aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={isMenuOpen}
+            >
+              {isMenuOpen ? <FiX /> : <FiMenu />}
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      {/* Mobile Navigation */}
+      <motion.div
+        className={`${styles.mobileNav} ${isMenuOpen ? styles.mobileNavOpen : ''}`}
+        initial={false}
+        animate={{
+          height: isMenuOpen ? 'auto' : 0,
+          opacity: isMenuOpen ? 1 : 0,
+        }}
+        transition={{ duration: 0.3, ease: 'easeInOut' }}
+      >
+        <div className={styles.mobileNavContent}>
+          {navigationItems.map((item) => (
+            <Link
+              key={item.path}
+              to={item.path}
+              onClick={scrollToTop}
+              className={
+                item.label === 'Contact'
+                  ? `${styles.mobileNavLink} ${styles.mobileNavLinkContact}`
+                  : styles.mobileNavLink
+              }
+            >
+              {item.label}
+            </Link>
+          ))}
+
+          {/* Mobile Branch Contacts */}
+          <div className={styles.mobileBranchSection}>
+            <h4 className={styles.mobileBranchTitle}>
+              <FiPhone /> Call Us
+            </h4>
+            <div className={styles.mobileBranchList}>
+              {branches.map((branch) => (
+                <a
+                  key={branch.name}
+                  href={`tel:${branch.phone.replace(/\s/g, '')}`}
+                  className={styles.mobileBranchItem}
+                >
+                  <span className={styles.mobileBranchName}>{branch.name}</span>
+                  <span className={styles.mobileBranchPhone}>{branch.phone}</span>
+                </a>
+              ))}
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </header>
   );
-};
-
-Header.propTypes = {
-  contacts: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      location: PropTypes.string.isRequired,
-      phone: PropTypes.string.isRequired,
-    })
-  ),
-};
-
-Header.defaultProps = {
-  contacts: [
-    { id: '1', location: 'Goregaon', phone: '9819508524' },
-    { id: '2', location: 'Malad', phone: '9223439986' },
-    { id: '3', location: 'Mulund', phone: '9619177392' },
-    { id: '4', location: 'Nalasopara', phone: '7021382816' },
-    { id: '5', location: 'Santacruz', phone: '7304157986' },
-  ],
 };
 
 export default Header;
