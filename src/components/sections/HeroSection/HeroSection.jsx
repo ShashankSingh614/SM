@@ -162,11 +162,8 @@ const HeroSection = () => {
 
   return (
     <>
-      {/* Page-level SEO for the homepage hero. Complements the static tags
-          already in index.html so hydrated/JS-executing crawlers see
-          consistent metadata. */}
       <Helmet>
-        <title>Shankar Multimedia | Top Design & Animation Institute, Mumbai</title>
+        <title>Best Animation Courses in Mumbai | Shankar Multimedia</title>
         <meta
           name="description"
           content="Mumbai's top-rated institute for Graphic Design, UI/UX, 3D Animation, VFX and Digital Marketing. 36+ years, ISO certified, 100% placement support."
@@ -186,14 +183,14 @@ const HeroSection = () => {
           Leading Multimedia and Animation Institute in Mumbai
           </motion.p>
 
-          <motion.h1
+          <motion.h2
             className={styles.heroHeading}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15 }}
           >
           Graphic Design, UI/UX, 3D Animation, VFX, Digital Marketing Courses in Mumbai
-          </motion.h1>
+          </motion.h2>
 
           <motion.p
             className={styles.heroSubtitle}

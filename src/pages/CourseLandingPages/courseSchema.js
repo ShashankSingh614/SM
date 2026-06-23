@@ -6,7 +6,7 @@ export const generateCourseSchema = (courseData, baseUrl = 'https://shankarmulti
     '@type': 'Course',
     name: courseData.title,
     description: courseData.intro,
-    url: `${baseUrl}/course/${courseData.slug}`,
+    url: `${baseUrl}/courses/${courseData.slug}`,
     image: `${baseUrl}/images/course-${courseData.slug}.webp`,
     author: {
       '@type': 'Organization',
@@ -14,8 +14,14 @@ export const generateCourseSchema = (courseData, baseUrl = 'https://shankarmulti
       url: baseUrl,
       sameAs: [
         'https://www.facebook.com/shankarmultimedia',
+        'https://www.facebook.com/share/1C1RSS5fJE/',
+        'https://www.youtube.com/@ShankarMultimediaMumbai',
+        'https://www.facebook.com/deepak.singh.goregaon/',
         'https://www.instagram.com/shankarmultimedia',
-        'https://www.youtube.com/@shankarmultimedia'
+        'https://www.instagram.com/shankarmultimediagoregaon',
+        'https://www.instagram.com/shankarmultimedia.malad',
+        'https://www.instagram.com/shankarmultimedia.nalasopara',
+        'https://www.instagram.com/shankarmultimedia.mulund',
       ]
     },
     provider: {
@@ -23,24 +29,24 @@ export const generateCourseSchema = (courseData, baseUrl = 'https://shankarmulti
       name: 'Shankar Multimedia',
       url: baseUrl
     },
-    duration: `PT${courseData.duration.split(' ')[0]}M`, // PT4M = Period Time 4 Months
+    duration: `PT${courseData.duration.split(' ')[0]}M`,
     courseCode: courseData.id,
     educationLevel: 'Vocational',
     hasCourseInstance: {
       '@type': 'CourseInstance',
       inLanguage: 'en-IN',
       isAccessibleForFree: false,
-      url: `${baseUrl}/course/${courseData.slug}`
+      url: `${baseUrl}/courses/${courseData.slug}`
     },
     offers: {
       '@type': 'Offer',
-      url: `${baseUrl}/course/${courseData.slug}`,
+      url: `${baseUrl}/courses/${courseData.slug}`,
       priceCurrency: 'INR',
       availability: 'https://schema.org/InStock'
     },
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '4.8',
+      ratingValue: '5',
       ratingCount: (courseData.testimonials ?? []).length
     },
     review: (courseData.testimonials ?? []).map(testimonial => ({
@@ -67,8 +73,15 @@ export const organizationSchema = {
   description: 'Leading animation and multimedia institute in Mumbai with 36+ years of excellence',
   sameAs: [
     'https://www.facebook.com/shankarmultimedia',
+    'https://www.facebook.com/share/1C1RSS5fJE/',
+    'https://www.youtube.com/@ShankarMultimediaMumbai',
+    'https://www.facebook.com/deepak.singh.goregaon/',
     'https://www.instagram.com/shankarmultimedia',
-    'https://www.youtube.com/@shankarmultimedia'
+    'https://www.instagram.com/shankarmultimediagoregaon',
+    'https://www.instagram.com/shankarmultimedia.malad',
+    'https://www.instagram.com/shankarmultimedia.nalasopara',
+    'https://www.instagram.com/shankarmultimedia.mulund',
+
   ],
   address: {
     '@type': 'PostalAddress',

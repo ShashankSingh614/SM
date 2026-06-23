@@ -99,7 +99,7 @@ const CourseLandingPage = () => {
         <meta name="description" content={courseData.intro.substring(0, 160)} />
         <meta
           name="keywords"
-          content={`best ${courseTitle} course near me,${courseTitle} institute with placement Mumbai,${courseTitle} course fees Mumbai,${courseTitle} course duration Mumbai,${courseTitle} certification course Mumbai,${courseTitle} diploma course with placement,${courseTitle} training institute near me,top-rated ${courseTitle} classes Mumbai,affordable ${courseTitle} course Mumbai,professional ${courseTitle} institute near me,weekend ${courseTitle} classes near me,government recognized ${courseTitle} course Mumbai,job-oriented ${courseTitle} training institute Mumbai,advanced ${courseTitle} diploma Mumbai 2026,best ${courseTitle} academy in Mumbai,,Shankar Multimedia`}
+          content={`best ${courseTitle} course near me,${courseTitle} institute with placement Mumbai,${courseTitle} course fees Mumbai,${courseTitle} course duration Mumbai,${courseTitle} certification course Mumbai,${courseTitle} diploma course with placement,${courseTitle} training institute near me,top-rated ${courseTitle} classes Mumbai,affordable ${courseTitle} course Mumbai,professional ${courseTitle} institute near me,weekend ${courseTitle} classes near me,government recognized ${courseTitle} course Mumbai,job-oriented ${courseTitle} training institute Mumbai,advanced ${courseTitle} diploma Mumbai 2026,best ${courseTitle} academy in Mumbai,Shankar Multimedia`}
         />
         <link rel="canonical" href={`https://shankarmultimedia.com/courses/${courseData.slug}`} />
 
@@ -108,6 +108,13 @@ const CourseLandingPage = () => {
         <meta property="og:description" content={courseData.intro.substring(0, 160)} />
         <meta property="og:url" content={`https://shankarmultimedia.com/courses/${courseData.slug}`} />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://shankarmultimedia.com/images/og-image.webp" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${courseData.h1} | Shankar Multimedia`} />
+        <meta name="twitter:description" content={courseData.intro.substring(0, 160)} />
+        <meta name="twitter:image" content="https://shankarmultimedia.com/images/og-image.webp" />
 
         {/* JSON-LD */}
         <script type="application/ld+json">{JSON.stringify(courseSchema)}</script>
@@ -382,6 +389,8 @@ const CourseLandingPage = () => {
                   '1-on-1 session with a senior faculty member',
                   'Personalised career roadmap for your background',
                   'Campus tour and student interaction',
+                  'Placement guidance and interview prep',
+                  'Industry Training & Portfolio Review',
                 ].map((pt, i) => (
                   <span key={i} className={styles.counsellingPoint}>
                     <FiCheckSquare /> {pt}

@@ -85,11 +85,26 @@ const Footer = () => {
               <h3 className={styles.footerTitle}>Institute Centers</h3>
               <div className={styles.contactInfo}>
                 <ul className={styles.footerLinks}>
-                  <li><a href="https://maps.google.com/?q=Shankar+Multimedia+Goregaon+Mumbai" target="_blank" rel="noopener noreferrer">Goregaon</a></li>
-                  <li><a href="https://maps.google.com/?q=Shankar+Multimedia+Malad+Mumbai" target="_blank" rel="noopener noreferrer">Malad</a></li>
-                  <li><a href="https://maps.google.com/?q=Shankar+Multimedia+Santacruz+Mumbai" target="_blank" rel="noopener noreferrer">Santacruz</a></li>
-                  <li><a href="https://maps.google.com/?q=Shankar+Multimedia+Mulund+Mumbai" target="_blank" rel="noopener noreferrer">Mulund</a></li>
-                  <li><a href="https://maps.google.com/?q=Shankar+Multimedia+Nalasopara+Mumbai" target="_blank" rel="noopener noreferrer">Nalasopara</a></li>
+                  <li className={styles.centerItem}>
+                    <a href="https://maps.google.com/?q=Shankar+Multimedia+Goregaon+Mumbai" target="_blank" rel="noopener noreferrer">Goregaon</a>
+                    <a href="tel:+919819508524" className={styles.centerPhone}>+91 9819508524</a>
+                  </li>
+                  <li className={styles.centerItem}>
+                    <a href="https://maps.google.com/?q=Shankar+Multimedia+Malad+Mumbai" target="_blank" rel="noopener noreferrer">Malad</a>
+                    <a href="tel:+919223439986" className={styles.centerPhone}>+91 9223439986</a>
+                  </li>
+                  <li className={styles.centerItem}>
+                    <a href="https://maps.google.com/?q=Shankar+Multimedia+Santacruz+Mumbai" target="_blank" rel="noopener noreferrer">Santacruz</a>
+                    <a href="tel:+917304157986" className={styles.centerPhone}>+91 7304157986</a>
+                  </li>
+                  <li className={styles.centerItem}>
+                    <a href="https://maps.google.com/?q=Shankar+Multimedia+Mulund+Mumbai" target="_blank" rel="noopener noreferrer">Mulund</a>
+                    <a href="tel:+919619177392" className={styles.centerPhone}>+91 9619177392</a>
+                  </li>
+                  <li className={styles.centerItem}>
+                    <a href="https://maps.google.com/?q=Shankar+Multimedia+Nalasopara+Mumbai" target="_blank" rel="noopener noreferrer">Nalasopara</a>
+                    <a href="tel:+917021382816" className={styles.centerPhone}>+91 7021382816</a>
+                  </li>
                 </ul>
               </div>
             </div>

@@ -72,7 +72,7 @@ export const helmetConfig = {
   home: {
     title: 'Shankar Multimedia | Graphic Design, UI UX, Animation, VFX & Digital Marketing Institute in Mumbai',
     description: 'Join Shankar Multimedia Mumbai for Graphic Design, UI UX Design, Web Development, Digital Marketing, 3D Animation, VFX, Video Editing and AutoCAD courses with placement assistance and industry-focused training.',
-    keywords: 'graphic design course mumbai, graphic design institute mumbai, ui ux design course mumbai, web development course mumbai, digital marketing course mumbai, animation course mumbai, 3d animation course mumbai, vfx course mumbai, video editing course mumbai, autocad course mumbai, multimedia institute mumbai, best multimedia institute mumbai, arena animation, maac, frameboxx, zica, iide, dgmark institute, digital scholar, freelancers academy, shankar multimedia',
+    keywords: 'graphic design course mumbai, graphic design institute mumbai, ui ux design course mumbai, web development course mumbai, digital marketing course mumbai, animation course mumbai, 3d animation course mumbai, vfx course mumbai, video editing course mumbai, autocad course mumbai, multimedia institute mumbai, best multimedia institute mumbai, arena animation, maac, frameboxx, zica, iide, dgmark institute, shankar multimedia',
     canonical: 'https://shankarmultimedia.com/',
     ogImage: 'https://shankarmultimedia.com/images/og-image.webp',
     ogType: 'website',
