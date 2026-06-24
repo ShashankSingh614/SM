@@ -179,50 +179,6 @@ const TermsConditionsPage = () => {
             </p>
           </section>
 
-         
-          {/* "AS IS" and "AS AVAILABLE" Disclaimer */}
-          <section className={styles.section}>
-            <h2>"AS IS" and "AS AVAILABLE" Disclaimer</h2>
-            <p>
-              The Service is provided to You "AS IS" and "AS AVAILABLE" and with all faults and defects without warranty of any kind. To the maximum extent permitted under applicable law, the Company, on its own behalf and on behalf of its Affiliates and its and their respective licensors and service providers, expressly disclaims all warranties, whether express, implied, statutory or otherwise, with respect to the Service, including all implied warranties of merchantability, fitness for a particular purpose, title and non-infringement, and warranties that may arise out of course of dealing, course of performance, usage or trade practice.
-            </p>
-            <p>
-              Without limitation to the foregoing, the Company provides no warranty or undertaking, and makes no representation of any kind that the Service will meet Your requirements, achieve any intended results, be compatible or work with any other software, applications, systems or services, operate without interruption, meet any performance or reliability standards or be error free or that any errors or defects can or will be corrected.
-            </p>
-            <p>
-              Without limiting the foregoing, neither the Company nor any of the company's provider makes any representation or warranty of any kind, express or implied: (i) as to the operation or availability of the Service, or the information, content, and materials or products included thereon; (ii) that the Service will be uninterrupted or error-free; (iii) as to the accuracy, reliability, or currency of any information or content provided through the Service; or (iv) that the Service, its servers, the content, or e-mails sent from or on behalf of the Company are free of viruses, scripts, trojan horses, worms, malware, timebombs or other harmful components.
-            </p>
-            <p>
-              Some jurisdictions do not allow the exclusion of certain types of warranties or limitations on applicable statutory rights of a consumer, so some or all of the above exclusions and limitations may not apply to You. But in such a case the exclusions and limitations set forth in this section shall be applied to the greatest extent enforceable under applicable law.
-            </p>
-          </section>
-
-          {/* Severability and Waiver */}
-          <section className={styles.section}>
-            <h2>Severability and Waiver</h2>
-            
-            <h3>Severability</h3>
-            <p>
-              If any provision of these Terms is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect.
-            </p>
-
-            <h3>Waiver</h3>
-            <p>
-              Except as provided herein, the failure to exercise a right or to require performance of an obligation under this Terms shall not effect a party's ability to exercise such right or require such performance at any time thereafter nor shall be the waiver of a breach constitute a waiver of any subsequent breach.
-            </p>
-          </section>
-
-          {/* Changes to Terms */}
-          <section className={styles.section}>
-            <h2>Changes to These Terms and Conditions</h2>
-            <p>
-              We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. What constitutes a material change will be determined at Our sole discretion.
-            </p>
-            <p>
-              By continuing to access or use Our Service after those revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service.
-            </p>
-          </section>
-
           {/* Contact Us */}
           <section className={styles.section}>
             <h2>Contact Us</h2>
