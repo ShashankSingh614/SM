@@ -3,7 +3,7 @@
 // Main brand assets
 export const BRAND_IMAGES = {
   logo: '/images/logo.webp',
-  favicon: '/favicon.ico',
+  favicon: '/favicon.png',
   altLogo: '/images/logo-alt.webp',
 };
 

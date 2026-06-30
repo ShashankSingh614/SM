@@ -183,14 +183,14 @@ const HeroSection = () => {
           Leading Multimedia and Animation Institute in Mumbai
           </motion.p>
 
-          <motion.h2
+          <motion.h1
             className={styles.heroHeading}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15 }}
           >
           Graphic Design, UI/UX, 3D Animation, VFX, Digital Marketing Courses in Mumbai
-          </motion.h2>
+          </motion.h1>
 
           <motion.p
             className={styles.heroSubtitle}
