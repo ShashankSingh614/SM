@@ -5,9 +5,9 @@
 
 import { useEffect } from 'react';
 
-export const useSEO = ({ title, description, keywords, canonical, ogImage, ogType = 'website', structuredData }) => {
+export const useSEO = ({ title, description, keywords, canonical, ogImage, ogType = 'website', ogLocale = 'en_IN', twitterCard = 'summary_large_image', structuredData }) => {
   useEffect(() => {
-    // Update title
+    // Update page title
     document.title = title;
 
     // Update or create meta description
@@ -29,54 +29,60 @@ export const useSEO = ({ title, description, keywords, canonical, ogImage, ogTyp
     metaKeywords.content = keywords;
 
     // Update canonical URL
-    let canonicalLink = document.querySelector('link[rel="canonical"]');
-    if (!canonicalLink) {
-      canonicalLink = document.createElement('link');
-      canonicalLink.rel = 'canonical';
-      document.head.appendChild(canonicalLink);
+    if (canonical) {
+      let canonicalLink = document.querySelector('link[rel="canonical"]');
+      if (!canonicalLink) {
+        canonicalLink = document.createElement('link');
+        canonicalLink.rel = 'canonical';
+        document.head.appendChild(canonicalLink);
+      }
+      canonicalLink.href = canonical;
+      updateMetaTag('property', 'og:url', canonical);
     }
-    canonicalLink.href = canonical;
 
     // Update Open Graph meta tags
-    updateMetaTag('og:title', title);
-    updateMetaTag('og:description', description);
-    updateMetaTag('og:type', ogType);
+    updateMetaTag('property', 'og:title', title);
+    updateMetaTag('property', 'og:description', description);
+    updateMetaTag('property', 'og:type', ogType);
+    updateMetaTag('property', 'og:locale', ogLocale);
     if (ogImage) {
-      updateMetaTag('og:image', ogImage);
+      updateMetaTag('property', 'og:image', ogImage);
     }
 
     // Update Twitter Card meta tags
-    updateMetaTag('twitter:title', title);
-    updateMetaTag('twitter:description', description);
+    updateMetaTag('name', 'twitter:title', title);
+    updateMetaTag('name', 'twitter:description', description);
+    updateMetaTag('name', 'twitter:card', twitterCard);
     if (ogImage) {
-      updateMetaTag('twitter:image', ogImage);
+      updateMetaTag('name', 'twitter:image', ogImage);
     }
 
-    // Add structured data (JSON-LD)
+    // Add structured data (JSON-LD) with a dedicated script ID
     if (structuredData) {
-      let scriptTag = document.querySelector('script[type="application/ld+json"]');
+      let scriptTag = document.head.querySelector('script#seo-json-ld');
       if (scriptTag) {
         scriptTag.remove();
       }
       const script = document.createElement('script');
       script.type = 'application/ld+json';
-      script.innerHTML = JSON.stringify(structuredData);
+      script.id = 'seo-json-ld';
+      script.textContent = JSON.stringify(structuredData);
       document.head.appendChild(script);
     }
 
-    // Scroll to top
+    // Scroll to top on page change
     window.scrollTo(0, 0);
-  }, [title, description, keywords, canonical, ogImage, ogType, structuredData]);
+  }, [title, description, keywords, canonical, ogImage, ogType, ogLocale, twitterCard, structuredData]);
 };
 
 /**
  * Helper function to update or create meta tags
  */
-const updateMetaTag = (property, content) => {
-  let tag = document.querySelector(`meta[property="${property}"]`);
+const updateMetaTag = (attr, name, content) => {
+  let tag = document.querySelector(`meta[${attr}="${name}"]`);
   if (!tag) {
     tag = document.createElement('meta');
-    tag.setAttribute('property', property);
+    tag.setAttribute(attr, name);
     document.head.appendChild(tag);
   }
   tag.content = content;

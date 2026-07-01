@@ -182,7 +182,16 @@ const TermsConditionsPage = () => {
           {/* Contact Us */}
           <section className={styles.section}>
             <h2>Contact Us</h2>
-            <p>If you have any questions about these Terms and Conditions, You can contact us at <strong className={styles.highlight}>info@shankarmultimedia.com</strong>.</p>
+            <p>
+              If you have any questions about these Terms and Conditions, you can contact us at{' '}
+              <a
+                href="mailto:info@shankarmultimedia.com"
+                className={styles.highlight}
+                aria-label="Email Shankar Multimedia"
+              >
+                info@shankarmultimedia.com
+              </a>
+            </p>
           </section>
         </motion.div>
       </div>

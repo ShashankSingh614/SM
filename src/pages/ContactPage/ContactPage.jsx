@@ -156,8 +156,12 @@ const ContactPageContent = () => {
                 <FiMail />
               </div>
               <h3>Email Us</h3>
-              <a href={`mailto:${'info'}${'@'}${'shankarmultimedia.com'}`}>
-                {'info'}{'\u0040'}{'shankarmultimedia.com'}
+              <a
+                href="mailto:info@shankarmultimedia.com"
+                className={styles.highlight}
+                aria-label="Email Shankar Multimedia"
+              >
+                info@shankarmultimedia.com
               </a>
             </motion.div>
 

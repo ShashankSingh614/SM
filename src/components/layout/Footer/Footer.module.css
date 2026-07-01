@@ -168,6 +168,19 @@
   flex-shrink: 0;
 }
 
+.emailLink {
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.emailLink:hover,
+.emailLink:focus-visible {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
 .footerBottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2rem 0;

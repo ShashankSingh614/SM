@@ -73,8 +73,14 @@ const Footer = () => {
               <h3 className={styles.footerTitle}>Get in Touch</h3>
               <div className={styles.contactInfo}>
                 <div className={styles.contactItem}>
-                  <FiMail />
-                  <span>info@shankarmultimedia.com</span>
+                  <FiMail />    
+                  <a
+                    href="mailto:info@shankarmultimedia.com"
+                    className={styles.highlight}
+                    aria-label="Email Shankar Multimedia"
+                  >
+                    info@shankarmultimedia.com
+                  </a>
                 </div>
                 <div className={styles.contactItem}>
                   <FiClock />

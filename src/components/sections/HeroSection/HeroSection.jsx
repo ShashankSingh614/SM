@@ -2,7 +2,6 @@ import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 import PropTypes from 'prop-types';
 import { FiAward, FiBriefcase, FiUsers, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
-import { Helmet } from 'react-helmet-async';
 import { HERO_CONTENT } from '../../../constants/content';
 import styles from './HeroSection.module.css';
 
@@ -161,175 +160,163 @@ const HeroSection = () => {
   ];
 
   return (
-    <>
-      <Helmet>
-        <title>Best Animation Courses in Mumbai | Shankar Multimedia</title>
-        <meta
-          name="description"
-          content="Mumbai's top-rated institute for Graphic Design, UI/UX, 3D Animation, VFX and Digital Marketing. 36+ years, ISO certified, 100% placement support."
-        />
-        <link rel="canonical" href="https://shankarmultimedia.com/" />
-      </Helmet>
+    <section className={styles.hero} aria-label="Introduction to Shankar Multimedia">
+      <div className={styles.heroPanel}>
 
-      <section className={styles.hero} aria-label="Introduction to Shankar Multimedia">
-        <div className={styles.heroPanel}>
+        <motion.p
+          className={styles.eyebrow}
+          initial={{ opacity: 0, y: -12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+        Leading Multimedia and Animation Institute in Mumbai
+        </motion.p>
 
-          <motion.p
-            className={styles.eyebrow}
-            initial={{ opacity: 0, y: -12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-          Leading Multimedia and Animation Institute in Mumbai
-          </motion.p>
+        <motion.h1
+          className={styles.heroHeading}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.15 }}
+        >
+        Graphic Design, UI/UX, 3D Animation, VFX, Digital Marketing Courses in Mumbai
+        </motion.h1>
 
-          <motion.h1
-            className={styles.heroHeading}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.15 }}
-          >
-          Graphic Design, UI/UX, 3D Animation, VFX, Digital Marketing Courses in Mumbai
-          </motion.h1>
+        <motion.p
+          className={styles.heroSubtitle}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+        >
+        Our programs are backed by government and industry credentials
+        </motion.p>
 
-          <motion.p
-            className={styles.heroSubtitle}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-          >
-          Our programs are backed by government and industry credentials
-          </motion.p>
+        <motion.div
+          className={styles.heroCtas}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.45 }}
+        >
+          <a href="/contact" className={styles.btnPrimary}>
+            Book Your Free Counselling Session
+          </a>
+        </motion.div>
 
+        {partnerLogos.length > 0 && (
           <motion.div
-            className={styles.heroCtas}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.45 }}
+            className={styles.partnersBlock}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.6 }}
           >
-            <a href="/contact" className={styles.btnPrimary}>
-              Book Your Free Counselling Session
-            </a>
+            <p className={styles.partnersLabel}>Our programs are backed by</p>
+            <div className={styles.partnersRow}>
+              {partnerLogos.map((logo, i) => (
+                <img
+                  key={i}
+                  src={logo.src}
+                  alt={logo.alt || `${logo.name || 'Partner'} logo`}
+                  className={styles.partnerLogo}
+                  loading="lazy"
+                  decoding="async"
+                  width="120"
+                  height="40"
+                />
+              ))}
+            </div>
           </motion.div>
+        )}
+      </div>
 
-          {partnerLogos.length > 0 && (
-            <motion.div
-              className={styles.partnersBlock}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.7, delay: 0.6 }}
-            >
-              <p className={styles.partnersLabel}>Our programs are backed by</p>
-              <div className={styles.partnersRow}>
-                {partnerLogos.map((logo, i) => (
-                  <img
-                    key={i}
-                    src={logo.src}
-                    alt={logo.alt || `${logo.name || 'Partner'} logo`}
-                    className={styles.partnerLogo}
-                    loading="lazy"
-                    decoding="async"
-                    width="120"
-                    height="40"
+      <motion.div
+        className={styles.heroShowcase}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.9, delay: 0.1 }}
+        role="region"
+        aria-roledescription="carousel"
+        aria-label="Shankar Multimedia campus and student work highlights"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+        onFocus={() => setIsPaused(true)}
+        onBlur={() => setIsPaused(false)}
+      >
+        <div
+          className={styles.carouselFrame}
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+        >
+          <AnimatePresence mode="wait">
+            {slides[currentSlide] && (
+              <motion.figure
+                key={currentSlide}
+                className={styles.carouselSlide}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.6, ease: 'easeInOut' }}
+                role="group"
+                aria-roledescription="slide"
+                aria-label={`${currentSlide + 1} of ${slides.length}`}
+              >
+                <img
+                  src={slides[currentSlide].src}
+                  alt={slides[currentSlide].alt}
+                  className={styles.carouselImage}
+                  width="1920"
+                  height="1280"
+                  loading={currentSlide === 0 ? 'eager' : 'lazy'}
+                  decoding="async"
+                  fetchPriority={currentSlide === 0 ? 'high' : 'auto'}
+                />
+                {slides[currentSlide].label && (
+                  <figcaption className={styles.carouselCaption}>
+                    {slides[currentSlide].label}
+                  </figcaption>
+                )}
+              </motion.figure>
+            )}
+          </AnimatePresence>
+
+          <div className={styles.carouselFade} aria-hidden="true" />
+
+          {slides.length > 1 && (
+            <>
+              <button
+                type="button"
+                className={`${styles.carouselBtn} ${styles.prevBtn}`}
+                onClick={prevSlide}
+                aria-label="Show previous highlight"
+              >
+                <FiChevronLeft aria-hidden="true" />
+              </button>
+
+              <button
+                type="button"
+                className={`${styles.carouselBtn} ${styles.nextBtn}`}
+                onClick={nextSlide}
+                aria-label="Show next highlight"
+              >
+                <FiChevronRight aria-hidden="true" />
+              </button>
+
+              <div className={styles.carouselIndicators} role="tablist" aria-label="Choose a highlight to display">
+                {slides.map((s, index) => (
+                  <button
+                    key={index}
+                    type="button"
+                    role="tab"
+                    aria-selected={index === currentSlide}
+                    className={`${styles.indicator} ${index === currentSlide ? styles.active : ''}`}
+                    onClick={() => goToSlide(index)}
+                    aria-label={`Show highlight ${index + 1}`}
                   />
                 ))}
               </div>
-            </motion.div>
+            </>
           )}
         </div>
-
-        <motion.div
-          className={styles.heroShowcase}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.9, delay: 0.1 }}
-          role="region"
-          aria-roledescription="carousel"
-          aria-label="Shankar Multimedia campus and student work highlights"
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
-          onFocus={() => setIsPaused(true)}
-          onBlur={() => setIsPaused(false)}
-        >
-          <div
-            className={styles.carouselFrame}
-            onTouchStart={handleTouchStart}
-            onTouchEnd={handleTouchEnd}
-          >
-            <AnimatePresence mode="wait">
-              {slides[currentSlide] && (
-                <motion.figure
-                  key={currentSlide}
-                  className={styles.carouselSlide}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.6, ease: 'easeInOut' }}
-                  role="group"
-                  aria-roledescription="slide"
-                  aria-label={`${currentSlide + 1} of ${slides.length}`}
-                >
-                  <img
-                    src={slides[currentSlide].src}
-                    alt={slides[currentSlide].alt}
-                    className={styles.carouselImage}
-                    width="1920"
-                    height="1280"
-                    loading={currentSlide === 0 ? 'eager' : 'lazy'}
-                    decoding="async"
-                    fetchPriority={currentSlide === 0 ? 'high' : 'auto'}
-                  />
-                  {slides[currentSlide].label && (
-                    <figcaption className={styles.carouselCaption}>
-                      {slides[currentSlide].label}
-                    </figcaption>
-                  )}
-                </motion.figure>
-              )}
-            </AnimatePresence>
-
-            <div className={styles.carouselFade} aria-hidden="true" />
-
-            {slides.length > 1 && (
-              <>
-                <button
-                  type="button"
-                  className={`${styles.carouselBtn} ${styles.prevBtn}`}
-                  onClick={prevSlide}
-                  aria-label="Show previous highlight"
-                >
-                  <FiChevronLeft aria-hidden="true" />
-                </button>
-
-                <button
-                  type="button"
-                  className={`${styles.carouselBtn} ${styles.nextBtn}`}
-                  onClick={nextSlide}
-                  aria-label="Show next highlight"
-                >
-                  <FiChevronRight aria-hidden="true" />
-                </button>
-
-                <div className={styles.carouselIndicators} role="tablist" aria-label="Choose a highlight to display">
-                  {slides.map((s, index) => (
-                    <button
-                      key={index}
-                      type="button"
-                      role="tab"
-                      aria-selected={index === currentSlide}
-                      className={`${styles.indicator} ${index === currentSlide ? styles.active : ''}`}
-                      onClick={() => goToSlide(index)}
-                      aria-label={`Show highlight ${index + 1}`}
-                    />
-                  ))}
-                </div>
-              </>
-            )}
-          </div>
-        </motion.div>
-      </section>
-
-    </>
+      </motion.div>
+    </section>
   );
 };
 

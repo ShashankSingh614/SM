@@ -51,6 +51,17 @@
   margin-right: 8px;
 }
 
+.emailLink {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.emailLink:hover,
+.emailLink:focus-visible {
+  text-decoration: underline;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .about {
